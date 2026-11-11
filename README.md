@@ -161,7 +161,7 @@ The repository includes a dedicated test harness (tests/test_pipeline_invariants
 1) Clone Repository & Configure Environment:
 
 ```
-git clone <repo-url>
+git clone https://github.com/PiyushVerma18/medallion-ai-pipeline
 cd medallion-ai-pipeline
 cp .env.example .env 
 ```

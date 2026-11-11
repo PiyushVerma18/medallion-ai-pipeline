@@ -1,343 +1,343 @@
-incident_year,building,canonical_category,total_annual_cost,avg_resolution_hours,total_unique_tickets
+incident_year,building,canonical_category,total_annual_cost,total_annual_hours_on_site,total_annual_tickets
 2023,Main Office,IT & Network,13533.79,,1
 2023,Tower A,Pest Control,,,1
-2024,Annex East,Access & Security,189395.39,7125.369694444445,45
-2024,Annex East,Electrical,186633.21,5316.882996031746,42
-2024,Annex East,Fire & Safety,144547.17,7481.084850427351,37
-2024,Annex East,General Maintenance,102596.12,5415.8381944444445,18
-2024,Annex East,HVAC,102029.7,6677.864920634921,30
-2024,Annex East,IT & Network,199626.93,5873.143095238095,45
-2024,Annex East,Janitorial & Cleaning,108625.43,5819.676666666666,29
-2024,Annex East,Pest Control,94812.64,8320.13511111111,28
-2024,Annex East,Plumbing,87578.16,4626.164490740741,35
-2024,Annex East,Vertical Transport,115387.53,5762.42515625,34
-2024,Annex West,Access & Security,197006.21,4444.912666666667,41
-2024,Annex West,Electrical,122016.44,6808.632743055556,33
-2024,Annex West,Fire & Safety,114431.3,4722.121512345679,36
-2024,Annex West,General Maintenance,148597.64,5823.5263888888885,28
-2024,Annex West,HVAC,109450.51,6006.154465811966,33
-2024,Annex West,IT & Network,129715.5,5173.410925925926,37
-2024,Annex West,Janitorial & Cleaning,188991.52,7456.3245,41
-2024,Annex West,Pest Control,108919.57,6304.221166666666,38
-2024,Annex West,Plumbing,183230.38,6252.336728395062,31
-2024,Annex West,Vertical Transport,155013.06,5810.209673202615,39
-2024,Building 3,Access & Security,175650.7,5765.351277777778,55
-2024,Building 3,Electrical,78214.43,6864.378166666666,31
-2024,Building 3,Fire & Safety,124266.35,6514.82511574074,29
-2024,Building 3,General Maintenance,84695.84,6056.338703703704,19
-2024,Building 3,HVAC,113611.52,5969.323214285714,36
-2024,Building 3,IT & Network,169806.08,6322.365992063492,33
-2024,Building 3,Janitorial & Cleaning,165321.13,5983.061759259259,37
-2024,Building 3,Pest Control,116361.34,6282.547171717171,40
-2024,Building 3,Plumbing,163958.17,6606.199722222223,45
-2024,Building 3,Vertical Transport,162953.71,6617.531085858586,38
-2024,Building 7,Access & Security,174680.9,7000.47575925926,42
-2024,Building 7,Electrical,140220.58,6458.048958333334,39
-2024,Building 7,Fire & Safety,112043.37,7831.787398989899,22
-2024,Building 7,General Maintenance,65886.91,7284.433148148149,18
-2024,Building 7,HVAC,140447.27,5903.0140972222225,43
-2024,Building 7,IT & Network,132215.76,7203.717083333333,37
-2024,Building 7,Janitorial & Cleaning,140059.57,5431.9042361111115,35
-2024,Building 7,Pest Control,203531.62,6413.072185185185,46
-2024,Building 7,Plumbing,183594.9,6033.815861111111,41
-2024,Building 7,Vertical Transport,157149.71,4323.963333333333,32
-2024,Cafeteria Block,Access & Security,112715.7,5255.259166666667,27
-2024,Cafeteria Block,Electrical,116672.26,6206.858472222222,30
-2024,Cafeteria Block,Fire & Safety,209368.49,6520.222400793651,47
-2024,Cafeteria Block,General Maintenance,63448.58,4808.779398148148,20
-2024,Cafeteria Block,HVAC,97646.28,8053.581388888889,35
-2024,Cafeteria Block,IT & Network,185296.89,7592.539236111111,42
-2024,Cafeteria Block,Janitorial & Cleaning,137035.72,6479.890396825397,30
-2024,Cafeteria Block,Pest Control,148011.19,7365.7413703703705,45
-2024,Cafeteria Block,Plumbing,208190.07,6570.272761437908,46
-2024,Cafeteria Block,Vertical Transport,120685.54,6650.930069444445,29
-2024,Data Center 1,Access & Security,168893.76,6203.438358585859,39
-2024,Data Center 1,Electrical,79981.0,7057.377037037037,37
-2024,Data Center 1,Fire & Safety,160291.63,5832.612854938272,42
-2024,Data Center 1,General Maintenance,51902.8,6603.346805555556,26
-2024,Data Center 1,HVAC,111058.28,7359.1685,28
-2024,Data Center 1,IT & Network,151121.88,6714.840296296296,34
-2024,Data Center 1,Janitorial & Cleaning,107752.08,5292.90265625,33
-2024,Data Center 1,Pest Control,152919.97,6775.0975,34
-2024,Data Center 1,Plumbing,97761.35,5112.414742063492,35
-2024,Data Center 1,Vertical Transport,184052.07,6034.846851851852,42
-2024,HQ Floor 1,Access & Security,138808.67,5780.418657407407,32
-2024,HQ Floor 1,Electrical,116816.52,6668.203373015873,35
-2024,HQ Floor 1,Fire & Safety,151852.22,6032.551717171717,37
-2024,HQ Floor 1,General Maintenance,35064.75,4962.465208333333,19
-2024,HQ Floor 1,HVAC,92301.76,6827.451840277778,33
-2024,HQ Floor 1,IT & Network,162700.31,7032.026458333334,43
-2024,HQ Floor 1,Janitorial & Cleaning,146876.27,5863.2273989898995,52
-2024,HQ Floor 1,Pest Control,153655.49,6382.056851851852,41
-2024,HQ Floor 1,Plumbing,169354.66,4393.617932098766,38
-2024,HQ Floor 1,Vertical Transport,132873.48,6485.385793650794,40
-2024,HQ Floor 2,Access & Security,163554.85,7579.600162037037,43
-2024,HQ Floor 2,Electrical,125240.76,5263.811861111111,36
-2024,HQ Floor 2,Fire & Safety,152582.67,6491.931785714286,31
-2024,HQ Floor 2,General Maintenance,42833.39,8277.4,9
-2024,HQ Floor 2,HVAC,243027.26,7922.462306763285,56
-2024,HQ Floor 2,IT & Network,109066.18,4924.1395,32
-2024,HQ Floor 2,Janitorial & Cleaning,150068.71,6805.762008547009,46
-2024,HQ Floor 2,Pest Control,223297.47,6012.841960784313,55
-2024,HQ Floor 2,Plumbing,131162.72,6686.150231481482,30
-2024,HQ Floor 2,Vertical Transport,149028.04,5600.103611111111,32
-2024,HQ Floor 3,Access & Security,94217.4,5903.281358024691,29
-2024,HQ Floor 3,Electrical,177988.37,7165.244246031746,40
-2024,HQ Floor 3,Fire & Safety,160456.56,4979.347727272727,40
-2024,HQ Floor 3,General Maintenance,50313.58,7359.2725,12
-2024,HQ Floor 3,HVAC,137616.76,5506.709305555555,36
-2024,HQ Floor 3,IT & Network,74773.8,3894.225925925926,19
-2024,HQ Floor 3,Janitorial & Cleaning,129325.13,5119.902996031746,40
-2024,HQ Floor 3,Pest Control,72857.55,5557.216875,34
-2024,HQ Floor 3,Plumbing,122923.05,5283.78150462963,39
-2024,HQ Floor 3,Vertical Transport,80820.28,6774.492839506173,29
-2024,Main Office,Access & Security,199083.22,7370.21703125,43
-2024,Main Office,Electrical,86660.34,7264.769636752137,36
-2024,Main Office,Fire & Safety,131678.57,8013.704916666667,30
-2024,Main Office,General Maintenance,66938.97,6057.516018518519,14
-2024,Main Office,HVAC,136589.8,7537.138076923077,39
-2024,Main Office,IT & Network,105730.08,6893.053531746032,31
-2024,Main Office,Janitorial & Cleaning,103608.25,7792.735952380953,36
-2024,Main Office,Pest Control,194815.19,4934.803796296296,37
-2024,Main Office,Plumbing,222960.72,4798.736944444445,44
-2024,Main Office,Vertical Transport,95055.94,4760.726975308642,34
-2024,Parking Garage,Access & Security,85381.31,6337.9258854166665,35
-2024,Parking Garage,Electrical,163713.66,6374.359814814815,37
-2024,Parking Garage,Fire & Safety,207866.79,7009.390375816994,46
-2024,Parking Garage,General Maintenance,28688.75,3128.3232222222223,13
-2024,Parking Garage,HVAC,92078.2,6151.810984848485,36
-2024,Parking Garage,IT & Network,155260.22,7365.308506944444,47
-2024,Parking Garage,Janitorial & Cleaning,102704.78,6006.072378472222,34
-2024,Parking Garage,Pest Control,112778.22,8243.890972222222,35
-2024,Parking Garage,Plumbing,89251.59,6096.5410833333335,36
-2024,Parking Garage,Vertical Transport,134278.72,7346.781047008547,28
-2024,Remote Site Alpha,Access & Security,154962.48,5467.08962962963,40
-2024,Remote Site Alpha,Electrical,193631.75,6370.9645,40
-2024,Remote Site Alpha,Fire & Safety,164961.93,7992.4663580246915,40
-2024,Remote Site Alpha,General Maintenance,93561.68,6383.134398148148,19
-2024,Remote Site Alpha,HVAC,148209.05,4802.656717171717,40
-2024,Remote Site Alpha,IT & Network,138749.04,5549.982478632479,37
-2024,Remote Site Alpha,Janitorial & Cleaning,198703.05,6745.873958333334,37
-2024,Remote Site Alpha,Pest Control,126755.91,4561.676141975308,38
-2024,Remote Site Alpha,Plumbing,120797.57,5462.5990656565655,40
-2024,Remote Site Alpha,Vertical Transport,178748.34,4870.449513888889,36
-2024,Remote Site Beta,Access & Security,167363.63,6677.102907407408,44
-2024,Remote Site Beta,Electrical,170819.52,7117.811944444445,44
-2024,Remote Site Beta,Fire & Safety,184194.13,6627.825685185185,49
-2024,Remote Site Beta,General Maintenance,103187.81,5841.111111111111,23
-2024,Remote Site Beta,HVAC,187113.65,6253.277091503268,44
-2024,Remote Site Beta,IT & Network,188636.25,6766.555378787879,47
-2024,Remote Site Beta,Janitorial & Cleaning,95952.93,6265.676833333333,34
-2024,Remote Site Beta,Pest Control,122796.03,5623.693314814815,39
-2024,Remote Site Beta,Plumbing,175728.37,7932.693888888889,41
-2024,Remote Site Beta,Vertical Transport,161396.0,6539.973964646465,39
-2024,Tower A,Access & Security,96180.05,6823.272666666667,37
-2024,Tower A,Electrical,136315.43,6969.934461805556,37
-2024,Tower A,Fire & Safety,96013.53,6454.525333333333,27
-2024,Tower A,General Maintenance,41055.64,5353.752023809524,18
-2024,Tower A,HVAC,104496.09,5956.7884375,26
-2024,Tower A,IT & Network,135056.66,6549.393055555555,43
-2024,Tower A,Janitorial & Cleaning,193981.15,6805.615376984127,45
-2024,Tower A,Pest Control,197396.8,6690.316527777778,35
-2024,Tower A,Plumbing,132248.56,5242.890486111111,34
-2024,Tower A,Vertical Transport,161819.22,6207.435034722223,31
-2024,Tower B,Access & Security,76236.71,5298.672420634921,29
-2024,Tower B,Electrical,178838.06,5138.096706349206,42
-2024,Tower B,Fire & Safety,85302.25,6610.562694444445,29
-2024,Tower B,General Maintenance,20537.18,5724.65824074074,13
-2024,Tower B,HVAC,126002.71,5714.410243055556,37
-2024,Tower B,IT & Network,108675.12,7895.0682986111115,37
-2024,Tower B,Janitorial & Cleaning,136493.23,6848.82654040404,39
-2024,Tower B,Pest Control,86011.1,7934.555451388889,33
-2024,Tower B,Plumbing,146072.44,5687.578697916667,45
-2024,Tower B,Vertical Transport,101509.37,6766.608333333334,35
-2024,Warehouse North,Access & Security,86252.82,7752.0241975308645,31
-2024,Warehouse North,Electrical,148038.62,5842.1165625,43
-2024,Warehouse North,Fire & Safety,132761.38,6474.012611111111,37
-2024,Warehouse North,General Maintenance,61156.19,9061.052638888888,20
-2024,Warehouse North,HVAC,174868.01,5937.076965811966,40
-2024,Warehouse North,IT & Network,200486.44,6312.105833333333,37
-2024,Warehouse North,Janitorial & Cleaning,102190.79,6427.499930555556,31
-2024,Warehouse North,Pest Control,190516.71,5947.648867521368,39
-2024,Warehouse North,Plumbing,132429.58,6700.226728395061,33
-2024,Warehouse North,Vertical Transport,138434.05,4893.36325,37
-2024,Warehouse South,Access & Security,158692.55,5640.466180555555,35
-2024,Warehouse South,Electrical,140185.37,6385.221284722223,35
-2024,Warehouse South,Fire & Safety,103691.47,7192.412425925926,38
-2024,Warehouse South,General Maintenance,46667.99,4843.536349206349,13
-2024,Warehouse South,HVAC,127193.52,5585.404145299145,34
-2024,Warehouse South,IT & Network,159718.35,6065.104642857143,41
-2024,Warehouse South,Janitorial & Cleaning,79129.37,3011.570333333333,24
-2024,Warehouse South,Pest Control,149097.43,6084.02311965812,34
-2024,Warehouse South,Plumbing,146907.05,6145.658858024692,36
-2024,Warehouse South,Vertical Transport,84628.75,8153.369638888888,25
-2025,Annex East,Access & Security,106700.55,1018.4412037037036,20
-2025,Annex East,Electrical,85179.89,1738.149,22
-2025,Annex East,Fire & Safety,50754.15,1890.285462962963,15
-2025,Annex East,General Maintenance,10379.34,532.5022222222223,3
-2025,Annex East,HVAC,67245.82,1759.03375,15
-2025,Annex East,IT & Network,45360.71,3547.7833333333333,17
-2025,Annex East,Janitorial & Cleaning,63887.66,2699.177222222222,17
-2025,Annex East,Pest Control,80884.27,1708.220185185185,20
-2025,Annex East,Plumbing,81242.88,926.9145833333333,22
-2025,Annex East,Vertical Transport,57045.88,647.6055555555556,17
-2025,Annex West,Access & Security,61367.92,1603.421388888889,15
-2025,Annex West,Electrical,33371.25,1728.4741666666666,14
-2025,Annex West,Fire & Safety,121679.64,1161.8879365079365,22
-2025,Annex West,General Maintenance,29585.45,955.3213888888889,8
-2025,Annex West,HVAC,45398.67,,14
-2025,Annex West,IT & Network,59980.97,2661.978425925926,18
-2025,Annex West,Janitorial & Cleaning,43465.37,3982.110347222222,17
-2025,Annex West,Pest Control,64934.0,2064.168888888889,14
-2025,Annex West,Plumbing,76473.01,1872.576388888889,23
-2025,Annex West,Vertical Transport,55448.07,1676.6033333333332,20
-2025,Building 3,Access & Security,42396.09,1891.510462962963,16
-2025,Building 3,Electrical,124940.26,2074.6433888888887,28
-2025,Building 3,Fire & Safety,59832.26,2150.912962962963,18
-2025,Building 3,General Maintenance,28320.46,1182.0255555555555,8
-2025,Building 3,HVAC,49272.01,1749.587611111111,16
-2025,Building 3,IT & Network,74712.7,3324.683611111111,21
-2025,Building 3,Janitorial & Cleaning,44574.17,2827.826666666667,12
-2025,Building 3,Pest Control,62631.28,866.4934722222222,26
-2025,Building 3,Plumbing,70925.9,3644.2023611111113,16
-2025,Building 3,Vertical Transport,99391.66,1348.2789351851852,22
-2025,Building 7,Access & Security,93613.34,1621.3513333333333,18
-2025,Building 7,Electrical,65869.86,3692.9773148148147,18
-2025,Building 7,Fire & Safety,34747.47,948.8629166666667,13
-2025,Building 7,General Maintenance,19948.2,1350.2066666666667,10
-2025,Building 7,HVAC,75695.04,989.8924305555555,25
-2025,Building 7,IT & Network,53446.01,2643.1053703703706,19
-2025,Building 7,Janitorial & Cleaning,36801.84,,8
-2025,Building 7,Pest Control,88918.88,1628.3589814814816,22
-2025,Building 7,Plumbing,53353.2,943.3,19
-2025,Building 7,Vertical Transport,62747.97,1036.6896296296297,13
-2025,Cafeteria Block,Access & Security,86202.37,,20
-2025,Cafeteria Block,Electrical,46207.38,3836.0033333333336,18
-2025,Cafeteria Block,Fire & Safety,105422.6,2261.5555555555557,21
-2025,Cafeteria Block,General Maintenance,20574.68,1678.8405555555555,8
-2025,Cafeteria Block,HVAC,81810.5,1230.0690972222221,22
-2025,Cafeteria Block,IT & Network,57480.16,2703.6666666666665,18
-2025,Cafeteria Block,Janitorial & Cleaning,61148.67,1508.174277777778,19
-2025,Cafeteria Block,Pest Control,36712.55,2250.0019444444442,15
-2025,Cafeteria Block,Plumbing,61989.31,563.3275,19
-2025,Cafeteria Block,Vertical Transport,97067.58,1659.2766666666666,21
-2025,Data Center 1,Access & Security,79344.24,1189.2650694444444,21
-2025,Data Center 1,Electrical,52467.72,2234.824259259259,15
-2025,Data Center 1,Fire & Safety,84908.84,926.2765277777778,21
-2025,Data Center 1,General Maintenance,48241.62,1471.0981944444445,9
-2025,Data Center 1,HVAC,32906.91,3039.2094444444447,14
-2025,Data Center 1,IT & Network,54146.8,1305.41,18
-2025,Data Center 1,Janitorial & Cleaning,73857.15,211.64138888888888,20
-2025,Data Center 1,Pest Control,60972.59,1206.3583333333333,18
-2025,Data Center 1,Plumbing,57151.69,963.4314444444444,22
-2025,Data Center 1,Vertical Transport,106904.68,2758.6223015873015,27
-2025,HQ Floor 1,Access & Security,31904.07,3567.364537037037,19
-2025,HQ Floor 1,Electrical,62288.62,1708.8833333333334,15
-2025,HQ Floor 1,Fire & Safety,125899.45,1173.4645833333334,23
-2025,HQ Floor 1,General Maintenance,27581.04,3140.081388888889,10
-2025,HQ Floor 1,HVAC,81888.17,1211.3487222222222,24
-2025,HQ Floor 1,IT & Network,84639.59,1594.704861111111,19
-2025,HQ Floor 1,Janitorial & Cleaning,114434.15,,24
-2025,HQ Floor 1,Pest Control,89117.76,1258.467314814815,21
-2025,HQ Floor 1,Plumbing,85502.14,652.0963888888889,17
-2025,HQ Floor 1,Vertical Transport,61053.98,1422.4829166666666,12
-2025,HQ Floor 2,Access & Security,74935.42,1296.9402222222222,20
-2025,HQ Floor 2,Electrical,35791.62,2336.893541666667,16
+2024,Annex East,Access & Security,193773.64,4.7,47
+2024,Annex East,Electrical,186633.21,6.0,42
+2024,Annex East,Fire & Safety,177517.01,14.8,40
+2024,Annex East,General Maintenance,102596.12,4.7,20
+2024,Annex East,HVAC,103827.12,7.0,31
+2024,Annex East,IT & Network,200880.86,18.0,46
+2024,Annex East,Janitorial & Cleaning,111309.69,,34
+2024,Annex East,Pest Control,117957.79,7.9,31
+2024,Annex East,Plumbing,98097.03,9.8,38
+2024,Annex East,Vertical Transport,119427.46,24.2,40
+2024,Annex West,Access & Security,222124.16,4.3,43
+2024,Annex West,Electrical,150049.96,11.6,38
+2024,Annex West,Fire & Safety,114431.3,6.6,37
+2024,Annex West,General Maintenance,160846.02,6.1,29
+2024,Annex West,HVAC,115603.87,19.4,38
+2024,Annex West,IT & Network,129715.5,37.6,38
+2024,Annex West,Janitorial & Cleaning,211111.78,28.6,45
+2024,Annex West,Pest Control,108919.57,9.7,38
+2024,Annex West,Plumbing,183230.38,13.6,32
+2024,Annex West,Vertical Transport,165643.43,20.2,41
+2024,Building 3,Access & Security,184853.7,3.9,58
+2024,Building 3,Electrical,86159.43,15.0,32
+2024,Building 3,Fire & Safety,160083.92,9.6,36
+2024,Building 3,General Maintenance,97571.96,12.1,22
+2024,Building 3,HVAC,130826.06,17.5,38
+2024,Building 3,IT & Network,221437.89,17.3,41
+2024,Building 3,Janitorial & Cleaning,181927.35,15.3,40
+2024,Building 3,Pest Control,123676.08,16.7,41
+2024,Building 3,Plumbing,163958.17,16.9,46
+2024,Building 3,Vertical Transport,173090.95,25.3,39
+2024,Building 7,Access & Security,191638.05,19.5,47
+2024,Building 7,Electrical,144424.82,7.0,43
+2024,Building 7,Fire & Safety,120835.37,,26
+2024,Building 7,General Maintenance,65886.91,5.9,18
+2024,Building 7,HVAC,151913.57,18.8,48
+2024,Building 7,IT & Network,160423.61,2.5,41
+2024,Building 7,Janitorial & Cleaning,164304.63,2.4,41
+2024,Building 7,Pest Control,232298.6,31.3,53
+2024,Building 7,Plumbing,218629.95,14.9,46
+2024,Building 7,Vertical Transport,181310.98,10.7,36
+2024,Cafeteria Block,Access & Security,139561.22,0.6,31
+2024,Cafeteria Block,Electrical,123995.13,22.0,33
+2024,Cafeteria Block,Fire & Safety,221315.47,22.6,48
+2024,Cafeteria Block,General Maintenance,63448.58,6.5,22
+2024,Cafeteria Block,HVAC,131637.32,7.9,39
+2024,Cafeteria Block,IT & Network,189639.93,42.1,46
+2024,Cafeteria Block,Janitorial & Cleaning,137035.72,18.5,30
+2024,Cafeteria Block,Pest Control,162197.65,17.0,47
+2024,Cafeteria Block,Plumbing,216424.88,25.2,49
+2024,Cafeteria Block,Vertical Transport,120685.54,5.4,33
+2024,Data Center 1,Access & Security,207793.06,7.5,43
+2024,Data Center 1,Electrical,94232.34,13.7,43
+2024,Data Center 1,Fire & Safety,166800.8,30.0,45
+2024,Data Center 1,General Maintenance,55121.33,12.7,28
+2024,Data Center 1,HVAC,134184.84,25.0,34
+2024,Data Center 1,IT & Network,177533.47,10.7,39
+2024,Data Center 1,Janitorial & Cleaning,121646.91,16.5,39
+2024,Data Center 1,Pest Control,153517.49,17.5,39
+2024,Data Center 1,Plumbing,100702.78,3.4,37
+2024,Data Center 1,Vertical Transport,187406.25,0.8,44
+2024,HQ Floor 1,Access & Security,148456.06,4.6,36
+2024,HQ Floor 1,Electrical,129256.42,11.5,39
+2024,HQ Floor 1,Fire & Safety,162299.8,,41
+2024,HQ Floor 1,General Maintenance,35064.75,3.8,19
+2024,HQ Floor 1,HVAC,101629.32,15.5,39
+2024,HQ Floor 1,IT & Network,180259.76,1.6,46
+2024,HQ Floor 1,Janitorial & Cleaning,153977.85,9.1,56
+2024,HQ Floor 1,Pest Control,163965.96,2.8,45
+2024,HQ Floor 1,Plumbing,191880.22,9.4,45
+2024,HQ Floor 1,Vertical Transport,159667.74,8.9,44
+2024,HQ Floor 2,Access & Security,179457.58,18.8,46
+2024,HQ Floor 2,Electrical,128225.19,4.8,38
+2024,HQ Floor 2,Fire & Safety,152582.67,,33
+2024,HQ Floor 2,General Maintenance,42833.39,3.9,9
+2024,HQ Floor 2,HVAC,263834.22,11.2,60
+2024,HQ Floor 2,IT & Network,115518.18,26.2,34
+2024,HQ Floor 2,Janitorial & Cleaning,171245.93,29.8,51
+2024,HQ Floor 2,Pest Control,239652.47,8.5,57
+2024,HQ Floor 2,Plumbing,131162.72,1.5,35
+2024,HQ Floor 2,Vertical Transport,164788.7,11.0,36
+2024,HQ Floor 3,Access & Security,98940.4,14.8,30
+2024,HQ Floor 3,Electrical,182579.65,17.5,45
+2024,HQ Floor 3,Fire & Safety,160456.56,7.0,42
+2024,HQ Floor 3,General Maintenance,50313.58,,15
+2024,HQ Floor 3,HVAC,137616.76,16.6,39
+2024,HQ Floor 3,IT & Network,90121.51,6.1,23
+2024,HQ Floor 3,Janitorial & Cleaning,151989.87,28.4,47
+2024,HQ Floor 3,Pest Control,73892.61,12.7,37
+2024,HQ Floor 3,Plumbing,136040.85,38.0,41
+2024,HQ Floor 3,Vertical Transport,89158.73,6.3,32
+2024,Main Office,Access & Security,224877.56,22.9,47
+2024,Main Office,Electrical,86660.34,12.1,37
+2024,Main Office,Fire & Safety,131838.68,5.3,33
+2024,Main Office,General Maintenance,66938.97,11.8,16
+2024,Main Office,HVAC,166881.02,1.5,43
+2024,Main Office,IT & Network,114649.85,12.4,33
+2024,Main Office,Janitorial & Cleaning,103608.25,21.7,36
+2024,Main Office,Pest Control,215539.04,21.8,41
+2024,Main Office,Plumbing,222960.72,14.4,45
+2024,Main Office,Vertical Transport,100598.01,4.2,38
+2024,Parking Garage,Access & Security,89834.87,7.2,36
+2024,Parking Garage,Electrical,181286.87,,39
+2024,Parking Garage,Fire & Safety,221239.02,34.5,49
+2024,Parking Garage,General Maintenance,38662.65,12.1,14
+2024,Parking Garage,HVAC,97333.2,11.5,39
+2024,Parking Garage,IT & Network,156371.22,15.8,50
+2024,Parking Garage,Janitorial & Cleaning,117990.07,12.1,39
+2024,Parking Garage,Pest Control,120643.22,29.1,38
+2024,Parking Garage,Plumbing,97476.54,7.1,38
+2024,Parking Garage,Vertical Transport,141947.23,11.8,31
+2024,Remote Site Alpha,Access & Security,166023.15,16.8,48
+2024,Remote Site Alpha,Electrical,199867.75,24.2,41
+2024,Remote Site Alpha,Fire & Safety,176309.41,11.8,41
+2024,Remote Site Alpha,General Maintenance,107953.02,6.4,22
+2024,Remote Site Alpha,HVAC,148209.05,14.6,40
+2024,Remote Site Alpha,IT & Network,142064.39,1.7,40
+2024,Remote Site Alpha,Janitorial & Cleaning,198703.05,13.9,38
+2024,Remote Site Alpha,Pest Control,132765.91,6.2,40
+2024,Remote Site Alpha,Plumbing,131894.12,17.0,47
+2024,Remote Site Alpha,Vertical Transport,178748.34,,36
+2024,Remote Site Beta,Access & Security,175877.12,17.4,49
+2024,Remote Site Beta,Electrical,175209.73,24.2,47
+2024,Remote Site Beta,Fire & Safety,199307.11,12.9,53
+2024,Remote Site Beta,General Maintenance,115002.18,10.9,24
+2024,Remote Site Beta,HVAC,201339.91,15.8,46
+2024,Remote Site Beta,IT & Network,193727.32,17.0,52
+2024,Remote Site Beta,Janitorial & Cleaning,101799.93,,37
+2024,Remote Site Beta,Pest Control,124631.03,26.3,42
+2024,Remote Site Beta,Plumbing,188917.11,12.2,42
+2024,Remote Site Beta,Vertical Transport,181877.13,18.7,41
+2024,Tower A,Access & Security,113086.03,11.3,40
+2024,Tower A,Electrical,143297.63,4.0,40
+2024,Tower A,Fire & Safety,99384.98,4.7,31
+2024,Tower A,General Maintenance,62799.41,8.6,22
+2024,Tower A,HVAC,104496.09,17.6,29
+2024,Tower A,IT & Network,135056.66,8.3,44
+2024,Tower A,Janitorial & Cleaning,216872.17,38.8,51
+2024,Tower A,Pest Control,200553.82,6.4,37
+2024,Tower A,Plumbing,137419.56,4.3,36
+2024,Tower A,Vertical Transport,174725.98,17.0,34
+2024,Tower B,Access & Security,82526.71,8.6,30
+2024,Tower B,Electrical,189724.15,18.8,47
+2024,Tower B,Fire & Safety,98592.35,6.3,31
+2024,Tower B,General Maintenance,22219.11,2.6,14
+2024,Tower B,HVAC,126356.71,11.7,38
+2024,Tower B,IT & Network,114421.97,11.6,39
+2024,Tower B,Janitorial & Cleaning,136493.23,17.8,41
+2024,Tower B,Pest Control,92447.42,15.7,36
+2024,Tower B,Plumbing,169001.21,19.2,47
+2024,Tower B,Vertical Transport,111089.58,12.9,38
+2024,Warehouse North,Access & Security,112245.8,,36
+2024,Warehouse North,Electrical,152513.34,6.9,44
+2024,Warehouse North,Fire & Safety,145668.7,3.6,40
+2024,Warehouse North,General Maintenance,74140.61,,21
+2024,Warehouse North,HVAC,174868.01,12.9,40
+2024,Warehouse North,IT & Network,217658.91,3.3,42
+2024,Warehouse North,Janitorial & Cleaning,119314.43,15.2,34
+2024,Warehouse North,Pest Control,205602.59,10.0,42
+2024,Warehouse North,Plumbing,132429.58,9.5,36
+2024,Warehouse North,Vertical Transport,138434.05,1.4,38
+2024,Warehouse South,Access & Security,174044.5,13.0,38
+2024,Warehouse South,Electrical,151909.68,15.1,39
+2024,Warehouse South,Fire & Safety,119867.64,4.4,42
+2024,Warehouse South,General Maintenance,50264.84,7.1,17
+2024,Warehouse South,HVAC,137058.18,19.3,38
+2024,Warehouse South,IT & Network,166677.46,,44
+2024,Warehouse South,Janitorial & Cleaning,90167.66,16.1,26
+2024,Warehouse South,Pest Control,161451.3,12.9,41
+2024,Warehouse South,Plumbing,163921.69,8.1,43
+2024,Warehouse South,Vertical Transport,94517.19,,27
+2025,Annex East,Access & Security,127250.93,,23
+2025,Annex East,Electrical,85450.07,7.1,23
+2025,Annex East,Fire & Safety,51153.56,8.6,16
+2025,Annex East,General Maintenance,19779.19,,5
+2025,Annex East,HVAC,74768.03,5.2,17
+2025,Annex East,IT & Network,45360.71,,17
+2025,Annex East,Janitorial & Cleaning,73688.72,6.8,19
+2025,Annex East,Pest Control,108418.88,5.5,23
+2025,Annex East,Plumbing,94706.3,,25
+2025,Annex East,Vertical Transport,62768.62,9.3,18
+2025,Annex West,Access & Security,61367.92,1.6,15
+2025,Annex West,Electrical,36038.57,1.5,16
+2025,Annex West,Fire & Safety,121679.64,5.2,22
+2025,Annex West,General Maintenance,30250.22,,9
+2025,Annex West,HVAC,45802.34,12.7,16
+2025,Annex West,IT & Network,66699.16,,22
+2025,Annex West,Janitorial & Cleaning,59084.77,10.8,20
+2025,Annex West,Pest Control,67288.53,12.5,16
+2025,Annex West,Plumbing,76473.01,1.0,24
+2025,Annex West,Vertical Transport,55448.07,1.7,20
+2025,Building 3,Access & Security,42396.09,,17
+2025,Building 3,Electrical,124940.26,8.9,29
+2025,Building 3,Fire & Safety,59832.26,5.1,19
+2025,Building 3,General Maintenance,48366.33,12.3,10
+2025,Building 3,HVAC,49272.01,,16
+2025,Building 3,IT & Network,74712.7,6.9,23
+2025,Building 3,Janitorial & Cleaning,59027.88,,13
+2025,Building 3,Pest Control,62631.28,12.4,27
+2025,Building 3,Plumbing,70925.9,10.3,16
+2025,Building 3,Vertical Transport,103355.74,11.0,23
+2025,Building 7,Access & Security,113823.09,20.4,23
+2025,Building 7,Electrical,68667.09,4.7,23
+2025,Building 7,Fire & Safety,36279.82,6.4,14
+2025,Building 7,General Maintenance,19948.2,,11
+2025,Building 7,HVAC,82274.33,1.9,26
+2025,Building 7,IT & Network,55682.71,11.0,21
+2025,Building 7,Janitorial & Cleaning,36801.84,,10
+2025,Building 7,Pest Control,88918.88,12.4,24
+2025,Building 7,Plumbing,53353.2,14.3,19
+2025,Building 7,Vertical Transport,70986.97,3.1,14
+2025,Cafeteria Block,Access & Security,97940.61,1.8,24
+2025,Cafeteria Block,Electrical,46207.38,,18
+2025,Cafeteria Block,Fire & Safety,130800.65,5.7,24
+2025,Cafeteria Block,General Maintenance,20574.68,,9
+2025,Cafeteria Block,HVAC,92078.39,12.0,23
+2025,Cafeteria Block,IT & Network,59763.58,9.4,19
+2025,Cafeteria Block,Janitorial & Cleaning,61148.67,19.6,19
+2025,Cafeteria Block,Pest Control,48280.38,,19
+2025,Cafeteria Block,Plumbing,61989.31,10.8,19
+2025,Cafeteria Block,Vertical Transport,102015.58,5.6,22
+2025,Data Center 1,Access & Security,80912.81,16.5,22
+2025,Data Center 1,Electrical,65389.02,,17
+2025,Data Center 1,Fire & Safety,84908.84,2.4,23
+2025,Data Center 1,General Maintenance,56964.09,7.8,11
+2025,Data Center 1,HVAC,51752.0,,17
+2025,Data Center 1,IT & Network,67079.29,,19
+2025,Data Center 1,Janitorial & Cleaning,73857.15,1.4,21
+2025,Data Center 1,Pest Control,60972.59,2.7,18
+2025,Data Center 1,Plumbing,58460.06,2.6,26
+2025,Data Center 1,Vertical Transport,124322.35,,30
+2025,HQ Floor 1,Access & Security,35026.55,6.1,21
+2025,HQ Floor 1,Electrical,62288.62,5.3,15
+2025,HQ Floor 1,Fire & Safety,136641.57,6.0,24
+2025,HQ Floor 1,General Maintenance,32949.84,7.3,11
+2025,HQ Floor 1,HVAC,90471.17,3.6,26
+2025,HQ Floor 1,IT & Network,84639.59,11.5,21
+2025,HQ Floor 1,Janitorial & Cleaning,118979.28,6.9,25
+2025,HQ Floor 1,Pest Control,89117.76,15.1,22
+2025,HQ Floor 1,Plumbing,90891.56,9.4,19
+2025,HQ Floor 1,Vertical Transport,61053.98,5.0,13
+2025,HQ Floor 2,Access & Security,88060.2,8.5,22
+2025,HQ Floor 2,Electrical,44285.49,2.8,19
 2025,HQ Floor 2,Fire & Safety,61673.84,,16
-2025,HQ Floor 2,General Maintenance,27417.04,599.2688888888889,8
-2025,HQ Floor 2,HVAC,53238.51,1576.0640555555556,22
-2025,HQ Floor 2,IT & Network,68508.0,1004.9802777777778,22
-2025,HQ Floor 2,Janitorial & Cleaning,70631.09,1752.0,12
-2025,HQ Floor 2,Pest Control,121236.71,,23
-2025,HQ Floor 2,Plumbing,81605.75,1761.5826388888888,22
-2025,HQ Floor 2,Vertical Transport,40525.67,1749.4734722222222,18
-2025,HQ Floor 3,Access & Security,60355.31,1552.4015277777778,19
-2025,HQ Floor 3,Electrical,81957.12,2546.945925925926,17
-2025,HQ Floor 3,Fire & Safety,50988.7,2021.8333333333333,17
-2025,HQ Floor 3,General Maintenance,45092.47,4316.5,11
-2025,HQ Floor 3,HVAC,93920.99,1276.1363888888889,22
-2025,HQ Floor 3,IT & Network,78520.19,1207.2416666666666,19
-2025,HQ Floor 3,Janitorial & Cleaning,121513.51,2003.215787037037,25
-2025,HQ Floor 3,Pest Control,46263.49,2306.9958333333334,10
-2025,HQ Floor 3,Plumbing,66676.78,723.1013888888889,18
-2025,HQ Floor 3,Vertical Transport,43648.59,1772.6325,10
-2025,Main Office,Access & Security,92595.12,1506.8026388888889,19
-2025,Main Office,Electrical,50608.19,1774.3379861111111,24
-2025,Main Office,Fire & Safety,70324.38,428.4736111111111,20
-2025,Main Office,General Maintenance,43401.34,,10
-2025,Main Office,HVAC,114109.09,1995.6854365079364,32
-2025,Main Office,IT & Network,55978.58,1030.0445833333333,18
-2025,Main Office,Janitorial & Cleaning,75916.45,2503.717222222222,22
-2025,Main Office,Pest Control,60631.42,498.18333333333334,15
-2025,Main Office,Plumbing,28415.09,1751.997361111111,16
-2025,Main Office,Vertical Transport,15662.49,1767.763888888889,17
-2025,Parking Garage,Access & Security,76319.49,1750.5052777777778,21
-2025,Parking Garage,Electrical,82371.13,1120.1770833333333,15
-2025,Parking Garage,Fire & Safety,91409.05,3315.715277777778,15
-2025,Parking Garage,General Maintenance,39683.37,,10
-2025,Parking Garage,HVAC,88226.14,3427.616388888889,17
-2025,Parking Garage,IT & Network,71912.56,1997.7665277777778,21
-2025,Parking Garage,Janitorial & Cleaning,47499.41,1412.9166666666667,18
-2025,Parking Garage,Pest Control,39101.22,359.43416666666667,13
-2025,Parking Garage,Plumbing,34616.6,1461.02,14
-2025,Parking Garage,Vertical Transport,113560.63,3195.505,24
-2025,Remote Site Alpha,Access & Security,59352.59,2890.2887037037035,22
-2025,Remote Site Alpha,Electrical,33155.65,2807.3685185185186,13
-2025,Remote Site Alpha,Fire & Safety,69334.06,1497.5479166666667,19
+2025,HQ Floor 2,General Maintenance,27417.04,,8
+2025,HQ Floor 2,HVAC,64063.12,6.6,24
+2025,HQ Floor 2,IT & Network,68508.0,,22
+2025,HQ Floor 2,Janitorial & Cleaning,70631.09,13.2,14
+2025,HQ Floor 2,Pest Control,121236.71,12.9,23
+2025,HQ Floor 2,Plumbing,97320.91,5.4,25
+2025,HQ Floor 2,Vertical Transport,49134.6,7.6,22
+2025,HQ Floor 3,Access & Security,65376.86,,21
+2025,HQ Floor 3,Electrical,89256.4,1.6,18
+2025,HQ Floor 3,Fire & Safety,55318.7,,21
+2025,HQ Floor 3,General Maintenance,51943.12,,12
+2025,HQ Floor 3,HVAC,93920.99,9.1,22
+2025,HQ Floor 3,IT & Network,81254.83,9.0,21
+2025,HQ Floor 3,Janitorial & Cleaning,121513.51,8.8,26
+2025,HQ Floor 3,Pest Control,46263.49,,12
+2025,HQ Floor 3,Plumbing,66676.78,2.6,18
+2025,HQ Floor 3,Vertical Transport,47327.73,,12
+2025,Main Office,Access & Security,92595.12,2.2,19
+2025,Main Office,Electrical,50608.19,6.8,25
+2025,Main Office,Fire & Safety,80461.5,12.0,21
+2025,Main Office,General Maintenance,43401.34,3.5,10
+2025,Main Office,HVAC,114109.09,23.5,33
+2025,Main Office,IT & Network,70364.3,12.2,19
+2025,Main Office,Janitorial & Cleaning,75916.45,21.5,22
+2025,Main Office,Pest Control,62658.31,5.3,16
+2025,Main Office,Plumbing,31026.58,5.4,17
+2025,Main Office,Vertical Transport,19638.47,1.6,18
+2025,Parking Garage,Access & Security,76319.49,9.4,22
+2025,Parking Garage,Electrical,82788.28,10.1,16
+2025,Parking Garage,Fire & Safety,93647.05,1.1,17
+2025,Parking Garage,General Maintenance,39683.37,6.6,10
+2025,Parking Garage,HVAC,88226.14,6.3,17
+2025,Parking Garage,IT & Network,74196.31,,23
+2025,Parking Garage,Janitorial & Cleaning,47499.41,9.7,18
+2025,Parking Garage,Pest Control,39101.22,1.2,14
+2025,Parking Garage,Plumbing,56492.81,,17
+2025,Parking Garage,Vertical Transport,113560.63,9.3,25
+2025,Remote Site Alpha,Access & Security,59352.59,8.0,23
+2025,Remote Site Alpha,Electrical,55804.23,7.7,17
+2025,Remote Site Alpha,Fire & Safety,76613.62,,21
 2025,Remote Site Alpha,General Maintenance,44417.91,,11
-2025,Remote Site Alpha,HVAC,70600.75,1484.058888888889,21
-2025,Remote Site Alpha,IT & Network,103266.45,2735.021111111111,22
-2025,Remote Site Alpha,Janitorial & Cleaning,70322.13,3035.7750925925925,18
-2025,Remote Site Alpha,Pest Control,56030.98,318.67625,23
-2025,Remote Site Alpha,Plumbing,111955.99,1667.5560185185186,24
-2025,Remote Site Alpha,Vertical Transport,39579.21,2475.0108333333333,15
-2025,Remote Site Beta,Access & Security,84147.62,2243.5993981481483,16
-2025,Remote Site Beta,Electrical,58646.8,1755.2927083333334,20
-2025,Remote Site Beta,Fire & Safety,50968.91,3732.728611111111,22
-2025,Remote Site Beta,General Maintenance,11286.2,2173.4187962962965,9
-2025,Remote Site Beta,HVAC,134489.99,1386.6477777777777,23
-2025,Remote Site Beta,IT & Network,37370.19,1257.8927777777778,17
-2025,Remote Site Beta,Janitorial & Cleaning,65596.05,1277.9645555555555,17
-2025,Remote Site Beta,Pest Control,104478.56,1844.239236111111,28
-2025,Remote Site Beta,Plumbing,42431.85,,15
-2025,Remote Site Beta,Vertical Transport,79905.83,1228.4146759259258,18
-2025,Tower A,Access & Security,80129.99,2299.7638888888887,22
-2025,Tower A,Electrical,67687.5,331.7547222222222,16
-2025,Tower A,Fire & Safety,87288.92,1321.6138888888888,20
-2025,Tower A,General Maintenance,55676.92,2513.4168055555556,11
-2025,Tower A,HVAC,78961.22,1680.7516666666668,22
-2025,Tower A,IT & Network,86115.42,1951.4719444444445,21
-2025,Tower A,Janitorial & Cleaning,68354.81,934.0470833333334,17
-2025,Tower A,Pest Control,115689.83,842.0784722222222,25
-2025,Tower A,Plumbing,48787.89,,14
-2025,Tower A,Vertical Transport,31183.26,1244.5693055555555,17
-2025,Tower B,Access & Security,20945.09,1504.9611111111112,8
-2025,Tower B,Electrical,37395.75,2424.176111111111,14
-2025,Tower B,Fire & Safety,57646.54,3140.039861111111,21
-2025,Tower B,General Maintenance,45859.72,2801.824722222222,11
-2025,Tower B,HVAC,109093.34,915.6168518518518,20
-2025,Tower B,IT & Network,30347.8,1751.381851851852,13
-2025,Tower B,Janitorial & Cleaning,60081.3,1731.69,20
-2025,Tower B,Pest Control,73409.29,,13
-2025,Tower B,Plumbing,31206.86,752.1122222222223,22
-2025,Tower B,Vertical Transport,36637.29,,14
-2025,Warehouse North,Access & Security,67712.39,2201.3083333333334,14
-2025,Warehouse North,Electrical,64927.5,2442.9127777777776,19
-2025,Warehouse North,Fire & Safety,55632.27,1160.503148148148,19
-2025,Warehouse North,General Maintenance,57909.66,,16
-2025,Warehouse North,HVAC,56454.09,1707.8135185185185,17
-2025,Warehouse North,IT & Network,67643.46,2813.0583333333334,19
-2025,Warehouse North,Janitorial & Cleaning,79813.07,1861.6597222222222,17
-2025,Warehouse North,Pest Control,52007.47,952.1991666666667,17
-2025,Warehouse North,Plumbing,58450.86,3561.1966666666667,21
-2025,Warehouse North,Vertical Transport,79169.64,2165.714259259259,19
-2025,Warehouse South,Access & Security,33986.34,1721.1058333333333,15
-2025,Warehouse South,Electrical,49627.95,1605.8013888888888,14
-2025,Warehouse South,Fire & Safety,104529.34,1278.7172222222223,21
-2025,Warehouse South,General Maintenance,71003.1,2355.045,12
-2025,Warehouse South,HVAC,97909.21,2257.807986111111,16
-2025,Warehouse South,IT & Network,58291.64,1897.3993055555557,12
-2025,Warehouse South,Janitorial & Cleaning,62048.55,1386.6933333333334,13
-2025,Warehouse South,Pest Control,106163.56,1131.2173333333333,25
-2025,Warehouse South,Plumbing,91081.51,169.2938888888889,23
-2025,Warehouse South,Vertical Transport,62533.17,878.9276851851852,16
+2025,Remote Site Alpha,HVAC,74768.79,11.6,23
+2025,Remote Site Alpha,IT & Network,113832.5,8.4,23
+2025,Remote Site Alpha,Janitorial & Cleaning,72424.22,,20
+2025,Remote Site Alpha,Pest Control,56030.98,3.0,25
+2025,Remote Site Alpha,Plumbing,130196.46,0.8,28
+2025,Remote Site Alpha,Vertical Transport,45403.52,4.6,18
+2025,Remote Site Beta,Access & Security,89553.88,,19
+2025,Remote Site Beta,Electrical,65892.72,11.1,23
+2025,Remote Site Beta,Fire & Safety,50968.91,,22
+2025,Remote Site Beta,General Maintenance,13226.2,1.8,12
+2025,Remote Site Beta,HVAC,143698.91,10.7,25
+2025,Remote Site Beta,IT & Network,51922.55,6.2,20
+2025,Remote Site Beta,Janitorial & Cleaning,68435.7,13.1,19
+2025,Remote Site Beta,Pest Control,107639.56,28.3,29
+2025,Remote Site Beta,Plumbing,42431.85,5.4,15
+2025,Remote Site Beta,Vertical Transport,90705.99,2.4,19
+2025,Tower A,Access & Security,80129.99,15.0,23
+2025,Tower A,Electrical,83071.95,3.4,20
+2025,Tower A,Fire & Safety,97517.2,,21
+2025,Tower A,General Maintenance,55676.92,,11
+2025,Tower A,HVAC,78961.22,8.9,22
+2025,Tower A,IT & Network,86115.42,12.7,21
+2025,Tower A,Janitorial & Cleaning,72872.81,11.5,19
+2025,Tower A,Pest Control,115689.83,4.8,27
+2025,Tower A,Plumbing,62412.54,4.0,16
+2025,Tower A,Vertical Transport,37106.48,2.1,19
+2025,Tower B,Access & Security,31747.85,,10
+2025,Tower B,Electrical,37395.75,1.8,15
+2025,Tower B,Fire & Safety,61042.54,12.6,22
+2025,Tower B,General Maintenance,45859.72,1.0,13
+2025,Tower B,HVAC,122826.06,9.7,23
+2025,Tower B,IT & Network,33310.17,,14
+2025,Tower B,Janitorial & Cleaning,63920.01,16.7,23
+2025,Tower B,Pest Control,78028.15,,16
+2025,Tower B,Plumbing,31206.86,10.9,24
+2025,Tower B,Vertical Transport,44911.17,,18
+2025,Warehouse North,Access & Security,72855.85,1.6,15
+2025,Warehouse North,Electrical,64927.5,12.0,21
+2025,Warehouse North,Fire & Safety,80128.58,12.3,21
+2025,Warehouse North,General Maintenance,62357.66,,17
+2025,Warehouse North,HVAC,56454.09,10.2,19
+2025,Warehouse North,IT & Network,67643.46,,19
+2025,Warehouse North,Janitorial & Cleaning,79813.07,3.8,19
+2025,Warehouse North,Pest Control,52007.47,3.9,17
+2025,Warehouse North,Plumbing,64992.94,10.7,22
+2025,Warehouse North,Vertical Transport,79169.64,8.8,21
+2025,Warehouse South,Access & Security,33986.34,23.3,17
+2025,Warehouse South,Electrical,59339.58,,16
+2025,Warehouse South,Fire & Safety,109138.94,,25
+2025,Warehouse South,General Maintenance,80152.1,2.7,13
+2025,Warehouse South,HVAC,110892.85,,19
+2025,Warehouse South,IT & Network,58291.64,,13
+2025,Warehouse South,Janitorial & Cleaning,71827.95,,15
+2025,Warehouse South,Pest Control,106163.56,,25
+2025,Warehouse South,Plumbing,116005.92,8.2,27
+2025,Warehouse South,Vertical Transport,81016.25,3.6,18
