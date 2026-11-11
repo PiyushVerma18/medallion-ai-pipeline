@@ -14,7 +14,7 @@ An enterprise-grade Medallion Data Lakehouse (Bronze → Silver → Gold) archit
 
 - Trust vs. Override Framework
 
-- What Changes at 100x Scale (1M+ to 10M+ Rows)
+- What Changes at 100x+ Scale (10k+ to 1M+ Rows)
 
 - Observability & Evaluation Harness
 
@@ -92,9 +92,9 @@ Autonomous agents accelerate pipeline design, but human engineering oversight is
 | **3. Multi-Persona Metric Ideation:**<br>Brainstorming multi-faceted operational KPIs across finance, reliability, and workforce personas. | **3. Missing Data vs. Zero Sentinels:**<br>The LLM may treat null costs as $0.00, skewing averages unless guided to filter null sentinels. |
 | **4. Unstructured Text Entity Normalization:**<br>Parsing descriptive strings into structured labels (e.g., mapping colloquial terms to standard names). | **4. Contractual & SLA Specifics:**<br>The LLM cannot infer custom SLA schedules (e.g., business hours vs. calendar hours) without context. |
 
-## 6. What Changes at 100x Scale (10K+ to 10M+ Rows)
+## 6. What Changes at 100x+ Scale (10K+ to 1M+ Rows)
 
-If this pipeline were scaled from 10k+ rows to 10M+ daily records:
+If this pipeline were scaled from 10k+ rows to 1M+ daily records:
 
 | Architectural Dimension | Current Architecture (10k Rows) | 100x Production Redesign (1M+ to 10M+ Rows) |
 | :--- | :--- | :--- |
