@@ -1,0 +1,13 @@
+import pandas as pd
+from src.db import engine
+
+# Query the materialized silver table
+query = "SELECT * FROM gold.annual_maintenance_sourcing_performance ;"
+
+print("Exporting golden dataset...")
+df = pd.read_sql(query, con=engine)
+
+output_path = "golden_annual_maintenance_sourcing_performance .csv"
+df.to_csv(output_path, index=False)
+
+print(f"Dataset successfully exported to {output_path} ({len(df)} rows).")
