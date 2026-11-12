@@ -193,7 +193,7 @@ The current pipeline is designed for a roughly 10k-row CSV, not daily million-ro
    cp .env.example .env
    ```
 
-   Keep the documented `DATABASE_URL` for the Compose database. For cached offline execution, set `LLM_CACHE_MODE=replay`; for new Gemini calls, set a valid `GEMINI_API_KEY` and use `read_write` or `refresh`.
+   Keep the documented `DATABASE_URL` for the Compose database. For cached offline execution, set `LLM_CACHE_MODE=replay`; for new Gemini calls, set a valid `GEMINI_API_KEY` and use `LLM_CACHE_MODE` as `read_write` or `refresh`.
 
 2. Start PostgreSQL, create/activate a virtual environment, install dependencies, and run the pipeline:
 
