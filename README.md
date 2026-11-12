@@ -80,6 +80,8 @@ The model names and SQL are proposed at run time, so they may change when prompt
 
 Gold SQL is constrained to one `SELECT` over `silver.cleaned_tickets` and its own CTEs. The target must be a safe `gold.*` name. Promotion and staging are application-owned operations. [`exports/`](exports/) contains example extracts; treat them as snapshots because the active Gold workflow generates model details at run time.
 
+After Gold promotion, the pipeline exports each successfully promoted model to `exports/gold_<model_name>.csv`. For example, `gold.annual_facilities_opex_summary` is written to `exports/gold_annual_facilities_opex_summary.csv`. These files are refreshed on each full pipeline run.
+
 ## Agent roles and assessment
 
 The pipeline has two agents in Silver and a third agent in Gold. The Gold Agent 3 flow is a separate closed-loop LangGraph workflow, not part of the Silver agent-evaluation harness.

@@ -5,6 +5,7 @@ from sqlalchemy import text
 
 from src.db import engine
 from src.pipeline.bronze_pipeline import ingest_bronze
+from src.pipeline.gold_export import export_promoted_gold_models
 from src.pipeline.silver_graph import build_silver_pipeline_graph
 from src.pipeline.stage_logging import configure_pipeline_logging, log_stage
 from src.pipeline.gold_closed_loop_graph import (
@@ -96,6 +97,7 @@ def _run_pipeline():
         "execution_history": []
     }
     gold_final_state = gold_app.invoke(gold_initial_state)
+    gold_exports = export_promoted_gold_models(gold_final_state["models"])
 
     total_time = time.time() - start_time
 
@@ -117,6 +119,7 @@ def _run_pipeline():
         icon = "✔" if m.is_promoted else "✖"
         row_c = getattr(m, "final_row_count", getattr(m, "row_count", 0))
         print(f"  {icon} Model {idx}: {m.problem.target_table_name:<46} | Rows: {row_c:>5,} | Domain: {m.domain_name[:28]}...")
+    print(f"Gold CSV exports            : {gold_exports['exported_models']} (saved under exports/)")
     print("=" * 90 + "\n")
 
 def main():

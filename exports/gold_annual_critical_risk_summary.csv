@@ -1,0 +1,817 @@
+incident_year,building,canonical_category,extracted_asset_type,total_critical_tickets,total_critical_cost,avg_critical_resolution_hours
+2024,Annex East,Access & Security,Door,2,4378.25,
+2024,Annex East,Access & Security,Security Camera,5,23119.79,
+2024,Annex East,Electrical,Circuit Breaker,3,4319.24,2922.1679166666668
+2024,Annex East,Electrical,Emergency lighting,1,11097.64,7658.001111111111
+2024,Annex East,Electrical,Power outlet,4,20189.08,
+2024,Annex East,Electrical,,5,30127.86,6524.124583333333
+2024,Annex East,Fire & Safety,Fire Alarm,2,27119.1,
+2024,Annex East,Fire & Safety,Fire Extinguisher,2,13806.13,
+2024,Annex East,Fire & Safety,smoke detector,1,,
+2024,Annex East,Fire & Safety,,1,5850.74,3927.325
+2024,Annex East,General Maintenance,Door,1,3098.58,
+2024,Annex East,General Maintenance,Pothole,1,,
+2024,Annex East,General Maintenance,,3,23663.25,4946.603055555555
+2024,Annex East,HVAC,AC Unit,1,6175.87,5035.406388888889
+2024,Annex East,HVAC,Flooring,1,8077.7,
+2024,Annex East,HVAC,,5,17345.02,6200.610925925926
+2024,Annex East,IT & Network,Printer,3,19620.7,
+2024,Annex East,IT & Network,,5,28929.61,6392.418472222223
+2024,Annex East,Janitorial & Cleaning,Flooring,1,673.0,10239.345277777778
+2024,Annex East,Janitorial & Cleaning,canopy,2,4314.28,260.43
+2024,Annex East,Janitorial & Cleaning,,3,27784.35,
+2024,Annex East,Pest Control,,5,16124.99,6942.112222222222
+2024,Annex East,Plumbing,Plumbing Fixture,7,12198.06,2589.5958333333333
+2024,Annex East,Plumbing,Plumbing Pipe,1,172.81,
+2024,Annex East,Plumbing,,1,,
+2024,Annex East,Vertical Transport,Elevator,7,26828.11,4058.7322222222224
+2024,Annex West,Access & Security,Door,1,,4824.0
+2024,Annex West,Access & Security,Security Camera,5,32253.8,1810.1675
+2024,Annex West,Access & Security,alarm,2,10855.65,
+2024,Annex West,Access & Security,,1,,
+2024,Annex West,Electrical,Circuit Breaker,2,13946.33,
+2024,Annex West,Electrical,,5,10476.75,8507.116666666667
+2024,Annex West,Fire & Safety,Fire Alarm,3,20665.17,4399.919722222222
+2024,Annex West,Fire & Safety,Fire Extinguisher,1,14991.55,9936.0
+2024,Annex West,Fire & Safety,Sprinkler,1,1188.44,
+2024,Annex West,Fire & Safety,smoke detector,2,481.14,
+2024,Annex West,Fire & Safety,,1,756.1,2377.5036111111112
+2024,Annex West,General Maintenance,Flooring,2,12248.38,3569.5533333333333
+2024,Annex West,General Maintenance,Pothole,1,,
+2024,Annex West,General Maintenance,,8,36658.73,5438.6275
+2024,Annex West,HVAC,AC Unit,2,3272.94,6054.738333333334
+2024,Annex West,HVAC,HVAC Unit,1,,3485.201111111111
+2024,Annex West,HVAC,Thermostat,1,,
+2024,Annex West,HVAC,,5,29927.57,
+2024,Annex West,IT & Network,Network jack,7,32183.15,2926.995
+2024,Annex West,IT & Network,Printer,1,,
+2024,Annex West,IT & Network,,2,,
+2024,Annex West,Janitorial & Cleaning,canopy,3,11387.07,
+2024,Annex West,Janitorial & Cleaning,,5,13937.74,7991.108611111111
+2024,Annex West,Pest Control,,7,24351.33,6964.16
+2024,Annex West,Plumbing,Plumbing Fixture,3,16377.69,5593.362777777777
+2024,Annex West,Plumbing,sink,1,8815.27,
+2024,Annex West,Plumbing,,2,,7788.7172222222225
+2024,Annex West,Vertical Transport,Elevator,10,42641.25,5182.981507936508
+2024,Building 3,Access & Security,Badge Reader,1,10355.0,
+2024,Building 3,Access & Security,Security Camera,4,24478.27,9332.542777777779
+2024,Building 3,Access & Security,alarm,1,2010.12,4519.899722222222
+2024,Building 3,Access & Security,,1,,
+2024,Building 3,Electrical,Power outlet,2,15844.91,
+2024,Building 3,Electrical,,3,13850.73,8206.272222222222
+2024,Building 3,Fire & Safety,Fire Alarm,3,6218.94,76.835
+2024,Building 3,Fire & Safety,Fire Extinguisher,1,8498.31,5490.712777777778
+2024,Building 3,Fire & Safety,Sprinkler,2,6225.61,5144.718055555555
+2024,Building 3,Fire & Safety,smoke detector,2,535.97,
+2024,Building 3,Fire & Safety,,1,,
+2024,Building 3,General Maintenance,Flooring,4,28882.39,4980.659166666666
+2024,Building 3,General Maintenance,Pothole,2,5454.4,134.385
+2024,Building 3,General Maintenance,,3,,8178.325833333333
+2024,Building 3,HVAC,AC Unit,1,,
+2024,Building 3,HVAC,HVAC Unit,4,14118.28,7612.436111111111
+2024,Building 3,HVAC,,5,12505.67,7512.3220833333335
+2024,Building 3,IT & Network,,5,41451.06,7862.261574074074
+2024,Building 3,Janitorial & Cleaning,canopy,1,,
+2024,Building 3,Janitorial & Cleaning,,4,13896.52,6964.264722222222
+2024,Building 3,Pest Control,,9,21722.21,5065.57212962963
+2024,Building 3,Plumbing,Plumbing Fixture,5,16373.28,4302.595833333334
+2024,Building 3,Plumbing,Plumbing Pipe,3,12253.6,
+2024,Building 3,Plumbing,,1,3658.0,
+2024,Building 3,Vertical Transport,Elevator,6,38169.55,
+2024,Building 7,Access & Security,Badge Reader,2,,6430.111666666667
+2024,Building 7,Access & Security,Door,1,1056.0,3624.886111111111
+2024,Building 7,Access & Security,Security Camera,5,38345.56,
+2024,Building 7,Access & Security,alarm,1,,
+2024,Building 7,Access & Security,,3,3313.33,
+2024,Building 7,Electrical,Emergency lighting,2,5991.27,10142.840277777777
+2024,Building 7,Electrical,Power outlet,7,8941.54,5949.366666666667
+2024,Building 7,Electrical,,4,9220.75,5646.241111111111
+2024,Building 7,Fire & Safety,Fire Alarm,3,20409.14,4775.910555555555
+2024,Building 7,Fire & Safety,Fire Extinguisher,1,13410.86,
+2024,Building 7,Fire & Safety,Sprinkler,1,642.16,
+2024,Building 7,Fire & Safety,smoke detector,3,10690.55,10869.8
+2024,Building 7,Fire & Safety,,1,3533.63,10216.25
+2024,Building 7,General Maintenance,Door,1,11365.37,
+2024,Building 7,General Maintenance,Flooring,1,6967.0,
+2024,Building 7,General Maintenance,Pothole,2,11630.47,
+2024,Building 7,General Maintenance,,1,9714.33,10185.824166666667
+2024,Building 7,HVAC,HVAC Unit,1,,3618.8205555555555
+2024,Building 7,HVAC,,6,27620.91,9157.804722222223
+2024,Building 7,IT & Network,Network jack,4,26696.47,
+2024,Building 7,IT & Network,,11,11060.02,7849.526805555555
+2024,Building 7,Janitorial & Cleaning,Flooring,1,3025.06,
+2024,Building 7,Janitorial & Cleaning,canopy,1,11057.7,
+2024,Building 7,Janitorial & Cleaning,,6,39195.39,
+2024,Building 7,Pest Control,,14,52417.72,5406.7662037037035
+2024,Building 7,Plumbing,Plumbing Fixture,9,44794.86,7611.1466666666665
+2024,Building 7,Plumbing,Plumbing Pipe,2,16553.25,6023.5233333333335
+2024,Building 7,Plumbing,,3,28246.72,
+2024,Building 7,Vertical Transport,Elevator,3,9993.1,1624.65
+2024,Cafeteria Block,Access & Security,Badge Reader,1,6419.8,
+2024,Cafeteria Block,Access & Security,Door,1,,
+2024,Cafeteria Block,Access & Security,Security Camera,1,10008.13,
+2024,Cafeteria Block,Access & Security,alarm,3,8553.61,5638.941203703704
+2024,Cafeteria Block,Electrical,Circuit Breaker,1,,
+2024,Cafeteria Block,Electrical,Emergency lighting,3,20097.01,
+2024,Cafeteria Block,Electrical,Power outlet,1,1992.84,
+2024,Cafeteria Block,Electrical,,3,9035.65,
+2024,Cafeteria Block,Fire & Safety,Fire Alarm,1,7226.0,
+2024,Cafeteria Block,Fire & Safety,Fire Extinguisher,7,46686.12,8681.480555555556
+2024,Cafeteria Block,Fire & Safety,Sprinkler,1,8648.0,5931.0
+2024,Cafeteria Block,Fire & Safety,smoke detector,2,,
+2024,Cafeteria Block,Fire & Safety,,1,,
+2024,Cafeteria Block,General Maintenance,Flooring,1,4462.52,3091.9
+2024,Cafeteria Block,General Maintenance,Pothole,2,,
+2024,Cafeteria Block,General Maintenance,,4,10176.46,4575.709444444445
+2024,Cafeteria Block,HVAC,AC Unit,2,11812.42,7846.3180555555555
+2024,Cafeteria Block,HVAC,Flooring,1,1232.73,4901.861111111111
+2024,Cafeteria Block,HVAC,HVAC Unit,2,0.0,11614.49736111111
+2024,Cafeteria Block,HVAC,Thermostat,1,6748.7,10961.04361111111
+2024,Cafeteria Block,HVAC,,1,,12067.65
+2024,Cafeteria Block,IT & Network,Network jack,1,4819.37,
+2024,Cafeteria Block,IT & Network,Printer,1,,5403.936944444445
+2024,Cafeteria Block,IT & Network,,8,23881.93,7306.489907407407
+2024,Cafeteria Block,Janitorial & Cleaning,Flooring,1,3350.97,
+2024,Cafeteria Block,Janitorial & Cleaning,canopy,2,13040.84,1698.385
+2024,Cafeteria Block,Janitorial & Cleaning,,8,24367.06,4987.376388888889
+2024,Cafeteria Block,Pest Control,,11,43813.18,7834.677722222223
+2024,Cafeteria Block,Plumbing,Plumbing Fixture,6,13823.34,5205.814166666667
+2024,Cafeteria Block,Plumbing,Plumbing Pipe,3,26210.13,8691.43888888889
+2024,Cafeteria Block,Plumbing,sink,2,14323.27,
+2024,Cafeteria Block,Plumbing,,1,,7561.486944444445
+2024,Cafeteria Block,Vertical Transport,Elevator,11,24613.13,3770.9994444444446
+2024,Data Center 1,Access & Security,Badge Reader,1,6421.24,
+2024,Data Center 1,Access & Security,Door,2,12900.26,
+2024,Data Center 1,Access & Security,Security Camera,7,29252.72,6532.564351851852
+2024,Data Center 1,Access & Security,,3,2498.4,3574.0138888888887
+2024,Data Center 1,Electrical,Emergency lighting,3,14481.85,1893.6283333333333
+2024,Data Center 1,Electrical,Power outlet,7,21710.37,7699.484027777778
+2024,Data Center 1,Electrical,,2,1032.28,
+2024,Data Center 1,Fire & Safety,Fire Alarm,2,,
+2024,Data Center 1,Fire & Safety,Fire Extinguisher,1,11181.62,3977.8547222222223
+2024,Data Center 1,Fire & Safety,Sprinkler,2,1905.95,6786.109444444444
+2024,Data Center 1,Fire & Safety,smoke detector,1,,5456.5952777777775
+2024,Data Center 1,Fire & Safety,,3,14106.49,6532.626805555556
+2024,Data Center 1,General Maintenance,Door,2,,
+2024,Data Center 1,General Maintenance,Pothole,1,4059.87,8623.059444444445
+2024,Data Center 1,General Maintenance,,4,3693.0,
+2024,Data Center 1,HVAC,Flooring,1,,
+2024,Data Center 1,HVAC,HVAC Unit,1,,6334.243888888889
+2024,Data Center 1,HVAC,,3,7008.79,9101.794722222223
+2024,Data Center 1,IT & Network,Network jack,1,10976.51,1106.4277777777777
+2024,Data Center 1,IT & Network,Printer,1,2252.38,10251.016666666666
+2024,Data Center 1,IT & Network,,12,60980.04,7163.862777777777
+2024,Data Center 1,Janitorial & Cleaning,Flooring,1,,
+2024,Data Center 1,Janitorial & Cleaning,canopy,6,9795.47,5678.3052777777775
+2024,Data Center 1,Janitorial & Cleaning,,4,27787.87,
+2024,Data Center 1,Pest Control,,10,45590.49,6591.0325
+2024,Data Center 1,Plumbing,Plumbing Fixture,4,7981.39,4291.739583333333
+2024,Data Center 1,Plumbing,Plumbing Pipe,1,,2653.5630555555554
+2024,Data Center 1,Plumbing,,1,927.09,
+2024,Data Center 1,Vertical Transport,Elevator,7,32045.6,
+2024,HQ Floor 1,Access & Security,Badge Reader,2,10554.87,723.6247222222222
+2024,HQ Floor 1,Access & Security,Door,1,1990.83,3233.1183333333333
+2024,HQ Floor 1,Access & Security,Security Camera,3,14263.79,
+2024,HQ Floor 1,Access & Security,,2,5822.0,
+2024,HQ Floor 1,Electrical,Circuit Breaker,2,4970.9,2949.558611111111
+2024,HQ Floor 1,Electrical,Emergency lighting,1,1720.44,
+2024,HQ Floor 1,Electrical,Power outlet,1,,
+2024,HQ Floor 1,Electrical,,2,851.79,
+2024,HQ Floor 1,Fire & Safety,Fire Alarm,1,,
+2024,HQ Floor 1,Fire & Safety,Fire Extinguisher,1,364.0,2747.3091666666664
+2024,HQ Floor 1,Fire & Safety,Sprinkler,1,,
+2024,HQ Floor 1,Fire & Safety,smoke detector,3,19101.45,
+2024,HQ Floor 1,Fire & Safety,,2,18754.17,61.7
+2024,HQ Floor 1,General Maintenance,,4,9022.89,4962.465208333333
+2024,HQ Floor 1,HVAC,Flooring,1,,830.6891666666667
+2024,HQ Floor 1,HVAC,HVAC Unit,2,1768.75,
+2024,HQ Floor 1,HVAC,Thermostat,1,10398.37,
+2024,HQ Floor 1,HVAC,,2,7010.74,
+2024,HQ Floor 1,IT & Network,Network jack,6,27423.92,12721.628055555557
+2024,HQ Floor 1,IT & Network,Printer,3,5082.03,
+2024,HQ Floor 1,IT & Network,,13,37209.03,2737.5891666666666
+2024,HQ Floor 1,Janitorial & Cleaning,Flooring,1,3891.12,2519.2102777777777
+2024,HQ Floor 1,Janitorial & Cleaning,canopy,3,7615.11,3682.3913888888887
+2024,HQ Floor 1,Janitorial & Cleaning,,1,10097.31,
+2024,HQ Floor 1,Pest Control,,16,68943.06,6708.050166666667
+2024,HQ Floor 1,Plumbing,Plumbing Fixture,7,51671.09,2540.6277777777777
+2024,HQ Floor 1,Plumbing,Plumbing Pipe,1,12720.34,
+2024,HQ Floor 1,Plumbing,sink,1,5209.0,
+2024,HQ Floor 1,Plumbing,,4,1195.54,8915.95
+2024,HQ Floor 1,Vertical Transport,Elevator,15,66397.23,8343.323981481482
+2024,HQ Floor 2,Access & Security,Badge Reader,1,2940.34,
+2024,HQ Floor 2,Access & Security,Door,2,25478.25,6929.876111111111
+2024,HQ Floor 2,Access & Security,Security Camera,1,4766.35,
+2024,HQ Floor 2,Access & Security,,1,,
+2024,HQ Floor 2,Electrical,Circuit Breaker,1,,11600.959166666667
+2024,HQ Floor 2,Electrical,Emergency lighting,1,1532.26,
+2024,HQ Floor 2,Electrical,,3,14859.05,
+2024,HQ Floor 2,Fire & Safety,Fire Alarm,3,15624.62,
+2024,HQ Floor 2,Fire & Safety,Fire Extinguisher,1,13052.35,
+2024,HQ Floor 2,Fire & Safety,Sprinkler,2,21156.12,10239.257916666667
+2024,HQ Floor 2,Fire & Safety,,1,,2915.1155555555556
+2024,HQ Floor 2,General Maintenance,Door,1,0.0,
+2024,HQ Floor 2,General Maintenance,,1,1391.0,
+2024,HQ Floor 2,HVAC,AC Unit,1,,
+2024,HQ Floor 2,HVAC,HVAC Unit,4,13424.68,7832.849027777777
+2024,HQ Floor 2,HVAC,Thermostat,1,0.0,
+2024,HQ Floor 2,HVAC,,5,39585.9,10578.8
+2024,HQ Floor 2,IT & Network,Network jack,1,12265.32,4953.845
+2024,HQ Floor 2,IT & Network,,4,9297.0,3945.3688888888887
+2024,HQ Floor 2,Janitorial & Cleaning,Flooring,2,8727.1,
+2024,HQ Floor 2,Janitorial & Cleaning,,8,42978.82,5742.188194444445
+2024,HQ Floor 2,Pest Control,,10,45859.47,6923.78507936508
+2024,HQ Floor 2,Plumbing,Plumbing Fixture,5,39925.96,4431.413611111111
+2024,HQ Floor 2,Plumbing,sink,3,18621.82,10159.146666666667
+2024,HQ Floor 2,Vertical Transport,Elevator,6,26006.81,4771.696944444445
+2024,HQ Floor 3,Access & Security,Door,1,2866.9,5652.45
+2024,HQ Floor 3,Access & Security,Security Camera,2,,
+2024,HQ Floor 3,Access & Security,,1,3911.0,4347.599166666667
+2024,HQ Floor 3,Electrical,Circuit Breaker,3,3345.08,3435.766666666667
+2024,HQ Floor 3,Electrical,Emergency lighting,1,,9399.716666666667
+2024,HQ Floor 3,Electrical,Power outlet,5,31234.87,3109.725138888889
+2024,HQ Floor 3,Electrical,,4,2044.21,9245.134861111112
+2024,HQ Floor 3,Fire & Safety,Fire Alarm,1,,
+2024,HQ Floor 3,Fire & Safety,Fire Extinguisher,3,36171.21,3330.72875
+2024,HQ Floor 3,Fire & Safety,Sprinkler,2,,2470.3205555555555
+2024,HQ Floor 3,Fire & Safety,,3,3642.36,4515.4927777777775
+2024,HQ Floor 3,General Maintenance,,2,7862.67,
+2024,HQ Floor 3,HVAC,Thermostat,1,4651.28,4519.6611111111115
+2024,HQ Floor 3,HVAC,,6,37972.52,5382.912222222222
+2024,HQ Floor 3,IT & Network,,2,12069.85,340.4811111111111
+2024,HQ Floor 3,Janitorial & Cleaning,Flooring,1,984.66,
+2024,HQ Floor 3,Janitorial & Cleaning,canopy,2,,3678.532222222222
+2024,HQ Floor 3,Janitorial & Cleaning,,7,15212.53,6540.134444444445
+2024,HQ Floor 3,Pest Control,,8,19702.86,
+2024,HQ Floor 3,Plumbing,Plumbing Fixture,2,4220.5,
+2024,HQ Floor 3,Plumbing,Plumbing Pipe,1,7987.0,
+2024,HQ Floor 3,Plumbing,sink,1,,5304.01
+2024,HQ Floor 3,Plumbing,,1,3948.35,
+2024,HQ Floor 3,Vertical Transport,Elevator,9,38579.88,6628.830925925926
+2024,Main Office,Access & Security,Badge Reader,2,17098.06,8904.0
+2024,Main Office,Access & Security,Door,3,17021.75,4247.696388888889
+2024,Main Office,Access & Security,Security Camera,4,27796.04,7757.7775
+2024,Main Office,Access & Security,alarm,2,22073.85,
+2024,Main Office,Electrical,Circuit Breaker,3,13349.13,4847.9944444444445
+2024,Main Office,Electrical,Power outlet,3,1920.91,2065.02
+2024,Main Office,Electrical,,4,16803.56,9306.723981481482
+2024,Main Office,Fire & Safety,Fire Alarm,2,27257.9,990.5875
+2024,Main Office,Fire & Safety,Fire Extinguisher,3,,12602.17
+2024,Main Office,Fire & Safety,Sprinkler,1,3253.9,
+2024,Main Office,Fire & Safety,smoke detector,1,9549.0,13412.607777777777
+2024,Main Office,Fire & Safety,,2,4197.0,12190.755833333333
+2024,Main Office,General Maintenance,,1,13823.74,4067.2102777777777
+2024,Main Office,HVAC,AC Unit,1,10597.25,
+2024,Main Office,HVAC,Flooring,2,23498.87,1801.3666666666666
+2024,Main Office,HVAC,HVAC Unit,2,168.65,
+2024,Main Office,HVAC,,1,1149.26,6520.858055555555
+2024,Main Office,IT & Network,Network jack,1,12628.94,
+2024,Main Office,IT & Network,Printer,1,,
+2024,Main Office,IT & Network,,7,12926.08,8600.871666666666
+2024,Main Office,Janitorial & Cleaning,Flooring,1,3849.1,
+2024,Main Office,Janitorial & Cleaning,canopy,1,,
+2024,Main Office,Janitorial & Cleaning,,6,12383.1,
+2024,Main Office,Pest Control,,5,33587.02,3249.8597222222224
+2024,Main Office,Plumbing,Plumbing Fixture,8,34282.03,
+2024,Main Office,Plumbing,Plumbing Pipe,2,7475.6,
+2024,Main Office,Plumbing,sink,1,,
+2024,Main Office,Vertical Transport,Elevator,7,5601.06,10870.933333333332
+2024,Parking Garage,Access & Security,Badge Reader,1,,12319.183333333332
+2024,Parking Garage,Access & Security,Door,1,1334.85,4756.466666666666
+2024,Parking Garage,Access & Security,Security Camera,3,7388.57,
+2024,Parking Garage,Access & Security,alarm,2,,
+2024,Parking Garage,Electrical,Circuit Breaker,1,,
+2024,Parking Garage,Electrical,Power outlet,2,,3164.7394444444444
+2024,Parking Garage,Electrical,,3,24447.08,
+2024,Parking Garage,Fire & Safety,Fire Alarm,2,13372.23,
+2024,Parking Garage,Fire & Safety,smoke detector,1,,5057.8086111111115
+2024,Parking Garage,Fire & Safety,,3,16087.92,4357.1025
+2024,Parking Garage,General Maintenance,,3,17644.06,3370.0529166666665
+2024,Parking Garage,HVAC,AC Unit,2,3650.5,
+2024,Parking Garage,HVAC,Thermostat,1,,8523.72
+2024,Parking Garage,HVAC,,4,,
+2024,Parking Garage,IT & Network,Network jack,2,1765.0,
+2024,Parking Garage,IT & Network,Printer,1,2639.51,
+2024,Parking Garage,IT & Network,,10,26097.3,8695.825185185186
+2024,Parking Garage,Janitorial & Cleaning,,5,1921.36,3381.8805555555555
+2024,Parking Garage,Pest Control,,8,23514.51,7854.754861111111
+2024,Parking Garage,Plumbing,Plumbing Fixture,7,16041.81,5713.823472222222
+2024,Parking Garage,Plumbing,sink,1,544.0,
+2024,Parking Garage,Plumbing,,2,11072.11,
+2024,Parking Garage,Vertical Transport,Elevator,7,27557.44,4082.444722222222
+2024,Remote Site Alpha,Access & Security,Badge Reader,3,14692.28,5545.396527777778
+2024,Remote Site Alpha,Access & Security,Door,3,,6800.028888888889
+2024,Remote Site Alpha,Access & Security,Security Camera,2,6706.45,
+2024,Remote Site Alpha,Access & Security,alarm,2,,5226.511388888889
+2024,Remote Site Alpha,Access & Security,,4,13169.64,
+2024,Remote Site Alpha,Electrical,Circuit Breaker,3,8824.28,10272.788055555557
+2024,Remote Site Alpha,Electrical,Emergency lighting,1,11888.36,
+2024,Remote Site Alpha,Electrical,Power outlet,3,23392.19,
+2024,Remote Site Alpha,Electrical,,3,5759.57,12415.013888888889
+2024,Remote Site Alpha,Fire & Safety,Sprinkler,1,10765.69,12008.0
+2024,Remote Site Alpha,Fire & Safety,smoke detector,1,12841.71,5169.165277777778
+2024,Remote Site Alpha,Fire & Safety,,6,31553.52,6517.653888888889
+2024,Remote Site Alpha,General Maintenance,Flooring,1,10091.55,
+2024,Remote Site Alpha,General Maintenance,Pothole,1,,
+2024,Remote Site Alpha,General Maintenance,,2,19764.04,3673.3380555555555
+2024,Remote Site Alpha,HVAC,AC Unit,1,,11319.49861111111
+2024,Remote Site Alpha,HVAC,Flooring,1,12403.45,
+2024,Remote Site Alpha,HVAC,HVAC Unit,2,13574.76,
+2024,Remote Site Alpha,HVAC,,4,8350.0,3615.4859722222222
+2024,Remote Site Alpha,IT & Network,Network jack,1,2980.0,
+2024,Remote Site Alpha,IT & Network,Printer,1,9740.52,
+2024,Remote Site Alpha,IT & Network,,4,16841.5,
+2024,Remote Site Alpha,Janitorial & Cleaning,Flooring,2,5067.0,
+2024,Remote Site Alpha,Janitorial & Cleaning,canopy,1,,
+2024,Remote Site Alpha,Janitorial & Cleaning,,5,30596.1,4305.023888888889
+2024,Remote Site Alpha,Pest Control,,13,39975.23,5822.328888888889
+2024,Remote Site Alpha,Plumbing,Plumbing Fixture,5,15160.94,3391.95
+2024,Remote Site Alpha,Plumbing,sink,2,2912.0,
+2024,Remote Site Alpha,Plumbing,,1,,
+2024,Remote Site Alpha,Vertical Transport,Elevator,10,71094.93,2094.8541666666665
+2024,Remote Site Beta,Access & Security,Badge Reader,1,,
+2024,Remote Site Beta,Access & Security,Door,1,9706.93,
+2024,Remote Site Beta,Access & Security,Security Camera,6,18687.05,8841.874861111111
+2024,Remote Site Beta,Access & Security,alarm,1,2074.47,9311.674722222222
+2024,Remote Site Beta,Electrical,Circuit Breaker,1,,
+2024,Remote Site Beta,Electrical,Power outlet,1,11605.92,7050.581666666667
+2024,Remote Site Beta,Electrical,,2,13893.23,5157.438472222222
+2024,Remote Site Beta,Fire & Safety,Fire Alarm,3,13438.24,4631.533055555556
+2024,Remote Site Beta,Fire & Safety,Fire Extinguisher,3,8634.39,
+2024,Remote Site Beta,Fire & Safety,Sprinkler,4,7451.75,7409.894444444444
+2024,Remote Site Beta,Fire & Safety,smoke detector,5,15739.94,7980.177777777778
+2024,Remote Site Beta,Fire & Safety,,2,24712.1,10434.283611111112
+2024,Remote Site Beta,General Maintenance,,3,19255.55,
+2024,Remote Site Beta,HVAC,HVAC Unit,3,15216.94,
+2024,Remote Site Beta,HVAC,Thermostat,2,14200.4,
+2024,Remote Site Beta,HVAC,,6,9073.59,9700.81138888889
+2024,Remote Site Beta,IT & Network,Network jack,1,2728.88,
+2024,Remote Site Beta,IT & Network,Printer,3,6436.54,
+2024,Remote Site Beta,IT & Network,,7,19666.56,5718.864722222223
+2024,Remote Site Beta,Janitorial & Cleaning,Flooring,2,,6444.199166666666
+2024,Remote Site Beta,Janitorial & Cleaning,canopy,2,257.0,3821.6541666666667
+2024,Remote Site Beta,Janitorial & Cleaning,,6,20758.5,6602.479444444445
+2024,Remote Site Beta,Pest Control,,5,13821.03,10298.666388888889
+2024,Remote Site Beta,Plumbing,Plumbing Fixture,5,13931.12,6168.0
+2024,Remote Site Beta,Plumbing,Plumbing Pipe,2,6544.0,7051.620277777778
+2024,Remote Site Beta,Plumbing,sink,3,17078.15,
+2024,Remote Site Beta,Vertical Transport,Elevator,11,58042.43,4550.728703703704
+2024,Tower A,Access & Security,Door,1,,
+2024,Tower A,Electrical,Circuit Breaker,1,0.0,
+2024,Tower A,Electrical,Power outlet,3,21969.02,8408.051111111112
+2024,Tower A,Electrical,,3,12403.2,6036.684444444444
+2024,Tower A,Fire & Safety,Fire Alarm,6,24187.88,2599.0022222222224
+2024,Tower A,Fire & Safety,Fire Extinguisher,1,,9931.70388888889
+2024,Tower A,Fire & Safety,Sprinkler,1,7177.16,
+2024,Tower A,Fire & Safety,smoke detector,3,17236.19,11251.765555555556
+2024,Tower A,Fire & Safety,,1,4205.71,
+2024,Tower A,General Maintenance,,5,27731.7,4046.469861111111
+2024,Tower A,HVAC,AC Unit,1,0.0,10797.044166666667
+2024,Tower A,HVAC,HVAC Unit,1,9652.82,
+2024,Tower A,HVAC,Thermostat,1,10180.12,
+2024,Tower A,HVAC,,4,14396.39,
+2024,Tower A,IT & Network,Network jack,3,6235.78,
+2024,Tower A,IT & Network,Printer,1,,
+2024,Tower A,IT & Network,,4,8643.3,4826.4198611111115
+2024,Tower A,Janitorial & Cleaning,,9,41893.45,8983.92601851852
+2024,Tower A,Pest Control,,10,45023.33,5467.503611111111
+2024,Tower A,Plumbing,Plumbing Fixture,3,4132.48,2497.5508333333332
+2024,Tower A,Plumbing,Plumbing Pipe,2,8398.0,
+2024,Tower A,Plumbing,sink,2,6674.57,6243.019444444444
+2024,Tower A,Plumbing,,1,6990.0,
+2024,Tower A,Vertical Transport,Elevator,9,51805.57,6296.716984126984
+2024,Tower B,Access & Security,Badge Reader,1,,
+2024,Tower B,Access & Security,Door,1,9977.74,4090.3566666666666
+2024,Tower B,Access & Security,Security Camera,4,3534.95,
+2024,Tower B,Access & Security,,1,,8295.218611111111
+2024,Tower B,Electrical,Circuit Breaker,1,,
+2024,Tower B,Electrical,outlet,1,9249.62,9476.486944444445
+2024,Tower B,Electrical,,5,18636.4,953.2405555555556
+2024,Tower B,Fire & Safety,Fire Alarm,1,10579.31,11140.323055555556
+2024,Tower B,Fire & Safety,Fire Extinguisher,2,509.74,4066.6711111111113
+2024,Tower B,Fire & Safety,Sprinkler,1,,9169.6875
+2024,Tower B,General Maintenance,Door,1,442.7,
+2024,Tower B,General Maintenance,Flooring,1,563.51,
+2024,Tower B,General Maintenance,,2,1108.74,7085.139166666667
+2024,Tower B,HVAC,AC Unit,1,2723.74,
+2024,Tower B,HVAC,Flooring,4,15139.19,722.4188888888889
+2024,Tower B,HVAC,HVAC Unit,3,15516.44,
+2024,Tower B,HVAC,,3,15032.12,
+2024,Tower B,IT & Network,Network jack,2,887.81,
+2024,Tower B,IT & Network,Printer,2,5746.85,
+2024,Tower B,IT & Network,,5,11146.89,5853.671111111111
+2024,Tower B,Janitorial & Cleaning,Flooring,1,5220.0,
+2024,Tower B,Janitorial & Cleaning,canopy,3,12772.51,9601.871388888889
+2024,Tower B,Janitorial & Cleaning,,5,11220.41,
+2024,Tower B,Pest Control,,10,46025.44,12325.1975
+2024,Tower B,Plumbing,Plumbing Fixture,5,13632.41,6877.098796296296
+2024,Tower B,Plumbing,Plumbing Pipe,1,6336.59,
+2024,Tower B,Plumbing,sink,1,,3111.8958333333335
+2024,Tower B,Plumbing,,1,1398.9,
+2024,Tower B,Vertical Transport,Elevator,7,30559.22,8909.103888888889
+2024,Warehouse North,Access & Security,Badge Reader,2,19350.11,9943.708888888888
+2024,Warehouse North,Access & Security,Door,1,5362.49,
+2024,Warehouse North,Access & Security,Security Camera,3,5668.25,3951.2744444444443
+2024,Warehouse North,Access & Security,alarm,2,4043.39,3455.4044444444444
+2024,Warehouse North,Access & Security,,2,1669.0,3494.383333333333
+2024,Warehouse North,Electrical,Circuit Breaker,1,,
+2024,Warehouse North,Electrical,Emergency lighting,2,9175.85,3724.4683333333332
+2024,Warehouse North,Electrical,Power outlet,2,6870.0,6429.975694444444
+2024,Warehouse North,Electrical,outlet,2,5806.23,12312.55361111111
+2024,Warehouse North,Electrical,,5,21042.43,4320.0
+2024,Warehouse North,Fire & Safety,Fire Alarm,2,10501.48,
+2024,Warehouse North,Fire & Safety,Fire Extinguisher,1,,616.2308333333333
+2024,Warehouse North,Fire & Safety,smoke detector,4,18487.27,3588.0066666666667
+2024,Warehouse North,General Maintenance,Door,2,1122.94,
+2024,Warehouse North,General Maintenance,,2,13616.67,3769.35
+2024,Warehouse North,HVAC,AC Unit,1,7555.35,2037.6880555555556
+2024,Warehouse North,HVAC,HVAC Unit,4,14094.23,6316.779166666666
+2024,Warehouse North,HVAC,Thermostat,2,9064.14,4177.745555555555
+2024,Warehouse North,HVAC,,6,20585.26,5228.281527777778
+2024,Warehouse North,IT & Network,Network jack,1,,6565.739166666666
+2024,Warehouse North,IT & Network,Printer,1,6019.41,
+2024,Warehouse North,IT & Network,,3,14230.0,
+2024,Warehouse North,Janitorial & Cleaning,Flooring,1,10084.72,
+2024,Warehouse North,Janitorial & Cleaning,canopy,1,,
+2024,Warehouse North,Janitorial & Cleaning,,7,25309.45,10104.245
+2024,Warehouse North,Pest Control,,10,32020.54,4464.322777777777
+2024,Warehouse North,Plumbing,Plumbing Fixture,5,29384.22,8040.0
+2024,Warehouse North,Vertical Transport,Elevator,7,18943.95,6761.053888888889
+2024,Warehouse South,Access & Security,Badge Reader,3,12535.29,5306.696388888889
+2024,Warehouse South,Access & Security,Door,2,3993.11,8294.975
+2024,Warehouse South,Access & Security,Security Camera,1,,10959.200277777778
+2024,Warehouse South,Access & Security,,2,,
+2024,Warehouse South,Electrical,Circuit Breaker,2,14428.22,
+2024,Warehouse South,Electrical,Power outlet,1,2440.64,
+2024,Warehouse South,Electrical,,6,11573.74,6273.5680555555555
+2024,Warehouse South,Fire & Safety,Fire Extinguisher,3,9139.07,5457.393611111111
+2024,Warehouse South,Fire & Safety,Sprinkler,1,7282.0,
+2024,Warehouse South,Fire & Safety,,1,14913.17,
+2024,Warehouse South,General Maintenance,Flooring,1,,
+2024,Warehouse South,General Maintenance,Pothole,2,3032.98,9729.360694444444
+2024,Warehouse South,General Maintenance,,3,5075.15,2386.6847222222223
+2024,Warehouse South,HVAC,AC Unit,1,,
+2024,Warehouse South,HVAC,Flooring,1,,3209.8713888888888
+2024,Warehouse South,HVAC,HVAC Unit,1,,
+2024,Warehouse South,HVAC,Thermostat,1,3387.0,
+2024,Warehouse South,HVAC,,4,3793.33,552.3127777777778
+2024,Warehouse South,IT & Network,Network jack,1,0.0,
+2024,Warehouse South,IT & Network,Printer,3,17297.51,8306.045833333334
+2024,Warehouse South,IT & Network,,5,8137.82,
+2024,Warehouse South,Janitorial & Cleaning,Flooring,1,1699.0,1582.0111111111112
+2024,Warehouse South,Janitorial & Cleaning,,3,3872.55,2029.9666666666667
+2024,Warehouse South,Pest Control,,11,47848.77,5574.023888888889
+2024,Warehouse South,Plumbing,Plumbing Fixture,4,4004.55,5058.5529166666665
+2024,Warehouse South,Plumbing,Plumbing Pipe,1,,
+2024,Warehouse South,Plumbing,sink,2,13297.34,
+2024,Warehouse South,Plumbing,,2,1812.66,
+2024,Warehouse South,Vertical Transport,Elevator,4,13562.96,9506.822916666666
+2025,Annex East,Access & Security,Badge Reader,3,19211.9,1086.3763888888889
+2025,Annex East,Access & Security,Security Camera,1,9861.0,
+2025,Annex East,Access & Security,alarm,3,16177.38,
+2025,Annex East,Electrical,Circuit Breaker,2,,2706.6647222222223
+2025,Annex East,Electrical,Emergency lighting,1,13677.46,
+2025,Annex East,Electrical,Power outlet,3,13062.14,487.80833333333334
+2025,Annex East,Electrical,,2,11991.14,
+2025,Annex East,Fire & Safety,Fire Alarm,1,2227.25,
+2025,Annex East,Fire & Safety,Fire Extinguisher,1,11440.07,
+2025,Annex East,Fire & Safety,Sprinkler,1,,
+2025,Annex East,Fire & Safety,smoke detector,1,399.41,
+2025,Annex East,General Maintenance,Pothole,1,,
+2025,Annex East,HVAC,AC Unit,1,,
+2025,Annex East,HVAC,Thermostat,1,1958.99,707.8947222222222
+2025,Annex East,HVAC,,1,2392.2,2810.172777777778
+2025,Annex East,IT & Network,Network jack,3,6878.58,
+2025,Annex East,IT & Network,Printer,2,2350.9,
+2025,Annex East,Janitorial & Cleaning,Flooring,1,4949.93,
+2025,Annex East,Janitorial & Cleaning,canopy,1,,
+2025,Annex East,Pest Control,,2,12579.78,
+2025,Annex East,Plumbing,Plumbing Fixture,3,3141.95,1029.0222222222221
+2025,Annex East,Plumbing,Plumbing Pipe,1,0.0,82.77833333333334
+2025,Annex East,Plumbing,sink,1,,
+2025,Annex East,Plumbing,,2,,
+2025,Annex East,Vertical Transport,Elevator,1,,
+2025,Annex West,Access & Security,Door,1,2733.8,
+2025,Annex West,Access & Security,Security Camera,1,10182.74,
+2025,Annex West,Access & Security,,2,2724.59,
+2025,Annex West,Electrical,Power outlet,1,0.0,
+2025,Annex West,Electrical,,2,2931.6,
+2025,Annex West,Fire & Safety,Fire Extinguisher,1,4889.24,1139.286111111111
+2025,Annex West,Fire & Safety,smoke detector,1,5035.72,
+2025,Annex West,General Maintenance,Flooring,1,13101.68,
+2025,Annex West,HVAC,AC Unit,1,0.0,
+2025,Annex West,HVAC,,1,6029.0,
+2025,Annex West,IT & Network,Network jack,1,,
+2025,Annex West,IT & Network,,4,10214.19,1726.4166666666667
+2025,Annex West,Janitorial & Cleaning,canopy,2,9433.94,
+2025,Annex West,Janitorial & Cleaning,,3,4363.48,3795.7027777777776
+2025,Annex West,Pest Control,,2,12234.68,
+2025,Annex West,Plumbing,Plumbing Fixture,4,975.46,1767.9230555555555
+2025,Annex West,Plumbing,sink,1,11567.69,
+2025,Annex West,Plumbing,,1,189.25,
+2025,Annex West,Vertical Transport,Elevator,6,28273.07,1788.8641666666667
+2025,Building 3,Access & Security,,2,2357.86,
+2025,Building 3,Electrical,Power outlet,2,7030.15,
+2025,Building 3,Electrical,,1,1439.29,
+2025,Building 3,Fire & Safety,Fire Alarm,1,8203.11,
+2025,Building 3,Fire & Safety,Fire Extinguisher,1,,
+2025,Building 3,Fire & Safety,Sprinkler,1,,
+2025,Building 3,Fire & Safety,smoke detector,1,,
+2025,Building 3,Fire & Safety,,1,,
+2025,Building 3,General Maintenance,Flooring,1,3058.08,
+2025,Building 3,General Maintenance,,2,11912.3,2092.051111111111
+2025,Building 3,HVAC,AC Unit,1,4668.71,
+2025,Building 3,HVAC,Flooring,1,1071.0,
+2025,Building 3,HVAC,,2,13476.33,273.80611111111114
+2025,Building 3,IT & Network,Network jack,1,,
+2025,Building 3,IT & Network,Printer,1,1984.31,4331.0569444444445
+2025,Building 3,IT & Network,,2,16123.68,
+2025,Building 3,Janitorial & Cleaning,,5,22370.13,2744.4755555555557
+2025,Building 3,Pest Control,,11,30064.19,866.4934722222222
+2025,Building 3,Plumbing,Plumbing Fixture,4,24672.87,3644.2023611111113
+2025,Building 3,Plumbing,Plumbing Pipe,1,795.68,
+2025,Building 3,Plumbing,sink,1,1675.82,
+2025,Building 3,Plumbing,,1,13141.51,
+2025,Building 3,Vertical Transport,Elevator,7,24336.08,810.5205555555556
+2025,Building 7,Access & Security,Security Camera,3,16561.68,
+2025,Building 7,Access & Security,alarm,2,5434.89,
+2025,Building 7,Access & Security,,1,11512.53,
+2025,Building 7,Electrical,Emergency lighting,1,,
+2025,Building 7,Electrical,Power outlet,1,5553.0,
+2025,Building 7,Electrical,,5,11918.25,2686.9819444444443
+2025,Building 7,Fire & Safety,Fire Alarm,2,10498.2,
+2025,Building 7,Fire & Safety,Fire Extinguisher,1,,
+2025,Building 7,Fire & Safety,Sprinkler,2,,
+2025,Building 7,General Maintenance,,2,6098.44,
+2025,Building 7,HVAC,AC Unit,1,5917.43,
+2025,Building 7,HVAC,HVAC Unit,3,,
+2025,Building 7,HVAC,,5,10922.4,1017.2586111111111
+2025,Building 7,IT & Network,,1,2236.7,
+2025,Building 7,Janitorial & Cleaning,Flooring,1,,
+2025,Building 7,Janitorial & Cleaning,canopy,2,4455.32,
+2025,Building 7,Janitorial & Cleaning,,1,,
+2025,Building 7,Pest Control,,6,26368.61,984.9027777777778
+2025,Building 7,Plumbing,Plumbing Fixture,3,5285.79,943.3
+2025,Building 7,Plumbing,Plumbing Pipe,2,16649.94,
+2025,Building 7,Vertical Transport,Elevator,5,37175.21,1380.2955555555557
+2025,Cafeteria Block,Access & Security,Security Camera,1,2904.33,
+2025,Cafeteria Block,Access & Security,alarm,1,4330.56,
+2025,Cafeteria Block,Electrical,Circuit Breaker,3,4109.86,
+2025,Cafeteria Block,Electrical,,1,,
+2025,Cafeteria Block,Fire & Safety,Fire Alarm,1,3338.86,
+2025,Cafeteria Block,Fire & Safety,Fire Extinguisher,1,468.67,
+2025,Cafeteria Block,Fire & Safety,smoke detector,1,,
+2025,Cafeteria Block,Fire & Safety,,3,13921.09,
+2025,Cafeteria Block,General Maintenance,Flooring,1,,
+2025,Cafeteria Block,General Maintenance,,1,4758.44,
+2025,Cafeteria Block,HVAC,Flooring,1,11126.16,
+2025,Cafeteria Block,HVAC,,1,1167.21,
+2025,Cafeteria Block,IT & Network,,5,9080.58,
+2025,Cafeteria Block,Janitorial & Cleaning,,4,16801.75,2361.39
+2025,Cafeteria Block,Pest Control,,2,4438.66,
+2025,Cafeteria Block,Plumbing,Plumbing Fixture,4,10340.26,
+2025,Cafeteria Block,Plumbing,Plumbing Pipe,1,,
+2025,Cafeteria Block,Vertical Transport,Elevator,2,22687.95,
+2025,Data Center 1,Access & Security,Badge Reader,3,9994.38,
+2025,Data Center 1,Access & Security,Door,1,6492.21,161.2511111111111
+2025,Data Center 1,Access & Security,Security Camera,1,,
+2025,Data Center 1,Electrical,,3,,2965.947222222222
+2025,Data Center 1,Fire & Safety,Fire Alarm,3,15676.07,
+2025,Data Center 1,Fire & Safety,Sprinkler,1,14835.2,1124.1166666666666
+2025,Data Center 1,Fire & Safety,,2,0.0,
+2025,Data Center 1,General Maintenance,Flooring,1,,2287.63
+2025,Data Center 1,HVAC,HVAC Unit,2,4928.26,
+2025,Data Center 1,HVAC,Thermostat,1,2676.55,
+2025,Data Center 1,HVAC,,2,1266.44,
+2025,Data Center 1,IT & Network,Printer,1,,2355.178611111111
+2025,Data Center 1,IT & Network,,1,12932.49,
+2025,Data Center 1,Janitorial & Cleaning,Flooring,1,,
+2025,Data Center 1,Janitorial & Cleaning,,3,11837.08,
+2025,Data Center 1,Pest Control,,1,,
+2025,Data Center 1,Plumbing,Plumbing Fixture,2,1285.58,
+2025,Data Center 1,Plumbing,Plumbing Pipe,1,,
+2025,Data Center 1,Plumbing,,1,,
+2025,Data Center 1,Vertical Transport,Elevator,6,25937.2,3355.7052777777776
+2025,HQ Floor 1,Access & Security,Security Camera,2,1607.51,
+2025,HQ Floor 1,Electrical,Circuit Breaker,1,,
+2025,HQ Floor 1,Electrical,Power outlet,2,4150.06,
+2025,HQ Floor 1,Electrical,,1,,
+2025,HQ Floor 1,Fire & Safety,Fire Alarm,3,22669.24,
+2025,HQ Floor 1,Fire & Safety,Fire Extinguisher,2,11265.14,
+2025,HQ Floor 1,Fire & Safety,Sprinkler,1,,
+2025,HQ Floor 1,Fire & Safety,smoke detector,1,,1794.4955555555555
+2025,HQ Floor 1,Fire & Safety,,2,1465.39,
+2025,HQ Floor 1,General Maintenance,Pothole,1,3246.0,
+2025,HQ Floor 1,General Maintenance,,2,12658.77,3811.7891666666665
+2025,HQ Floor 1,HVAC,HVAC Unit,1,,797.5325
+2025,HQ Floor 1,HVAC,,2,2796.04,
+2025,HQ Floor 1,IT & Network,Network jack,1,1147.4,
+2025,HQ Floor 1,IT & Network,,4,29052.45,869.2091666666666
+2025,HQ Floor 1,Janitorial & Cleaning,Flooring,3,12140.4,
+2025,HQ Floor 1,Janitorial & Cleaning,,4,28556.84,
+2025,HQ Floor 1,Pest Control,,5,29753.43,
+2025,HQ Floor 1,Plumbing,sink,2,10385.14,490.4452777777778
+2025,HQ Floor 1,Plumbing,,1,,
+2025,HQ Floor 1,Vertical Transport,Elevator,3,11136.77,
+2025,HQ Floor 2,Access & Security,Door,2,10721.79,
+2025,HQ Floor 2,Access & Security,Security Camera,1,7267.54,
+2025,HQ Floor 2,Access & Security,,1,1691.87,179.51194444444445
+2025,HQ Floor 2,Electrical,,3,2902.03,667.1888888888889
+2025,HQ Floor 2,Fire & Safety,Sprinkler,1,,
+2025,HQ Floor 2,Fire & Safety,,1,,
+2025,HQ Floor 2,HVAC,HVAC Unit,2,8270.61,2194.036111111111
+2025,HQ Floor 2,HVAC,,4,7992.92,1038.0275
+2025,HQ Floor 2,IT & Network,Network jack,2,9190.0,
+2025,HQ Floor 2,IT & Network,Printer,1,8662.6,
+2025,HQ Floor 2,IT & Network,,3,11352.13,
+2025,HQ Floor 2,Janitorial & Cleaning,canopy,2,7137.38,
+2025,HQ Floor 2,Janitorial & Cleaning,,2,2335.4,
+2025,HQ Floor 2,Pest Control,,4,40169.16,
+2025,HQ Floor 2,Plumbing,Plumbing Fixture,4,27897.79,4278.5327777777775
+2025,HQ Floor 2,Plumbing,Plumbing Pipe,1,,
+2025,HQ Floor 2,Plumbing,sink,1,,
+2025,HQ Floor 2,Vertical Transport,Elevator,5,4085.52,
+2025,HQ Floor 3,Access & Security,Badge Reader,1,,
+2025,HQ Floor 3,Access & Security,Security Camera,1,12507.13,
+2025,HQ Floor 3,Access & Security,alarm,1,2972.34,
+2025,HQ Floor 3,Electrical,Power outlet,1,10344.72,
+2025,HQ Floor 3,Electrical,,2,11645.78,
+2025,HQ Floor 3,Fire & Safety,Fire Alarm,1,10302.72,
+2025,HQ Floor 3,Fire & Safety,Fire Extinguisher,1,,1739.9258333333332
+2025,HQ Floor 3,Fire & Safety,,1,6738.5,
+2025,HQ Floor 3,General Maintenance,,2,1595.07,4316.5
+2025,HQ Floor 3,HVAC,HVAC Unit,1,,
+2025,HQ Floor 3,HVAC,,2,13899.27,
+2025,HQ Floor 3,IT & Network,Printer,1,,
+2025,HQ Floor 3,IT & Network,,1,,1796.17
+2025,HQ Floor 3,Janitorial & Cleaning,Flooring,1,7893.0,
+2025,HQ Floor 3,Janitorial & Cleaning,canopy,1,,
+2025,HQ Floor 3,Janitorial & Cleaning,,4,13865.83,428.4425
+2025,HQ Floor 3,Pest Control,,2,16770.71,
+2025,HQ Floor 3,Plumbing,Plumbing Fixture,2,13263.0,
+2025,HQ Floor 3,Plumbing,Plumbing Pipe,1,,
+2025,HQ Floor 3,Vertical Transport,Elevator,1,8517.06,
+2025,Main Office,Access & Security,Security Camera,1,12803.2,
+2025,Main Office,Access & Security,alarm,1,,
+2025,Main Office,Electrical,Circuit Breaker,1,11677.53,1859.7444444444445
+2025,Main Office,Electrical,Emergency lighting,2,,3781.4575
+2025,Main Office,Electrical,Power outlet,3,,
+2025,Main Office,Electrical,,2,1753.42,343.05
+2025,Main Office,Fire & Safety,Fire Alarm,2,20976.54,
+2025,Main Office,General Maintenance,,1,,
+2025,Main Office,HVAC,HVAC Unit,2,6815.12,944.6744444444445
+2025,Main Office,HVAC,,5,20147.39,
+2025,Main Office,IT & Network,Network jack,2,9001.43,1030.0445833333333
+2025,Main Office,IT & Network,Printer,1,0.0,
+2025,Main Office,IT & Network,,1,,
+2025,Main Office,Janitorial & Cleaning,canopy,2,13166.49,1484.1252777777777
+2025,Main Office,Janitorial & Cleaning,,7,30642.9,
+2025,Main Office,Pest Control,,2,14360.76,
+2025,Main Office,Plumbing,Plumbing Fixture,1,0.0,
+2025,Main Office,Plumbing,sink,1,,
+2025,Main Office,Plumbing,,1,,2507.796388888889
+2025,Main Office,Vertical Transport,Elevator,3,10527.43,
+2025,Parking Garage,Access & Security,Badge Reader,1,7241.69,
+2025,Parking Garage,Access & Security,Door,1,,
+2025,Parking Garage,Access & Security,Security Camera,2,11232.21,
+2025,Parking Garage,Access & Security,alarm,1,,
+2025,Parking Garage,Access & Security,,1,9619.56,
+2025,Parking Garage,Electrical,Power outlet,2,23172.58,
+2025,Parking Garage,Electrical,,2,2839.21,
+2025,Parking Garage,Fire & Safety,smoke detector,1,13405.1,
+2025,Parking Garage,Fire & Safety,,3,20034.09,
+2025,Parking Garage,HVAC,AC Unit,2,5344.28,
+2025,Parking Garage,HVAC,HVAC Unit,2,13407.26,3967.6213888888888
+2025,Parking Garage,IT & Network,,2,13076.41,1720.3008333333332
+2025,Parking Garage,Janitorial & Cleaning,,2,9541.0,
+2025,Parking Garage,Pest Control,,2,,
+2025,Parking Garage,Plumbing,Plumbing Fixture,1,,
+2025,Parking Garage,Vertical Transport,Elevator,6,22879.65,
+2025,Remote Site Alpha,Access & Security,Door,1,0.0,
+2025,Remote Site Alpha,Access & Security,Security Camera,1,10370.16,
+2025,Remote Site Alpha,Access & Security,alarm,1,13950.3,2589.516666666667
+2025,Remote Site Alpha,Electrical,Emergency lighting,1,4347.2,
+2025,Remote Site Alpha,Electrical,Power outlet,2,,4411.315833333333
+2025,Remote Site Alpha,Electrical,,2,13285.75,
+2025,Remote Site Alpha,Fire & Safety,Fire Extinguisher,1,396.65,
+2025,Remote Site Alpha,Fire & Safety,Sprinkler,1,,
+2025,Remote Site Alpha,Fire & Safety,,1,2568.08,
+2025,Remote Site Alpha,General Maintenance,Door,1,,
+2025,Remote Site Alpha,General Maintenance,Flooring,1,,
+2025,Remote Site Alpha,HVAC,AC Unit,1,2013.75,
+2025,Remote Site Alpha,HVAC,Flooring,1,,
+2025,Remote Site Alpha,HVAC,,2,9200.99,2581.317777777778
+2025,Remote Site Alpha,IT & Network,Network jack,1,,
+2025,Remote Site Alpha,IT & Network,Printer,1,7636.0,
+2025,Remote Site Alpha,IT & Network,,5,47051.18,3376.045833333333
+2025,Remote Site Alpha,Janitorial & Cleaning,Flooring,1,8657.0,
+2025,Remote Site Alpha,Janitorial & Cleaning,canopy,1,13219.33,
+2025,Remote Site Alpha,Janitorial & Cleaning,,4,18613.98,2651.083888888889
+2025,Remote Site Alpha,Pest Control,,8,24908.76,81.67361111111111
+2025,Remote Site Alpha,Plumbing,Plumbing Fixture,2,,
+2025,Remote Site Alpha,Plumbing,Plumbing Pipe,1,8151.95,
+2025,Remote Site Alpha,Vertical Transport,Elevator,2,8554.01,2479.4333333333334
+2025,Remote Site Beta,Access & Security,Badge Reader,1,897.26,
+2025,Remote Site Beta,Access & Security,Door,1,11233.89,
+2025,Remote Site Beta,Access & Security,Security Camera,2,4509.0,
+2025,Remote Site Beta,Access & Security,,1,7296.35,
+2025,Remote Site Beta,Electrical,Circuit Breaker,3,12828.84,
+2025,Remote Site Beta,Electrical,Emergency lighting,2,,
+2025,Remote Site Beta,Electrical,Power outlet,1,0.0,
+2025,Remote Site Beta,Electrical,,1,,
+2025,Remote Site Beta,Fire & Safety,Sprinkler,3,1176.53,
+2025,Remote Site Beta,Fire & Safety,smoke detector,2,13435.91,
+2025,Remote Site Beta,Fire & Safety,,1,5331.25,
+2025,Remote Site Beta,General Maintenance,,2,2336.38,847.1102777777778
+2025,Remote Site Beta,HVAC,AC Unit,1,3602.36,2208.718888888889
+2025,Remote Site Beta,HVAC,Flooring,1,14174.62,258.9025
+2025,Remote Site Beta,HVAC,HVAC Unit,1,4773.94,
+2025,Remote Site Beta,HVAC,Thermostat,1,14200.4,
+2025,Remote Site Beta,HVAC,,3,21163.85,
+2025,Remote Site Beta,IT & Network,Network jack,3,6160.28,
+2025,Remote Site Beta,IT & Network,,2,9417.04,
+2025,Remote Site Beta,Janitorial & Cleaning,,1,11762.47,85.12611111111111
+2025,Remote Site Beta,Pest Control,,1,4770.97,
+2025,Remote Site Beta,Plumbing,Plumbing Fixture,1,8486.59,
+2025,Remote Site Beta,Plumbing,sink,1,4199.0,
+2025,Remote Site Beta,Vertical Transport,Elevator,6,44553.92,1376.2318055555556
+2025,Tower A,Access & Security,Badge Reader,1,3503.51,
+2025,Tower A,Access & Security,Door,1,11065.28,
+2025,Tower A,Access & Security,Security Camera,3,1294.79,
+2025,Tower A,Electrical,Circuit Breaker,1,828.18,
+2025,Tower A,Electrical,Power outlet,1,5280.0,
+2025,Tower A,Electrical,,1,12333.21,
+2025,Tower A,Fire & Safety,Fire Alarm,1,3540.0,
+2025,Tower A,Fire & Safety,Sprinkler,1,11372.52,
+2025,Tower A,Fire & Safety,smoke detector,2,15574.82,
+2025,Tower A,Fire & Safety,,1,11035.58,
+2025,Tower A,General Maintenance,Pothole,1,3892.0,
+2025,Tower A,General Maintenance,,2,12003.71,
+2025,Tower A,HVAC,HVAC Unit,1,,
+2025,Tower A,HVAC,,4,14457.3,
+2025,Tower A,IT & Network,Network jack,1,3613.83,760.2897222222222
+2025,Tower A,IT & Network,,3,4782.02,
+2025,Tower A,Janitorial & Cleaning,Flooring,1,1382.0,
+2025,Tower A,Janitorial & Cleaning,canopy,1,8460.0,
+2025,Tower A,Janitorial & Cleaning,,5,23415.19,
+2025,Tower A,Pest Control,,6,18794.54,
+2025,Tower A,Plumbing,Plumbing Fixture,2,4705.0,
+2025,Tower A,Plumbing,sink,2,25013.78,
+2025,Tower A,Vertical Transport,Elevator,4,4678.17,696.0
+2025,Tower B,Access & Security,Badge Reader,1,,
+2025,Tower B,Electrical,Emergency lighting,1,173.16,
+2025,Tower B,Electrical,outlet,2,8544.54,
+2025,Tower B,Electrical,,1,4071.0,
+2025,Tower B,Fire & Safety,Fire Alarm,2,8011.0,
+2025,Tower B,Fire & Safety,smoke detector,2,784.6,
+2025,Tower B,General Maintenance,Pothole,1,,
+2025,Tower B,HVAC,,4,19684.58,
+2025,Tower B,IT & Network,,5,26516.63,1576.2095833333333
+2025,Tower B,Janitorial & Cleaning,Flooring,1,,
+2025,Tower B,Janitorial & Cleaning,,5,10485.84,1651.367638888889
+2025,Tower B,Pest Control,,2,5841.4,
+2025,Tower B,Plumbing,Plumbing Fixture,2,8100.54,
+2025,Tower B,Plumbing,,2,969.13,274.8486111111111
+2025,Tower B,Vertical Transport,Elevator,5,7826.35,
+2025,Warehouse North,Access & Security,Badge Reader,1,12514.09,
+2025,Warehouse North,Access & Security,Door,1,9043.0,2201.3083333333334
+2025,Warehouse North,Access & Security,alarm,1,795.0,
+2025,Warehouse North,Access & Security,,3,6065.76,
+2025,Warehouse North,Electrical,Emergency lighting,1,,
+2025,Warehouse North,Electrical,,4,19519.08,
+2025,Warehouse North,Fire & Safety,Fire Extinguisher,1,7001.0,
+2025,Warehouse North,Fire & Safety,Sprinkler,2,9014.39,1875.036111111111
+2025,Warehouse North,Fire & Safety,smoke detector,1,,
+2025,Warehouse North,General Maintenance,Flooring,1,6039.09,
+2025,Warehouse North,General Maintenance,,3,7841.22,
+2025,Warehouse North,HVAC,AC Unit,1,5984.0,
+2025,Warehouse North,HVAC,HVAC Unit,2,12950.41,3443.5933333333332
+2025,Warehouse North,HVAC,,1,,
+2025,Warehouse North,IT & Network,,2,,
+2025,Warehouse North,Janitorial & Cleaning,Flooring,1,,
+2025,Warehouse North,Janitorial & Cleaning,canopy,1,9629.87,
+2025,Warehouse North,Janitorial & Cleaning,,4,11386.57,
+2025,Warehouse North,Pest Control,,3,2018.0,
+2025,Warehouse North,Plumbing,Plumbing Fixture,3,1596.17,
+2025,Warehouse North,Plumbing,Plumbing Pipe,1,,
+2025,Warehouse North,Plumbing,sink,2,11279.86,
+2025,Warehouse North,Vertical Transport,Elevator,4,35627.2,2385.076111111111
+2025,Warehouse South,Access & Security,Door,2,2283.98,
+2025,Warehouse South,Electrical,Power outlet,1,11781.11,
+2025,Warehouse South,Electrical,,1,,
+2025,Warehouse South,Fire & Safety,Fire Alarm,4,5456.44,414.3666666666667
+2025,Warehouse South,Fire & Safety,Sprinkler,3,13892.76,
+2025,Warehouse South,Fire & Safety,,1,,
+2025,Warehouse South,General Maintenance,Door,1,9149.0,
+2025,Warehouse South,General Maintenance,,1,,3404.0333333333333
+2025,Warehouse South,HVAC,AC Unit,1,14472.9,
+2025,Warehouse South,HVAC,HVAC Unit,1,,
+2025,Warehouse South,HVAC,,3,14982.34,
+2025,Warehouse South,IT & Network,Printer,1,2422.11,
+2025,Warehouse South,IT & Network,,1,13836.89,
+2025,Warehouse South,Janitorial & Cleaning,,2,13775.92,2452.25
+2025,Warehouse South,Pest Control,,6,27692.84,
+2025,Warehouse South,Plumbing,Plumbing Fixture,2,6501.63,
+2025,Warehouse South,Plumbing,sink,1,,
+2025,Warehouse South,Plumbing,,1,8963.96,
+2025,Warehouse South,Vertical Transport,Elevator,3,,1890.5405555555556

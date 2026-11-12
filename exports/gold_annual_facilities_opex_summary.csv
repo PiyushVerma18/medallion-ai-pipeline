@@ -1,0 +1,2518 @@
+incident_year,building,canonical_category,assigned_to,total_annual_cost,total_annual_hours_on_site,total_unique_tickets
+2023,Main Office,IT & Network,Joe (in-house),13533.79,,1
+2023,Tower A,Pest Control,ABC Mechanical,,,1
+2024,Annex East,Access & Security,ABC Mechanical,8938.42,,6
+2024,Annex East,Access & Security,CityWide Electric,12318.8,,2
+2024,Annex East,Access & Security,Joe (in-house),11019.29,3.9,5
+2024,Annex East,Access & Security,PestPro Services,18540.45,,2
+2024,Annex East,Access & Security,maintenance team,25381.37,0.8,5
+2024,Annex East,Access & Security,overnight crew,20838.59,,4
+2024,Annex East,Access & Security,vendor tech,15951.31,,4
+2024,Annex East,Access & Security,,80785.41,,17
+2024,Annex East,Electrical,ABC Mechanical,27349.42,,7
+2024,Annex East,Electrical,CityWide Electric,10983.07,,3
+2024,Annex East,Electrical,Joe (in-house),27907.05,,5
+2024,Annex East,Electrical,PestPro Services,12458.04,,5
+2024,Annex East,Electrical,maintenance team,7614.17,,3
+2024,Annex East,Electrical,overnight crew,13527.61,,2
+2024,Annex East,Electrical,vendor tech,12645.13,,3
+2024,Annex East,Electrical,,74148.72,6.0,14
+2024,Annex East,Fire & Safety,ABC Mechanical,1816.95,,4
+2024,Annex East,Fire & Safety,CityWide Electric,2284.85,2.5,3
+2024,Annex East,Fire & Safety,Joe (in-house),12936.96,,3
+2024,Annex East,Fire & Safety,PestPro Services,38586.83,3.6,5
+2024,Annex East,Fire & Safety,maintenance team,42064.68,,2
+2024,Annex East,Fire & Safety,overnight crew,13381.81,,3
+2024,Annex East,Fire & Safety,vendor tech,11849.24,6.1,6
+2024,Annex East,Fire & Safety,,54595.69,2.6,11
+2024,Annex East,General Maintenance,ABC Mechanical,9865.1,4.7,3
+2024,Annex East,General Maintenance,CityWide Electric,7571.0,,3
+2024,Annex East,General Maintenance,Joe (in-house),10958.75,,1
+2024,Annex East,General Maintenance,PestPro Services,20836.17,,3
+2024,Annex East,General Maintenance,maintenance team,3098.58,,1
+2024,Annex East,General Maintenance,overnight crew,13798.15,,1
+2024,Annex East,General Maintenance,vendor tech,14504.02,,2
+2024,Annex East,General Maintenance,,21964.35,,4
+2024,Annex East,HVAC,ABC Mechanical,463.53,,3
+2024,Annex East,HVAC,CityWide Electric,14028.79,0.8,4
+2024,Annex East,HVAC,Joe (in-house),7534.63,,2
+2024,Annex East,HVAC,PestPro Services,1797.42,,1
+2024,Annex East,HVAC,maintenance team,27148.37,,3
+2024,Annex East,HVAC,overnight crew,14847.82,6.2,4
+2024,Annex East,HVAC,vendor tech,12028.29,,4
+2024,Annex East,HVAC,,25978.27,,9
+2024,Annex East,IT & Network,ABC Mechanical,9805.0,,2
+2024,Annex East,IT & Network,CityWide Electric,24391.33,3.2,9
+2024,Annex East,IT & Network,Joe (in-house),6925.89,,4
+2024,Annex East,IT & Network,PestPro Services,8952.0,,4
+2024,Annex East,IT & Network,maintenance team,9055.96,,2
+2024,Annex East,IT & Network,overnight crew,3406.47,,2
+2024,Annex East,IT & Network,vendor tech,62583.99,6.2,8
+2024,Annex East,IT & Network,,75760.22,8.6,14
+2024,Annex East,Janitorial & Cleaning,ABC Mechanical,10983.47,,5
+2024,Annex East,Janitorial & Cleaning,CityWide Electric,15282.94,,2
+2024,Annex East,Janitorial & Cleaning,Joe (in-house),10829.8,,3
+2024,Annex East,Janitorial & Cleaning,PestPro Services,13579.45,,4
+2024,Annex East,Janitorial & Cleaning,maintenance team,33861.96,,5
+2024,Annex East,Janitorial & Cleaning,overnight crew,5868.63,,4
+2024,Annex East,Janitorial & Cleaning,vendor tech,5627.0,,3
+2024,Annex East,Janitorial & Cleaning,,15276.44,,3
+2024,Annex East,Pest Control,ABC Mechanical,7818.04,,4
+2024,Annex East,Pest Control,CityWide Electric,16359.21,,4
+2024,Annex East,Pest Control,Joe (in-house),,,3
+2024,Annex East,Pest Control,PestPro Services,31616.02,4.7,5
+2024,Annex East,Pest Control,overnight crew,9032.49,,1
+2024,Annex East,Pest Control,vendor tech,11197.95,,3
+2024,Annex East,Pest Control,,41934.08,3.2,8
+2024,Annex East,Plumbing,ABC Mechanical,18486.97,,6
+2024,Annex East,Plumbing,Joe (in-house),3546.03,,2
+2024,Annex East,Plumbing,PestPro Services,3861.0,5.8,6
+2024,Annex East,Plumbing,maintenance team,11747.49,,4
+2024,Annex East,Plumbing,overnight crew,21903.88,,4
+2024,Annex East,Plumbing,vendor tech,10919.06,,1
+2024,Annex East,Plumbing,,27632.6,4.0,12
+2024,Annex East,Vertical Transport,ABC Mechanical,12057.08,,1
+2024,Annex East,Vertical Transport,CityWide Electric,29351.9,1.4,3
+2024,Annex East,Vertical Transport,Joe (in-house),8515.76,9.1,6
+2024,Annex East,Vertical Transport,PestPro Services,1102.58,,2
+2024,Annex East,Vertical Transport,maintenance team,23200.05,,2
+2024,Annex East,Vertical Transport,overnight crew,15157.82,,4
+2024,Annex East,Vertical Transport,vendor tech,0.0,7.8,4
+2024,Annex East,Vertical Transport,,30042.27,5.9,12
+2024,Annex West,Access & Security,ABC Mechanical,19124.41,,4
+2024,Annex West,Access & Security,CityWide Electric,67699.49,,8
+2024,Annex West,Access & Security,Joe (in-house),47277.77,1.1,5
+2024,Annex West,Access & Security,PestPro Services,19646.07,,5
+2024,Annex West,Access & Security,maintenance team,22241.97,,4
+2024,Annex West,Access & Security,overnight crew,10891.57,,2
+2024,Annex West,Access & Security,vendor tech,2927.36,,2
+2024,Annex West,Access & Security,,32315.52,3.2,11
+2024,Annex West,Electrical,ABC Mechanical,41578.43,,4
+2024,Annex West,Electrical,CityWide Electric,25704.66,,5
+2024,Annex West,Electrical,Joe (in-house),4701.91,6.0,2
+2024,Annex West,Electrical,PestPro Services,5766.0,5.0,3
+2024,Annex West,Electrical,maintenance team,,,1
+2024,Annex West,Electrical,overnight crew,12605.18,,2
+2024,Annex West,Electrical,vendor tech,3962.0,,2
+2024,Annex West,Electrical,,55731.78,0.6,14
+2024,Annex West,Fire & Safety,ABC Mechanical,6892.03,,2
+2024,Annex West,Fire & Safety,CityWide Electric,11537.29,,4
+2024,Annex West,Fire & Safety,Joe (in-house),18244.59,,3
+2024,Annex West,Fire & Safety,PestPro Services,15444.89,,3
+2024,Annex West,Fire & Safety,maintenance team,12340.17,,2
+2024,Annex West,Fire & Safety,overnight crew,9435.24,,5
+2024,Annex West,Fire & Safety,vendor tech,7428.44,,5
+2024,Annex West,Fire & Safety,,33108.65,6.6,12
+2024,Annex West,General Maintenance,ABC Mechanical,12248.38,,1
+2024,Annex West,General Maintenance,CityWide Electric,18689.47,,2
+2024,Annex West,General Maintenance,Joe (in-house),11675.26,,4
+2024,Annex West,General Maintenance,PestPro Services,19038.59,,4
+2024,Annex West,General Maintenance,maintenance team,11651.85,,2
+2024,Annex West,General Maintenance,overnight crew,31040.01,,3
+2024,Annex West,General Maintenance,vendor tech,31706.48,6.1,5
+2024,Annex West,General Maintenance,,24795.98,,7
+2024,Annex West,HVAC,ABC Mechanical,,,3
+2024,Annex West,HVAC,CityWide Electric,8082.0,,4
+2024,Annex West,HVAC,Joe (in-house),12874.83,,1
+2024,Annex West,HVAC,PestPro Services,6550.81,,2
+2024,Annex West,HVAC,maintenance team,4121.73,4.9,3
+2024,Annex West,HVAC,overnight crew,21803.46,,4
+2024,Annex West,HVAC,vendor tech,4201.93,,1
+2024,Annex West,HVAC,,57969.11,14.5,15
+2024,Annex West,IT & Network,ABC Mechanical,,,1
+2024,Annex West,IT & Network,CityWide Electric,832.0,6.5,1
+2024,Annex West,IT & Network,Joe (in-house),38653.46,5.8,6
+2024,Annex West,IT & Network,PestPro Services,14282.52,,4
+2024,Annex West,IT & Network,maintenance team,1676.0,,2
+2024,Annex West,IT & Network,overnight crew,12338.11,,1
+2024,Annex West,IT & Network,vendor tech,3295.42,3.5,3
+2024,Annex West,IT & Network,,58637.99,21.8,19
+2024,Annex West,Janitorial & Cleaning,ABC Mechanical,38395.07,,6
+2024,Annex West,Janitorial & Cleaning,CityWide Electric,23241.9,,3
+2024,Annex West,Janitorial & Cleaning,Joe (in-house),1704.0,,3
+2024,Annex West,Janitorial & Cleaning,PestPro Services,10345.16,6.7,1
+2024,Annex West,Janitorial & Cleaning,maintenance team,21389.78,7.0,4
+2024,Annex West,Janitorial & Cleaning,overnight crew,8336.29,7.1,4
+2024,Annex West,Janitorial & Cleaning,vendor tech,6157.72,,3
+2024,Annex West,Janitorial & Cleaning,,101541.86,7.8,17
+2024,Annex West,Pest Control,ABC Mechanical,12545.09,,4
+2024,Annex West,Pest Control,CityWide Electric,4976.13,4.6,3
+2024,Annex West,Pest Control,PestPro Services,9793.36,,5
+2024,Annex West,Pest Control,maintenance team,21729.5,5.1,8
+2024,Annex West,Pest Control,overnight crew,34195.41,,6
+2024,Annex West,Pest Control,vendor tech,12313.9,,4
+2024,Annex West,Pest Control,,13366.18,,8
+2024,Annex West,Plumbing,ABC Mechanical,23148.0,6.4,2
+2024,Annex West,Plumbing,CityWide Electric,,,2
+2024,Annex West,Plumbing,Joe (in-house),14870.22,,1
+2024,Annex West,Plumbing,PestPro Services,47922.98,7.2,5
+2024,Annex West,Plumbing,maintenance team,16870.47,,4
+2024,Annex West,Plumbing,overnight crew,10553.45,,4
+2024,Annex West,Plumbing,vendor tech,34816.56,,3
+2024,Annex West,Plumbing,,35048.7,,10
+2024,Annex West,Vertical Transport,ABC Mechanical,,,1
+2024,Annex West,Vertical Transport,CityWide Electric,7714.0,,2
+2024,Annex West,Vertical Transport,Joe (in-house),23467.72,,4
+2024,Annex West,Vertical Transport,PestPro Services,11683.99,,3
+2024,Annex West,Vertical Transport,maintenance team,30952.84,6.6,6
+2024,Annex West,Vertical Transport,overnight crew,68.44,,4
+2024,Annex West,Vertical Transport,vendor tech,24984.07,,7
+2024,Annex West,Vertical Transport,,66772.37,13.6,12
+2024,Building 3,Access & Security,ABC Mechanical,16026.5,,3
+2024,Building 3,Access & Security,CityWide Electric,14944.77,,5
+2024,Building 3,Access & Security,Joe (in-house),13872.01,,5
+2024,Building 3,Access & Security,PestPro Services,35701.7,,7
+2024,Building 3,Access & Security,maintenance team,30451.59,,7
+2024,Building 3,Access & Security,overnight crew,13467.64,,6
+2024,Building 3,Access & Security,vendor tech,12744.02,3.9,6
+2024,Building 3,Access & Security,,47645.47,,16
+2024,Building 3,Electrical,ABC Mechanical,,,3
+2024,Building 3,Electrical,CityWide Electric,5686.72,2.6,4
+2024,Building 3,Electrical,Joe (in-house),21093.08,5.6,5
+2024,Building 3,Electrical,PestPro Services,16947.98,,3
+2024,Building 3,Electrical,maintenance team,6511.04,,2
+2024,Building 3,Electrical,overnight crew,5173.89,,4
+2024,Building 3,Electrical,vendor tech,4151.28,,2
+2024,Building 3,Electrical,,26595.44,6.8,8
+2024,Building 3,Fire & Safety,ABC Mechanical,25054.43,5.9,4
+2024,Building 3,Fire & Safety,CityWide Electric,27873.96,,3
+2024,Building 3,Fire & Safety,Joe (in-house),22381.28,3.7,6
+2024,Building 3,Fire & Safety,PestPro Services,19286.75,,6
+2024,Building 3,Fire & Safety,maintenance team,13984.02,,1
+2024,Building 3,Fire & Safety,overnight crew,535.97,,2
+2024,Building 3,Fire & Safety,vendor tech,3343.51,,1
+2024,Building 3,Fire & Safety,,47624.0,,6
+2024,Building 3,General Maintenance,ABC Mechanical,,5.7,4
+2024,Building 3,General Maintenance,CityWide Electric,18907.48,,3
+2024,Building 3,General Maintenance,Joe (in-house),10139.48,,1
+2024,Building 3,General Maintenance,PestPro Services,17619.28,,2
+2024,Building 3,General Maintenance,maintenance team,14342.6,6.4,2
+2024,Building 3,General Maintenance,overnight crew,20075.06,,1
+2024,Building 3,General Maintenance,vendor tech,14539.79,,1
+2024,Building 3,General Maintenance,,1948.27,,5
+2024,Building 3,HVAC,ABC Mechanical,2396.34,,4
+2024,Building 3,HVAC,CityWide Electric,14916.42,3.0,2
+2024,Building 3,HVAC,Joe (in-house),11272.88,,3
+2024,Building 3,HVAC,PestPro Services,44144.1,,5
+2024,Building 3,HVAC,overnight crew,10052.31,,3
+2024,Building 3,HVAC,vendor tech,12864.37,6.9,3
+2024,Building 3,HVAC,,35179.64,7.6,16
+2024,Building 3,IT & Network,ABC Mechanical,1983.54,,1
+2024,Building 3,IT & Network,CityWide Electric,2929.87,7.1,3
+2024,Building 3,IT & Network,Joe (in-house),45660.78,4.3,7
+2024,Building 3,IT & Network,PestPro Services,23368.85,,2
+2024,Building 3,IT & Network,maintenance team,43329.06,5.9,3
+2024,Building 3,IT & Network,overnight crew,9961.33,,3
+2024,Building 3,IT & Network,vendor tech,40243.98,,3
+2024,Building 3,IT & Network,,53960.48,,11
+2024,Building 3,Janitorial & Cleaning,CityWide Electric,34660.8,,8
+2024,Building 3,Janitorial & Cleaning,Joe (in-house),67.29,,3
+2024,Building 3,Janitorial & Cleaning,PestPro Services,31984.35,2.8,4
+2024,Building 3,Janitorial & Cleaning,maintenance team,25616.92,7.7,4
+2024,Building 3,Janitorial & Cleaning,overnight crew,16097.35,4.8,4
+2024,Building 3,Janitorial & Cleaning,vendor tech,9758.18,,1
+2024,Building 3,Janitorial & Cleaning,,63742.46,,13
+2024,Building 3,Pest Control,ABC Mechanical,6716.11,7.5,4
+2024,Building 3,Pest Control,CityWide Electric,18358.49,,3
+2024,Building 3,Pest Control,Joe (in-house),11664.79,5.5,6
+2024,Building 3,Pest Control,PestPro Services,15732.67,,7
+2024,Building 3,Pest Control,maintenance team,15712.74,,3
+2024,Building 3,Pest Control,vendor tech,,,1
+2024,Building 3,Pest Control,,55491.28,3.7,16
+2024,Building 3,Plumbing,ABC Mechanical,38317.8,2.2,8
+2024,Building 3,Plumbing,CityWide Electric,9592.18,3.0,3
+2024,Building 3,Plumbing,Joe (in-house),33911.54,,5
+2024,Building 3,Plumbing,PestPro Services,458.26,3.6,1
+2024,Building 3,Plumbing,maintenance team,,,3
+2024,Building 3,Plumbing,overnight crew,11630.58,1.8,3
+2024,Building 3,Plumbing,vendor tech,26476.34,,6
+2024,Building 3,Plumbing,,43571.47,6.3,16
+2024,Building 3,Vertical Transport,ABC Mechanical,27012.94,7.7,3
+2024,Building 3,Vertical Transport,CityWide Electric,22056.61,,6
+2024,Building 3,Vertical Transport,Joe (in-house),29535.43,,4
+2024,Building 3,Vertical Transport,PestPro Services,16489.46,6.9,3
+2024,Building 3,Vertical Transport,maintenance team,15998.24,3.2,6
+2024,Building 3,Vertical Transport,overnight crew,5626.18,,3
+2024,Building 3,Vertical Transport,vendor tech,11334.97,,2
+2024,Building 3,Vertical Transport,,45037.12,7.5,11
+2024,Building 7,Access & Security,ABC Mechanical,,,2
+2024,Building 7,Access & Security,CityWide Electric,41776.79,,4
+2024,Building 7,Access & Security,Joe (in-house),22446.31,,5
+2024,Building 7,Access & Security,PestPro Services,7698.09,,2
+2024,Building 7,Access & Security,maintenance team,2446.6,13.1,4
+2024,Building 7,Access & Security,overnight crew,27316.37,2.3,7
+2024,Building 7,Access & Security,vendor tech,22457.56,,3
+2024,Building 7,Access & Security,,67496.33,4.1,15
+2024,Building 7,Electrical,ABC Mechanical,20411.09,,3
+2024,Building 7,Electrical,CityWide Electric,4533.03,,1
+2024,Building 7,Electrical,Joe (in-house),10168.43,,3
+2024,Building 7,Electrical,PestPro Services,16032.85,,3
+2024,Building 7,Electrical,maintenance team,8520.29,,3
+2024,Building 7,Electrical,overnight crew,9570.0,,5
+2024,Building 7,Electrical,vendor tech,29477.16,,4
+2024,Building 7,Electrical,,45711.97,7.0,17
+2024,Building 7,Fire & Safety,ABC Mechanical,13410.86,,3
+2024,Building 7,Fire & Safety,CityWide Electric,8550.04,,1
+2024,Building 7,Fire & Safety,PestPro Services,16878.42,,2
+2024,Building 7,Fire & Safety,maintenance team,16692.54,,3
+2024,Building 7,Fire & Safety,overnight crew,20625.04,,5
+2024,Building 7,Fire & Safety,,44678.47,,8
+2024,Building 7,General Maintenance,ABC Mechanical,6541.0,,1
+2024,Building 7,General Maintenance,CityWide Electric,20008.43,,2
+2024,Building 7,General Maintenance,Joe (in-house),6967.0,,3
+2024,Building 7,General Maintenance,PestPro Services,,,1
+2024,Building 7,General Maintenance,overnight crew,11365.37,,4
+2024,Building 7,General Maintenance,vendor tech,9374.64,3.6,3
+2024,Building 7,General Maintenance,,11630.47,2.3,4
+2024,Building 7,HVAC,ABC Mechanical,4946.59,,3
+2024,Building 7,HVAC,CityWide Electric,19578.53,,4
+2024,Building 7,HVAC,Joe (in-house),24064.36,7.9,5
+2024,Building 7,HVAC,PestPro Services,825.41,,4
+2024,Building 7,HVAC,maintenance team,13687.47,,6
+2024,Building 7,HVAC,overnight crew,20915.9,1.1,5
+2024,Building 7,HVAC,vendor tech,20908.71,,4
+2024,Building 7,HVAC,,46986.6,9.8,12
+2024,Building 7,IT & Network,ABC Mechanical,13440.21,,1
+2024,Building 7,IT & Network,CityWide Electric,10954.22,,2
+2024,Building 7,IT & Network,Joe (in-house),7962.59,,2
+2024,Building 7,IT & Network,PestPro Services,,,3
+2024,Building 7,IT & Network,maintenance team,27549.65,,4
+2024,Building 7,IT & Network,overnight crew,19376.85,2.5,4
+2024,Building 7,IT & Network,vendor tech,10383.75,,9
+2024,Building 7,IT & Network,,70756.34,,12
+2024,Building 7,Janitorial & Cleaning,ABC Mechanical,25837.71,1.2,5
+2024,Building 7,Janitorial & Cleaning,CityWide Electric,35399.23,1.2,6
+2024,Building 7,Janitorial & Cleaning,Joe (in-house),19468.45,,3
+2024,Building 7,Janitorial & Cleaning,PestPro Services,,,0
+2024,Building 7,Janitorial & Cleaning,maintenance team,14636.77,,3
+2024,Building 7,Janitorial & Cleaning,overnight crew,17130.34,,2
+2024,Building 7,Janitorial & Cleaning,vendor tech,25813.27,,3
+2024,Building 7,Janitorial & Cleaning,,26018.86,,13
+2024,Building 7,Pest Control,ABC Mechanical,17943.05,16.0,6
+2024,Building 7,Pest Control,CityWide Electric,12326.75,,2
+2024,Building 7,Pest Control,Joe (in-house),14380.56,,2
+2024,Building 7,Pest Control,PestPro Services,13317.08,,3
+2024,Building 7,Pest Control,maintenance team,28889.21,11.9,8
+2024,Building 7,Pest Control,overnight crew,38595.94,,6
+2024,Building 7,Pest Control,vendor tech,28392.57,,4
+2024,Building 7,Pest Control,,78453.44,3.4,15
+2024,Building 7,Plumbing,ABC Mechanical,48954.37,4.2,7
+2024,Building 7,Plumbing,CityWide Electric,20134.31,,4
+2024,Building 7,Plumbing,Joe (in-house),36069.18,6.2,5
+2024,Building 7,Plumbing,PestPro Services,17285.08,,1
+2024,Building 7,Plumbing,maintenance team,24078.39,,4
+2024,Building 7,Plumbing,overnight crew,9653.6,,4
+2024,Building 7,Plumbing,vendor tech,14089.73,,3
+2024,Building 7,Plumbing,,48365.29,4.5,13
+2024,Building 7,Vertical Transport,ABC Mechanical,14502.87,,3
+2024,Building 7,Vertical Transport,CityWide Electric,94.3,,3
+2024,Building 7,Vertical Transport,Joe (in-house),48918.95,,6
+2024,Building 7,Vertical Transport,maintenance team,48710.3,,6
+2024,Building 7,Vertical Transport,overnight crew,1152.0,,3
+2024,Building 7,Vertical Transport,vendor tech,11909.03,3.1,3
+2024,Building 7,Vertical Transport,,56023.53,7.6,8
+2024,Cafeteria Block,Access & Security,ABC Mechanical,4541.52,,4
+2024,Cafeteria Block,Access & Security,CityWide Electric,2805.06,,2
+2024,Cafeteria Block,Access & Security,Joe (in-house),2384.5,,1
+2024,Cafeteria Block,Access & Security,PestPro Services,8553.61,,2
+2024,Cafeteria Block,Access & Security,maintenance team,30195.43,,4
+2024,Cafeteria Block,Access & Security,overnight crew,14310.23,,1
+2024,Cafeteria Block,Access & Security,vendor tech,24231.92,,3
+2024,Cafeteria Block,Access & Security,,52538.95,0.6,10
+2024,Cafeteria Block,Electrical,ABC Mechanical,1992.84,6.2,2
+2024,Cafeteria Block,Electrical,CityWide Electric,21713.65,3.2,3
+2024,Cafeteria Block,Electrical,Joe (in-house),21067.77,,3
+2024,Cafeteria Block,Electrical,PestPro Services,25039.33,,4
+2024,Cafeteria Block,Electrical,maintenance team,16889.0,,2
+2024,Cafeteria Block,Electrical,overnight crew,28089.43,,3
+2024,Cafeteria Block,Electrical,vendor tech,,,2
+2024,Cafeteria Block,Electrical,,9203.11,12.6,11
+2024,Cafeteria Block,Fire & Safety,ABC Mechanical,38688.78,,5
+2024,Cafeteria Block,Fire & Safety,CityWide Electric,4356.0,,2
+2024,Cafeteria Block,Fire & Safety,Joe (in-house),10223.02,,4
+2024,Cafeteria Block,Fire & Safety,PestPro Services,,,2
+2024,Cafeteria Block,Fire & Safety,maintenance team,26441.11,7.7,5
+2024,Cafeteria Block,Fire & Safety,overnight crew,6039.52,,1
+2024,Cafeteria Block,Fire & Safety,vendor tech,51122.82,6.9,8
+2024,Cafeteria Block,Fire & Safety,,84444.22,8.0,20
+2024,Cafeteria Block,General Maintenance,ABC Mechanical,19874.52,,3
+2024,Cafeteria Block,General Maintenance,CityWide Electric,12879.32,3.4,2
+2024,Cafeteria Block,General Maintenance,Joe (in-house),1051.0,,1
+2024,Cafeteria Block,General Maintenance,PestPro Services,3951.17,,1
+2024,Cafeteria Block,General Maintenance,maintenance team,,,2
+2024,Cafeteria Block,General Maintenance,overnight crew,4536.65,,2
+2024,Cafeteria Block,General Maintenance,vendor tech,,,2
+2024,Cafeteria Block,General Maintenance,,21155.92,3.1,7
+2024,Cafeteria Block,HVAC,ABC Mechanical,28014.07,,3
+2024,Cafeteria Block,HVAC,CityWide Electric,2649.99,,1
+2024,Cafeteria Block,HVAC,Joe (in-house),2736.61,,3
+2024,Cafeteria Block,HVAC,PestPro Services,14664.31,7.9,8
+2024,Cafeteria Block,HVAC,maintenance team,20544.71,,3
+2024,Cafeteria Block,HVAC,overnight crew,10080.2,,2
+2024,Cafeteria Block,HVAC,vendor tech,,,2
+2024,Cafeteria Block,HVAC,,52947.43,,13
+2024,Cafeteria Block,IT & Network,ABC Mechanical,12652.66,4.2,3
+2024,Cafeteria Block,IT & Network,CityWide Electric,37635.29,,5
+2024,Cafeteria Block,IT & Network,Joe (in-house),11244.66,,5
+2024,Cafeteria Block,IT & Network,PestPro Services,7908.3,,2
+2024,Cafeteria Block,IT & Network,maintenance team,15743.05,,4
+2024,Cafeteria Block,IT & Network,overnight crew,22849.68,10.1,7
+2024,Cafeteria Block,IT & Network,vendor tech,,5.0,2
+2024,Cafeteria Block,IT & Network,,81606.29,22.8,14
+2024,Cafeteria Block,Janitorial & Cleaning,ABC Mechanical,12649.0,,3
+2024,Cafeteria Block,Janitorial & Cleaning,CityWide Electric,2720.64,,2
+2024,Cafeteria Block,Janitorial & Cleaning,Joe (in-house),23154.21,13.0,5
+2024,Cafeteria Block,Janitorial & Cleaning,PestPro Services,9801.86,,1
+2024,Cafeteria Block,Janitorial & Cleaning,maintenance team,29188.35,,7
+2024,Cafeteria Block,Janitorial & Cleaning,overnight crew,26145.27,,3
+2024,Cafeteria Block,Janitorial & Cleaning,vendor tech,13874.24,5.5,4
+2024,Cafeteria Block,Janitorial & Cleaning,,19502.15,,5
+2024,Cafeteria Block,Pest Control,ABC Mechanical,20726.12,6.1,6
+2024,Cafeteria Block,Pest Control,CityWide Electric,9355.72,,2
+2024,Cafeteria Block,Pest Control,Joe (in-house),17842.95,,3
+2024,Cafeteria Block,Pest Control,PestPro Services,15210.04,5.6,3
+2024,Cafeteria Block,Pest Control,maintenance team,29297.02,,4
+2024,Cafeteria Block,Pest Control,overnight crew,17223.17,0.6,5
+2024,Cafeteria Block,Pest Control,vendor tech,19509.5,2.3,5
+2024,Cafeteria Block,Pest Control,,33033.13,2.4,17
+2024,Cafeteria Block,Plumbing,ABC Mechanical,38852.03,5.9,4
+2024,Cafeteria Block,Plumbing,CityWide Electric,32635.58,13.7,6
+2024,Cafeteria Block,Plumbing,Joe (in-house),19433.61,,3
+2024,Cafeteria Block,Plumbing,PestPro Services,16805.17,3.4,6
+2024,Cafeteria Block,Plumbing,maintenance team,6613.55,,4
+2024,Cafeteria Block,Plumbing,overnight crew,11220.96,,3
+2024,Cafeteria Block,Plumbing,vendor tech,,,2
+2024,Cafeteria Block,Plumbing,,90863.98,2.2,18
+2024,Cafeteria Block,Vertical Transport,ABC Mechanical,17063.2,,3
+2024,Cafeteria Block,Vertical Transport,CityWide Electric,2012.18,,2
+2024,Cafeteria Block,Vertical Transport,Joe (in-house),2546.34,,2
+2024,Cafeteria Block,Vertical Transport,PestPro Services,10899.93,,5
+2024,Cafeteria Block,Vertical Transport,maintenance team,8284.0,,3
+2024,Cafeteria Block,Vertical Transport,overnight crew,4820.0,,2
+2024,Cafeteria Block,Vertical Transport,vendor tech,12615.59,,1
+2024,Cafeteria Block,Vertical Transport,,62444.3,5.4,11
+2024,Data Center 1,Access & Security,ABC Mechanical,14787.43,5.0,5
+2024,Data Center 1,Access & Security,CityWide Electric,24355.08,,4
+2024,Data Center 1,Access & Security,Joe (in-house),10739.37,,3
+2024,Data Center 1,Access & Security,PestPro Services,47629.31,,6
+2024,Data Center 1,Access & Security,maintenance team,40753.85,2.5,6
+2024,Data Center 1,Access & Security,overnight crew,8198.0,,2
+2024,Data Center 1,Access & Security,vendor tech,15912.53,,3
+2024,Data Center 1,Access & Security,,45417.49,,10
+2024,Data Center 1,Electrical,ABC Mechanical,,,1
+2024,Data Center 1,Electrical,CityWide Electric,13042.85,,0
+2024,Data Center 1,Electrical,Joe (in-house),36273.13,,5
+2024,Data Center 1,Electrical,PestPro Services,11080.18,7.1,6
+2024,Data Center 1,Electrical,maintenance team,7863.44,6.6,6
+2024,Data Center 1,Electrical,overnight crew,8702.35,,3
+2024,Data Center 1,Electrical,vendor tech,888.0,,3
+2024,Data Center 1,Electrical,,16382.39,,13
+2024,Data Center 1,Fire & Safety,ABC Mechanical,,7.8,2
+2024,Data Center 1,Fire & Safety,CityWide Electric,,10.5,2
+2024,Data Center 1,Fire & Safety,Joe (in-house),4712.37,,1
+2024,Data Center 1,Fire & Safety,PestPro Services,34310.78,,4
+2024,Data Center 1,Fire & Safety,maintenance team,47660.98,,6
+2024,Data Center 1,Fire & Safety,overnight crew,18711.17,7.4,5
+2024,Data Center 1,Fire & Safety,vendor tech,21031.91,,7
+2024,Data Center 1,Fire & Safety,,40373.59,4.3,15
+2024,Data Center 1,General Maintenance,ABC Mechanical,7278.4,,5
+2024,Data Center 1,General Maintenance,CityWide Electric,3693.0,,2
+2024,Data Center 1,General Maintenance,Joe (in-house),24761.71,,4
+2024,Data Center 1,General Maintenance,PestPro Services,2621.25,,1
+2024,Data Center 1,General Maintenance,maintenance team,,,2
+2024,Data Center 1,General Maintenance,overnight crew,7078.61,,3
+2024,Data Center 1,General Maintenance,vendor tech,4532.85,4.8,4
+2024,Data Center 1,General Maintenance,,5155.51,7.9,5
+2024,Data Center 1,HVAC,ABC Mechanical,5342.0,,1
+2024,Data Center 1,HVAC,CityWide Electric,24460.44,7.3,4
+2024,Data Center 1,HVAC,Joe (in-house),22180.15,,4
+2024,Data Center 1,HVAC,PestPro Services,20116.16,5.2,6
+2024,Data Center 1,HVAC,maintenance team,6008.31,,1
+2024,Data Center 1,HVAC,overnight crew,16731.39,,4
+2024,Data Center 1,HVAC,vendor tech,19194.25,6.2,4
+2024,Data Center 1,HVAC,,20152.14,6.3,4
+2024,Data Center 1,IT & Network,ABC Mechanical,26298.36,,3
+2024,Data Center 1,IT & Network,CityWide Electric,15656.23,,3
+2024,Data Center 1,IT & Network,Joe (in-house),20081.18,7.6,5
+2024,Data Center 1,IT & Network,PestPro Services,9229.39,,3
+2024,Data Center 1,IT & Network,maintenance team,28503.97,,4
+2024,Data Center 1,IT & Network,overnight crew,12548.87,3.1,3
+2024,Data Center 1,IT & Network,vendor tech,31514.78,,4
+2024,Data Center 1,IT & Network,,33700.69,,9
+2024,Data Center 1,Janitorial & Cleaning,ABC Mechanical,20653.86,1.0,4
+2024,Data Center 1,Janitorial & Cleaning,CityWide Electric,,5.1,2
+2024,Data Center 1,Janitorial & Cleaning,Joe (in-house),2940.73,,2
+2024,Data Center 1,Janitorial & Cleaning,PestPro Services,31103.95,7.7,3
+2024,Data Center 1,Janitorial & Cleaning,maintenance team,22432.75,2.7,5
+2024,Data Center 1,Janitorial & Cleaning,overnight crew,0.0,,2
+2024,Data Center 1,Janitorial & Cleaning,vendor tech,19610.11,,6
+2024,Data Center 1,Janitorial & Cleaning,,24905.51,,9
+2024,Data Center 1,Pest Control,ABC Mechanical,1240.53,,6
+2024,Data Center 1,Pest Control,CityWide Electric,12977.83,,2
+2024,Data Center 1,Pest Control,Joe (in-house),1160.49,,2
+2024,Data Center 1,Pest Control,PestPro Services,19789.07,,2
+2024,Data Center 1,Pest Control,maintenance team,29714.24,5.8,4
+2024,Data Center 1,Pest Control,overnight crew,26352.47,4.7,5
+2024,Data Center 1,Pest Control,vendor tech,597.52,7.0,3
+2024,Data Center 1,Pest Control,,61685.34,,10
+2024,Data Center 1,Plumbing,ABC Mechanical,18077.36,3.4,6
+2024,Data Center 1,Plumbing,CityWide Electric,4259.32,,3
+2024,Data Center 1,Plumbing,Joe (in-house),8611.44,,3
+2024,Data Center 1,Plumbing,PestPro Services,,,1
+2024,Data Center 1,Plumbing,maintenance team,32500.2,,6
+2024,Data Center 1,Plumbing,overnight crew,7923.38,,5
+2024,Data Center 1,Plumbing,vendor tech,,,4
+2024,Data Center 1,Plumbing,,29331.08,,7
+2024,Data Center 1,Vertical Transport,ABC Mechanical,570.85,,3
+2024,Data Center 1,Vertical Transport,CityWide Electric,21169.4,,3
+2024,Data Center 1,Vertical Transport,Joe (in-house),,,2
+2024,Data Center 1,Vertical Transport,PestPro Services,51173.84,,5
+2024,Data Center 1,Vertical Transport,maintenance team,1179.14,,2
+2024,Data Center 1,Vertical Transport,overnight crew,11923.81,,6
+2024,Data Center 1,Vertical Transport,vendor tech,34134.42,,6
+2024,Data Center 1,Vertical Transport,,67254.79,0.8,15
+2024,HQ Floor 1,Access & Security,ABC Mechanical,3682.27,,2
+2024,HQ Floor 1,Access & Security,CityWide Electric,5693.0,4.6,2
+2024,HQ Floor 1,Access & Security,Joe (in-house),15405.73,,2
+2024,HQ Floor 1,Access & Security,PestPro Services,20468.17,,5
+2024,HQ Floor 1,Access & Security,maintenance team,32766.32,,3
+2024,HQ Floor 1,Access & Security,overnight crew,3117.18,,3
+2024,HQ Floor 1,Access & Security,vendor tech,8439.9,,4
+2024,HQ Floor 1,Access & Security,,58883.49,,11
+2024,HQ Floor 1,Electrical,ABC Mechanical,23979.61,,4
+2024,HQ Floor 1,Electrical,CityWide Electric,4013.32,,3
+2024,HQ Floor 1,Electrical,Joe (in-house),0.0,,2
+2024,HQ Floor 1,Electrical,PestPro Services,8274.02,5.0,4
+2024,HQ Floor 1,Electrical,maintenance team,20196.03,4.1,5
+2024,HQ Floor 1,Electrical,overnight crew,,,3
+2024,HQ Floor 1,Electrical,vendor tech,23994.3,,5
+2024,HQ Floor 1,Electrical,,48799.14,2.4,9
+2024,HQ Floor 1,Fire & Safety,ABC Mechanical,8776.03,,4
+2024,HQ Floor 1,Fire & Safety,CityWide Electric,38541.05,,5
+2024,HQ Floor 1,Fire & Safety,Joe (in-house),14708.45,,5
+2024,HQ Floor 1,Fire & Safety,PestPro Services,15790.43,,6
+2024,HQ Floor 1,Fire & Safety,maintenance team,21667.88,,6
+2024,HQ Floor 1,Fire & Safety,overnight crew,34990.36,,6
+2024,HQ Floor 1,Fire & Safety,,27825.6,,5
+2024,HQ Floor 1,General Maintenance,ABC Mechanical,3371.0,,1
+2024,HQ Floor 1,General Maintenance,CityWide Electric,3183.64,,2
+2024,HQ Floor 1,General Maintenance,Joe (in-house),9022.89,,3
+2024,HQ Floor 1,General Maintenance,PestPro Services,,3.8,2
+2024,HQ Floor 1,General Maintenance,maintenance team,,,1
+2024,HQ Floor 1,General Maintenance,vendor tech,,,1
+2024,HQ Floor 1,General Maintenance,,19487.22,,9
+2024,HQ Floor 1,HVAC,ABC Mechanical,3411.61,,1
+2024,HQ Floor 1,HVAC,CityWide Electric,11616.3,4.5,4
+2024,HQ Floor 1,HVAC,Joe (in-house),12214.28,3.4,3
+2024,HQ Floor 1,HVAC,PestPro Services,3810.38,,1
+2024,HQ Floor 1,HVAC,maintenance team,16645.28,2.4,3
+2024,HQ Floor 1,HVAC,overnight crew,9695.53,,2
+2024,HQ Floor 1,HVAC,vendor tech,5849.62,,6
+2024,HQ Floor 1,HVAC,,38386.32,5.2,13
+2024,HQ Floor 1,IT & Network,ABC Mechanical,7989.92,,2
+2024,HQ Floor 1,IT & Network,CityWide Electric,42125.25,,6
+2024,HQ Floor 1,IT & Network,Joe (in-house),1314.84,,5
+2024,HQ Floor 1,IT & Network,PestPro Services,3617.8,,2
+2024,HQ Floor 1,IT & Network,maintenance team,27638.81,0.6,5
+2024,HQ Floor 1,IT & Network,overnight crew,20698.01,,5
+2024,HQ Floor 1,IT & Network,vendor tech,17732.07,,7
+2024,HQ Floor 1,IT & Network,,59143.06,1.0,11
+2024,HQ Floor 1,Janitorial & Cleaning,ABC Mechanical,23974.87,2.1,6
+2024,HQ Floor 1,Janitorial & Cleaning,CityWide Electric,13051.54,,5
+2024,HQ Floor 1,Janitorial & Cleaning,Joe (in-house),21845.94,,2
+2024,HQ Floor 1,Janitorial & Cleaning,PestPro Services,34629.38,4.6,8
+2024,HQ Floor 1,Janitorial & Cleaning,maintenance team,1406.77,,4
+2024,HQ Floor 1,Janitorial & Cleaning,overnight crew,18771.31,,7
+2024,HQ Floor 1,Janitorial & Cleaning,vendor tech,15447.78,2.4,10
+2024,HQ Floor 1,Janitorial & Cleaning,,24850.26,,10
+2024,HQ Floor 1,Pest Control,ABC Mechanical,18862.94,,8
+2024,HQ Floor 1,Pest Control,CityWide Electric,20772.31,,3
+2024,HQ Floor 1,Pest Control,Joe (in-house),25186.44,,6
+2024,HQ Floor 1,Pest Control,PestPro Services,8995.41,,4
+2024,HQ Floor 1,Pest Control,maintenance team,23848.27,0.7,7
+2024,HQ Floor 1,Pest Control,overnight crew,26894.33,,4
+2024,HQ Floor 1,Pest Control,vendor tech,8534.28,2.1,5
+2024,HQ Floor 1,Pest Control,,30871.98,,4
+2024,HQ Floor 1,Plumbing,ABC Mechanical,30364.64,,7
+2024,HQ Floor 1,Plumbing,CityWide Electric,14008.2,,4
+2024,HQ Floor 1,Plumbing,Joe (in-house),6614.06,4.9,4
+2024,HQ Floor 1,Plumbing,PestPro Services,12687.54,,1
+2024,HQ Floor 1,Plumbing,maintenance team,19382.36,,3
+2024,HQ Floor 1,Plumbing,overnight crew,10890.02,,2
+2024,HQ Floor 1,Plumbing,vendor tech,27748.56,,7
+2024,HQ Floor 1,Plumbing,,70184.84,4.5,10
+2024,HQ Floor 1,Vertical Transport,ABC Mechanical,15735.31,1.5,6
+2024,HQ Floor 1,Vertical Transport,CityWide Electric,27672.83,,3
+2024,HQ Floor 1,Vertical Transport,Joe (in-house),2800.76,,1
+2024,HQ Floor 1,Vertical Transport,PestPro Services,25695.05,,7
+2024,HQ Floor 1,Vertical Transport,maintenance team,16874.94,7.4,5
+2024,HQ Floor 1,Vertical Transport,overnight crew,14121.95,,5
+2024,HQ Floor 1,Vertical Transport,vendor tech,15363.95,,2
+2024,HQ Floor 1,Vertical Transport,,41402.95,,11
+2024,HQ Floor 2,Access & Security,ABC Mechanical,16518.49,,5
+2024,HQ Floor 2,Access & Security,CityWide Electric,10760.01,6.3,7
+2024,HQ Floor 2,Access & Security,Joe (in-house),40192.17,,5
+2024,HQ Floor 2,Access & Security,PestPro Services,20265.51,,4
+2024,HQ Floor 2,Access & Security,maintenance team,23396.0,,5
+2024,HQ Floor 2,Access & Security,overnight crew,11332.2,11.0,6
+2024,HQ Floor 2,Access & Security,vendor tech,17718.24,1.5,5
+2024,HQ Floor 2,Access & Security,,39274.96,,6
+2024,HQ Floor 2,Electrical,ABC Mechanical,1592.81,,1
+2024,HQ Floor 2,Electrical,CityWide Electric,8876.79,,5
+2024,HQ Floor 2,Electrical,Joe (in-house),,,1
+2024,HQ Floor 2,Electrical,PestPro Services,6458.64,,4
+2024,HQ Floor 2,Electrical,maintenance team,37660.66,,6
+2024,HQ Floor 2,Electrical,overnight crew,0.0,,2
+2024,HQ Floor 2,Electrical,vendor tech,,,3
+2024,HQ Floor 2,Electrical,,73636.29,4.8,14
+2024,HQ Floor 2,Fire & Safety,ABC Mechanical,32231.28,,6
+2024,HQ Floor 2,Fire & Safety,CityWide Electric,13794.12,,2
+2024,HQ Floor 2,Fire & Safety,Joe (in-house),14305.72,,2
+2024,HQ Floor 2,Fire & Safety,PestPro Services,9705.83,,3
+2024,HQ Floor 2,Fire & Safety,maintenance team,18557.88,,6
+2024,HQ Floor 2,Fire & Safety,overnight crew,27140.0,,5
+2024,HQ Floor 2,Fire & Safety,vendor tech,721.67,,1
+2024,HQ Floor 2,Fire & Safety,,36126.17,,6
+2024,HQ Floor 2,General Maintenance,ABC Mechanical,1391.0,,1
+2024,HQ Floor 2,General Maintenance,maintenance team,13422.68,,2
+2024,HQ Floor 2,General Maintenance,overnight crew,581.31,,1
+2024,HQ Floor 2,General Maintenance,vendor tech,13495.05,,1
+2024,HQ Floor 2,General Maintenance,,13943.35,3.9,4
+2024,HQ Floor 2,HVAC,ABC Mechanical,28782.52,,7
+2024,HQ Floor 2,HVAC,CityWide Electric,0.0,,1
+2024,HQ Floor 2,HVAC,Joe (in-house),8957.83,1.7,2
+2024,HQ Floor 2,HVAC,PestPro Services,32961.18,,5
+2024,HQ Floor 2,HVAC,maintenance team,73758.18,4.4,10
+2024,HQ Floor 2,HVAC,overnight crew,19572.18,5.1,5
+2024,HQ Floor 2,HVAC,vendor tech,10898.14,,2
+2024,HQ Floor 2,HVAC,,88904.19,,24
+2024,HQ Floor 2,IT & Network,ABC Mechanical,14109.17,,4
+2024,HQ Floor 2,IT & Network,CityWide Electric,7516.36,,1
+2024,HQ Floor 2,IT & Network,Joe (in-house),9297.0,,2
+2024,HQ Floor 2,IT & Network,PestPro Services,15344.31,7.1,5
+2024,HQ Floor 2,IT & Network,maintenance team,2066.53,,2
+2024,HQ Floor 2,IT & Network,overnight crew,,5.1,3
+2024,HQ Floor 2,IT & Network,vendor tech,27016.51,,4
+2024,HQ Floor 2,IT & Network,,40168.3,14.0,11
+2024,HQ Floor 2,Janitorial & Cleaning,ABC Mechanical,4139.6,,2
+2024,HQ Floor 2,Janitorial & Cleaning,CityWide Electric,7068.05,9.0,7
+2024,HQ Floor 2,Janitorial & Cleaning,Joe (in-house),29097.69,2.9,5
+2024,HQ Floor 2,Janitorial & Cleaning,PestPro Services,14019.93,,4
+2024,HQ Floor 2,Janitorial & Cleaning,maintenance team,28051.42,0.8,5
+2024,HQ Floor 2,Janitorial & Cleaning,overnight crew,22859.37,1.9,5
+2024,HQ Floor 2,Janitorial & Cleaning,vendor tech,9006.0,3.4,3
+2024,HQ Floor 2,Janitorial & Cleaning,,57003.87,11.8,15
+2024,HQ Floor 2,Pest Control,ABC Mechanical,27386.27,,6
+2024,HQ Floor 2,Pest Control,CityWide Electric,3981.73,,4
+2024,HQ Floor 2,Pest Control,Joe (in-house),33190.93,4.1,6
+2024,HQ Floor 2,Pest Control,PestPro Services,33591.73,1.4,8
+2024,HQ Floor 2,Pest Control,maintenance team,21763.26,,4
+2024,HQ Floor 2,Pest Control,overnight crew,34318.71,,7
+2024,HQ Floor 2,Pest Control,vendor tech,29519.85,,4
+2024,HQ Floor 2,Pest Control,,55899.99,3.0,16
+2024,HQ Floor 2,Plumbing,ABC Mechanical,12476.5,,2
+2024,HQ Floor 2,Plumbing,CityWide Electric,3875.0,,3
+2024,HQ Floor 2,Plumbing,Joe (in-house),1153.0,,2
+2024,HQ Floor 2,Plumbing,maintenance team,5095.0,,3
+2024,HQ Floor 2,Plumbing,overnight crew,3768.55,0.9,1
+2024,HQ Floor 2,Plumbing,vendor tech,19447.35,,6
+2024,HQ Floor 2,Plumbing,,85347.32,0.6,13
+2024,HQ Floor 2,Vertical Transport,ABC Mechanical,30814.64,4.9,4
+2024,HQ Floor 2,Vertical Transport,CityWide Electric,14092.97,3.7,4
+2024,HQ Floor 2,Vertical Transport,Joe (in-house),37239.28,,5
+2024,HQ Floor 2,Vertical Transport,PestPro Services,3792.91,,1
+2024,HQ Floor 2,Vertical Transport,maintenance team,23481.64,,6
+2024,HQ Floor 2,Vertical Transport,overnight crew,3271.04,,2
+2024,HQ Floor 2,Vertical Transport,vendor tech,10646.02,,1
+2024,HQ Floor 2,Vertical Transport,,41450.2,2.4,9
+2024,HQ Floor 3,Access & Security,ABC Mechanical,29633.38,,6
+2024,HQ Floor 3,Access & Security,CityWide Electric,8930.99,,6
+2024,HQ Floor 3,Access & Security,Joe (in-house),13777.8,7.0,3
+2024,HQ Floor 3,Access & Security,PestPro Services,2095.82,,1
+2024,HQ Floor 3,Access & Security,maintenance team,1724.79,,1
+2024,HQ Floor 3,Access & Security,overnight crew,1717.28,,2
+2024,HQ Floor 3,Access & Security,vendor tech,11426.14,7.8,4
+2024,HQ Floor 3,Access & Security,,29634.2,,6
+2024,HQ Floor 3,Electrical,ABC Mechanical,13487.76,,1
+2024,HQ Floor 3,Electrical,CityWide Electric,43641.96,6.2,10
+2024,HQ Floor 3,Electrical,Joe (in-house),14147.44,5.9,2
+2024,HQ Floor 3,Electrical,PestPro Services,4837.23,,3
+2024,HQ Floor 3,Electrical,maintenance team,21503.22,5.4,6
+2024,HQ Floor 3,Electrical,overnight crew,15017.85,,3
+2024,HQ Floor 3,Electrical,vendor tech,13542.33,,4
+2024,HQ Floor 3,Electrical,,56401.86,,11
+2024,HQ Floor 3,Fire & Safety,ABC Mechanical,9295.85,,4
+2024,HQ Floor 3,Fire & Safety,CityWide Electric,8567.59,1.3,7
+2024,HQ Floor 3,Fire & Safety,Joe (in-house),25273.4,2.7,5
+2024,HQ Floor 3,Fire & Safety,PestPro Services,16148.8,,4
+2024,HQ Floor 3,Fire & Safety,maintenance team,52911.32,3.0,6
+2024,HQ Floor 3,Fire & Safety,overnight crew,13080.91,,2
+2024,HQ Floor 3,Fire & Safety,vendor tech,2039.64,,2
+2024,HQ Floor 3,Fire & Safety,,33139.05,,10
+2024,HQ Floor 3,General Maintenance,ABC Mechanical,5765.06,,2
+2024,HQ Floor 3,General Maintenance,CityWide Electric,,,1
+2024,HQ Floor 3,General Maintenance,Joe (in-house),7862.67,,1
+2024,HQ Floor 3,General Maintenance,PestPro Services,4329.74,,3
+2024,HQ Floor 3,General Maintenance,maintenance team,14945.31,,1
+2024,HQ Floor 3,General Maintenance,overnight crew,11497.34,,1
+2024,HQ Floor 3,General Maintenance,vendor tech,,,1
+2024,HQ Floor 3,General Maintenance,,5913.46,,2
+2024,HQ Floor 3,HVAC,ABC Mechanical,38800.64,,5
+2024,HQ Floor 3,HVAC,CityWide Electric,13180.2,,1
+2024,HQ Floor 3,HVAC,Joe (in-house),1209.98,,3
+2024,HQ Floor 3,HVAC,PestPro Services,4292.91,,3
+2024,HQ Floor 3,HVAC,maintenance team,8403.52,,6
+2024,HQ Floor 3,HVAC,overnight crew,2637.35,,1
+2024,HQ Floor 3,HVAC,vendor tech,9571.0,,3
+2024,HQ Floor 3,HVAC,,59521.16,16.6,14
+2024,HQ Floor 3,IT & Network,ABC Mechanical,14239.55,,2
+2024,HQ Floor 3,IT & Network,CityWide Electric,13838.59,6.1,3
+2024,HQ Floor 3,IT & Network,Joe (in-house),9492.73,,2
+2024,HQ Floor 3,IT & Network,maintenance team,18094.71,,1
+2024,HQ Floor 3,IT & Network,overnight crew,10036.87,,4
+2024,HQ Floor 3,IT & Network,vendor tech,14028.43,,3
+2024,HQ Floor 3,IT & Network,,10390.63,,4
+2024,HQ Floor 3,Janitorial & Cleaning,ABC Mechanical,1335.73,,5
+2024,HQ Floor 3,Janitorial & Cleaning,CityWide Electric,17604.55,,2
+2024,HQ Floor 3,Janitorial & Cleaning,Joe (in-house),13634.52,,3
+2024,HQ Floor 3,Janitorial & Cleaning,PestPro Services,22488.62,,2
+2024,HQ Floor 3,Janitorial & Cleaning,maintenance team,26913.49,,4
+2024,HQ Floor 3,Janitorial & Cleaning,overnight crew,12845.58,,2
+2024,HQ Floor 3,Janitorial & Cleaning,vendor tech,23702.83,6.0,6
+2024,HQ Floor 3,Janitorial & Cleaning,,33464.55,22.4,16
+2024,HQ Floor 3,Pest Control,ABC Mechanical,4074.3,1.6,7
+2024,HQ Floor 3,Pest Control,CityWide Electric,10741.4,,3
+2024,HQ Floor 3,Pest Control,Joe (in-house),11112.15,,2
+2024,HQ Floor 3,Pest Control,PestPro Services,1914.46,,3
+2024,HQ Floor 3,Pest Control,maintenance team,10679.44,,7
+2024,HQ Floor 3,Pest Control,overnight crew,12953.7,7.6,3
+2024,HQ Floor 3,Pest Control,vendor tech,14991.21,3.5,3
+2024,HQ Floor 3,Pest Control,,7425.95,,6
+2024,HQ Floor 3,Plumbing,ABC Mechanical,14986.4,2.2,4
+2024,HQ Floor 3,Plumbing,CityWide Electric,22949.58,,5
+2024,HQ Floor 3,Plumbing,Joe (in-house),10962.44,,4
+2024,HQ Floor 3,Plumbing,PestPro Services,19532.5,16.5,9
+2024,HQ Floor 3,Plumbing,maintenance team,23208.3,4.6,3
+2024,HQ Floor 3,Plumbing,overnight crew,7987.0,,2
+2024,HQ Floor 3,Plumbing,vendor tech,18447.47,6.7,4
+2024,HQ Floor 3,Plumbing,,17967.16,8.0,8
+2024,HQ Floor 3,Vertical Transport,ABC Mechanical,22286.36,,6
+2024,HQ Floor 3,Vertical Transport,CityWide Electric,,,1
+2024,HQ Floor 3,Vertical Transport,Joe (in-house),,,0
+2024,HQ Floor 3,Vertical Transport,PestPro Services,16122.86,,4
+2024,HQ Floor 3,Vertical Transport,maintenance team,8338.45,,1
+2024,HQ Floor 3,Vertical Transport,overnight crew,5775.86,,2
+2024,HQ Floor 3,Vertical Transport,vendor tech,6536.94,,6
+2024,HQ Floor 3,Vertical Transport,,30098.26,6.3,9
+2024,Main Office,Access & Security,ABC Mechanical,14229.23,,2
+2024,Main Office,Access & Security,CityWide Electric,31406.02,,6
+2024,Main Office,Access & Security,Joe (in-house),36348.15,7.7,9
+2024,Main Office,Access & Security,PestPro Services,13216.0,,4
+2024,Main Office,Access & Security,maintenance team,35726.24,,6
+2024,Main Office,Access & Security,overnight crew,28287.56,,1
+2024,Main Office,Access & Security,vendor tech,16925.64,,3
+2024,Main Office,Access & Security,,48738.72,15.2,12
+2024,Main Office,Electrical,ABC Mechanical,4089.91,,1
+2024,Main Office,Electrical,CityWide Electric,,,1
+2024,Main Office,Electrical,Joe (in-house),20030.6,,7
+2024,Main Office,Electrical,maintenance team,15595.7,5.5,8
+2024,Main Office,Electrical,overnight crew,28996.98,,5
+2024,Main Office,Electrical,vendor tech,5833.56,,4
+2024,Main Office,Electrical,,12113.59,6.6,10
+2024,Main Office,Fire & Safety,ABC Mechanical,17616.14,,3
+2024,Main Office,Fire & Safety,CityWide Electric,35107.76,5.3,4
+2024,Main Office,Fire & Safety,Joe (in-house),3747.04,,2
+2024,Main Office,Fire & Safety,PestPro Services,13727.81,,3
+2024,Main Office,Fire & Safety,maintenance team,160.11,,1
+2024,Main Office,Fire & Safety,overnight crew,,,2
+2024,Main Office,Fire & Safety,vendor tech,17566.24,,3
+2024,Main Office,Fire & Safety,,43913.58,,12
+2024,Main Office,General Maintenance,ABC Mechanical,7739.66,6.9,4
+2024,Main Office,General Maintenance,CityWide Electric,18839.16,,2
+2024,Main Office,General Maintenance,Joe (in-house),,,1
+2024,Main Office,General Maintenance,PestPro Services,4761.29,,1
+2024,Main Office,General Maintenance,maintenance team,10050.61,,1
+2024,Main Office,General Maintenance,,25548.25,4.9,5
+2024,Main Office,HVAC,ABC Mechanical,29514.93,,4
+2024,Main Office,HVAC,CityWide Electric,12200.81,,1
+2024,Main Office,HVAC,Joe (in-house),16426.72,,4
+2024,Main Office,HVAC,PestPro Services,8156.45,,5
+2024,Main Office,HVAC,maintenance team,16052.23,,2
+2024,Main Office,HVAC,overnight crew,34080.18,,5
+2024,Main Office,HVAC,vendor tech,4546.26,,5
+2024,Main Office,HVAC,,45903.44,1.5,13
+2024,Main Office,IT & Network,ABC Mechanical,,,1
+2024,Main Office,IT & Network,CityWide Electric,8072.95,6.1,3
+2024,Main Office,IT & Network,Joe (in-house),19218.83,,4
+2024,Main Office,IT & Network,PestPro Services,14858.74,,6
+2024,Main Office,IT & Network,maintenance team,13095.75,,2
+2024,Main Office,IT & Network,overnight crew,19118.06,,4
+2024,Main Office,IT & Network,vendor tech,10557.43,6.3,6
+2024,Main Office,IT & Network,,29728.09,,5
+2024,Main Office,Janitorial & Cleaning,ABC Mechanical,4713.99,,3
+2024,Main Office,Janitorial & Cleaning,CityWide Electric,3528.83,4.8,2
+2024,Main Office,Janitorial & Cleaning,Joe (in-house),8660.71,5.7,4
+2024,Main Office,Janitorial & Cleaning,PestPro Services,1473.23,,1
+2024,Main Office,Janitorial & Cleaning,maintenance team,12631.28,3.4,4
+2024,Main Office,Janitorial & Cleaning,overnight crew,11631.8,,3
+2024,Main Office,Janitorial & Cleaning,vendor tech,33740.5,,5
+2024,Main Office,Janitorial & Cleaning,,27227.91,7.8,14
+2024,Main Office,Pest Control,ABC Mechanical,14639.59,7.2,3
+2024,Main Office,Pest Control,CityWide Electric,34215.85,,3
+2024,Main Office,Pest Control,Joe (in-house),23640.27,6.9,3
+2024,Main Office,Pest Control,PestPro Services,12992.0,2.0,2
+2024,Main Office,Pest Control,maintenance team,23129.75,,4
+2024,Main Office,Pest Control,overnight crew,26979.78,,5
+2024,Main Office,Pest Control,vendor tech,5008.99,,3
+2024,Main Office,Pest Control,,74932.81,5.7,14
+2024,Main Office,Plumbing,ABC Mechanical,33588.9,,5
+2024,Main Office,Plumbing,CityWide Electric,44939.08,2.0,6
+2024,Main Office,Plumbing,Joe (in-house),25911.57,,6
+2024,Main Office,Plumbing,PestPro Services,16230.12,,2
+2024,Main Office,Plumbing,maintenance team,13868.89,,3
+2024,Main Office,Plumbing,overnight crew,15369.64,,3
+2024,Main Office,Plumbing,vendor tech,39185.96,3.1,9
+2024,Main Office,Plumbing,,33866.56,9.3,10
+2024,Main Office,Vertical Transport,ABC Mechanical,,,1
+2024,Main Office,Vertical Transport,Joe (in-house),10827.77,,3
+2024,Main Office,Vertical Transport,PestPro Services,23091.76,,3
+2024,Main Office,Vertical Transport,maintenance team,22132.44,,6
+2024,Main Office,Vertical Transport,overnight crew,673.0,,5
+2024,Main Office,Vertical Transport,vendor tech,20101.18,,8
+2024,Main Office,Vertical Transport,,23771.86,4.2,8
+2024,Parking Garage,Access & Security,ABC Mechanical,3943.51,,2
+2024,Parking Garage,Access & Security,CityWide Electric,18409.8,,3
+2024,Parking Garage,Access & Security,Joe (in-house),1112.17,,4
+2024,Parking Garage,Access & Security,PestPro Services,2747.01,6.5,2
+2024,Parking Garage,Access & Security,maintenance team,5014.48,,5
+2024,Parking Garage,Access & Security,overnight crew,10855.06,,3
+2024,Parking Garage,Access & Security,vendor tech,20552.74,,6
+2024,Parking Garage,Access & Security,,27200.1,0.7,10
+2024,Parking Garage,Electrical,ABC Mechanical,12257.38,,3
+2024,Parking Garage,Electrical,CityWide Electric,19651.6,,5
+2024,Parking Garage,Electrical,Joe (in-house),34398.86,,5
+2024,Parking Garage,Electrical,PestPro Services,,,1
+2024,Parking Garage,Electrical,maintenance team,19753.26,,4
+2024,Parking Garage,Electrical,overnight crew,22175.12,,2
+2024,Parking Garage,Electrical,vendor tech,25405.13,,4
+2024,Parking Garage,Electrical,,47645.52,,13
+2024,Parking Garage,Fire & Safety,ABC Mechanical,15987.04,,4
+2024,Parking Garage,Fire & Safety,CityWide Electric,3523.0,,2
+2024,Parking Garage,Fire & Safety,Joe (in-house),7371.0,8.0,3
+2024,Parking Garage,Fire & Safety,PestPro Services,42635.43,12.3,9
+2024,Parking Garage,Fire & Safety,maintenance team,10562.54,4.4,6
+2024,Parking Garage,Fire & Safety,overnight crew,33398.34,,6
+2024,Parking Garage,Fire & Safety,vendor tech,57026.62,,7
+2024,Parking Garage,Fire & Safety,,50735.05,9.8,9
+2024,Parking Garage,General Maintenance,ABC Mechanical,,,1
+2024,Parking Garage,General Maintenance,CityWide Electric,14915.15,,2
+2024,Parking Garage,General Maintenance,Joe (in-house),760.41,6.4,1
+2024,Parking Garage,General Maintenance,PestPro Services,2728.91,,1
+2024,Parking Garage,General Maintenance,maintenance team,,,1
+2024,Parking Garage,General Maintenance,overnight crew,166.0,,1
+2024,Parking Garage,General Maintenance,vendor tech,6659.28,,3
+2024,Parking Garage,General Maintenance,,13432.9,5.7,3
+2024,Parking Garage,HVAC,ABC Mechanical,6689.13,3.4,2
+2024,Parking Garage,HVAC,CityWide Electric,9055.51,1.1,3
+2024,Parking Garage,HVAC,Joe (in-house),3650.5,,4
+2024,Parking Garage,HVAC,PestPro Services,13877.74,,2
+2024,Parking Garage,HVAC,maintenance team,12424.64,,5
+2024,Parking Garage,HVAC,overnight crew,13290.21,,2
+2024,Parking Garage,HVAC,vendor tech,1861.56,,4
+2024,Parking Garage,HVAC,,36483.91,7.0,14
+2024,Parking Garage,IT & Network,ABC Mechanical,3638.06,,2
+2024,Parking Garage,IT & Network,Joe (in-house),4462.56,,3
+2024,Parking Garage,IT & Network,PestPro Services,19406.06,6.8,8
+2024,Parking Garage,IT & Network,maintenance team,27148.1,,5
+2024,Parking Garage,IT & Network,overnight crew,20744.87,8.4,5
+2024,Parking Garage,IT & Network,vendor tech,21256.91,0.6,8
+2024,Parking Garage,IT & Network,,59714.66,,16
+2024,Parking Garage,Janitorial & Cleaning,ABC Mechanical,32368.95,3.5,7
+2024,Parking Garage,Janitorial & Cleaning,CityWide Electric,13975.0,,2
+2024,Parking Garage,Janitorial & Cleaning,Joe (in-house),11455.96,,3
+2024,Parking Garage,Janitorial & Cleaning,PestPro Services,19614.67,,4
+2024,Parking Garage,Janitorial & Cleaning,maintenance team,,3.9,2
+2024,Parking Garage,Janitorial & Cleaning,overnight crew,27400.56,4.7,6
+2024,Parking Garage,Janitorial & Cleaning,vendor tech,2074.0,,2
+2024,Parking Garage,Janitorial & Cleaning,,11100.93,,8
+2024,Parking Garage,Pest Control,ABC Mechanical,0.0,,3
+2024,Parking Garage,Pest Control,CityWide Electric,41837.22,12.8,7
+2024,Parking Garage,Pest Control,Joe (in-house),18784.31,,3
+2024,Parking Garage,Pest Control,PestPro Services,11275.2,4.5,3
+2024,Parking Garage,Pest Control,maintenance team,3425.02,6.8,2
+2024,Parking Garage,Pest Control,overnight crew,10170.94,5.0,4
+2024,Parking Garage,Pest Control,vendor tech,11904.33,,3
+2024,Parking Garage,Pest Control,,23246.2,,10
+2024,Parking Garage,Plumbing,ABC Mechanical,2865.53,,4
+2024,Parking Garage,Plumbing,CityWide Electric,11743.93,,4
+2024,Parking Garage,Plumbing,Joe (in-house),1574.23,,5
+2024,Parking Garage,Plumbing,PestPro Services,12658.51,,3
+2024,Parking Garage,Plumbing,maintenance team,20915.6,,6
+2024,Parking Garage,Plumbing,overnight crew,7267.0,,3
+2024,Parking Garage,Plumbing,vendor tech,1637.81,7.1,1
+2024,Parking Garage,Plumbing,,38813.93,,10
+2024,Parking Garage,Vertical Transport,ABC Mechanical,12429.58,7.5,3
+2024,Parking Garage,Vertical Transport,CityWide Electric,22851.85,,4
+2024,Parking Garage,Vertical Transport,Joe (in-house),7000.34,4.3,3
+2024,Parking Garage,Vertical Transport,PestPro Services,11473.31,,1
+2024,Parking Garage,Vertical Transport,maintenance team,30755.31,,5
+2024,Parking Garage,Vertical Transport,overnight crew,7715.7,,3
+2024,Parking Garage,Vertical Transport,vendor tech,12081.33,,2
+2024,Parking Garage,Vertical Transport,,37639.81,,7
+2024,Remote Site Alpha,Access & Security,ABC Mechanical,22192.96,,4
+2024,Remote Site Alpha,Access & Security,CityWide Electric,4260.84,,3
+2024,Remote Site Alpha,Access & Security,Joe (in-house),30103.05,2.3,5
+2024,Remote Site Alpha,Access & Security,PestPro Services,28649.45,2.8,7
+2024,Remote Site Alpha,Access & Security,maintenance team,29394.27,0.7,6
+2024,Remote Site Alpha,Access & Security,overnight crew,23461.15,,4
+2024,Remote Site Alpha,Access & Security,vendor tech,4494.72,,5
+2024,Remote Site Alpha,Access & Security,,23466.71,11.0,6
+2024,Remote Site Alpha,Electrical,ABC Mechanical,45397.75,7.1,9
+2024,Remote Site Alpha,Electrical,CityWide Electric,22250.77,2.3,4
+2024,Remote Site Alpha,Electrical,Joe (in-house),34714.5,,7
+2024,Remote Site Alpha,Electrical,PestPro Services,24758.0,11.2,2
+2024,Remote Site Alpha,Electrical,overnight crew,26073.17,,2
+2024,Remote Site Alpha,Electrical,vendor tech,18374.34,,6
+2024,Remote Site Alpha,Electrical,,28299.22,3.6,10
+2024,Remote Site Alpha,Fire & Safety,ABC Mechanical,23816.98,,7
+2024,Remote Site Alpha,Fire & Safety,CityWide Electric,28045.83,1.7,5
+2024,Remote Site Alpha,Fire & Safety,Joe (in-house),26313.49,2.6,5
+2024,Remote Site Alpha,Fire & Safety,PestPro Services,15829.71,,5
+2024,Remote Site Alpha,Fire & Safety,maintenance team,12616.93,0.7,2
+2024,Remote Site Alpha,Fire & Safety,overnight crew,3238.39,,1
+2024,Remote Site Alpha,Fire & Safety,vendor tech,18621.02,0.9,4
+2024,Remote Site Alpha,Fire & Safety,,47827.06,5.9,11
+2024,Remote Site Alpha,General Maintenance,ABC Mechanical,23735.32,,3
+2024,Remote Site Alpha,General Maintenance,CityWide Electric,,,3
+2024,Remote Site Alpha,General Maintenance,Joe (in-house),33563.52,,5
+2024,Remote Site Alpha,General Maintenance,PestPro Services,9524.43,,1
+2024,Remote Site Alpha,General Maintenance,maintenance team,,,0
+2024,Remote Site Alpha,General Maintenance,overnight crew,,,1
+2024,Remote Site Alpha,General Maintenance,,41129.75,6.4,6
+2024,Remote Site Alpha,HVAC,ABC Mechanical,4970.63,,2
+2024,Remote Site Alpha,HVAC,CityWide Electric,15993.91,3.2,4
+2024,Remote Site Alpha,HVAC,Joe (in-house),10757.46,,5
+2024,Remote Site Alpha,HVAC,PestPro Services,18515.0,,3
+2024,Remote Site Alpha,HVAC,maintenance team,3725.15,7.7,2
+2024,Remote Site Alpha,HVAC,overnight crew,11042.62,3.7,3
+2024,Remote Site Alpha,HVAC,vendor tech,,,2
+2024,Remote Site Alpha,HVAC,,83204.28,,19
+2024,Remote Site Alpha,IT & Network,ABC Mechanical,7532.53,,4
+2024,Remote Site Alpha,IT & Network,CityWide Electric,40048.65,,5
+2024,Remote Site Alpha,IT & Network,Joe (in-house),7639.61,,3
+2024,Remote Site Alpha,IT & Network,PestPro Services,17170.72,,6
+2024,Remote Site Alpha,IT & Network,maintenance team,119.72,1.7,4
+2024,Remote Site Alpha,IT & Network,vendor tech,9450.39,,2
+2024,Remote Site Alpha,IT & Network,,60102.77,,13
+2024,Remote Site Alpha,Janitorial & Cleaning,ABC Mechanical,17270.15,,2
+2024,Remote Site Alpha,Janitorial & Cleaning,CityWide Electric,14214.36,0.6,2
+2024,Remote Site Alpha,Janitorial & Cleaning,Joe (in-house),35170.73,,7
+2024,Remote Site Alpha,Janitorial & Cleaning,PestPro Services,4075.68,,3
+2024,Remote Site Alpha,Janitorial & Cleaning,maintenance team,10199.76,,2
+2024,Remote Site Alpha,Janitorial & Cleaning,overnight crew,25101.54,,5
+2024,Remote Site Alpha,Janitorial & Cleaning,vendor tech,2949.1,,3
+2024,Remote Site Alpha,Janitorial & Cleaning,,89721.73,13.3,13
+2024,Remote Site Alpha,Pest Control,ABC Mechanical,9457.89,4.7,3
+2024,Remote Site Alpha,Pest Control,CityWide Electric,30664.39,,6
+2024,Remote Site Alpha,Pest Control,Joe (in-house),3952.0,,3
+2024,Remote Site Alpha,Pest Control,PestPro Services,7881.0,,5
+2024,Remote Site Alpha,Pest Control,maintenance team,16486.59,,3
+2024,Remote Site Alpha,Pest Control,overnight crew,4131.84,,5
+2024,Remote Site Alpha,Pest Control,vendor tech,23887.69,,3
+2024,Remote Site Alpha,Pest Control,,36304.51,1.5,10
+2024,Remote Site Alpha,Plumbing,ABC Mechanical,22990.43,,6
+2024,Remote Site Alpha,Plumbing,CityWide Electric,17313.88,5.5,5
+2024,Remote Site Alpha,Plumbing,Joe (in-house),,2.6,3
+2024,Remote Site Alpha,Plumbing,PestPro Services,9781.98,,2
+2024,Remote Site Alpha,Plumbing,maintenance team,26538.86,,8
+2024,Remote Site Alpha,Plumbing,overnight crew,4327.5,,1
+2024,Remote Site Alpha,Plumbing,vendor tech,2096.12,,3
+2024,Remote Site Alpha,Plumbing,,48845.35,8.9,12
+2024,Remote Site Alpha,Vertical Transport,ABC Mechanical,12738.31,,2
+2024,Remote Site Alpha,Vertical Transport,CityWide Electric,45880.46,,6
+2024,Remote Site Alpha,Vertical Transport,Joe (in-house),34742.92,,4
+2024,Remote Site Alpha,Vertical Transport,PestPro Services,13841.97,,4
+2024,Remote Site Alpha,Vertical Transport,maintenance team,4523.0,,2
+2024,Remote Site Alpha,Vertical Transport,overnight crew,3930.18,,5
+2024,Remote Site Alpha,Vertical Transport,vendor tech,15227.57,,2
+2024,Remote Site Alpha,Vertical Transport,,47863.93,,11
+2024,Remote Site Beta,Access & Security,ABC Mechanical,10406.64,3.9,4
+2024,Remote Site Beta,Access & Security,CityWide Electric,18875.93,,3
+2024,Remote Site Beta,Access & Security,Joe (in-house),2860.24,,2
+2024,Remote Site Beta,Access & Security,PestPro Services,28341.51,7.0,3
+2024,Remote Site Beta,Access & Security,maintenance team,30309.25,,7
+2024,Remote Site Beta,Access & Security,overnight crew,15148.04,,5
+2024,Remote Site Beta,Access & Security,vendor tech,29927.57,3.9,9
+2024,Remote Site Beta,Access & Security,,40007.94,2.6,11
+2024,Remote Site Beta,Electrical,ABC Mechanical,36443.97,4.3,6
+2024,Remote Site Beta,Electrical,CityWide Electric,37827.38,1.2,12
+2024,Remote Site Beta,Electrical,Joe (in-house),6844.53,5.9,2
+2024,Remote Site Beta,Electrical,PestPro Services,10556.39,,1
+2024,Remote Site Beta,Electrical,maintenance team,7836.22,7.2,4
+2024,Remote Site Beta,Electrical,overnight crew,8844.9,,2
+2024,Remote Site Beta,Electrical,vendor tech,22021.73,5.6,7
+2024,Remote Site Beta,Electrical,,44834.61,,10
+2024,Remote Site Beta,Fire & Safety,ABC Mechanical,16098.08,4.4,5
+2024,Remote Site Beta,Fire & Safety,CityWide Electric,11598.96,,3
+2024,Remote Site Beta,Fire & Safety,Joe (in-house),7735.12,,6
+2024,Remote Site Beta,Fire & Safety,PestPro Services,8822.76,0.9,1
+2024,Remote Site Beta,Fire & Safety,maintenance team,9536.71,,7
+2024,Remote Site Beta,Fire & Safety,overnight crew,21136.13,,6
+2024,Remote Site Beta,Fire & Safety,vendor tech,42348.92,,5
+2024,Remote Site Beta,Fire & Safety,,82030.43,7.6,16
+2024,Remote Site Beta,General Maintenance,ABC Mechanical,11814.37,,0
+2024,Remote Site Beta,General Maintenance,CityWide Electric,15288.09,,2
+2024,Remote Site Beta,General Maintenance,Joe (in-house),27095.02,3.8,4
+2024,Remote Site Beta,General Maintenance,PestPro Services,7092.0,,3
+2024,Remote Site Beta,General Maintenance,maintenance team,3147.63,,2
+2024,Remote Site Beta,General Maintenance,overnight crew,12712.05,7.1,4
+2024,Remote Site Beta,General Maintenance,vendor tech,13973.18,,2
+2024,Remote Site Beta,General Maintenance,,23879.84,,6
+2024,Remote Site Beta,HVAC,ABC Mechanical,3209.67,,2
+2024,Remote Site Beta,HVAC,CityWide Electric,15624.4,,5
+2024,Remote Site Beta,HVAC,Joe (in-house),42323.86,,8
+2024,Remote Site Beta,HVAC,PestPro Services,18455.79,4.5,3
+2024,Remote Site Beta,HVAC,maintenance team,19877.83,7.5,7
+2024,Remote Site Beta,HVAC,overnight crew,3266.0,,2
+2024,Remote Site Beta,HVAC,vendor tech,39021.19,3.8,6
+2024,Remote Site Beta,HVAC,,59561.17,,11
+2024,Remote Site Beta,IT & Network,ABC Mechanical,25538.69,,4
+2024,Remote Site Beta,IT & Network,CityWide Electric,2372.3,4.0,3
+2024,Remote Site Beta,IT & Network,Joe (in-house),20844.16,1.1,7
+2024,Remote Site Beta,IT & Network,PestPro Services,26321.01,1.7,4
+2024,Remote Site Beta,IT & Network,maintenance team,37785.74,10.2,9
+2024,Remote Site Beta,IT & Network,overnight crew,35311.12,,3
+2024,Remote Site Beta,IT & Network,vendor tech,9744.14,,3
+2024,Remote Site Beta,IT & Network,,35810.16,,14
+2024,Remote Site Beta,Janitorial & Cleaning,ABC Mechanical,1179.67,,5
+2024,Remote Site Beta,Janitorial & Cleaning,CityWide Electric,6184.43,,1
+2024,Remote Site Beta,Janitorial & Cleaning,PestPro Services,14600.76,,4
+2024,Remote Site Beta,Janitorial & Cleaning,maintenance team,21108.62,,5
+2024,Remote Site Beta,Janitorial & Cleaning,overnight crew,11171.46,,4
+2024,Remote Site Beta,Janitorial & Cleaning,vendor tech,5124.06,,2
+2024,Remote Site Beta,Janitorial & Cleaning,,42430.93,,13
+2024,Remote Site Beta,Pest Control,ABC Mechanical,23420.84,,6
+2024,Remote Site Beta,Pest Control,CityWide Electric,12435.12,,5
+2024,Remote Site Beta,Pest Control,Joe (in-house),10684.91,,3
+2024,Remote Site Beta,Pest Control,PestPro Services,14229.83,6.8,6
+2024,Remote Site Beta,Pest Control,maintenance team,,,1
+2024,Remote Site Beta,Pest Control,overnight crew,8903.91,7.4,3
+2024,Remote Site Beta,Pest Control,vendor tech,9061.98,,3
+2024,Remote Site Beta,Pest Control,,45894.44,12.1,12
+2024,Remote Site Beta,Plumbing,ABC Mechanical,4678.13,,2
+2024,Remote Site Beta,Plumbing,CityWide Electric,35719.62,1.4,5
+2024,Remote Site Beta,Plumbing,Joe (in-house),5129.8,7.6,5
+2024,Remote Site Beta,Plumbing,PestPro Services,13602.24,,4
+2024,Remote Site Beta,Plumbing,maintenance team,11553.81,,2
+2024,Remote Site Beta,Plumbing,overnight crew,14969.88,,4
+2024,Remote Site Beta,Plumbing,vendor tech,67825.28,,8
+2024,Remote Site Beta,Plumbing,,35438.35,3.2,11
+2024,Remote Site Beta,Vertical Transport,ABC Mechanical,11312.8,10.5,4
+2024,Remote Site Beta,Vertical Transport,CityWide Electric,27285.18,,3
+2024,Remote Site Beta,Vertical Transport,Joe (in-house),606.86,,1
+2024,Remote Site Beta,Vertical Transport,PestPro Services,10529.83,,3
+2024,Remote Site Beta,Vertical Transport,maintenance team,26555.13,1.1,6
+2024,Remote Site Beta,Vertical Transport,overnight crew,33207.14,1.5,5
+2024,Remote Site Beta,Vertical Transport,vendor tech,27509.94,4.2,3
+2024,Remote Site Beta,Vertical Transport,,44870.25,1.4,14
+2024,Tower A,Access & Security,ABC Mechanical,3262.33,,5
+2024,Tower A,Access & Security,CityWide Electric,18150.93,,4
+2024,Tower A,Access & Security,Joe (in-house),15813.8,,3
+2024,Tower A,Access & Security,PestPro Services,,,1
+2024,Tower A,Access & Security,maintenance team,,,2
+2024,Tower A,Access & Security,overnight crew,9797.44,3.2,5
+2024,Tower A,Access & Security,vendor tech,27434.26,,2
+2024,Tower A,Access & Security,,38627.27,8.1,15
+2024,Tower A,Electrical,ABC Mechanical,13943.44,,4
+2024,Tower A,Electrical,CityWide Electric,2323.0,,4
+2024,Tower A,Electrical,Joe (in-house),5810.2,,2
+2024,Tower A,Electrical,PestPro Services,,,1
+2024,Tower A,Electrical,maintenance team,18445.74,,4
+2024,Tower A,Electrical,overnight crew,30471.84,0.8,5
+2024,Tower A,Electrical,vendor tech,23326.14,,3
+2024,Tower A,Electrical,,48977.27,3.2,14
+2024,Tower A,Fire & Safety,ABC Mechanical,16499.91,,5
+2024,Tower A,Fire & Safety,CityWide Electric,14310.58,,3
+2024,Tower A,Fire & Safety,Joe (in-house),3381.36,,2
+2024,Tower A,Fire & Safety,PestPro Services,2244.0,,2
+2024,Tower A,Fire & Safety,maintenance team,6209.49,,3
+2024,Tower A,Fire & Safety,overnight crew,17085.44,4.7,2
+2024,Tower A,Fire & Safety,vendor tech,5013.65,,1
+2024,Tower A,Fire & Safety,,34640.55,,9
+2024,Tower A,General Maintenance,ABC Mechanical,0.0,,3
+2024,Tower A,General Maintenance,CityWide Electric,6623.59,,2
+2024,Tower A,General Maintenance,Joe (in-house),13941.38,,2
+2024,Tower A,General Maintenance,PestPro Services,1430.66,,1
+2024,Tower A,General Maintenance,maintenance team,1029.0,,2
+2024,Tower A,General Maintenance,overnight crew,0.0,,1
+2024,Tower A,General Maintenance,vendor tech,37311.69,,3
+2024,Tower A,General Maintenance,,2463.09,8.6,4
+2024,Tower A,HVAC,ABC Mechanical,,4.6,1
+2024,Tower A,HVAC,CityWide Electric,5972.23,2.6,3
+2024,Tower A,HVAC,Joe (in-house),1374.93,,1
+2024,Tower A,HVAC,PestPro Services,45058.48,7.0,5
+2024,Tower A,HVAC,maintenance team,4402.65,,2
+2024,Tower A,HVAC,overnight crew,3032.09,,1
+2024,Tower A,HVAC,vendor tech,10529.1,2.2,6
+2024,Tower A,HVAC,,34126.61,1.2,7
+2024,Tower A,IT & Network,ABC Mechanical,26545.88,,4
+2024,Tower A,IT & Network,CityWide Electric,15312.96,,4
+2024,Tower A,IT & Network,Joe (in-house),,,2
+2024,Tower A,IT & Network,PestPro Services,29094.74,,5
+2024,Tower A,IT & Network,maintenance team,1403.0,,2
+2024,Tower A,IT & Network,overnight crew,7794.28,4.8,4
+2024,Tower A,IT & Network,vendor tech,18942.18,3.5,5
+2024,Tower A,IT & Network,,35963.62,,17
+2024,Tower A,Janitorial & Cleaning,ABC Mechanical,23507.54,,4
+2024,Tower A,Janitorial & Cleaning,CityWide Electric,19470.08,7.9,5
+2024,Tower A,Janitorial & Cleaning,Joe (in-house),26817.99,,3
+2024,Tower A,Janitorial & Cleaning,PestPro Services,3697.38,7.2,7
+2024,Tower A,Janitorial & Cleaning,maintenance team,19133.64,5.8,5
+2024,Tower A,Janitorial & Cleaning,overnight crew,13689.32,7.7,5
+2024,Tower A,Janitorial & Cleaning,vendor tech,17819.36,4.3,2
+2024,Tower A,Janitorial & Cleaning,,92736.86,5.9,14
+2024,Tower A,Pest Control,CityWide Electric,11334.82,,1
+2024,Tower A,Pest Control,Joe (in-house),19309.98,,3
+2024,Tower A,Pest Control,PestPro Services,20445.21,,4
+2024,Tower A,Pest Control,maintenance team,10597.41,,2
+2024,Tower A,Pest Control,overnight crew,54829.35,6.4,10
+2024,Tower A,Pest Control,vendor tech,28870.49,,6
+2024,Tower A,Pest Control,,55166.56,,9
+2024,Tower A,Plumbing,ABC Mechanical,40698.77,,6
+2024,Tower A,Plumbing,CityWide Electric,11569.57,,5
+2024,Tower A,Plumbing,Joe (in-house),7862.73,,3
+2024,Tower A,Plumbing,PestPro Services,13664.57,3.0,4
+2024,Tower A,Plumbing,maintenance team,25310.93,,5
+2024,Tower A,Plumbing,overnight crew,23527.51,,6
+2024,Tower A,Plumbing,vendor tech,1647.78,1.3,2
+2024,Tower A,Plumbing,,13137.7,,3
+2024,Tower A,Vertical Transport,ABC Mechanical,6190.0,,3
+2024,Tower A,Vertical Transport,CityWide Electric,14575.67,,2
+2024,Tower A,Vertical Transport,Joe (in-house),15607.7,,1
+2024,Tower A,Vertical Transport,PestPro Services,11979.55,,3
+2024,Tower A,Vertical Transport,maintenance team,10694.9,,2
+2024,Tower A,Vertical Transport,overnight crew,26404.36,7.7,4
+2024,Tower A,Vertical Transport,vendor tech,32810.32,9.3,5
+2024,Tower A,Vertical Transport,,56463.48,,11
+2024,Tower B,Access & Security,ABC Mechanical,1836.96,,1
+2024,Tower B,Access & Security,CityWide Electric,2103.55,5.8,3
+2024,Tower B,Access & Security,Joe (in-house),14444.49,,6
+2024,Tower B,Access & Security,PestPro Services,22174.15,,4
+2024,Tower B,Access & Security,maintenance team,6290.0,,1
+2024,Tower B,Access & Security,overnight crew,11514.09,2.8,4
+2024,Tower B,Access & Security,vendor tech,9977.74,,1
+2024,Tower B,Access & Security,,14185.73,,9
+2024,Tower B,Electrical,ABC Mechanical,13161.02,,2
+2024,Tower B,Electrical,CityWide Electric,11372.85,,3
+2024,Tower B,Electrical,Joe (in-house),6898.76,6.3,5
+2024,Tower B,Electrical,PestPro Services,1082.97,,2
+2024,Tower B,Electrical,maintenance team,31761.08,,4
+2024,Tower B,Electrical,overnight crew,17972.98,8.3,4
+2024,Tower B,Electrical,vendor tech,10688.2,,2
+2024,Tower B,Electrical,,96786.29,4.2,20
+2024,Tower B,Fire & Safety,ABC Mechanical,9411.8,,3
+2024,Tower B,Fire & Safety,CityWide Electric,4342.84,5.2,3
+2024,Tower B,Fire & Safety,Joe (in-house),19495.1,1.1,4
+2024,Tower B,Fire & Safety,PestPro Services,0.0,,4
+2024,Tower B,Fire & Safety,maintenance team,12494.22,,4
+2024,Tower B,Fire & Safety,overnight crew,5741.5,,3
+2024,Tower B,Fire & Safety,vendor tech,11089.05,,3
+2024,Tower B,Fire & Safety,,36017.84,,5
+2024,Tower B,General Maintenance,ABC Mechanical,4994.74,,2
+2024,Tower B,General Maintenance,CityWide Electric,10191.51,,1
+2024,Tower B,General Maintenance,Joe (in-house),283.29,,1
+2024,Tower B,General Maintenance,overnight crew,2846.51,,2
+2024,Tower B,General Maintenance,vendor tech,1681.93,,2
+2024,Tower B,General Maintenance,,2221.13,2.6,5
+2024,Tower B,HVAC,ABC Mechanical,18486.14,,7
+2024,Tower B,HVAC,CityWide Electric,5561.0,0.9,5
+2024,Tower B,HVAC,Joe (in-house),1444.01,,1
+2024,Tower B,HVAC,PestPro Services,17101.43,,6
+2024,Tower B,HVAC,maintenance team,11217.86,,1
+2024,Tower B,HVAC,overnight crew,8098.0,,3
+2024,Tower B,HVAC,vendor tech,9356.01,,2
+2024,Tower B,HVAC,,55092.26,10.8,12
+2024,Tower B,IT & Network,ABC Mechanical,16376.25,,1
+2024,Tower B,IT & Network,CityWide Electric,,,1
+2024,Tower B,IT & Network,Joe (in-house),,7.9,2
+2024,Tower B,IT & Network,PestPro Services,12756.13,2.4,6
+2024,Tower B,IT & Network,maintenance team,7904.78,,6
+2024,Tower B,IT & Network,overnight crew,6153.38,1.3,2
+2024,Tower B,IT & Network,vendor tech,11603.98,,6
+2024,Tower B,IT & Network,,59627.45,,13
+2024,Tower B,Janitorial & Cleaning,ABC Mechanical,21818.29,13.6,7
+2024,Tower B,Janitorial & Cleaning,CityWide Electric,8048.51,,2
+2024,Tower B,Janitorial & Cleaning,Joe (in-house),15378.15,,2
+2024,Tower B,Janitorial & Cleaning,PestPro Services,19668.89,,4
+2024,Tower B,Janitorial & Cleaning,maintenance team,18811.44,,5
+2024,Tower B,Janitorial & Cleaning,overnight crew,,,3
+2024,Tower B,Janitorial & Cleaning,vendor tech,0.0,,3
+2024,Tower B,Janitorial & Cleaning,,52767.95,4.2,13
+2024,Tower B,Pest Control,ABC Mechanical,,5.1,3
+2024,Tower B,Pest Control,CityWide Electric,4966.51,5.7,3
+2024,Tower B,Pest Control,Joe (in-house),20006.06,,6
+2024,Tower B,Pest Control,PestPro Services,13663.73,,4
+2024,Tower B,Pest Control,maintenance team,0.0,,1
+2024,Tower B,Pest Control,overnight crew,20114.12,2.4,6
+2024,Tower B,Pest Control,,33697.0,2.5,10
+2024,Tower B,Plumbing,ABC Mechanical,19252.45,7.9,7
+2024,Tower B,Plumbing,CityWide Electric,25713.69,,5
+2024,Tower B,Plumbing,Joe (in-house),14321.93,4.2,5
+2024,Tower B,Plumbing,PestPro Services,19963.84,,5
+2024,Tower B,Plumbing,maintenance team,7997.59,,3
+2024,Tower B,Plumbing,overnight crew,19920.48,4.5,5
+2024,Tower B,Plumbing,,61831.23,2.6,15
+2024,Tower B,Vertical Transport,ABC Mechanical,26870.61,,7
+2024,Tower B,Vertical Transport,CityWide Electric,,,1
+2024,Tower B,Vertical Transport,Joe (in-house),19658.16,,4
+2024,Tower B,Vertical Transport,PestPro Services,16411.1,,5
+2024,Tower B,Vertical Transport,maintenance team,7976.59,3.5,7
+2024,Tower B,Vertical Transport,overnight crew,1133.78,3.9,3
+2024,Tower B,Vertical Transport,vendor tech,8812.65,5.5,3
+2024,Tower B,Vertical Transport,,30226.69,,5
+2024,Warehouse North,Access & Security,ABC Mechanical,16840.38,,2
+2024,Warehouse North,Access & Security,CityWide Electric,22254.3,,4
+2024,Warehouse North,Access & Security,Joe (in-house),15295.53,,5
+2024,Warehouse North,Access & Security,PestPro Services,12263.84,,4
+2024,Warehouse North,Access & Security,maintenance team,17004.28,,3
+2024,Warehouse North,Access & Security,overnight crew,14938.08,,2
+2024,Warehouse North,Access & Security,vendor tech,,,3
+2024,Warehouse North,Access & Security,,13649.39,,8
+2024,Warehouse North,Electrical,ABC Mechanical,911.77,,4
+2024,Warehouse North,Electrical,CityWide Electric,35548.87,,8
+2024,Warehouse North,Electrical,Joe (in-house),28564.0,1.7,5
+2024,Warehouse North,Electrical,PestPro Services,3404.71,,2
+2024,Warehouse North,Electrical,maintenance team,3294.49,5.2,1
+2024,Warehouse North,Electrical,overnight crew,7872.28,,6
+2024,Warehouse North,Electrical,vendor tech,33040.82,,4
+2024,Warehouse North,Electrical,,39876.4,,13
+2024,Warehouse North,Fire & Safety,ABC Mechanical,8326.04,,3
+2024,Warehouse North,Fire & Safety,CityWide Electric,21922.87,,5
+2024,Warehouse North,Fire & Safety,PestPro Services,12284.42,,3
+2024,Warehouse North,Fire & Safety,maintenance team,1912.21,,2
+2024,Warehouse North,Fire & Safety,overnight crew,15843.75,,2
+2024,Warehouse North,Fire & Safety,vendor tech,9910.71,3.6,4
+2024,Warehouse North,Fire & Safety,,75468.7,,18
+2024,Warehouse North,General Maintenance,ABC Mechanical,3058.09,,1
+2024,Warehouse North,General Maintenance,CityWide Electric,12894.61,,3
+2024,Warehouse North,General Maintenance,Joe (in-house),2643.86,,1
+2024,Warehouse North,General Maintenance,PestPro Services,922.17,,1
+2024,Warehouse North,General Maintenance,maintenance team,17349.18,,3
+2024,Warehouse North,General Maintenance,overnight crew,12984.42,,3
+2024,Warehouse North,General Maintenance,vendor tech,10689.26,,2
+2024,Warehouse North,General Maintenance,,13599.02,,6
+2024,Warehouse North,HVAC,ABC Mechanical,25572.15,,6
+2024,Warehouse North,HVAC,Joe (in-house),24504.12,,3
+2024,Warehouse North,HVAC,PestPro Services,10027.51,,5
+2024,Warehouse North,HVAC,maintenance team,,,1
+2024,Warehouse North,HVAC,overnight crew,17240.6,,3
+2024,Warehouse North,HVAC,vendor tech,26658.75,,6
+2024,Warehouse North,HVAC,,70864.88,12.9,16
+2024,Warehouse North,IT & Network,CityWide Electric,9491.0,3.3,2
+2024,Warehouse North,IT & Network,Joe (in-house),50933.85,,6
+2024,Warehouse North,IT & Network,PestPro Services,41642.45,,7
+2024,Warehouse North,IT & Network,maintenance team,20672.85,,3
+2024,Warehouse North,IT & Network,overnight crew,16438.18,,4
+2024,Warehouse North,IT & Network,vendor tech,12127.82,,3
+2024,Warehouse North,IT & Network,,66352.76,,12
+2024,Warehouse North,Janitorial & Cleaning,ABC Mechanical,7503.47,2.4,4
+2024,Warehouse North,Janitorial & Cleaning,CityWide Electric,1806.95,,4
+2024,Warehouse North,Janitorial & Cleaning,Joe (in-house),8244.61,,2
+2024,Warehouse North,Janitorial & Cleaning,PestPro Services,878.16,5.6,2
+2024,Warehouse North,Janitorial & Cleaning,maintenance team,32235.84,5.5,5
+2024,Warehouse North,Janitorial & Cleaning,overnight crew,,,1
+2024,Warehouse North,Janitorial & Cleaning,vendor tech,35994.7,0.6,5
+2024,Warehouse North,Janitorial & Cleaning,,32650.7,1.1,8
+2024,Warehouse North,Pest Control,ABC Mechanical,33562.01,,4
+2024,Warehouse North,Pest Control,CityWide Electric,11692.0,,2
+2024,Warehouse North,Pest Control,Joe (in-house),15090.92,,3
+2024,Warehouse North,Pest Control,PestPro Services,10812.87,1.6,5
+2024,Warehouse North,Pest Control,maintenance team,33089.45,,7
+2024,Warehouse North,Pest Control,overnight crew,29369.36,,5
+2024,Warehouse North,Pest Control,vendor tech,12854.29,8.4,3
+2024,Warehouse North,Pest Control,,59131.69,,10
+2024,Warehouse North,Plumbing,ABC Mechanical,0.0,,2
+2024,Warehouse North,Plumbing,CityWide Electric,14093.89,2.2,3
+2024,Warehouse North,Plumbing,Joe (in-house),282.0,,4
+2024,Warehouse North,Plumbing,PestPro Services,21408.6,7.3,4
+2024,Warehouse North,Plumbing,maintenance team,3891.68,,2
+2024,Warehouse North,Plumbing,overnight crew,9894.0,,5
+2024,Warehouse North,Plumbing,vendor tech,26822.97,,4
+2024,Warehouse North,Plumbing,,56036.44,,9
+2024,Warehouse North,Vertical Transport,ABC Mechanical,11911.34,,2
+2024,Warehouse North,Vertical Transport,CityWide Electric,3411.0,,5
+2024,Warehouse North,Vertical Transport,Joe (in-house),10303.21,,7
+2024,Warehouse North,Vertical Transport,PestPro Services,,1.4,1
+2024,Warehouse North,Vertical Transport,maintenance team,42373.06,,6
+2024,Warehouse North,Vertical Transport,overnight crew,20202.04,,5
+2024,Warehouse North,Vertical Transport,vendor tech,,,1
+2024,Warehouse North,Vertical Transport,,50233.4,,10
+2024,Warehouse South,Access & Security,ABC Mechanical,6923.08,,3
+2024,Warehouse South,Access & Security,CityWide Electric,5138.3,,2
+2024,Warehouse South,Access & Security,Joe (in-house),32354.51,,7
+2024,Warehouse South,Access & Security,PestPro Services,2144.77,,1
+2024,Warehouse South,Access & Security,maintenance team,23729.6,,5
+2024,Warehouse South,Access & Security,overnight crew,45380.78,5.5,6
+2024,Warehouse South,Access & Security,vendor tech,20613.28,3.1,3
+2024,Warehouse South,Access & Security,,37760.18,4.4,8
+2024,Warehouse South,Electrical,ABC Mechanical,10968.52,,5
+2024,Warehouse South,Electrical,CityWide Electric,31957.82,7.4,6
+2024,Warehouse South,Electrical,Joe (in-house),34967.74,7.7,4
+2024,Warehouse South,Electrical,PestPro Services,17793.41,,3
+2024,Warehouse South,Electrical,maintenance team,23863.74,,6
+2024,Warehouse South,Electrical,overnight crew,9283.67,,0
+2024,Warehouse South,Electrical,vendor tech,4165.09,,2
+2024,Warehouse South,Electrical,,18909.69,,9
+2024,Warehouse South,Fire & Safety,ABC Mechanical,29874.92,,4
+2024,Warehouse South,Fire & Safety,CityWide Electric,,,1
+2024,Warehouse South,Fire & Safety,Joe (in-house),5814.0,,5
+2024,Warehouse South,Fire & Safety,PestPro Services,13090.64,4.4,5
+2024,Warehouse South,Fire & Safety,maintenance team,20482.52,,7
+2024,Warehouse South,Fire & Safety,overnight crew,17226.73,,5
+2024,Warehouse South,Fire & Safety,vendor tech,4162.47,,4
+2024,Warehouse South,Fire & Safety,,29216.36,,7
+2024,Warehouse South,General Maintenance,ABC Mechanical,18267.07,,3
+2024,Warehouse South,General Maintenance,maintenance team,4294.21,,1
+2024,Warehouse South,General Maintenance,overnight crew,,,1
+2024,Warehouse South,General Maintenance,vendor tech,,,0
+2024,Warehouse South,General Maintenance,,27703.56,7.1,8
+2024,Warehouse South,HVAC,ABC Mechanical,16739.24,,2
+2024,Warehouse South,HVAC,CityWide Electric,26782.88,6.6,7
+2024,Warehouse South,HVAC,Joe (in-house),21363.94,7.0,6
+2024,Warehouse South,HVAC,PestPro Services,1140.23,,1
+2024,Warehouse South,HVAC,maintenance team,31007.84,,5
+2024,Warehouse South,HVAC,overnight crew,20163.96,,4
+2024,Warehouse South,HVAC,vendor tech,945.0,,4
+2024,Warehouse South,HVAC,,18915.09,5.7,5
+2024,Warehouse South,IT & Network,ABC Mechanical,3070.22,,2
+2024,Warehouse South,IT & Network,CityWide Electric,6610.0,,1
+2024,Warehouse South,IT & Network,Joe (in-house),10443.2,,7
+2024,Warehouse South,IT & Network,PestPro Services,20553.52,,5
+2024,Warehouse South,IT & Network,maintenance team,19290.05,,2
+2024,Warehouse South,IT & Network,overnight crew,26107.42,,6
+2024,Warehouse South,IT & Network,vendor tech,10429.37,,2
+2024,Warehouse South,IT & Network,,70173.68,,16
+2024,Warehouse South,Janitorial & Cleaning,ABC Mechanical,13290.4,,1
+2024,Warehouse South,Janitorial & Cleaning,CityWide Electric,12117.26,5.2,3
+2024,Warehouse South,Janitorial & Cleaning,Joe (in-house),4217.09,7.4,4
+2024,Warehouse South,Janitorial & Cleaning,PestPro Services,,,2
+2024,Warehouse South,Janitorial & Cleaning,maintenance team,,3.5,2
+2024,Warehouse South,Janitorial & Cleaning,overnight crew,17425.78,,2
+2024,Warehouse South,Janitorial & Cleaning,vendor tech,27221.76,,6
+2024,Warehouse South,Janitorial & Cleaning,,15895.37,,4
+2024,Warehouse South,Pest Control,ABC Mechanical,6868.0,,1
+2024,Warehouse South,Pest Control,CityWide Electric,43558.6,,5
+2024,Warehouse South,Pest Control,Joe (in-house),12709.93,0.7,3
+2024,Warehouse South,Pest Control,PestPro Services,21531.5,,4
+2024,Warehouse South,Pest Control,maintenance team,,,1
+2024,Warehouse South,Pest Control,overnight crew,15879.36,,3
+2024,Warehouse South,Pest Control,vendor tech,9291.53,2.9,3
+2024,Warehouse South,Pest Control,,51612.38,9.3,14
+2024,Warehouse South,Plumbing,ABC Mechanical,12947.78,,2
+2024,Warehouse South,Plumbing,CityWide Electric,11485.53,0.6,2
+2024,Warehouse South,Plumbing,Joe (in-house),11415.94,,5
+2024,Warehouse South,Plumbing,PestPro Services,16858.02,4.2,4
+2024,Warehouse South,Plumbing,maintenance team,9701.0,,1
+2024,Warehouse South,Plumbing,overnight crew,10602.69,,5
+2024,Warehouse South,Plumbing,vendor tech,15686.19,,3
+2024,Warehouse South,Plumbing,,75224.54,3.3,14
+2024,Warehouse South,Vertical Transport,ABC Mechanical,17470.77,,3
+2024,Warehouse South,Vertical Transport,CityWide Electric,23135.78,,2
+2024,Warehouse South,Vertical Transport,Joe (in-house),,,2
+2024,Warehouse South,Vertical Transport,PestPro Services,3749.5,,2
+2024,Warehouse South,Vertical Transport,maintenance team,7555.63,,1
+2024,Warehouse South,Vertical Transport,overnight crew,17444.8,,5
+2024,Warehouse South,Vertical Transport,vendor tech,16783.29,,2
+2024,Warehouse South,Vertical Transport,,8377.42,,8
+2025,Annex East,Access & Security,ABC Mechanical,8624.38,,1
+2025,Annex East,Access & Security,CityWide Electric,5586.0,,1
+2025,Annex East,Access & Security,Joe (in-house),2251.87,,1
+2025,Annex East,Access & Security,PestPro Services,28142.94,,2
+2025,Annex East,Access & Security,maintenance team,14809.61,,3
+2025,Annex East,Access & Security,overnight crew,41267.66,,3
+2025,Annex East,Access & Security,vendor tech,13056.27,,2
+2025,Annex East,Access & Security,,13512.2,,7
+2025,Annex East,Electrical,CityWide Electric,13062.14,,3
+2025,Annex East,Electrical,Joe (in-house),24673.69,7.1,5
+2025,Annex East,Electrical,PestPro Services,,,1
+2025,Annex East,Electrical,maintenance team,10609.05,,2
+2025,Annex East,Electrical,overnight crew,,,3
+2025,Annex East,Electrical,vendor tech,14931.29,,3
+2025,Annex East,Electrical,,22173.9,,5
+2025,Annex East,Fire & Safety,ABC Mechanical,2227.25,,1
+2025,Annex East,Fire & Safety,Joe (in-house),,4.0,1
+2025,Annex East,Fire & Safety,PestPro Services,3794.85,,1
+2025,Annex East,Fire & Safety,maintenance team,25030.52,,4
+2025,Annex East,Fire & Safety,overnight crew,3127.58,,1
+2025,Annex East,Fire & Safety,vendor tech,11519.05,,2
+2025,Annex East,Fire & Safety,,5454.31,4.6,5
+2025,Annex East,General Maintenance,CityWide Electric,,,1
+2025,Annex East,General Maintenance,Joe (in-house),,,0
+2025,Annex East,General Maintenance,PestPro Services,3403.13,,1
+2025,Annex East,General Maintenance,maintenance team,9399.85,,0
+2025,Annex East,General Maintenance,overnight crew,6976.21,,1
+2025,Annex East,HVAC,ABC Mechanical,5182.0,,1
+2025,Annex East,HVAC,CityWide Electric,7347.16,,2
+2025,Annex East,HVAC,PestPro Services,7522.21,,0
+2025,Annex East,HVAC,overnight crew,11318.9,,3
+2025,Annex East,HVAC,vendor tech,8409.38,,2
+2025,Annex East,HVAC,,34988.38,5.2,7
+2025,Annex East,IT & Network,ABC Mechanical,11953.38,,4
+2025,Annex East,IT & Network,CityWide Electric,,,1
+2025,Annex East,IT & Network,Joe (in-house),6155.51,,3
+2025,Annex East,IT & Network,PestPro Services,6878.58,,2
+2025,Annex East,IT & Network,maintenance team,,,1
+2025,Annex East,IT & Network,overnight crew,1889.0,,1
+2025,Annex East,IT & Network,,18484.24,,5
+2025,Annex East,Janitorial & Cleaning,ABC Mechanical,6072.77,,1
+2025,Annex East,Janitorial & Cleaning,CityWide Electric,12517.97,,5
+2025,Annex East,Janitorial & Cleaning,Joe (in-house),15966.95,,4
+2025,Annex East,Janitorial & Cleaning,PestPro Services,,,1
+2025,Annex East,Janitorial & Cleaning,maintenance team,7402.0,,1
+2025,Annex East,Janitorial & Cleaning,vendor tech,4949.93,,2
+2025,Annex East,Janitorial & Cleaning,,26779.1,6.8,3
+2025,Annex East,Pest Control,ABC Mechanical,4315.7,3.0,1
+2025,Annex East,Pest Control,CityWide Electric,16350.11,,2
+2025,Annex East,Pest Control,Joe (in-house),,,1
+2025,Annex East,Pest Control,PestPro Services,,,1
+2025,Annex East,Pest Control,maintenance team,,,1
+2025,Annex East,Pest Control,overnight crew,22946.01,,4
+2025,Annex East,Pest Control,vendor tech,9228.0,,1
+2025,Annex East,Pest Control,,55579.06,2.5,9
+2025,Annex East,Plumbing,ABC Mechanical,0.0,,2
+2025,Annex East,Plumbing,CityWide Electric,,,1
+2025,Annex East,Plumbing,Joe (in-house),8906.03,,2
+2025,Annex East,Plumbing,PestPro Services,29147.1,,4
+2025,Annex East,Plumbing,maintenance team,5327.38,,1
+2025,Annex East,Plumbing,overnight crew,4949.37,,3
+2025,Annex East,Plumbing,vendor tech,9875.0,,1
+2025,Annex East,Plumbing,,36501.42,,8
+2025,Annex East,Vertical Transport,ABC Mechanical,15906.63,,2
+2025,Annex East,Vertical Transport,CityWide Electric,13628.77,9.3,4
+2025,Annex East,Vertical Transport,Joe (in-house),5722.74,,0
+2025,Annex East,Vertical Transport,PestPro Services,14940.58,,1
+2025,Annex East,Vertical Transport,maintenance team,1280.19,,2
+2025,Annex East,Vertical Transport,overnight crew,2648.96,,1
+2025,Annex East,Vertical Transport,vendor tech,1788.84,,1
+2025,Annex East,Vertical Transport,,6851.91,,6
+2025,Annex West,Access & Security,ABC Mechanical,10892.49,,2
+2025,Annex West,Access & Security,CityWide Electric,8815.82,,2
+2025,Annex West,Access & Security,Joe (in-house),13474.43,,2
+2025,Annex West,Access & Security,PestPro Services,2724.59,,2
+2025,Annex West,Access & Security,maintenance team,,,1
+2025,Annex West,Access & Security,overnight crew,9528.88,1.6,2
+2025,Annex West,Access & Security,,15931.71,,4
+2025,Annex West,Electrical,ABC Mechanical,0.0,,2
+2025,Annex West,Electrical,CityWide Electric,11055.67,,1
+2025,Annex West,Electrical,Joe (in-house),13316.13,,4
+2025,Annex West,Electrical,maintenance team,10626.92,1.5,3
+2025,Annex West,Electrical,overnight crew,419.1,,3
+2025,Annex West,Electrical,vendor tech,,,0
+2025,Annex West,Electrical,,620.75,,1
+2025,Annex West,Fire & Safety,ABC Mechanical,20754.43,5.2,3
+2025,Annex West,Fire & Safety,CityWide Electric,19053.95,,2
+2025,Annex West,Fire & Safety,Joe (in-house),,,2
+2025,Annex West,Fire & Safety,PestPro Services,16677.49,,3
+2025,Annex West,Fire & Safety,maintenance team,4316.71,,1
+2025,Annex West,Fire & Safety,overnight crew,9552.26,,2
+2025,Annex West,Fire & Safety,vendor tech,17265.44,,4
+2025,Annex West,Fire & Safety,,34059.36,,5
+2025,Annex West,General Maintenance,ABC Mechanical,8475.23,,2
+2025,Annex West,General Maintenance,CityWide Electric,,,1
+2025,Annex West,General Maintenance,Joe (in-house),4930.37,,1
+2025,Annex West,General Maintenance,PestPro Services,,,1
+2025,Annex West,General Maintenance,maintenance team,13766.45,,1
+2025,Annex West,General Maintenance,vendor tech,,,1
+2025,Annex West,General Maintenance,,3078.17,,1
+2025,Annex West,HVAC,ABC Mechanical,10771.19,,2
+2025,Annex West,HVAC,Joe (in-house),,2.0,1
+2025,Annex West,HVAC,PestPro Services,,3.6,1
+2025,Annex West,HVAC,maintenance team,2810.67,7.1,2
+2025,Annex West,HVAC,overnight crew,3202.56,,1
+2025,Annex West,HVAC,vendor tech,1422.95,,2
+2025,Annex West,HVAC,,27594.97,,5
+2025,Annex West,IT & Network,CityWide Electric,11444.63,,2
+2025,Annex West,IT & Network,Joe (in-house),,,1
+2025,Annex West,IT & Network,PestPro Services,11017.27,,3
+2025,Annex West,IT & Network,maintenance team,3555.72,,2
+2025,Annex West,IT & Network,overnight crew,,,1
+2025,Annex West,IT & Network,vendor tech,19098.81,,6
+2025,Annex West,IT & Network,,21582.73,,3
+2025,Annex West,Janitorial & Cleaning,ABC Mechanical,3749.48,,1
+2025,Annex West,Janitorial & Cleaning,CityWide Electric,,,1
+2025,Annex West,Janitorial & Cleaning,Joe (in-house),19253.92,,1
+2025,Annex West,Janitorial & Cleaning,PestPro Services,,,1
+2025,Annex West,Janitorial & Cleaning,maintenance team,33119.32,5.4,6
+2025,Annex West,Janitorial & Cleaning,overnight crew,,,1
+2025,Annex West,Janitorial & Cleaning,vendor tech,,,2
+2025,Annex West,Janitorial & Cleaning,,2962.05,5.4,4
+2025,Annex West,Pest Control,ABC Mechanical,1679.0,,2
+2025,Annex West,Pest Control,CityWide Electric,5239.0,,1
+2025,Annex West,Pest Control,Joe (in-house),1918.0,,1
+2025,Annex West,Pest Control,PestPro Services,20833.42,1.8,2
+2025,Annex West,Pest Control,maintenance team,18642.26,2.3,2
+2025,Annex West,Pest Control,vendor tech,16120.3,8.4,3
+2025,Annex West,Pest Control,,2856.55,,3
+2025,Annex West,Plumbing,ABC Mechanical,1681.13,,2
+2025,Annex West,Plumbing,CityWide Electric,11086.4,1.0,4
+2025,Annex West,Plumbing,Joe (in-house),0.0,,2
+2025,Annex West,Plumbing,PestPro Services,189.25,,2
+2025,Annex West,Plumbing,overnight crew,7997.0,,3
+2025,Annex West,Plumbing,vendor tech,16080.58,,3
+2025,Annex West,Plumbing,,39438.65,,7
+2025,Annex West,Vertical Transport,ABC Mechanical,17706.36,,4
+2025,Annex West,Vertical Transport,CityWide Electric,,,2
+2025,Annex West,Vertical Transport,Joe (in-house),7821.0,,2
+2025,Annex West,Vertical Transport,PestPro Services,5293.71,,2
+2025,Annex West,Vertical Transport,maintenance team,7677.42,,1
+2025,Annex West,Vertical Transport,overnight crew,2922.66,,2
+2025,Annex West,Vertical Transport,vendor tech,7781.26,,3
+2025,Annex West,Vertical Transport,,6245.66,1.7,4
+2025,Building 3,Access & Security,ABC Mechanical,1253.79,,3
+2025,Building 3,Access & Security,CityWide Electric,15680.71,,2
+2025,Building 3,Access & Security,Joe (in-house),,,1
+2025,Building 3,Access & Security,PestPro Services,1805.43,,3
+2025,Building 3,Access & Security,maintenance team,4764.84,,2
+2025,Building 3,Access & Security,overnight crew,2357.86,,1
+2025,Building 3,Access & Security,vendor tech,4653.83,,1
+2025,Building 3,Access & Security,,11879.63,,3
+2025,Building 3,Electrical,ABC Mechanical,,,1
+2025,Building 3,Electrical,CityWide Electric,8781.96,,2
+2025,Building 3,Electrical,Joe (in-house),14343.77,,4
+2025,Building 3,Electrical,PestPro Services,36631.84,,6
+2025,Building 3,Electrical,maintenance team,701.03,,2
+2025,Building 3,Electrical,overnight crew,23029.73,4.8,4
+2025,Building 3,Electrical,vendor tech,13554.35,,3
+2025,Building 3,Electrical,,27897.58,4.1,6
+2025,Building 3,Fire & Safety,ABC Mechanical,11597.88,1.2,1
+2025,Building 3,Fire & Safety,CityWide Electric,,3.9,1
+2025,Building 3,Fire & Safety,Joe (in-house),,,3
+2025,Building 3,Fire & Safety,PestPro Services,16219.32,,4
+2025,Building 3,Fire & Safety,maintenance team,,,1
+2025,Building 3,Fire & Safety,overnight crew,17509.6,,2
+2025,Building 3,Fire & Safety,vendor tech,14505.46,,4
+2025,Building 3,Fire & Safety,,0.0,,2
+2025,Building 3,General Maintenance,ABC Mechanical,3058.08,,2
+2025,Building 3,General Maintenance,PestPro Services,14570.0,,1
+2025,Building 3,General Maintenance,maintenance team,11912.3,5.2,1
+2025,Building 3,General Maintenance,overnight crew,10359.87,,1
+2025,Building 3,General Maintenance,,8466.08,7.1,3
+2025,Building 3,HVAC,ABC Mechanical,7302.26,,2
+2025,Building 3,HVAC,CityWide Electric,,,1
+2025,Building 3,HVAC,Joe (in-house),14459.32,,2
+2025,Building 3,HVAC,PestPro Services,16768.85,,3
+2025,Building 3,HVAC,maintenance team,7084.72,,2
+2025,Building 3,HVAC,vendor tech,,,3
+2025,Building 3,HVAC,,3656.86,,3
+2025,Building 3,IT & Network,ABC Mechanical,17027.73,,3
+2025,Building 3,IT & Network,CityWide Electric,,,1
+2025,Building 3,IT & Network,Joe (in-house),6147.49,,2
+2025,Building 3,IT & Network,PestPro Services,14402.62,,2
+2025,Building 3,IT & Network,maintenance team,,,1
+2025,Building 3,IT & Network,overnight crew,,,1
+2025,Building 3,IT & Network,vendor tech,,,1
+2025,Building 3,IT & Network,,37134.86,6.9,10
+2025,Building 3,Janitorial & Cleaning,ABC Mechanical,3502.0,,1
+2025,Building 3,Janitorial & Cleaning,CityWide Electric,931.43,,2
+2025,Building 3,Janitorial & Cleaning,Joe (in-house),14284.22,,3
+2025,Building 3,Janitorial & Cleaning,PestPro Services,,,1
+2025,Building 3,Janitorial & Cleaning,overnight crew,23114.46,,2
+2025,Building 3,Janitorial & Cleaning,,17195.77,,3
+2025,Building 3,Pest Control,ABC Mechanical,3564.03,2.4,5
+2025,Building 3,Pest Control,CityWide Electric,2565.78,3.6,4
+2025,Building 3,Pest Control,Joe (in-house),9428.0,,1
+2025,Building 3,Pest Control,PestPro Services,9801.0,,4
+2025,Building 3,Pest Control,maintenance team,,,1
+2025,Building 3,Pest Control,overnight crew,1580.0,,1
+2025,Building 3,Pest Control,vendor tech,,,1
+2025,Building 3,Pest Control,,35692.47,6.4,9
+2025,Building 3,Plumbing,ABC Mechanical,7416.08,4.6,3
+2025,Building 3,Plumbing,CityWide Electric,,,1
+2025,Building 3,Plumbing,Joe (in-house),795.68,,1
+2025,Building 3,Plumbing,PestPro Services,1675.82,,1
+2025,Building 3,Plumbing,maintenance team,1063.58,,3
+2025,Building 3,Plumbing,vendor tech,9089.79,,1
+2025,Building 3,Plumbing,,50884.95,5.7,6
+2025,Building 3,Vertical Transport,ABC Mechanical,1363.26,,1
+2025,Building 3,Vertical Transport,CityWide Electric,25996.47,,4
+2025,Building 3,Vertical Transport,Joe (in-house),2293.17,,1
+2025,Building 3,Vertical Transport,PestPro Services,11482.02,,3
+2025,Building 3,Vertical Transport,maintenance team,0.0,,2
+2025,Building 3,Vertical Transport,overnight crew,4804.11,,1
+2025,Building 3,Vertical Transport,vendor tech,10486.87,6.0,2
+2025,Building 3,Vertical Transport,,46929.84,5.0,8
+2025,Building 7,Access & Security,ABC Mechanical,4432.14,,1
+2025,Building 7,Access & Security,CityWide Electric,19010.39,,2
+2025,Building 7,Access & Security,PestPro Services,27718.69,1.9,5
+2025,Building 7,Access & Security,maintenance team,12647.12,5.5,2
+2025,Building 7,Access & Security,overnight crew,7423.99,5.2,2
+2025,Building 7,Access & Security,vendor tech,,7.8,1
+2025,Building 7,Access & Security,,42590.76,,5
+2025,Building 7,Electrical,ABC Mechanical,,4.7,2
+2025,Building 7,Electrical,CityWide Electric,5553.0,,1
+2025,Building 7,Electrical,Joe (in-house),9988.0,,2
+2025,Building 7,Electrical,PestPro Services,,,1
+2025,Building 7,Electrical,maintenance team,15616.12,,3
+2025,Building 7,Electrical,overnight crew,1941.47,,1
+2025,Building 7,Electrical,vendor tech,11936.19,,3
+2025,Building 7,Electrical,,23632.31,,5
+2025,Building 7,Fire & Safety,ABC Mechanical,,,1
+2025,Building 7,Fire & Safety,CityWide Electric,3804.1,,1
+2025,Building 7,Fire & Safety,Joe (in-house),,,1
+2025,Building 7,Fire & Safety,maintenance team,1252.0,,1
+2025,Building 7,Fire & Safety,overnight crew,14743.85,,3
+2025,Building 7,Fire & Safety,vendor tech,,6.4,3
+2025,Building 7,Fire & Safety,,16479.87,,3
+2025,Building 7,General Maintenance,ABC Mechanical,,,1
+2025,Building 7,General Maintenance,CityWide Electric,0.0,,2
+2025,Building 7,General Maintenance,Joe (in-house),0.0,,3
+2025,Building 7,General Maintenance,maintenance team,6098.44,,1
+2025,Building 7,General Maintenance,vendor tech,6134.0,,1
+2025,Building 7,General Maintenance,,7715.76,,2
+2025,Building 7,HVAC,ABC Mechanical,11938.94,,4
+2025,Building 7,HVAC,CityWide Electric,,,1
+2025,Building 7,HVAC,Joe (in-house),11030.81,,4
+2025,Building 7,HVAC,PestPro Services,0.0,,1
+2025,Building 7,HVAC,maintenance team,,,2
+2025,Building 7,HVAC,overnight crew,17528.82,,2
+2025,Building 7,HVAC,vendor tech,9429.27,,1
+2025,Building 7,HVAC,,32346.49,1.9,10
+2025,Building 7,IT & Network,ABC Mechanical,156.88,,3
+2025,Building 7,IT & Network,CityWide Electric,,,1
+2025,Building 7,IT & Network,Joe (in-house),18499.18,5.6,3
+2025,Building 7,IT & Network,PestPro Services,20761.04,,3
+2025,Building 7,IT & Network,maintenance team,,,0
+2025,Building 7,IT & Network,overnight crew,433.18,,1
+2025,Building 7,IT & Network,vendor tech,8958.14,5.4,1
+2025,Building 7,IT & Network,,6874.29,,7
+2025,Building 7,Janitorial & Cleaning,CityWide Electric,14468.87,,2
+2025,Building 7,Janitorial & Cleaning,Joe (in-house),,,1
+2025,Building 7,Janitorial & Cleaning,PestPro Services,,,0
+2025,Building 7,Janitorial & Cleaning,maintenance team,4892.74,,1
+2025,Building 7,Janitorial & Cleaning,overnight crew,12984.91,,1
+2025,Building 7,Janitorial & Cleaning,,4455.32,,3
+2025,Building 7,Pest Control,ABC Mechanical,14235.83,,3
+2025,Building 7,Pest Control,CityWide Electric,4612.0,,1
+2025,Building 7,Pest Control,Joe (in-house),18363.44,9.1,3
+2025,Building 7,Pest Control,maintenance team,2789.74,,2
+2025,Building 7,Pest Control,overnight crew,8234.0,,1
+2025,Building 7,Pest Control,vendor tech,1447.0,,1
+2025,Building 7,Pest Control,,39236.87,3.3,11
+2025,Building 7,Plumbing,ABC Mechanical,17086.48,,4
+2025,Building 7,Plumbing,CityWide Electric,12288.98,,2
+2025,Building 7,Plumbing,PestPro Services,14252.76,,1
+2025,Building 7,Plumbing,maintenance team,431.17,,1
+2025,Building 7,Plumbing,overnight crew,2397.18,5.2,4
+2025,Building 7,Plumbing,,6896.63,9.1,7
+2025,Building 7,Vertical Transport,ABC Mechanical,,,1
+2025,Building 7,Vertical Transport,CityWide Electric,8239.0,,0
+2025,Building 7,Vertical Transport,Joe (in-house),7864.81,,1
+2025,Building 7,Vertical Transport,PestPro Services,6123.48,,1
+2025,Building 7,Vertical Transport,overnight crew,22110.99,,3
+2025,Building 7,Vertical Transport,vendor tech,12597.7,3.1,4
+2025,Building 7,Vertical Transport,,14050.99,,3
+2025,Cafeteria Block,Access & Security,ABC Mechanical,11550.23,,1
+2025,Cafeteria Block,Access & Security,CityWide Electric,9521.54,,2
+2025,Cafeteria Block,Access & Security,Joe (in-house),,1.8,2
+2025,Cafeteria Block,Access & Security,PestPro Services,13115.67,,2
+2025,Cafeteria Block,Access & Security,maintenance team,21833.57,,2
+2025,Cafeteria Block,Access & Security,overnight crew,4330.56,,1
+2025,Cafeteria Block,Access & Security,vendor tech,7671.15,,3
+2025,Cafeteria Block,Access & Security,,29917.89,,7
+2025,Cafeteria Block,Electrical,ABC Mechanical,7458.0,,1
+2025,Cafeteria Block,Electrical,CityWide Electric,6468.86,,2
+2025,Cafeteria Block,Electrical,Joe (in-house),156.06,,2
+2025,Cafeteria Block,Electrical,maintenance team,,,3
+2025,Cafeteria Block,Electrical,overnight crew,100.0,,2
+2025,Cafeteria Block,Electrical,vendor tech,3195.0,,1
+2025,Cafeteria Block,Electrical,,28829.46,,7
+2025,Cafeteria Block,Fire & Safety,CityWide Electric,11289.66,,1
+2025,Cafeteria Block,Fire & Safety,Joe (in-house),6386.2,,1
+2025,Cafeteria Block,Fire & Safety,PestPro Services,8920.67,,1
+2025,Cafeteria Block,Fire & Safety,maintenance team,10287.42,1.5,2
+2025,Cafeteria Block,Fire & Safety,overnight crew,23761.22,4.2,4
+2025,Cafeteria Block,Fire & Safety,vendor tech,12735.2,,1
+2025,Cafeteria Block,Fire & Safety,,57420.28,,11
+2025,Cafeteria Block,General Maintenance,ABC Mechanical,,,2
+2025,Cafeteria Block,General Maintenance,CityWide Electric,8394.19,,2
+2025,Cafeteria Block,General Maintenance,Joe (in-house),5670.49,,1
+2025,Cafeteria Block,General Maintenance,maintenance team,6510.0,,2
+2025,Cafeteria Block,General Maintenance,,,,1
+2025,Cafeteria Block,HVAC,CityWide Electric,16380.38,,1
+2025,Cafeteria Block,HVAC,Joe (in-house),15185.29,12.0,2
+2025,Cafeteria Block,HVAC,PestPro Services,18637.47,,4
+2025,Cafeteria Block,HVAC,maintenance team,18355.36,,3
+2025,Cafeteria Block,HVAC,overnight crew,1406.48,,2
+2025,Cafeteria Block,HVAC,vendor tech,14770.49,,4
+2025,Cafeteria Block,HVAC,,7342.92,,6
+2025,Cafeteria Block,IT & Network,ABC Mechanical,4728.76,,1
+2025,Cafeteria Block,IT & Network,CityWide Electric,3433.55,,2
+2025,Cafeteria Block,IT & Network,PestPro Services,,,1
+2025,Cafeteria Block,IT & Network,maintenance team,8984.53,,3
+2025,Cafeteria Block,IT & Network,vendor tech,26461.61,,4
+2025,Cafeteria Block,IT & Network,,16155.13,9.4,7
+2025,Cafeteria Block,Janitorial & Cleaning,ABC Mechanical,,,1
+2025,Cafeteria Block,Janitorial & Cleaning,CityWide Electric,576.76,5.8,1
+2025,Cafeteria Block,Janitorial & Cleaning,Joe (in-house),1428.52,,1
+2025,Cafeteria Block,Janitorial & Cleaning,PestPro Services,16801.75,,2
+2025,Cafeteria Block,Janitorial & Cleaning,overnight crew,12705.3,5.4,2
+2025,Cafeteria Block,Janitorial & Cleaning,vendor tech,9085.51,6.6,4
+2025,Cafeteria Block,Janitorial & Cleaning,,20550.83,1.8,8
+2025,Cafeteria Block,Pest Control,ABC Mechanical,7891.22,,4
+2025,Cafeteria Block,Pest Control,CityWide Electric,1999.0,,3
+2025,Cafeteria Block,Pest Control,Joe (in-house),2413.78,,1
+2025,Cafeteria Block,Pest Control,PestPro Services,11567.83,,0
+2025,Cafeteria Block,Pest Control,maintenance team,1625.45,,2
+2025,Cafeteria Block,Pest Control,overnight crew,12940.32,,1
+2025,Cafeteria Block,Pest Control,vendor tech,,,0
+2025,Cafeteria Block,Pest Control,,9842.78,,4
+2025,Cafeteria Block,Plumbing,ABC Mechanical,7414.0,7.7,2
+2025,Cafeteria Block,Plumbing,CityWide Electric,1667.0,,1
+2025,Cafeteria Block,Plumbing,Joe (in-house),2782.9,,1
+2025,Cafeteria Block,Plumbing,PestPro Services,160.54,,2
+2025,Cafeteria Block,Plumbing,overnight crew,9216.08,,1
+2025,Cafeteria Block,Plumbing,vendor tech,21248.98,,3
+2025,Cafeteria Block,Plumbing,,19499.81,3.1,9
+2025,Cafeteria Block,Vertical Transport,ABC Mechanical,19475.63,2.4,5
+2025,Cafeteria Block,Vertical Transport,CityWide Electric,10111.38,,3
+2025,Cafeteria Block,Vertical Transport,Joe (in-house),14746.89,,1
+2025,Cafeteria Block,Vertical Transport,PestPro Services,,,1
+2025,Cafeteria Block,Vertical Transport,maintenance team,19140.32,3.2,2
+2025,Cafeteria Block,Vertical Transport,overnight crew,13881.76,,2
+2025,Cafeteria Block,Vertical Transport,vendor tech,3928.86,,2
+2025,Cafeteria Block,Vertical Transport,,20730.74,,5
+2025,Data Center 1,Access & Security,ABC Mechanical,2958.81,4.5,3
+2025,Data Center 1,Access & Security,CityWide Electric,,,2
+2025,Data Center 1,Access & Security,Joe (in-house),9256.56,,1
+2025,Data Center 1,Access & Security,PestPro Services,4820.86,,2
+2025,Data Center 1,Access & Security,maintenance team,1588.22,,1
+2025,Data Center 1,Access & Security,overnight crew,,,2
+2025,Data Center 1,Access & Security,vendor tech,9981.67,12.0,3
+2025,Data Center 1,Access & Security,,52306.69,,7
+2025,Data Center 1,Electrical,ABC Mechanical,,,1
+2025,Data Center 1,Electrical,Joe (in-house),31591.76,,4
+2025,Data Center 1,Electrical,PestPro Services,,,2
+2025,Data Center 1,Electrical,overnight crew,1753.84,,2
+2025,Data Center 1,Electrical,vendor tech,12921.3,,0
+2025,Data Center 1,Electrical,,19122.12,,6
+2025,Data Center 1,Fire & Safety,ABC Mechanical,11852.92,,1
+2025,Data Center 1,Fire & Safety,CityWide Electric,18227.37,,3
+2025,Data Center 1,Fire & Safety,Joe (in-house),3768.5,,2
+2025,Data Center 1,Fire & Safety,PestPro Services,11581.1,,3
+2025,Data Center 1,Fire & Safety,maintenance team,9598.31,,2
+2025,Data Center 1,Fire & Safety,overnight crew,16851.86,2.4,4
+2025,Data Center 1,Fire & Safety,vendor tech,5468.27,,4
+2025,Data Center 1,Fire & Safety,,7560.51,,2
+2025,Data Center 1,General Maintenance,Joe (in-house),22270.42,,1
+2025,Data Center 1,General Maintenance,PestPro Services,3927.52,,2
+2025,Data Center 1,General Maintenance,overnight crew,350.33,,1
+2025,Data Center 1,General Maintenance,vendor tech,20920.82,,2
+2025,Data Center 1,General Maintenance,,9495.0,7.8,3
+2025,Data Center 1,HVAC,ABC Mechanical,8779.18,,3
+2025,Data Center 1,HVAC,CityWide Electric,13925.87,,1
+2025,Data Center 1,HVAC,Joe (in-house),4966.75,,0
+2025,Data Center 1,HVAC,PestPro Services,6101.21,,1
+2025,Data Center 1,HVAC,maintenance team,411.45,,1
+2025,Data Center 1,HVAC,vendor tech,4928.26,,2
+2025,Data Center 1,HVAC,,12639.28,,6
+2025,Data Center 1,IT & Network,ABC Mechanical,33449.81,,4
+2025,Data Center 1,IT & Network,CityWide Electric,,,1
+2025,Data Center 1,IT & Network,PestPro Services,7812.41,,6
+2025,Data Center 1,IT & Network,maintenance team,,,1
+2025,Data Center 1,IT & Network,overnight crew,2557.0,,2
+2025,Data Center 1,IT & Network,vendor tech,969.39,,2
+2025,Data Center 1,IT & Network,,22290.68,,2
+2025,Data Center 1,Janitorial & Cleaning,ABC Mechanical,5306.02,,3
+2025,Data Center 1,Janitorial & Cleaning,CityWide Electric,10999.39,,3
+2025,Data Center 1,Janitorial & Cleaning,Joe (in-house),16878.93,,3
+2025,Data Center 1,Janitorial & Cleaning,PestPro Services,7737.79,,3
+2025,Data Center 1,Janitorial & Cleaning,maintenance team,15075.08,,4
+2025,Data Center 1,Janitorial & Cleaning,vendor tech,17859.94,1.4,3
+2025,Data Center 1,Janitorial & Cleaning,,,,1
+2025,Data Center 1,Pest Control,CityWide Electric,,,2
+2025,Data Center 1,Pest Control,Joe (in-house),8581.93,,1
+2025,Data Center 1,Pest Control,maintenance team,89.4,,4
+2025,Data Center 1,Pest Control,overnight crew,9089.0,,2
+2025,Data Center 1,Pest Control,,43212.26,2.7,9
+2025,Data Center 1,Plumbing,ABC Mechanical,,,2
+2025,Data Center 1,Plumbing,CityWide Electric,7391.84,,2
+2025,Data Center 1,Plumbing,Joe (in-house),11853.0,,4
+2025,Data Center 1,Plumbing,PestPro Services,161.3,,1
+2025,Data Center 1,Plumbing,maintenance team,6774.26,,3
+2025,Data Center 1,Plumbing,overnight crew,10498.24,,3
+2025,Data Center 1,Plumbing,vendor tech,19842.31,2.6,5
+2025,Data Center 1,Plumbing,,1939.11,,2
+2025,Data Center 1,Vertical Transport,ABC Mechanical,7088.33,,1
+2025,Data Center 1,Vertical Transport,CityWide Electric,7047.0,,2
+2025,Data Center 1,Vertical Transport,Joe (in-house),344.93,,3
+2025,Data Center 1,Vertical Transport,PestPro Services,23213.2,,2
+2025,Data Center 1,Vertical Transport,maintenance team,38175.86,,7
+2025,Data Center 1,Vertical Transport,overnight crew,,,2
+2025,Data Center 1,Vertical Transport,vendor tech,9512.0,,1
+2025,Data Center 1,Vertical Transport,,38941.03,,9
+2025,HQ Floor 1,Access & Security,ABC Mechanical,4415.99,,4
+2025,HQ Floor 1,Access & Security,Joe (in-house),6105.25,,2
+2025,HQ Floor 1,Access & Security,maintenance team,,6.1,1
+2025,HQ Floor 1,Access & Security,overnight crew,12733.1,,3
+2025,HQ Floor 1,Access & Security,vendor tech,3122.48,,1
+2025,HQ Floor 1,Access & Security,,8649.73,,8
+2025,HQ Floor 1,Electrical,ABC Mechanical,,,1
+2025,HQ Floor 1,Electrical,CityWide Electric,13063.24,5.3,1
+2025,HQ Floor 1,Electrical,PestPro Services,,,1
+2025,HQ Floor 1,Electrical,maintenance team,3680.63,,3
+2025,HQ Floor 1,Electrical,overnight crew,9675.41,,3
+2025,HQ Floor 1,Electrical,vendor tech,2268.15,,2
+2025,HQ Floor 1,Electrical,,33601.19,,4
+2025,HQ Floor 1,Fire & Safety,ABC Mechanical,14614.28,,2
+2025,HQ Floor 1,Fire & Safety,CityWide Electric,20995.28,3.7,2
+2025,HQ Floor 1,Fire & Safety,Joe (in-house),13653.99,2.3,2
+2025,HQ Floor 1,Fire & Safety,PestPro Services,14202.0,,4
+2025,HQ Floor 1,Fire & Safety,maintenance team,23635.49,,4
+2025,HQ Floor 1,Fire & Safety,overnight crew,2143.69,,1
+2025,HQ Floor 1,Fire & Safety,,47396.84,,8
+2025,HQ Floor 1,General Maintenance,ABC Mechanical,,,1
+2025,HQ Floor 1,General Maintenance,CityWide Electric,17045.07,,2
+2025,HQ Floor 1,General Maintenance,PestPro Services,,7.3,1
+2025,HQ Floor 1,General Maintenance,maintenance team,5368.8,,0
+2025,HQ Floor 1,General Maintenance,overnight crew,,,1
+2025,HQ Floor 1,General Maintenance,vendor tech,,,1
+2025,HQ Floor 1,General Maintenance,,10535.97,,4
+2025,HQ Floor 1,HVAC,ABC Mechanical,10186.58,,3
+2025,HQ Floor 1,HVAC,CityWide Electric,,,3
+2025,HQ Floor 1,HVAC,Joe (in-house),1188.63,,1
+2025,HQ Floor 1,HVAC,PestPro Services,14368.4,,3
+2025,HQ Floor 1,HVAC,maintenance team,774.39,,3
+2025,HQ Floor 1,HVAC,overnight crew,8713.0,,4
+2025,HQ Floor 1,HVAC,vendor tech,22773.91,3.6,2
+2025,HQ Floor 1,HVAC,,32466.26,,5
+2025,HQ Floor 1,IT & Network,ABC Mechanical,2892.31,,3
+2025,HQ Floor 1,IT & Network,CityWide Electric,10612.52,3.9,3
+2025,HQ Floor 1,IT & Network,Joe (in-house),8459.0,,1
+2025,HQ Floor 1,IT & Network,PestPro Services,18611.72,,2
+2025,HQ Floor 1,IT & Network,maintenance team,,,1
+2025,HQ Floor 1,IT & Network,overnight crew,9775.52,7.6,1
+2025,HQ Floor 1,IT & Network,vendor tech,10817.93,,1
+2025,HQ Floor 1,IT & Network,,23470.59,,7
+2025,HQ Floor 1,Janitorial & Cleaning,ABC Mechanical,8863.19,,1
+2025,HQ Floor 1,Janitorial & Cleaning,CityWide Electric,11069.61,,2
+2025,HQ Floor 1,Janitorial & Cleaning,Joe (in-house),18488.84,,3
+2025,HQ Floor 1,Janitorial & Cleaning,maintenance team,,,4
+2025,HQ Floor 1,Janitorial & Cleaning,overnight crew,9463.0,,2
+2025,HQ Floor 1,Janitorial & Cleaning,vendor tech,12759.09,4.9,4
+2025,HQ Floor 1,Janitorial & Cleaning,,58335.55,2.0,8
+2025,HQ Floor 1,Pest Control,ABC Mechanical,,,1
+2025,HQ Floor 1,Pest Control,CityWide Electric,30331.14,,5
+2025,HQ Floor 1,Pest Control,Joe (in-house),,5.0,1
+2025,HQ Floor 1,Pest Control,PestPro Services,8837.87,3.9,3
+2025,HQ Floor 1,Pest Control,maintenance team,2639.28,,1
+2025,HQ Floor 1,Pest Control,overnight crew,,,1
+2025,HQ Floor 1,Pest Control,vendor tech,16255.86,6.2,3
+2025,HQ Floor 1,Pest Control,,31053.61,,6
+2025,HQ Floor 1,Plumbing,ABC Mechanical,3528.61,,2
+2025,HQ Floor 1,Plumbing,CityWide Electric,,,1
+2025,HQ Floor 1,Plumbing,Joe (in-house),7078.55,2.6,1
+2025,HQ Floor 1,Plumbing,PestPro Services,24469.07,1.1,5
+2025,HQ Floor 1,Plumbing,maintenance team,18986.36,,3
+2025,HQ Floor 1,Plumbing,overnight crew,13585.94,,1
+2025,HQ Floor 1,Plumbing,vendor tech,2063.7,,1
+2025,HQ Floor 1,Plumbing,,21179.33,5.7,3
+2025,HQ Floor 1,Vertical Transport,ABC Mechanical,,,1
+2025,HQ Floor 1,Vertical Transport,CityWide Electric,21885.14,5.0,2
+2025,HQ Floor 1,Vertical Transport,Joe (in-house),4809.0,,3
+2025,HQ Floor 1,Vertical Transport,maintenance team,7761.0,,1
+2025,HQ Floor 1,Vertical Transport,,26598.84,,5
+2025,HQ Floor 2,Access & Security,ABC Mechanical,6827.0,,3
+2025,HQ Floor 2,Access & Security,CityWide Electric,1691.87,,1
+2025,HQ Floor 2,Access & Security,Joe (in-house),,,0
+2025,HQ Floor 2,Access & Security,PestPro Services,9053.0,,2
+2025,HQ Floor 2,Access & Security,maintenance team,,,1
+2025,HQ Floor 2,Access & Security,overnight crew,2793.64,3.4,1
+2025,HQ Floor 2,Access & Security,vendor tech,45491.56,5.1,4
+2025,HQ Floor 2,Access & Security,,22203.13,,8
+2025,HQ Floor 2,Electrical,ABC Mechanical,9901.06,,1
+2025,HQ Floor 2,Electrical,CityWide Electric,3232.65,,3
+2025,HQ Floor 2,Electrical,Joe (in-house),16935.74,,1
+2025,HQ Floor 2,Electrical,PestPro Services,124.63,,2
+2025,HQ Floor 2,Electrical,maintenance team,163.5,,4
+2025,HQ Floor 2,Electrical,overnight crew,,2.8,1
+2025,HQ Floor 2,Electrical,vendor tech,,,1
+2025,HQ Floor 2,Electrical,,13927.91,,3
+2025,HQ Floor 2,Fire & Safety,ABC Mechanical,1090.72,,2
+2025,HQ Floor 2,Fire & Safety,CityWide Electric,8523.88,,2
+2025,HQ Floor 2,Fire & Safety,PestPro Services,13988.52,,3
+2025,HQ Floor 2,Fire & Safety,maintenance team,13704.48,,2
+2025,HQ Floor 2,Fire & Safety,overnight crew,7617.4,,1
+2025,HQ Floor 2,Fire & Safety,vendor tech,,,1
+2025,HQ Floor 2,Fire & Safety,,16748.84,,5
+2025,HQ Floor 2,General Maintenance,Joe (in-house),,,1
+2025,HQ Floor 2,General Maintenance,maintenance team,4020.26,,1
+2025,HQ Floor 2,General Maintenance,overnight crew,11249.78,,1
+2025,HQ Floor 2,General Maintenance,vendor tech,,,1
+2025,HQ Floor 2,General Maintenance,,12147.0,,4
+2025,HQ Floor 2,HVAC,ABC Mechanical,6374.86,,2
+2025,HQ Floor 2,HVAC,CityWide Electric,18063.16,,2
+2025,HQ Floor 2,HVAC,Joe (in-house),0.0,,1
+2025,HQ Floor 2,HVAC,PestPro Services,17592.02,3.0,5
+2025,HQ Floor 2,HVAC,maintenance team,2554.0,,1
+2025,HQ Floor 2,HVAC,overnight crew,12661.61,,1
+2025,HQ Floor 2,HVAC,vendor tech,3280.52,,1
+2025,HQ Floor 2,HVAC,,3536.95,3.6,9
+2025,HQ Floor 2,IT & Network,ABC Mechanical,13480.38,,3
+2025,HQ Floor 2,IT & Network,CityWide Electric,8983.36,,3
+2025,HQ Floor 2,IT & Network,Joe (in-house),22891.76,,4
+2025,HQ Floor 2,IT & Network,PestPro Services,6794.64,,5
+2025,HQ Floor 2,IT & Network,overnight crew,773.86,,2
+2025,HQ Floor 2,IT & Network,,15584.0,,5
+2025,HQ Floor 2,Janitorial & Cleaning,ABC Mechanical,12373.3,,1
+2025,HQ Floor 2,Janitorial & Cleaning,CityWide Electric,8239.43,6.4,3
+2025,HQ Floor 2,Janitorial & Cleaning,Joe (in-house),12639.43,,1
+2025,HQ Floor 2,Janitorial & Cleaning,PestPro Services,11878.85,,2
+2025,HQ Floor 2,Janitorial & Cleaning,maintenance team,12187.15,,1
+2025,HQ Floor 2,Janitorial & Cleaning,,13312.93,6.8,4
+2025,HQ Floor 2,Pest Control,ABC Mechanical,13007.78,,1
+2025,HQ Floor 2,Pest Control,CityWide Electric,20295.51,,3
+2025,HQ Floor 2,Pest Control,Joe (in-house),28808.76,,5
+2025,HQ Floor 2,Pest Control,PestPro Services,,,1
+2025,HQ Floor 2,Pest Control,maintenance team,3956.34,5.8,1
+2025,HQ Floor 2,Pest Control,overnight crew,8205.0,,2
+2025,HQ Floor 2,Pest Control,vendor tech,4755.51,,2
+2025,HQ Floor 2,Pest Control,,42207.81,7.1,8
+2025,HQ Floor 2,Plumbing,ABC Mechanical,3502.79,,1
+2025,HQ Floor 2,Plumbing,CityWide Electric,33706.43,,6
+2025,HQ Floor 2,Plumbing,Joe (in-house),,,3
+2025,HQ Floor 2,Plumbing,PestPro Services,,5.4,1
+2025,HQ Floor 2,Plumbing,maintenance team,10625.63,,3
+2025,HQ Floor 2,Plumbing,overnight crew,,,1
+2025,HQ Floor 2,Plumbing,,49486.06,,7
+2025,HQ Floor 2,Vertical Transport,ABC Mechanical,,,1
+2025,HQ Floor 2,Vertical Transport,CityWide Electric,2445.0,5.2,2
+2025,HQ Floor 2,Vertical Transport,Joe (in-house),18523.63,,4
+2025,HQ Floor 2,Vertical Transport,PestPro Services,14168.81,,1
+2025,HQ Floor 2,Vertical Transport,maintenance team,0.0,,1
+2025,HQ Floor 2,Vertical Transport,overnight crew,1302.71,,3
+2025,HQ Floor 2,Vertical Transport,vendor tech,,,1
+2025,HQ Floor 2,Vertical Transport,,12694.45,2.4,5
+2025,HQ Floor 3,Access & Security,CityWide Electric,18214.64,,3
+2025,HQ Floor 3,Access & Security,Joe (in-house),27299.06,,3
+2025,HQ Floor 3,Access & Security,PestPro Services,408.5,,1
+2025,HQ Floor 3,Access & Security,maintenance team,591.33,,4
+2025,HQ Floor 3,Access & Security,overnight crew,,,1
+2025,HQ Floor 3,Access & Security,vendor tech,5021.55,,1
+2025,HQ Floor 3,Access & Security,,13841.78,,6
+2025,HQ Floor 3,Electrical,ABC Mechanical,14859.49,,1
+2025,HQ Floor 3,Electrical,CityWide Electric,7299.28,,0
+2025,HQ Floor 3,Electrical,Joe (in-house),18155.41,1.6,3
+2025,HQ Floor 3,Electrical,maintenance team,,,3
+2025,HQ Floor 3,Electrical,vendor tech,10435.66,,2
+2025,HQ Floor 3,Electrical,,38506.56,,8
+2025,HQ Floor 3,Fire & Safety,ABC Mechanical,,,1
+2025,HQ Floor 3,Fire & Safety,CityWide Electric,8814.58,,4
+2025,HQ Floor 3,Fire & Safety,Joe (in-house),17535.77,,3
+2025,HQ Floor 3,Fire & Safety,maintenance team,4753.42,,1
+2025,HQ Floor 3,Fire & Safety,overnight crew,,,1
+2025,HQ Floor 3,Fire & Safety,vendor tech,,,1
+2025,HQ Floor 3,Fire & Safety,,24214.93,,6
+2025,HQ Floor 3,General Maintenance,ABC Mechanical,3154.92,,1
+2025,HQ Floor 3,General Maintenance,CityWide Electric,1595.07,,1
+2025,HQ Floor 3,General Maintenance,Joe (in-house),20663.22,,2
+2025,HQ Floor 3,General Maintenance,PestPro Services,2895.15,,2
+2025,HQ Floor 3,General Maintenance,overnight crew,11518.16,,2
+2025,HQ Floor 3,General Maintenance,,12116.6,,3
+2025,HQ Floor 3,HVAC,ABC Mechanical,31786.04,,5
+2025,HQ Floor 3,HVAC,CityWide Electric,3642.89,,2
+2025,HQ Floor 3,HVAC,Joe (in-house),24660.69,,4
+2025,HQ Floor 3,HVAC,maintenance team,11297.59,,2
+2025,HQ Floor 3,HVAC,overnight crew,3118.0,3.8,2
+2025,HQ Floor 3,HVAC,vendor tech,5747.91,,3
+2025,HQ Floor 3,HVAC,,13667.87,5.3,4
+2025,HQ Floor 3,IT & Network,ABC Mechanical,9305.2,,1
+2025,HQ Floor 3,IT & Network,CityWide Electric,13053.0,,4
+2025,HQ Floor 3,IT & Network,PestPro Services,3889.75,,2
+2025,HQ Floor 3,IT & Network,maintenance team,11412.92,,2
+2025,HQ Floor 3,IT & Network,overnight crew,,,0
+2025,HQ Floor 3,IT & Network,vendor tech,1640.41,7.1,3
+2025,HQ Floor 3,IT & Network,,41953.55,1.9,7
+2025,HQ Floor 3,Janitorial & Cleaning,ABC Mechanical,3611.75,,1
+2025,HQ Floor 3,Janitorial & Cleaning,CityWide Electric,14530.98,,4
+2025,HQ Floor 3,Janitorial & Cleaning,Joe (in-house),8312.68,1.3,3
+2025,HQ Floor 3,Janitorial & Cleaning,PestPro Services,20379.44,,2
+2025,HQ Floor 3,Janitorial & Cleaning,maintenance team,9065.12,,5
+2025,HQ Floor 3,Janitorial & Cleaning,overnight crew,9803.0,4.7,3
+2025,HQ Floor 3,Janitorial & Cleaning,vendor tech,32842.45,2.8,4
+2025,HQ Floor 3,Janitorial & Cleaning,,22968.09,,3
+2025,HQ Floor 3,Pest Control,ABC Mechanical,2295.17,,1
+2025,HQ Floor 3,Pest Control,Joe (in-house),9442.65,,2
+2025,HQ Floor 3,Pest Control,PestPro Services,4906.01,,1
+2025,HQ Floor 3,Pest Control,maintenance team,,,0
+2025,HQ Floor 3,Pest Control,overnight crew,16770.71,,3
+2025,HQ Floor 3,Pest Control,vendor tech,3825.43,,1
+2025,HQ Floor 3,Pest Control,,9023.52,,2
+2025,HQ Floor 3,Plumbing,ABC Mechanical,,2.6,2
+2025,HQ Floor 3,Plumbing,CityWide Electric,1600.37,,3
+2025,HQ Floor 3,Plumbing,PestPro Services,23828.13,,4
+2025,HQ Floor 3,Plumbing,maintenance team,12106.57,,3
+2025,HQ Floor 3,Plumbing,overnight crew,8420.0,,2
+2025,HQ Floor 3,Plumbing,vendor tech,,,1
+2025,HQ Floor 3,Plumbing,,20721.71,,3
+2025,HQ Floor 3,Vertical Transport,Joe (in-house),2063.14,,1
+2025,HQ Floor 3,Vertical Transport,PestPro Services,8517.06,,1
+2025,HQ Floor 3,Vertical Transport,maintenance team,1143.88,,2
+2025,HQ Floor 3,Vertical Transport,overnight crew,,,1
+2025,HQ Floor 3,Vertical Transport,,35603.65,,5
+2025,Main Office,Access & Security,ABC Mechanical,9005.61,,2
+2025,Main Office,Access & Security,CityWide Electric,3444.01,,2
+2025,Main Office,Access & Security,Joe (in-house),,,1
+2025,Main Office,Access & Security,PestPro Services,30330.32,,3
+2025,Main Office,Access & Security,maintenance team,9474.72,,1
+2025,Main Office,Access & Security,overnight crew,10740.01,,2
+2025,Main Office,Access & Security,vendor tech,23182.14,,3
+2025,Main Office,Access & Security,,6418.31,2.2,5
+2025,Main Office,Electrical,ABC Mechanical,13533.06,,4
+2025,Main Office,Electrical,Joe (in-house),,,3
+2025,Main Office,Electrical,PestPro Services,11677.53,0.9,5
+2025,Main Office,Electrical,maintenance team,,,2
+2025,Main Office,Electrical,overnight crew,9263.82,,5
+2025,Main Office,Electrical,,16133.78,5.9,5
+2025,Main Office,Fire & Safety,ABC Mechanical,31588.59,5.4,5
+2025,Main Office,Fire & Safety,CityWide Electric,17979.99,,4
+2025,Main Office,Fire & Safety,Joe (in-house),6987.64,6.6,3
+2025,Main Office,Fire & Safety,PestPro Services,1537.79,,2
+2025,Main Office,Fire & Safety,maintenance team,,,1
+2025,Main Office,Fire & Safety,vendor tech,15038.52,,1
+2025,Main Office,Fire & Safety,,7328.97,,4
+2025,Main Office,General Maintenance,CityWide Electric,2703.28,,1
+2025,Main Office,General Maintenance,Joe (in-house),16219.34,,2
+2025,Main Office,General Maintenance,maintenance team,1257.52,,2
+2025,Main Office,General Maintenance,overnight crew,15277.2,3.5,2
+2025,Main Office,General Maintenance,,7944.0,,3
+2025,Main Office,HVAC,ABC Mechanical,1241.97,,2
+2025,Main Office,HVAC,CityWide Electric,14633.14,,5
+2025,Main Office,HVAC,Joe (in-house),16179.54,1.3,2
+2025,Main Office,HVAC,PestPro Services,24202.93,,5
+2025,Main Office,HVAC,maintenance team,17766.55,,4
+2025,Main Office,HVAC,overnight crew,8408.23,,2
+2025,Main Office,HVAC,vendor tech,13734.16,,2
+2025,Main Office,HVAC,,17942.57,22.2,10
+2025,Main Office,IT & Network,ABC Mechanical,14385.72,,1
+2025,Main Office,IT & Network,CityWide Electric,12241.42,,2
+2025,Main Office,IT & Network,Joe (in-house),11475.56,6.1,1
+2025,Main Office,IT & Network,maintenance team,9001.43,6.1,3
+2025,Main Office,IT & Network,overnight crew,,,1
+2025,Main Office,IT & Network,vendor tech,0.0,,2
+2025,Main Office,IT & Network,,23260.17,,8
+2025,Main Office,Janitorial & Cleaning,ABC Mechanical,6055.0,6.4,3
+2025,Main Office,Janitorial & Cleaning,CityWide Electric,27039.57,5.7,6
+2025,Main Office,Janitorial & Cleaning,Joe (in-house),5126.34,,1
+2025,Main Office,Janitorial & Cleaning,maintenance team,6672.47,1.4,4
+2025,Main Office,Janitorial & Cleaning,overnight crew,9725.17,3.1,4
+2025,Main Office,Janitorial & Cleaning,vendor tech,1977.41,,1
+2025,Main Office,Janitorial & Cleaning,,19320.49,4.9,3
+2025,Main Office,Pest Control,ABC Mechanical,8211.76,,2
+2025,Main Office,Pest Control,CityWide Electric,10970.18,5.3,2
+2025,Main Office,Pest Control,PestPro Services,8197.0,,4
+2025,Main Office,Pest Control,maintenance team,18255.5,,4
+2025,Main Office,Pest Control,overnight crew,7621.63,,1
+2025,Main Office,Pest Control,,9402.24,,2
+2025,Main Office,Plumbing,ABC Mechanical,746.0,,3
+2025,Main Office,Plumbing,CityWide Electric,3259.37,,2
+2025,Main Office,Plumbing,Joe (in-house),,,1
+2025,Main Office,Plumbing,PestPro Services,,,1
+2025,Main Office,Plumbing,maintenance team,4016.71,1.0,2
+2025,Main Office,Plumbing,vendor tech,3886.51,,3
+2025,Main Office,Plumbing,,19117.99,4.4,4
+2025,Main Office,Vertical Transport,ABC Mechanical,,,2
+2025,Main Office,Vertical Transport,CityWide Electric,202.41,,1
+2025,Main Office,Vertical Transport,PestPro Services,,,1
+2025,Main Office,Vertical Transport,maintenance team,1100.0,1.6,5
+2025,Main Office,Vertical Transport,overnight crew,2969.04,,4
+2025,Main Office,Vertical Transport,vendor tech,11391.04,,3
+2025,Main Office,Vertical Transport,,3975.98,,1
+2025,Parking Garage,Access & Security,ABC Mechanical,,6.5,3
+2025,Parking Garage,Access & Security,CityWide Electric,2746.49,,1
+2025,Parking Garage,Access & Security,Joe (in-house),,,1
+2025,Parking Garage,Access & Security,PestPro Services,4235.68,,1
+2025,Parking Garage,Access & Security,maintenance team,10168.48,,3
+2025,Parking Garage,Access & Security,overnight crew,11232.21,,3
+2025,Parking Garage,Access & Security,vendor tech,34586.13,,4
+2025,Parking Garage,Access & Security,,13350.5,2.9,5
+2025,Parking Garage,Electrical,ABC Mechanical,13250.32,8.3,2
+2025,Parking Garage,Electrical,CityWide Electric,10497.64,1.8,3
+2025,Parking Garage,Electrical,PestPro Services,28885.18,,2
+2025,Parking Garage,Electrical,maintenance team,12862.41,,1
+2025,Parking Garage,Electrical,vendor tech,2050.48,,3
+2025,Parking Garage,Electrical,,15242.25,,4
+2025,Parking Garage,Fire & Safety,ABC Mechanical,21391.44,,3
+2025,Parking Garage,Fire & Safety,Joe (in-house),6911.83,,1
+2025,Parking Garage,Fire & Safety,PestPro Services,2238.0,,0
+2025,Parking Garage,Fire & Safety,maintenance team,9809.68,,2
+2025,Parking Garage,Fire & Safety,overnight crew,10522.76,,1
+2025,Parking Garage,Fire & Safety,,42773.34,1.1,8
+2025,Parking Garage,General Maintenance,CityWide Electric,,,2
+2025,Parking Garage,General Maintenance,Joe (in-house),2154.22,,2
+2025,Parking Garage,General Maintenance,overnight crew,1011.02,,1
+2025,Parking Garage,General Maintenance,vendor tech,4053.17,,1
+2025,Parking Garage,General Maintenance,,32464.96,6.6,4
+2025,Parking Garage,HVAC,ABC Mechanical,37439.94,,4
+2025,Parking Garage,HVAC,CityWide Electric,6892.88,1.1,2
+2025,Parking Garage,HVAC,PestPro Services,20505.41,,3
+2025,Parking Garage,HVAC,vendor tech,2521.28,5.2,2
+2025,Parking Garage,HVAC,,20866.63,,6
+2025,Parking Garage,IT & Network,ABC Mechanical,20230.24,,5
+2025,Parking Garage,IT & Network,CityWide Electric,5980.98,,2
+2025,Parking Garage,IT & Network,Joe (in-house),10510.13,,2
+2025,Parking Garage,IT & Network,PestPro Services,,,1
+2025,Parking Garage,IT & Network,overnight crew,,,1
+2025,Parking Garage,IT & Network,vendor tech,14353.32,,4
+2025,Parking Garage,IT & Network,,23121.64,,6
+2025,Parking Garage,Janitorial & Cleaning,ABC Mechanical,11180.08,,2
+2025,Parking Garage,Janitorial & Cleaning,CityWide Electric,2548.07,,4
+2025,Parking Garage,Janitorial & Cleaning,PestPro Services,4441.94,4.9,3
+2025,Parking Garage,Janitorial & Cleaning,maintenance team,12198.0,,2
+2025,Parking Garage,Janitorial & Cleaning,overnight crew,652.66,,1
+2025,Parking Garage,Janitorial & Cleaning,vendor tech,0.0,4.8,3
+2025,Parking Garage,Janitorial & Cleaning,,16478.66,,3
+2025,Parking Garage,Pest Control,CityWide Electric,957.28,,1
+2025,Parking Garage,Pest Control,Joe (in-house),,1.2,1
+2025,Parking Garage,Pest Control,PestPro Services,,,1
+2025,Parking Garage,Pest Control,maintenance team,,,1
+2025,Parking Garage,Pest Control,overnight crew,26566.5,,2
+2025,Parking Garage,Pest Control,vendor tech,1308.65,,2
+2025,Parking Garage,Pest Control,,10268.79,,5
+2025,Parking Garage,Plumbing,ABC Mechanical,13691.23,,1
+2025,Parking Garage,Plumbing,CityWide Electric,1051.88,,2
+2025,Parking Garage,Plumbing,Joe (in-house),8184.98,,0
+2025,Parking Garage,Plumbing,PestPro Services,412.09,,1
+2025,Parking Garage,Plumbing,maintenance team,,,1
+2025,Parking Garage,Plumbing,overnight crew,11366.01,,2
+2025,Parking Garage,Plumbing,vendor tech,15160.75,,3
+2025,Parking Garage,Plumbing,,6625.87,,4
+2025,Parking Garage,Vertical Transport,ABC Mechanical,197.76,3.7,1
+2025,Parking Garage,Vertical Transport,CityWide Electric,6647.23,,2
+2025,Parking Garage,Vertical Transport,Joe (in-house),7886.29,,3
+2025,Parking Garage,Vertical Transport,PestPro Services,17624.43,,4
+2025,Parking Garage,Vertical Transport,maintenance team,42669.74,,4
+2025,Parking Garage,Vertical Transport,overnight crew,13795.72,,3
+2025,Parking Garage,Vertical Transport,vendor tech,,,1
+2025,Parking Garage,Vertical Transport,,24739.46,5.6,6
+2025,Remote Site Alpha,Access & Security,ABC Mechanical,15376.23,6.6,5
+2025,Remote Site Alpha,Access & Security,CityWide Electric,1891.53,,1
+2025,Remote Site Alpha,Access & Security,Joe (in-house),18747.21,,3
+2025,Remote Site Alpha,Access & Security,maintenance team,,,2
+2025,Remote Site Alpha,Access & Security,overnight crew,2394.0,,3
+2025,Remote Site Alpha,Access & Security,vendor tech,,,1
+2025,Remote Site Alpha,Access & Security,,20943.62,1.4,7
+2025,Remote Site Alpha,Electrical,ABC Mechanical,1746.23,,1
+2025,Remote Site Alpha,Electrical,CityWide Electric,10501.2,,3
+2025,Remote Site Alpha,Electrical,PestPro Services,12380.11,,2
+2025,Remote Site Alpha,Electrical,maintenance team,,,1
+2025,Remote Site Alpha,Electrical,overnight crew,10268.47,,0
+2025,Remote Site Alpha,Electrical,vendor tech,730.49,,1
+2025,Remote Site Alpha,Electrical,,20177.73,7.7,5
+2025,Remote Site Alpha,Fire & Safety,CityWide Electric,8244.98,,2
+2025,Remote Site Alpha,Fire & Safety,Joe (in-house),10470.88,,2
+2025,Remote Site Alpha,Fire & Safety,PestPro Services,15757.91,,2
+2025,Remote Site Alpha,Fire & Safety,maintenance team,7495.72,,3
+2025,Remote Site Alpha,Fire & Safety,overnight crew,11036.8,,1
+2025,Remote Site Alpha,Fire & Safety,vendor tech,212.0,,2
+2025,Remote Site Alpha,Fire & Safety,,23395.33,,7
+2025,Remote Site Alpha,General Maintenance,ABC Mechanical,,,1
+2025,Remote Site Alpha,General Maintenance,Joe (in-house),3140.99,,2
+2025,Remote Site Alpha,General Maintenance,PestPro Services,5005.6,,2
+2025,Remote Site Alpha,General Maintenance,maintenance team,14317.09,,1
+2025,Remote Site Alpha,General Maintenance,overnight crew,17684.53,,2
+2025,Remote Site Alpha,General Maintenance,vendor tech,,,2
+2025,Remote Site Alpha,General Maintenance,,4269.7,,1
+2025,Remote Site Alpha,HVAC,ABC Mechanical,18656.51,,4
+2025,Remote Site Alpha,HVAC,CityWide Electric,8579.04,,3
+2025,Remote Site Alpha,HVAC,Joe (in-house),9418.0,7.0,1
+2025,Remote Site Alpha,HVAC,PestPro Services,3700.4,,2
+2025,Remote Site Alpha,HVAC,maintenance team,2462.21,,2
+2025,Remote Site Alpha,HVAC,overnight crew,3029.81,,2
+2025,Remote Site Alpha,HVAC,vendor tech,1319.22,4.6,2
+2025,Remote Site Alpha,HVAC,,27603.6,,5
+2025,Remote Site Alpha,IT & Network,ABC Mechanical,11696.51,,3
+2025,Remote Site Alpha,IT & Network,CityWide Electric,3059.56,,2
+2025,Remote Site Alpha,IT & Network,Joe (in-house),12623.44,,4
+2025,Remote Site Alpha,IT & Network,PestPro Services,,,1
+2025,Remote Site Alpha,IT & Network,maintenance team,11755.81,,1
+2025,Remote Site Alpha,IT & Network,overnight crew,24309.13,5.9,3
+2025,Remote Site Alpha,IT & Network,vendor tech,30438.48,2.5,6
+2025,Remote Site Alpha,IT & Network,,19949.57,,2
+2025,Remote Site Alpha,Janitorial & Cleaning,ABC Mechanical,16679.45,,3
+2025,Remote Site Alpha,Janitorial & Cleaning,Joe (in-house),8657.0,,3
+2025,Remote Site Alpha,Janitorial & Cleaning,PestPro Services,0.0,,2
+2025,Remote Site Alpha,Janitorial & Cleaning,maintenance team,13497.77,,1
+2025,Remote Site Alpha,Janitorial & Cleaning,overnight crew,13219.33,,3
+2025,Remote Site Alpha,Janitorial & Cleaning,vendor tech,8334.69,,4
+2025,Remote Site Alpha,Janitorial & Cleaning,,12035.98,,2
+2025,Remote Site Alpha,Pest Control,ABC Mechanical,2863.57,,1
+2025,Remote Site Alpha,Pest Control,CityWide Electric,,,3
+2025,Remote Site Alpha,Pest Control,Joe (in-house),9895.06,,2
+2025,Remote Site Alpha,Pest Control,PestPro Services,11516.51,,3
+2025,Remote Site Alpha,Pest Control,maintenance team,1717.41,,4
+2025,Remote Site Alpha,Pest Control,overnight crew,5262.0,,3
+2025,Remote Site Alpha,Pest Control,vendor tech,10027.1,,2
+2025,Remote Site Alpha,Pest Control,,14749.33,3.0,5
+2025,Remote Site Alpha,Plumbing,ABC Mechanical,13711.48,,2
+2025,Remote Site Alpha,Plumbing,CityWide Electric,7092.22,,0
+2025,Remote Site Alpha,Plumbing,Joe (in-house),,,1
+2025,Remote Site Alpha,Plumbing,maintenance team,6377.06,,3
+2025,Remote Site Alpha,Plumbing,overnight crew,33819.73,,6
+2025,Remote Site Alpha,Plumbing,vendor tech,16004.31,,1
+2025,Remote Site Alpha,Plumbing,,53191.66,0.8,11
+2025,Remote Site Alpha,Vertical Transport,ABC Mechanical,14517.36,,1
+2025,Remote Site Alpha,Vertical Transport,CityWide Electric,9635.98,,2
+2025,Remote Site Alpha,Vertical Transport,Joe (in-house),14452.33,0.6,4
+2025,Remote Site Alpha,Vertical Transport,PestPro Services,,,1
+2025,Remote Site Alpha,Vertical Transport,maintenance team,3527.61,4.0,4
+2025,Remote Site Alpha,Vertical Transport,vendor tech,,,1
+2025,Remote Site Alpha,Vertical Transport,,3270.24,,2
+2025,Remote Site Beta,Access & Security,ABC Mechanical,18567.01,,2
+2025,Remote Site Beta,Access & Security,CityWide Electric,7296.35,,2
+2025,Remote Site Beta,Access & Security,Joe (in-house),,,2
+2025,Remote Site Beta,Access & Security,PestPro Services,8870.26,,2
+2025,Remote Site Beta,Access & Security,maintenance team,,,1
+2025,Remote Site Beta,Access & Security,overnight crew,18528.73,,1
+2025,Remote Site Beta,Access & Security,vendor tech,13664.61,,1
+2025,Remote Site Beta,Access & Security,,22626.92,,5
+2025,Remote Site Beta,Electrical,ABC Mechanical,16239.06,,2
+2025,Remote Site Beta,Electrical,PestPro Services,1020.01,,2
+2025,Remote Site Beta,Electrical,maintenance team,9799.39,2.2,2
+2025,Remote Site Beta,Electrical,overnight crew,18291.85,,1
+2025,Remote Site Beta,Electrical,,20542.41,8.9,13
+2025,Remote Site Beta,Fire & Safety,ABC Mechanical,,,1
+2025,Remote Site Beta,Fire & Safety,CityWide Electric,16868.72,,3
+2025,Remote Site Beta,Fire & Safety,Joe (in-house),813.38,,2
+2025,Remote Site Beta,Fire & Safety,PestPro Services,1993.53,,4
+2025,Remote Site Beta,Fire & Safety,maintenance team,13435.91,,2
+2025,Remote Site Beta,Fire & Safety,overnight crew,,,1
+2025,Remote Site Beta,Fire & Safety,vendor tech,,,2
+2025,Remote Site Beta,Fire & Safety,,17857.37,,7
+2025,Remote Site Beta,General Maintenance,ABC Mechanical,3465.0,,1
+2025,Remote Site Beta,General Maintenance,CityWide Electric,,,0
+2025,Remote Site Beta,General Maintenance,PestPro Services,,,1
+2025,Remote Site Beta,General Maintenance,vendor tech,,1.8,2
+2025,Remote Site Beta,General Maintenance,,9761.2,,5
+2025,Remote Site Beta,HVAC,ABC Mechanical,31925.36,3.7,4
+2025,Remote Site Beta,HVAC,CityWide Electric,9208.92,,0
+2025,Remote Site Beta,HVAC,Joe (in-house),4437.86,,1
+2025,Remote Site Beta,HVAC,PestPro Services,21427.52,,5
+2025,Remote Site Beta,HVAC,maintenance team,3602.36,,1
+2025,Remote Site Beta,HVAC,overnight crew,2720.0,,1
+2025,Remote Site Beta,HVAC,vendor tech,9126.1,2.1,2
+2025,Remote Site Beta,HVAC,,61250.79,4.9,9
+2025,Remote Site Beta,IT & Network,CityWide Electric,,,1
+2025,Remote Site Beta,IT & Network,Joe (in-house),3431.4,6.2,1
+2025,Remote Site Beta,IT & Network,PestPro Services,,,1
+2025,Remote Site Beta,IT & Network,maintenance team,4517.0,,0
+2025,Remote Site Beta,IT & Network,overnight crew,14043.1,,3
+2025,Remote Site Beta,IT & Network,vendor tech,1403.56,,3
+2025,Remote Site Beta,IT & Network,,28527.49,,8
+2025,Remote Site Beta,Janitorial & Cleaning,ABC Mechanical,295.42,,2
+2025,Remote Site Beta,Janitorial & Cleaning,CityWide Electric,25036.3,11.0,3
+2025,Remote Site Beta,Janitorial & Cleaning,Joe (in-house),8434.0,,3
+2025,Remote Site Beta,Janitorial & Cleaning,PestPro Services,14222.1,,1
+2025,Remote Site Beta,Janitorial & Cleaning,maintenance team,7389.57,,2
+2025,Remote Site Beta,Janitorial & Cleaning,vendor tech,,,1
+2025,Remote Site Beta,Janitorial & Cleaning,,13058.31,2.1,5
+2025,Remote Site Beta,Pest Control,ABC Mechanical,11516.06,,1
+2025,Remote Site Beta,Pest Control,CityWide Electric,7180.0,,1
+2025,Remote Site Beta,Pest Control,Joe (in-house),14203.89,,3
+2025,Remote Site Beta,Pest Control,PestPro Services,9047.97,22.8,7
+2025,Remote Site Beta,Pest Control,maintenance team,16391.15,,3
+2025,Remote Site Beta,Pest Control,overnight crew,2734.68,,2
+2025,Remote Site Beta,Pest Control,vendor tech,36697.47,,5
+2025,Remote Site Beta,Pest Control,,9868.34,5.5,6
+2025,Remote Site Beta,Plumbing,ABC Mechanical,,,2
+2025,Remote Site Beta,Plumbing,CityWide Electric,,,1
+2025,Remote Site Beta,Plumbing,Joe (in-house),13370.0,,3
+2025,Remote Site Beta,Plumbing,PestPro Services,1869.73,,1
+2025,Remote Site Beta,Plumbing,maintenance team,8486.59,5.4,1
+2025,Remote Site Beta,Plumbing,overnight crew,8668.59,,2
+2025,Remote Site Beta,Plumbing,vendor tech,,,1
+2025,Remote Site Beta,Plumbing,,10036.94,,4
+2025,Remote Site Beta,Vertical Transport,ABC Mechanical,3911.26,2.4,1
+2025,Remote Site Beta,Vertical Transport,CityWide Electric,6965.91,,2
+2025,Remote Site Beta,Vertical Transport,Joe (in-house),29747.91,,2
+2025,Remote Site Beta,Vertical Transport,PestPro Services,33738.78,,4
+2025,Remote Site Beta,Vertical Transport,overnight crew,16342.13,,3
+2025,Remote Site Beta,Vertical Transport,vendor tech,,,3
+2025,Remote Site Beta,Vertical Transport,,,,3
+2025,Tower A,Access & Security,ABC Mechanical,7451.19,,2
+2025,Tower A,Access & Security,CityWide Electric,9611.3,6.9,5
+2025,Tower A,Access & Security,Joe (in-house),14206.12,,2
+2025,Tower A,Access & Security,PestPro Services,10075.82,1.4,3
+2025,Tower A,Access & Security,overnight crew,1993.07,,2
+2025,Tower A,Access & Security,vendor tech,1383.0,,1
+2025,Tower A,Access & Security,,35409.49,6.7,7
+2025,Tower A,Electrical,ABC Mechanical,8306.94,,2
+2025,Tower A,Electrical,CityWide Electric,2520.69,,0
+2025,Tower A,Electrical,Joe (in-house),,3.4,2
+2025,Tower A,Electrical,maintenance team,11922.39,,3
+2025,Tower A,Electrical,overnight crew,13733.0,,3
+2025,Tower A,Electrical,vendor tech,828.18,,1
+2025,Tower A,Electrical,,45760.75,,5
+2025,Tower A,Fire & Safety,CityWide Electric,19153.53,,2
+2025,Tower A,Fire & Safety,Joe (in-house),9990.29,,3
+2025,Tower A,Fire & Safety,PestPro Services,15227.09,,1
+2025,Tower A,Fire & Safety,maintenance team,8682.11,,3
+2025,Tower A,Fire & Safety,overnight crew,11396.98,,3
+2025,Tower A,Fire & Safety,vendor tech,5346.54,,1
+2025,Tower A,Fire & Safety,,27720.66,,7
+2025,Tower A,General Maintenance,ABC Mechanical,2651.13,,1
+2025,Tower A,General Maintenance,CityWide Electric,,,1
+2025,Tower A,General Maintenance,Joe (in-house),19902.97,,3
+2025,Tower A,General Maintenance,maintenance team,27845.2,,3
+2025,Tower A,General Maintenance,vendor tech,1824.67,,2
+2025,Tower A,General Maintenance,,3452.95,,1
+2025,Tower A,HVAC,ABC Mechanical,1594.09,5.3,3
+2025,Tower A,HVAC,CityWide Electric,5482.34,,3
+2025,Tower A,HVAC,Joe (in-house),13777.15,,1
+2025,Tower A,HVAC,maintenance team,13784.37,,5
+2025,Tower A,HVAC,overnight crew,25228.35,3.6,4
+2025,Tower A,HVAC,vendor tech,14089.85,,3
+2025,Tower A,HVAC,,5005.07,,3
+2025,Tower A,IT & Network,ABC Mechanical,42980.08,,4
+2025,Tower A,IT & Network,CityWide Electric,1601.43,,2
+2025,Tower A,IT & Network,Joe (in-house),3613.83,,1
+2025,Tower A,IT & Network,PestPro Services,10671.17,,3
+2025,Tower A,IT & Network,maintenance team,9727.65,6.6,1
+2025,Tower A,IT & Network,overnight crew,2730.49,,1
+2025,Tower A,IT & Network,vendor tech,,6.1,2
+2025,Tower A,IT & Network,,14790.77,,7
+2025,Tower A,Janitorial & Cleaning,ABC Mechanical,18865.65,,3
+2025,Tower A,Janitorial & Cleaning,Joe (in-house),0.0,5.3,1
+2025,Tower A,Janitorial & Cleaning,PestPro Services,8460.0,,2
+2025,Tower A,Janitorial & Cleaning,maintenance team,28711.0,,5
+2025,Tower A,Janitorial & Cleaning,overnight crew,4518.0,,0
+2025,Tower A,Janitorial & Cleaning,vendor tech,,6.2,1
+2025,Tower A,Janitorial & Cleaning,,12318.16,,5
+2025,Tower A,Pest Control,ABC Mechanical,26033.48,,3
+2025,Tower A,Pest Control,CityWide Electric,16001.87,,2
+2025,Tower A,Pest Control,Joe (in-house),29331.09,4.0,3
+2025,Tower A,Pest Control,PestPro Services,11284.2,,2
+2025,Tower A,Pest Control,maintenance team,11932.18,,5
+2025,Tower A,Pest Control,overnight crew,4571.7,,2
+2025,Tower A,Pest Control,,16535.31,0.8,8
+2025,Tower A,Plumbing,ABC Mechanical,13624.65,,0
+2025,Tower A,Plumbing,CityWide Electric,814.56,,3
+2025,Tower A,Plumbing,PestPro Services,11389.13,,1
+2025,Tower A,Plumbing,maintenance team,7360.0,0.6,2
+2025,Tower A,Plumbing,overnight crew,3886.91,,3
+2025,Tower A,Plumbing,vendor tech,13594.58,,1
+2025,Tower A,Plumbing,,11742.71,3.4,4
+2025,Tower A,Vertical Transport,ABC Mechanical,1768.12,2.1,2
+2025,Tower A,Vertical Transport,CityWide Electric,,,1
+2025,Tower A,Vertical Transport,Joe (in-house),2952.98,,2
+2025,Tower A,Vertical Transport,PestPro Services,3264.0,,2
+2025,Tower A,Vertical Transport,maintenance team,2017.78,,2
+2025,Tower A,Vertical Transport,vendor tech,6399.76,,3
+2025,Tower A,Vertical Transport,,20703.84,,5
+2025,Tower B,Access & Security,ABC Mechanical,0.0,,2
+2025,Tower B,Access & Security,maintenance team,,,1
+2025,Tower B,Access & Security,overnight crew,14438.0,,1
+2025,Tower B,Access & Security,vendor tech,5433.57,,1
+2025,Tower B,Access & Security,,11876.28,,3
+2025,Tower B,Electrical,ABC Mechanical,6547.61,,3
+2025,Tower B,Electrical,Joe (in-house),8544.54,,2
+2025,Tower B,Electrical,PestPro Services,173.16,1.8,2
+2025,Tower B,Electrical,maintenance team,,,0
+2025,Tower B,Electrical,overnight crew,1059.05,,2
+2025,Tower B,Electrical,vendor tech,9502.47,,1
+2025,Tower B,Electrical,,11568.92,,4
+2025,Tower B,Fire & Safety,Joe (in-house),5438.0,0.7,2
+2025,Tower B,Fire & Safety,PestPro Services,,5.3,2
+2025,Tower B,Fire & Safety,maintenance team,24894.25,,5
+2025,Tower B,Fire & Safety,overnight crew,,6.6,1
+2025,Tower B,Fire & Safety,vendor tech,14159.11,,4
+2025,Tower B,Fire & Safety,,16551.18,,7
+2025,Tower B,General Maintenance,ABC Mechanical,13900.33,,1
+2025,Tower B,General Maintenance,CityWide Electric,,,1
+2025,Tower B,General Maintenance,PestPro Services,,,1
+2025,Tower B,General Maintenance,maintenance team,4596.48,,1
+2025,Tower B,General Maintenance,overnight crew,12740.77,,3
+2025,Tower B,General Maintenance,vendor tech,5888.51,,2
+2025,Tower B,General Maintenance,,8733.63,1.0,2
+2025,Tower B,HVAC,ABC Mechanical,22863.69,2.0,3
+2025,Tower B,HVAC,CityWide Electric,5199.89,,0
+2025,Tower B,HVAC,Joe (in-house),15325.13,,1
+2025,Tower B,HVAC,PestPro Services,,,0
+2025,Tower B,HVAC,maintenance team,24024.15,,3
+2025,Tower B,HVAC,overnight crew,7684.04,,2
+2025,Tower B,HVAC,vendor tech,13778.56,7.7,2
+2025,Tower B,HVAC,,33950.6,,9
+2025,Tower B,IT & Network,ABC Mechanical,1919.32,,2
+2025,Tower B,IT & Network,CityWide Electric,5234.91,,2
+2025,Tower B,IT & Network,maintenance team,2962.37,,0
+2025,Tower B,IT & Network,overnight crew,,,1
+2025,Tower B,IT & Network,vendor tech,1241.63,,3
+2025,Tower B,IT & Network,,21951.94,,5
+2025,Tower B,Janitorial & Cleaning,ABC Mechanical,15299.6,9.2,3
+2025,Tower B,Janitorial & Cleaning,CityWide Electric,,,0
+2025,Tower B,Janitorial & Cleaning,PestPro Services,14392.33,,3
+2025,Tower B,Janitorial & Cleaning,maintenance team,5588.95,6.0,4
+2025,Tower B,Janitorial & Cleaning,overnight crew,,,2
+2025,Tower B,Janitorial & Cleaning,vendor tech,20799.88,,3
+2025,Tower B,Janitorial & Cleaning,,7839.25,1.5,5
+2025,Tower B,Pest Control,ABC Mechanical,14936.4,,1
+2025,Tower B,Pest Control,CityWide Electric,12015.12,,1
+2025,Tower B,Pest Control,Joe (in-house),9050.39,,3
+2025,Tower B,Pest Control,PestPro Services,11805.79,,2
+2025,Tower B,Pest Control,overnight crew,4922.94,,1
+2025,Tower B,Pest Control,vendor tech,,,1
+2025,Tower B,Pest Control,,25297.51,,4
+2025,Tower B,Plumbing,ABC Mechanical,4273.24,,1
+2025,Tower B,Plumbing,CityWide Electric,4805.88,,2
+2025,Tower B,Plumbing,Joe (in-house),4044.19,,1
+2025,Tower B,Plumbing,PestPro Services,3827.3,,3
+2025,Tower B,Plumbing,overnight crew,4574.34,6.7,5
+2025,Tower B,Plumbing,vendor tech,7497.0,4.2,4
+2025,Tower B,Plumbing,,2184.91,,6
+2025,Tower B,Vertical Transport,ABC Mechanical,4297.65,,1
+2025,Tower B,Vertical Transport,CityWide Electric,236.35,,1
+2025,Tower B,Vertical Transport,Joe (in-house),,,1
+2025,Tower B,Vertical Transport,PestPro Services,14665.87,,2
+2025,Tower B,Vertical Transport,overnight crew,8752.44,,3
+2025,Tower B,Vertical Transport,vendor tech,1890.0,,4
+2025,Tower B,Vertical Transport,,15068.86,,2
+2025,Warehouse North,Access & Security,CityWide Electric,15350.02,,3
+2025,Warehouse North,Access & Security,Joe (in-house),5626.48,,1
+2025,Warehouse North,Access & Security,PestPro Services,22406.86,,2
+2025,Warehouse North,Access & Security,maintenance team,4151.27,,2
+2025,Warehouse North,Access & Security,overnight crew,0.0,,2
+2025,Warehouse North,Access & Security,vendor tech,3764.13,1.6,2
+2025,Warehouse North,Access & Security,,21557.09,,2
+2025,Warehouse North,Electrical,ABC Mechanical,16504.42,,2
+2025,Warehouse North,Electrical,CityWide Electric,9048.76,,1
+2025,Warehouse North,Electrical,Joe (in-house),6981.36,,1
+2025,Warehouse North,Electrical,PestPro Services,3568.94,,3
+2025,Warehouse North,Electrical,overnight crew,9139.11,,2
+2025,Warehouse North,Electrical,,19684.91,12.0,10
+2025,Warehouse North,Fire & Safety,ABC Mechanical,10497.2,,2
+2025,Warehouse North,Fire & Safety,CityWide Electric,24189.02,,3
+2025,Warehouse North,Fire & Safety,Joe (in-house),,,2
+2025,Warehouse North,Fire & Safety,PestPro Services,14422.82,,1
+2025,Warehouse North,Fire & Safety,maintenance team,1889.65,7.4,4
+2025,Warehouse North,Fire & Safety,overnight crew,3442.92,1.1,1
+2025,Warehouse North,Fire & Safety,vendor tech,7001.0,,1
+2025,Warehouse North,Fire & Safety,,18685.97,3.8,5
+2025,Warehouse North,General Maintenance,ABC Mechanical,1311.69,,1
+2025,Warehouse North,General Maintenance,CityWide Electric,17930.83,,4
+2025,Warehouse North,General Maintenance,Joe (in-house),4126.03,,1
+2025,Warehouse North,General Maintenance,PestPro Services,6953.31,,3
+2025,Warehouse North,General Maintenance,maintenance team,9790.87,,2
+2025,Warehouse North,General Maintenance,overnight crew,,,1
+2025,Warehouse North,General Maintenance,vendor tech,4592.1,,1
+2025,Warehouse North,General Maintenance,,17652.83,,3
+2025,Warehouse North,HVAC,ABC Mechanical,17840.77,,3
+2025,Warehouse North,HVAC,CityWide Electric,,,1
+2025,Warehouse North,HVAC,PestPro Services,5984.0,1.6,1
+2025,Warehouse North,HVAC,maintenance team,2778.34,,1
+2025,Warehouse North,HVAC,overnight crew,985.49,4.0,1
+2025,Warehouse North,HVAC,vendor tech,8050.46,4.6,3
+2025,Warehouse North,HVAC,,20815.03,,7
+2025,Warehouse North,IT & Network,ABC Mechanical,,,1
+2025,Warehouse North,IT & Network,Joe (in-house),,,2
+2025,Warehouse North,IT & Network,PestPro Services,16157.2,,3
+2025,Warehouse North,IT & Network,maintenance team,3766.0,,3
+2025,Warehouse North,IT & Network,overnight crew,13369.27,,2
+2025,Warehouse North,IT & Network,vendor tech,12127.82,,2
+2025,Warehouse North,IT & Network,,22223.17,,6
+2025,Warehouse North,Janitorial & Cleaning,ABC Mechanical,,3.8,1
+2025,Warehouse North,Janitorial & Cleaning,CityWide Electric,13975.14,,3
+2025,Warehouse North,Janitorial & Cleaning,Joe (in-house),9705.96,,3
+2025,Warehouse North,Janitorial & Cleaning,PestPro Services,12812.95,,3
+2025,Warehouse North,Janitorial & Cleaning,maintenance team,13206.0,,2
+2025,Warehouse North,Janitorial & Cleaning,overnight crew,4137.41,,1
+2025,Warehouse North,Janitorial & Cleaning,vendor tech,2343.02,,1
+2025,Warehouse North,Janitorial & Cleaning,,23632.59,,3
+2025,Warehouse North,Pest Control,CityWide Electric,14531.0,,2
+2025,Warehouse North,Pest Control,PestPro Services,20911.99,3.9,4
+2025,Warehouse North,Pest Control,maintenance team,,,1
+2025,Warehouse North,Pest Control,overnight crew,0.0,,1
+2025,Warehouse North,Pest Control,vendor tech,2018.0,,3
+2025,Warehouse North,Pest Control,,14546.48,,6
+2025,Warehouse North,Plumbing,ABC Mechanical,13523.89,9.6,5
+2025,Warehouse North,Plumbing,PestPro Services,14147.96,1.1,3
+2025,Warehouse North,Plumbing,maintenance team,2400.93,,3
+2025,Warehouse North,Plumbing,overnight crew,11279.86,,1
+2025,Warehouse North,Plumbing,vendor tech,2356.28,,3
+2025,Warehouse North,Plumbing,,21284.02,,6
+2025,Warehouse North,Vertical Transport,ABC Mechanical,14222.95,,4
+2025,Warehouse North,Vertical Transport,CityWide Electric,18531.64,,2
+2025,Warehouse North,Vertical Transport,Joe (in-house),3888.94,,2
+2025,Warehouse North,Vertical Transport,maintenance team,4615.03,,2
+2025,Warehouse North,Vertical Transport,overnight crew,21985.12,,4
+2025,Warehouse North,Vertical Transport,vendor tech,3613.88,6.4,2
+2025,Warehouse North,Vertical Transport,,12312.08,2.4,3
+2025,Warehouse South,Access & Security,ABC Mechanical,71.29,,2
+2025,Warehouse South,Access & Security,CityWide Electric,,6.4,1
+2025,Warehouse South,Access & Security,Joe (in-house),13304.91,,3
+2025,Warehouse South,Access & Security,PestPro Services,,,1
+2025,Warehouse South,Access & Security,overnight crew,13524.14,,1
+2025,Warehouse South,Access & Security,vendor tech,0.0,6.5,3
+2025,Warehouse South,Access & Security,,7086.0,10.4,4
+2025,Warehouse South,Electrical,CityWide Electric,,,1
+2025,Warehouse South,Electrical,Joe (in-house),,,1
+2025,Warehouse South,Electrical,PestPro Services,,,1
+2025,Warehouse South,Electrical,maintenance team,1013.69,,2
+2025,Warehouse South,Electrical,overnight crew,20617.64,,2
+2025,Warehouse South,Electrical,vendor tech,6327.65,,3
+2025,Warehouse South,Electrical,,31380.6,,4
+2025,Warehouse South,Fire & Safety,ABC Mechanical,33827.94,,4
+2025,Warehouse South,Fire & Safety,CityWide Electric,6997.8,,3
+2025,Warehouse South,Fire & Safety,Joe (in-house),8242.29,,1
+2025,Warehouse South,Fire & Safety,PestPro Services,,,1
+2025,Warehouse South,Fire & Safety,maintenance team,28242.35,,4
+2025,Warehouse South,Fire & Safety,overnight crew,177.27,,2
+2025,Warehouse South,Fire & Safety,vendor tech,2317.15,,1
+2025,Warehouse South,Fire & Safety,,29334.14,,5
+2025,Warehouse South,General Maintenance,ABC Mechanical,17900.55,,2
+2025,Warehouse South,General Maintenance,CityWide Electric,13085.83,,1
+2025,Warehouse South,General Maintenance,Joe (in-house),5412.61,,2
+2025,Warehouse South,General Maintenance,PestPro Services,21356.72,,1
+2025,Warehouse South,General Maintenance,maintenance team,9180.0,,1
+2025,Warehouse South,General Maintenance,overnight crew,3484.63,,1
+2025,Warehouse South,General Maintenance,vendor tech,,,3
+2025,Warehouse South,General Maintenance,,9731.76,2.7,1
+2025,Warehouse South,HVAC,ABC Mechanical,17516.42,,3
+2025,Warehouse South,HVAC,CityWide Electric,32407.4,,4
+2025,Warehouse South,HVAC,Joe (in-house),2593.0,,1
+2025,Warehouse South,HVAC,PestPro Services,15097.48,,3
+2025,Warehouse South,HVAC,maintenance team,10865.77,,1
+2025,Warehouse South,HVAC,overnight crew,14472.9,,1
+2025,Warehouse South,HVAC,vendor tech,4956.24,,2
+2025,Warehouse South,HVAC,,12983.64,,1
+2025,Warehouse South,IT & Network,ABC Mechanical,12313.11,,2
+2025,Warehouse South,IT & Network,CityWide Electric,21285.33,,2
+2025,Warehouse South,IT & Network,Joe (in-house),,,1
+2025,Warehouse South,IT & Network,overnight crew,13836.89,,4
+2025,Warehouse South,IT & Network,,10856.31,,3
+2025,Warehouse South,Janitorial & Cleaning,ABC Mechanical,7352.99,,1
+2025,Warehouse South,Janitorial & Cleaning,Joe (in-house),0.0,,2
+2025,Warehouse South,Janitorial & Cleaning,PestPro Services,11969.51,,3
+2025,Warehouse South,Janitorial & Cleaning,maintenance team,4133.0,,1
+2025,Warehouse South,Janitorial & Cleaning,vendor tech,15944.85,,2
+2025,Warehouse South,Janitorial & Cleaning,,32427.6,,4
+2025,Warehouse South,Pest Control,ABC Mechanical,12220.01,,1
+2025,Warehouse South,Pest Control,CityWide Electric,,,1
+2025,Warehouse South,Pest Control,Joe (in-house),9738.97,,1
+2025,Warehouse South,Pest Control,PestPro Services,240.19,,1
+2025,Warehouse South,Pest Control,maintenance team,10296.02,,5
+2025,Warehouse South,Pest Control,overnight crew,,,1
+2025,Warehouse South,Pest Control,vendor tech,115.4,,1
+2025,Warehouse South,Pest Control,,73552.97,,14
+2025,Warehouse South,Plumbing,ABC Mechanical,7311.56,,3
+2025,Warehouse South,Plumbing,Joe (in-house),6295.41,,4
+2025,Warehouse South,Plumbing,PestPro Services,4185.64,,3
+2025,Warehouse South,Plumbing,maintenance team,20132.49,,2
+2025,Warehouse South,Plumbing,overnight crew,35987.91,7.5,4
+2025,Warehouse South,Plumbing,vendor tech,13831.32,,1
+2025,Warehouse South,Plumbing,,28261.59,0.7,6
+2025,Warehouse South,Vertical Transport,ABC Mechanical,,,1
+2025,Warehouse South,Vertical Transport,Joe (in-house),27363.44,,4
+2025,Warehouse South,Vertical Transport,PestPro Services,6670.7,,2
+2025,Warehouse South,Vertical Transport,maintenance team,,,2
+2025,Warehouse South,Vertical Transport,overnight crew,11914.05,0.9,1
+2025,Warehouse South,Vertical Transport,vendor tech,,,2
+2025,Warehouse South,Vertical Transport,,35068.06,2.7,4

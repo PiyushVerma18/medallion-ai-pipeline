@@ -1,0 +1,386 @@
+incident_year,assigned_to_category,building,canonical_category,total_tickets_resolved,total_cost_of_labor,average_resolution_time_hours,total_hours_on_site,first_time_fixes_count
+2024,External Vendor,Annex East,Access & Security,1,4723.29,11875.01611111111,,1
+2024,External Vendor,Annex East,Electrical,2,5608.35,4120.739722222223,,1
+2024,External Vendor,Annex East,Fire & Safety,6,14420.11,8118.347314814815,2.5,1
+2024,External Vendor,Annex East,General Maintenance,1,13261.56,10071.082222222221,,0
+2024,External Vendor,Annex East,HVAC,1,463.53,8127.816666666667,,0
+2024,External Vendor,Annex East,IT & Network,3,11058.93,6342.020555555556,,0
+2024,External Vendor,Annex East,Janitorial & Cleaning,2,,4578.740555555555,,1
+2024,External Vendor,Annex East,Pest Control,3,17040.8,8122.246944444444,,0
+2024,External Vendor,Annex East,Plumbing,1,6237.43,8543.679444444444,,0
+2024,External Vendor,Annex East,Vertical Transport,2,10494.74,3428.5158333333334,,1
+2024,External Vendor,Annex West,Access & Security,2,21090.23,6217.730555555556,,0
+2024,External Vendor,Annex West,Electrical,5,22118.4,6737.312888888889,,2
+2024,External Vendor,Annex West,General Maintenance,1,8982.72,5438.6275,,0
+2024,External Vendor,Annex West,HVAC,3,6550.81,4165.726759259259,,0
+2024,External Vendor,Annex West,IT & Network,2,3295.42,1491.2145833333334,,2
+2024,External Vendor,Annex West,Janitorial & Cleaning,2,4218.74,7044.870972222222,,1
+2024,External Vendor,Annex West,Pest Control,4,4062.02,6006.586736111111,,1
+2024,External Vendor,Annex West,Plumbing,2,20986.93,10232.53986111111,,0
+2024,External Vendor,Annex West,Vertical Transport,3,7870.62,4991.670833333334,,0
+2024,External Vendor,Building 3,Access & Security,6,16305.55,5045.285694444445,,1
+2024,External Vendor,Building 3,Electrical,1,,3305.228611111111,,0
+2024,External Vendor,Building 3,Fire & Safety,3,10424.78,4489.245740740741,,0
+2024,External Vendor,Building 3,General Maintenance,2,19994.19,1084.713888888889,,0
+2024,External Vendor,Building 3,HVAC,2,13081.97,12101.618333333334,,1
+2024,External Vendor,Building 3,IT & Network,3,4913.41,3701.554074074074,7.1,1
+2024,External Vendor,Building 3,Janitorial & Cleaning,1,,10445.850833333334,,1
+2024,External Vendor,Building 3,Pest Control,2,,6307.325972222222,1.8,0
+2024,External Vendor,Building 3,Plumbing,4,1048.71,9675.979375,2.2,1
+2024,External Vendor,Building 3,Vertical Transport,1,4904.22,7885.631111111111,,1
+2024,External Vendor,Building 7,Access & Security,5,11588.89,7417.578333333333,2.3,1
+2024,External Vendor,Building 7,Electrical,5,37135.53,7029.0663888888885,,2
+2024,External Vendor,Building 7,Fire & Safety,4,26406.48,8522.322083333333,,2
+2024,External Vendor,Building 7,General Maintenance,2,9714.33,5712.9454166666665,,1
+2024,External Vendor,Building 7,HVAC,1,14446.28,12677.264166666668,,0
+2024,External Vendor,Building 7,IT & Network,4,0.0,6042.830069444444,,0
+2024,External Vendor,Building 7,Janitorial & Cleaning,3,14912.53,4961.113055555556,1.2,0
+2024,External Vendor,Building 7,Pest Control,4,24819.16,7489.414930555556,,1
+2024,External Vendor,Building 7,Plumbing,1,11983.43,3621.233888888889,,0
+2024,External Vendor,Building 7,Vertical Transport,2,1152.0,5336.325,,0
+2024,External Vendor,Cafeteria Block,Access & Security,2,5044.09,10628.77375,,1
+2024,External Vendor,Cafeteria Block,Electrical,1,11598.32,2911.9333333333334,,0
+2024,External Vendor,Cafeteria Block,Fire & Safety,3,10581.21,6110.828611111111,,0
+2024,External Vendor,Cafeteria Block,General Maintenance,1,4192.72,4575.709444444445,,1
+2024,External Vendor,Cafeteria Block,HVAC,3,0.0,9171.036481481482,2.7,0
+2024,External Vendor,Cafeteria Block,IT & Network,3,1212.29,7177.622962962963,4.1,0
+2024,External Vendor,Cafeteria Block,Janitorial & Cleaning,1,7601.0,9648.0,,0
+2024,External Vendor,Cafeteria Block,Pest Control,2,16585.55,10449.66625,0.6,1
+2024,External Vendor,Cafeteria Block,Plumbing,3,4241.19,7448.108240740741,,0
+2024,External Vendor,Data Center 1,Access & Security,3,8838.82,6859.409722222223,,0
+2024,External Vendor,Data Center 1,Electrical,5,10202.9,6494.589388888889,7.1,1
+2024,External Vendor,Data Center 1,Fire & Safety,5,19903.48,4858.419444444445,6.0,1
+2024,External Vendor,Data Center 1,General Maintenance,1,4059.87,8623.059444444445,,1
+2024,External Vendor,Data Center 1,HVAC,5,24484.09,7983.743611111111,,2
+2024,External Vendor,Data Center 1,IT & Network,5,52673.61,4417.962666666666,,2
+2024,External Vendor,Data Center 1,Janitorial & Cleaning,6,12502.85,4242.280231481482,,1
+2024,External Vendor,Data Center 1,Pest Control,4,9000.05,7274.698958333333,7.0,1
+2024,External Vendor,Data Center 1,Plumbing,6,9043.03,5071.203425925926,3.4,1
+2024,External Vendor,Data Center 1,Vertical Transport,1,,4238.611944444445,,0
+2024,External Vendor,HQ Floor 1,Access & Security,1,,1461.336388888889,,0
+2024,External Vendor,HQ Floor 1,Electrical,3,12315.32,7089.8069444444445,,0
+2024,External Vendor,HQ Floor 1,Fire & Safety,1,11769.49,5685.758611111111,,1
+2024,External Vendor,HQ Floor 1,HVAC,2,3629.14,7347.123888888889,,1
+2024,External Vendor,HQ Floor 1,IT & Network,2,14604.54,8678.13763888889,,0
+2024,External Vendor,HQ Floor 1,Janitorial & Cleaning,5,8514.52,6646.860111111111,,3
+2024,External Vendor,HQ Floor 1,Pest Control,3,4628.16,5595.0038888888885,,0
+2024,External Vendor,HQ Floor 1,Plumbing,3,12687.54,4517.185833333333,,1
+2024,External Vendor,HQ Floor 1,Vertical Transport,3,1126.23,9263.070092592592,,1
+2024,External Vendor,HQ Floor 2,Access & Security,5,25355.17,7152.2020555555555,,1
+2024,External Vendor,HQ Floor 2,Electrical,2,443.4,6251.849861111111,,0
+2024,External Vendor,HQ Floor 2,Fire & Safety,3,13794.12,7199.671481481481,,2
+2024,External Vendor,HQ Floor 2,HVAC,4,4282.75,7315.219305555555,,1
+2024,External Vendor,HQ Floor 2,IT & Network,2,12265.32,5917.346527777778,,1
+2024,External Vendor,HQ Floor 2,Janitorial & Cleaning,2,13253.37,9557.700833333334,,0
+2024,External Vendor,HQ Floor 2,Pest Control,6,26434.58,7861.235462962963,,2
+2024,External Vendor,HQ Floor 2,Vertical Transport,2,11782.18,4591.118194444444,,0
+2024,External Vendor,HQ Floor 3,Access & Security,2,2866.9,5729.97375,,0
+2024,External Vendor,HQ Floor 3,Electrical,5,17079.39,7469.307111111111,,1
+2024,External Vendor,HQ Floor 3,Fire & Safety,3,2039.64,4933.3475,1.3,0
+2024,External Vendor,HQ Floor 3,General Maintenance,2,5765.06,5432.743611111111,,0
+2024,External Vendor,HQ Floor 3,HVAC,4,6432.87,5824.444583333333,,1
+2024,External Vendor,HQ Floor 3,IT & Network,1,14239.55,3036.748611111111,,0
+2024,External Vendor,HQ Floor 3,Janitorial & Cleaning,6,12525.2,3450.9079629629628,,1
+2024,External Vendor,HQ Floor 3,Pest Control,3,1035.06,5481.0339814814815,,2
+2024,External Vendor,HQ Floor 3,Plumbing,5,4612.15,5567.116055555555,16.6,0
+2024,External Vendor,HQ Floor 3,Vertical Transport,3,11028.44,8869.052870370371,,2
+2024,External Vendor,Main Office,Access & Security,5,13100.71,6083.715444444444,,0
+2024,External Vendor,Main Office,Fire & Safety,4,33800.67,7209.4225,,2
+2024,External Vendor,Main Office,HVAC,3,12200.81,9881.805555555555,,1
+2024,External Vendor,Main Office,IT & Network,3,10557.43,7866.883796296296,,0
+2024,External Vendor,Main Office,Janitorial & Cleaning,2,3528.83,10437.033333333333,4.8,0
+2024,External Vendor,Main Office,Pest Control,2,22110.09,3655.1618055555555,,1
+2024,External Vendor,Main Office,Plumbing,3,28074.04,5476.723518518518,,0
+2024,External Vendor,Main Office,Vertical Transport,2,2222.62,1952.7966666666666,,0
+2024,External Vendor,Parking Garage,Access & Security,6,18421.99,6797.762777777778,,3
+2024,External Vendor,Parking Garage,Electrical,5,20024.75,5578.0952777777775,,1
+2024,External Vendor,Parking Garage,Fire & Safety,5,21169.52,6560.858111111111,,3
+2024,External Vendor,Parking Garage,General Maintenance,2,14915.15,3370.0529166666665,,1
+2024,External Vendor,Parking Garage,HVAC,2,18396.05,7767.67,,1
+2024,External Vendor,Parking Garage,IT & Network,2,13938.43,10404.248194444444,5.4,0
+2024,External Vendor,Parking Garage,Janitorial & Cleaning,3,16205.09,2614.0226851851853,,0
+2024,External Vendor,Parking Garage,Pest Control,1,9419.17,11664.0,,1
+2024,External Vendor,Parking Garage,Plumbing,2,60.19,7562.543194444444,,1
+2024,External Vendor,Parking Garage,Vertical Transport,4,26766.73,5692.835277777778,,4
+2024,External Vendor,Remote Site Alpha,Access & Security,2,3550.64,3081.6402777777776,,1
+2024,External Vendor,Remote Site Alpha,Electrical,4,22941.1,6778.031319444444,2.3,1
+2024,External Vendor,Remote Site Alpha,Fire & Safety,3,14654.24,5263.7321296296295,,2
+2024,External Vendor,Remote Site Alpha,General Maintenance,3,9524.43,8704.308333333332,,1
+2024,External Vendor,Remote Site Alpha,HVAC,3,4419.79,4557.449074074074,,3
+2024,External Vendor,Remote Site Alpha,IT & Network,2,2623.75,2117.3593055555557,,0
+2024,External Vendor,Remote Site Alpha,Janitorial & Cleaning,4,25925.04,6489.916666666667,,1
+2024,External Vendor,Remote Site Alpha,Pest Control,2,12687.65,6408.655972222222,,0
+2024,External Vendor,Remote Site Alpha,Plumbing,2,6286.06,8517.845277777778,,0
+2024,External Vendor,Remote Site Beta,Access & Security,2,12617.6,7133.497916666666,,0
+2024,External Vendor,Remote Site Beta,Electrical,4,5895.12,5687.269305555556,,0
+2024,External Vendor,Remote Site Beta,Fire & Safety,5,43189.88,7941.621277777778,,1
+2024,External Vendor,Remote Site Beta,General Maintenance,4,29255.55,6938.0095833333335,7.1,1
+2024,External Vendor,Remote Site Beta,HVAC,5,7480.81,7274.215222222222,4.5,0
+2024,External Vendor,Remote Site Beta,IT & Network,2,26235.12,8485.882638888888,,1
+2024,External Vendor,Remote Site Beta,Janitorial & Cleaning,1,,7418.376666666667,,0
+2024,External Vendor,Remote Site Beta,Pest Control,8,21144.86,7106.420381944445,7.4,2
+2024,External Vendor,Remote Site Beta,Plumbing,2,4088.0,9423.273611111112,,1
+2024,External Vendor,Remote Site Beta,Vertical Transport,2,13423.46,5525.859444444444,,1
+2024,External Vendor,Tower A,Access & Security,2,1260.52,6317.550277777777,,0
+2024,External Vendor,Tower A,Electrical,1,7020.06,4516.195555555556,,0
+2024,External Vendor,Tower A,Fire & Safety,2,15836.22,7241.591111111111,,0
+2024,External Vendor,Tower A,General Maintenance,3,1430.66,5254.545462962963,,1
+2024,External Vendor,Tower A,HVAC,3,5972.23,4321.532685185185,2.6,1
+2024,External Vendor,Tower A,IT & Network,1,,4575.374444444445,,0
+2024,External Vendor,Tower A,Janitorial & Cleaning,6,26435.65,6846.129212962963,12.2,3
+2024,External Vendor,Tower A,Pest Control,4,32480.0,6528.031597222222,6.4,0
+2024,External Vendor,Tower A,Plumbing,4,0.0,6406.976736111111,,1
+2024,External Vendor,Tower A,Vertical Transport,2,25787.42,7360.74625,,1
+2024,External Vendor,Tower B,Access & Security,1,9977.74,4090.3566666666666,,0
+2024,External Vendor,Tower B,Electrical,2,8723.36,5025.163611111111,5.8,0
+2024,External Vendor,Tower B,Fire & Safety,3,509.74,3861.1824074074075,,0
+2024,External Vendor,Tower B,General Maintenance,2,,3740.5269444444443,,1
+2024,External Vendor,Tower B,HVAC,4,8098.0,6603.5742361111115,0.9,1
+2024,External Vendor,Tower B,IT & Network,3,7287.97,8420.608888888888,1.3,1
+2024,External Vendor,Tower B,Janitorial & Cleaning,3,1434.39,5226.641111111111,,1
+2024,External Vendor,Tower B,Pest Control,4,8213.51,5405.584444444445,,3
+2024,External Vendor,Tower B,Plumbing,6,27031.43,6260.994537037037,,1
+2024,External Vendor,Tower B,Vertical Transport,1,,6886.032222222222,,0
+2024,External Vendor,Warehouse North,Access & Security,4,23555.99,10251.42,,1
+2024,External Vendor,Warehouse North,Electrical,3,11518.37,5993.763703703704,,1
+2024,External Vendor,Warehouse North,Fire & Safety,3,8140.43,7113.168981481482,,0
+2024,External Vendor,Warehouse North,General Maintenance,1,11771.67,3769.35,,0
+2024,External Vendor,Warehouse North,HVAC,1,7555.35,2037.6880555555556,,1
+2024,External Vendor,Warehouse North,IT & Network,2,0.0,6895.724722222222,,0
+2024,External Vendor,Warehouse North,Janitorial & Cleaning,1,,9224.030833333334,,0
+2024,External Vendor,Warehouse North,Pest Control,4,37084.12,5644.226736111111,4.1,0
+2024,External Vendor,Warehouse North,Vertical Transport,1,4888.26,1224.6677777777777,,0
+2024,External Vendor,Warehouse South,Access & Security,5,33789.04,6429.736166666667,,2
+2024,External Vendor,Warehouse South,Electrical,4,18505.63,8173.963541666667,7.4,2
+2024,External Vendor,Warehouse South,Fire & Safety,3,8795.0,8446.840185185185,,0
+2024,External Vendor,Warehouse South,General Maintenance,2,9129.93,2144.9523611111113,,1
+2024,External Vendor,Warehouse South,HVAC,4,9124.27,8976.610694444444,,1
+2024,External Vendor,Warehouse South,IT & Network,1,,8306.045833333334,,0
+2024,External Vendor,Warehouse South,Janitorial & Cleaning,2,4951.52,1181.1920833333334,,1
+2024,External Vendor,Warehouse South,Pest Control,3,19698.1,6985.407592592593,,1
+2024,External Vendor,Warehouse South,Plumbing,1,,5720.827777777778,,1
+2024,External Vendor,Warehouse South,Vertical Transport,1,2464.0,13045.8425,,0
+2024,Internal,Annex East,Access & Security,2,,7524.369722222223,0.8,1
+2024,Internal,Annex East,IT & Network,3,7349.82,5259.27,,1
+2024,Internal,Annex East,Vertical Transport,1,5074.36,2320.301388888889,4.7,0
+2024,Internal,Annex West,Fire & Safety,1,14991.55,9936.0,,0
+2024,Internal,Annex West,General Maintenance,1,11675.26,6787.100833333333,,0
+2024,Internal,Annex West,HVAC,1,115.0,10986.341388888888,,0
+2024,Internal,Annex West,Plumbing,1,2965.54,8300.96388888889,,1
+2024,Internal,Building 3,Access & Security,1,11609.86,1467.621111111111,,1
+2024,Internal,Building 3,Electrical,1,6769.81,10941.770277777778,5.6,0
+2024,Internal,Building 3,Fire & Safety,1,4006.02,10080.476388888888,,0
+2024,Internal,Building 3,General Maintenance,1,14342.6,509.1513888888889,6.4,0
+2024,Internal,Building 3,HVAC,2,2763.88,6338.802361111111,,0
+2024,Internal,Building 3,IT & Network,1,4437.0,5285.15,,0
+2024,Internal,Building 3,Pest Control,1,4770.7,5451.9013888888885,,1
+2024,Internal,Building 3,Plumbing,2,4652.45,7623.555138888889,,1
+2024,Internal,Building 3,Vertical Transport,4,5861.0,5813.435625,,0
+2024,Internal,Building 7,Access & Security,1,,6916.167777777778,,0
+2024,Internal,Building 7,Electrical,1,2219.87,5727.806388888889,,0
+2024,Internal,Building 7,HVAC,3,5889.33,1949.4935185185186,,2
+2024,Internal,Building 7,IT & Network,2,4214.14,9525.49111111111,,1
+2024,Internal,Building 7,Pest Control,1,14380.56,9920.906666666666,,1
+2024,Internal,Building 7,Vertical Transport,2,17656.8,5021.766666666666,,1
+2024,Internal,Cafeteria Block,Access & Security,1,14785.69,2710.831388888889,,0
+2024,Internal,Cafeteria Block,Fire & Safety,1,8596.0,10653.547777777778,7.7,0
+2024,Internal,Cafeteria Block,HVAC,2,2736.61,8248.269861111112,,0
+2024,Internal,Cafeteria Block,IT & Network,2,10232.62,10323.190972222223,,1
+2024,Internal,Cafeteria Block,Janitorial & Cleaning,1,11723.69,11375.101944444445,,1
+2024,Internal,Cafeteria Block,Pest Control,1,,6967.5325,,0
+2024,Internal,Cafeteria Block,Plumbing,1,14618.79,8990.483333333334,,0
+2024,Internal,Cafeteria Block,Vertical Transport,2,,7827.726527777778,,0
+2024,Internal,Data Center 1,Access & Security,1,13205.99,7012.35,,0
+2024,Internal,Data Center 1,Electrical,3,9808.18,9541.77611111111,6.6,1
+2024,Internal,Data Center 1,General Maintenance,1,,5626.361666666667,,0
+2024,Internal,Data Center 1,IT & Network,1,6026.94,3325.8722222222223,,0
+2024,Internal,Data Center 1,Pest Control,1,4634.0,7220.308888888889,,0
+2024,Internal,Data Center 1,Plumbing,2,10528.08,4452.11375,,1
+2024,Internal,HQ Floor 1,Access & Security,3,19319.31,6793.003518518519,,2
+2024,Internal,HQ Floor 1,Fire & Safety,1,,9943.2375,,0
+2024,Internal,HQ Floor 1,General Maintenance,1,9022.89,1943.7755555555555,,0
+2024,Internal,HQ Floor 1,Pest Control,4,12639.6,6282.86,,1
+2024,Internal,HQ Floor 1,Vertical Transport,1,,5093.261111111111,,0
+2024,Internal,HQ Floor 2,Access & Security,1,6969.32,3702.279722222222,,0
+2024,Internal,HQ Floor 2,Electrical,1,,9703.751944444444,,1
+2024,Internal,HQ Floor 2,Fire & Safety,1,,6507.795833333334,,0
+2024,Internal,HQ Floor 2,Janitorial & Cleaning,2,3846.01,7757.474583333334,,1
+2024,Internal,HQ Floor 2,Pest Control,3,26886.11,3324.2380555555555,,1
+2024,Internal,HQ Floor 2,Plumbing,2,2938.0,4024.510138888889,,0
+2024,Internal,HQ Floor 2,Vertical Transport,1,,10473.47388888889,,1
+2024,Internal,HQ Floor 3,Electrical,2,18555.16,8305.25263888889,,0
+2024,Internal,HQ Floor 3,HVAC,1,1209.98,2616.2816666666668,,0
+2024,Internal,HQ Floor 3,IT & Network,1,12731.0,4057.65,,0
+2024,Internal,HQ Floor 3,Plumbing,1,11604.17,2253.661666666667,,0
+2024,Internal,Main Office,Access & Security,3,9465.46,8988.755925925925,,0
+2024,Internal,Main Office,Electrical,6,22640.89,7961.084583333333,5.5,0
+2024,Internal,Main Office,Fire & Safety,1,,12602.17,,0
+2024,Internal,Main Office,HVAC,3,12690.84,2824.424722222222,,0
+2024,Internal,Main Office,IT & Network,1,,5911.33,,0
+2024,Internal,Main Office,Pest Control,1,5790.04,8368.488055555556,6.9,0
+2024,Internal,Main Office,Vertical Transport,1,971.75,74.40777777777778,,0
+2024,Internal,Parking Garage,Access & Security,4,2447.02,6702.015208333333,,3
+2024,Internal,Parking Garage,Electrical,1,13997.61,6134.3341666666665,,0
+2024,Internal,Parking Garage,Fire & Safety,3,621.03,6172.033333333334,,2
+2024,Internal,Parking Garage,HVAC,2,2612.64,6358.235,,0
+2024,Internal,Parking Garage,Pest Control,2,17525.88,3056.2906944444444,,0
+2024,Internal,Parking Garage,Plumbing,3,5608.0,6563.456388888889,,1
+2024,Internal,Parking Garage,Vertical Transport,1,7000.34,6360.664722222222,4.3,0
+2024,Internal,Remote Site Alpha,Access & Security,3,9480.53,7228.583611111111,0.7,1
+2024,Internal,Remote Site Alpha,Fire & Safety,2,17735.69,9262.826944444445,,0
+2024,Internal,Remote Site Alpha,General Maintenance,2,19764.04,3673.3380555555555,,0
+2024,Internal,Remote Site Alpha,HVAC,1,8350.0,1623.5297222222223,,0
+2024,Internal,Remote Site Alpha,IT & Network,1,,6169.4325,,0
+2024,Internal,Remote Site Alpha,Janitorial & Cleaning,2,,6173.915138888889,,0
+2024,Internal,Remote Site Alpha,Vertical Transport,2,8541.27,4467.101388888889,,1
+2024,Internal,Remote Site Beta,Electrical,1,,3918.876388888889,,0
+2024,Internal,Remote Site Beta,Fire & Safety,1,4285.75,1104.0,,1
+2024,Internal,Remote Site Beta,HVAC,2,,2890.231388888889,,0
+2024,Internal,Remote Site Beta,IT & Network,2,10262.43,5395.680972222222,6.1,0
+2024,Internal,Remote Site Beta,Pest Control,1,,4928.125277777778,,1
+2024,Internal,Remote Site Beta,Vertical Transport,1,1403.59,10272.0,,0
+2024,Internal,Tower A,Electrical,1,8667.51,8408.051111111112,,0
+2024,Internal,Tower A,Fire & Safety,1,821.0,8710.980277777779,,1
+2024,Internal,Tower A,General Maintenance,1,5568.85,5090.994166666666,,0
+2024,Internal,Tower A,Pest Control,1,5386.79,9270.370833333332,,0
+2024,Internal,Tower A,Plumbing,2,8524.08,5105.0888888888885,,0
+2024,Internal,Tower A,Vertical Transport,1,11032.54,4188.318333333334,,1
+2024,Internal,Tower B,Access & Security,1,,5083.951666666667,,0
+2024,Internal,Tower B,Electrical,2,3261.0,6269.355416666666,6.3,0
+2024,Internal,Tower B,HVAC,1,11217.86,10984.66,,0
+2024,Internal,Tower B,IT & Network,1,,6338.392777777778,,0
+2024,Internal,Tower B,Plumbing,1,10464.19,5658.751944444444,,0
+2024,Internal,Warehouse North,Access & Security,3,,7105.626666666667,,1
+2024,Internal,Warehouse North,General Maintenance,1,8526.51,11914.7125,,1
+2024,Internal,Warehouse North,HVAC,1,,6316.779166666666,,0
+2024,Internal,Warehouse North,IT & Network,2,21383.14,6491.4319444444445,,1
+2024,Internal,Warehouse North,Janitorial & Cleaning,1,8933.0,10104.245,,0
+2024,Internal,Warehouse North,Pest Control,2,361.63,7042.1923611111115,,0
+2024,Internal,Warehouse North,Vertical Transport,1,1600.3,4070.896388888889,,1
+2024,Internal,Warehouse South,Access & Security,2,13740.0,2469.8152777777777,,0
+2024,Internal,Warehouse South,Electrical,2,11963.15,4423.437083333333,7.7,1
+2024,Internal,Warehouse South,Fire & Safety,4,13132.4,7507.445833333333,,2
+2024,Internal,Warehouse South,HVAC,2,8911.65,6287.212777777778,,0
+2024,Internal,Warehouse South,IT & Network,1,,8952.687222222223,,0
+2024,Internal,Warehouse South,Janitorial & Cleaning,1,1699.0,1582.0111111111112,,0
+2024,Internal,Warehouse South,Pest Control,1,11640.8,5574.023888888889,0.7,0
+2024,Internal,Warehouse South,Vertical Transport,1,7555.63,4335.104444444444,,0
+2025,External Vendor,Annex East,Access & Security,1,8624.38,1086.3763888888889,,1
+2025,External Vendor,Annex East,Electrical,2,13062.14,1195.1961111111111,,1
+2025,External Vendor,Annex East,HVAC,1,1958.99,707.8947222222222,,0
+2025,External Vendor,Annex East,Plumbing,1,9875.0,2604.214722222222,,0
+2025,External Vendor,Annex East,Vertical Transport,1,,647.6055555555556,,0
+2025,External Vendor,Annex West,Access & Security,1,3545.0,2338.8169444444443,,0
+2025,External Vendor,Annex West,Fire & Safety,3,18775.96,1308.9800925925927,5.2,0
+2025,External Vendor,Annex West,Janitorial & Cleaning,1,,4176.343055555555,,0
+2025,External Vendor,Annex West,Pest Control,1,1134.64,230.42444444444445,2.8,0
+2025,External Vendor,Annex West,Plumbing,2,,2164.058611111111,,1
+2025,External Vendor,Building 3,Access & Security,2,753.32,1613.2656944444445,,0
+2025,External Vendor,Building 3,Electrical,2,6200.0,2547.7533333333336,4.8,0
+2025,External Vendor,Building 3,Fire & Safety,1,4293.7,3572.8658333333333,,0
+2025,External Vendor,Building 3,HVAC,1,,99.87472222222222,,0
+2025,External Vendor,Building 3,Pest Control,1,,436.9869444444444,,0
+2025,External Vendor,Building 3,Vertical Transport,1,4804.11,3235.081388888889,,1
+2025,External Vendor,Building 7,Electrical,1,,2686.9819444444443,,0
+2025,External Vendor,Building 7,Fire & Safety,1,,851.3291666666667,6.4,0
+2025,External Vendor,Building 7,IT & Network,1,8958.14,3601.5569444444445,5.4,0
+2025,External Vendor,Building 7,Pest Control,1,,3013.8527777777776,,0
+2025,External Vendor,Building 7,Vertical Transport,2,6123.48,1442.9422222222222,,1
+2025,External Vendor,Cafeteria Block,Fire & Safety,1,1624.18,363.49444444444447,,0
+2025,External Vendor,Cafeteria Block,HVAC,1,1406.48,1242.615,,0
+2025,External Vendor,Cafeteria Block,IT & Network,1,,1989.9258333333332,,1
+2025,External Vendor,Cafeteria Block,Janitorial & Cleaning,1,6019.0,1400.7063888888888,,0
+2025,External Vendor,Cafeteria Block,Vertical Transport,2,13881.76,1375.2345833333334,,0
+2025,External Vendor,Data Center 1,Access & Security,2,5281.2,1225.4725,,1
+2025,External Vendor,Data Center 1,Electrical,2,,2965.947222222222,,0
+2025,External Vendor,Data Center 1,Fire & Safety,1,14835.2,1124.1166666666666,,0
+2025,External Vendor,Data Center 1,General Maintenance,2,20920.82,679.2468055555555,,0
+2025,External Vendor,Data Center 1,IT & Network,2,,1305.41,,0
+2025,External Vendor,Data Center 1,Janitorial & Cleaning,1,2078.95,211.64138888888888,1.4,0
+2025,External Vendor,Data Center 1,Plumbing,3,,801.6201851851852,0.7,0
+2025,External Vendor,Data Center 1,Vertical Transport,1,7088.33,3355.7052777777776,,0
+2025,External Vendor,HQ Floor 1,Access & Security,2,4133.88,3204.4090277777777,,0
+2025,External Vendor,HQ Floor 1,Electrical,1,7217.41,1708.8833333333334,,0
+2025,External Vendor,HQ Floor 1,General Maintenance,1,,2468.373611111111,7.3,0
+2025,External Vendor,HQ Floor 1,HVAC,2,,915.3086111111111,,2
+2025,External Vendor,HQ Floor 1,IT & Network,2,2922.52,1600.8275,,1
+2025,External Vendor,HQ Floor 1,Pest Control,1,,1696.5258333333334,,0
+2025,External Vendor,HQ Floor 2,Access & Security,4,21643.65,1205.7096527777778,,1
+2025,External Vendor,HQ Floor 2,Electrical,1,,4682.423333333333,2.8,0
+2025,External Vendor,HQ Floor 2,HVAC,1,3601.92,1038.0275,,0
+2025,External Vendor,HQ Floor 2,Plumbing,1,3156.56,333.7783333333333,,0
+2025,External Vendor,HQ Floor 3,Fire & Safety,1,6856.67,3430.016666666667,,1
+2025,External Vendor,HQ Floor 3,HVAC,2,3815.91,1592.8804166666666,,0
+2025,External Vendor,HQ Floor 3,Janitorial & Cleaning,2,6582.94,2185.0588888888888,,1
+2025,External Vendor,Main Office,Access & Security,1,9843.14,2206.760277777778,,0
+2025,External Vendor,Main Office,Electrical,2,11677.53,2820.600972222222,0.9,0
+2025,External Vendor,Main Office,HVAC,4,23091.32,1240.9588888888889,,1
+2025,External Vendor,Main Office,Janitorial & Cleaning,2,1004.66,2661.949861111111,,1
+2025,External Vendor,Main Office,Plumbing,2,,2199.070277777778,,1
+2025,External Vendor,Main Office,Vertical Transport,2,108.42,1670.7752777777778,,1
+2025,External Vendor,Parking Garage,Electrical,1,13934.53,1021.025,,0
+2025,External Vendor,Parking Garage,Fire & Safety,1,9641.26,3121.076666666667,,1
+2025,External Vendor,Parking Garage,IT & Network,1,,2472.4775,,1
+2025,External Vendor,Parking Garage,Janitorial & Cleaning,1,,1412.9166666666667,,0
+2025,External Vendor,Remote Site Alpha,Electrical,1,10268.47,1022.4358333333333,,0
+2025,External Vendor,Remote Site Alpha,IT & Network,1,562.0,3376.045833333333,,0
+2025,External Vendor,Remote Site Alpha,Plumbing,2,13257.96,507.6936111111111,,0
+2025,External Vendor,Remote Site Alpha,Vertical Transport,1,,2977.151388888889,,0
+2025,External Vendor,Remote Site Beta,Access & Security,2,21352.85,1914.3481944444445,,1
+2025,External Vendor,Remote Site Beta,Electrical,1,,716.3452777777778,,0
+2025,External Vendor,Remote Site Beta,HVAC,2,2720.0,1539.484861111111,,0
+2025,External Vendor,Remote Site Beta,Janitorial & Cleaning,2,7956.63,1811.2198611111112,5.2,0
+2025,External Vendor,Remote Site Beta,Pest Control,4,3767.88,901.33875,22.8,0
+2025,External Vendor,Remote Site Beta,Vertical Transport,2,12679.12,1588.5748611111112,,0
+2025,External Vendor,Tower A,Access & Security,1,4813.0,2789.5338888888887,6.9,0
+2025,External Vendor,Tower A,Electrical,1,2520.69,151.10444444444445,,0
+2025,External Vendor,Tower A,Janitorial & Cleaning,1,11274.59,1384.2586111111111,,0
+2025,External Vendor,Tower A,Pest Control,1,8304.53,521.7522222222223,,0
+2025,External Vendor,Tower A,Vertical Transport,1,,696.0,,0
+2025,External Vendor,Tower B,General Maintenance,1,2327.61,1146.6977777777777,,1
+2025,External Vendor,Tower B,HVAC,2,8379.0,930.9525,,0
+2025,External Vendor,Tower B,IT & Network,1,1602.32,2107.133333333333,,1
+2025,External Vendor,Tower B,Plumbing,2,969.13,180.73458333333335,,0
+2025,External Vendor,Warehouse North,HVAC,1,,566.1661111111111,4.6,0
+2025,External Vendor,Warehouse North,IT & Network,1,4169.2,1066.1166666666666,,0
+2025,External Vendor,Warehouse South,Electrical,1,7085.77,1074.0833333333333,,0
+2025,External Vendor,Warehouse South,General Maintenance,1,,3404.0333333333333,,1
+2025,External Vendor,Warehouse South,HVAC,1,14107.48,2594.928611111111,,1
+2025,External Vendor,Warehouse South,IT & Network,2,9891.0,1897.3993055555557,,1
+2025,External Vendor,Warehouse South,Pest Control,1,,2129.7952777777778,,0
+2025,External Vendor,Warehouse South,Plumbing,1,13831.32,169.2938888888889,,0
+2025,External Vendor,Warehouse South,Vertical Transport,1,6607.57,277.7036111111111,,0
+2025,Internal,Annex East,Electrical,1,8743.55,2085.2166666666667,,0
+2025,Internal,Annex East,Fire & Safety,1,,2574.413888888889,,0
+2025,Internal,Annex East,Pest Control,1,,812.3811111111111,,0
+2025,Internal,Annex West,Pest Control,1,,3897.9133333333334,,1
+2025,Internal,Building 3,Access & Security,1,,2448.0,,0
+2025,Internal,Building 3,Fire & Safety,1,,1448.8302777777778,,0
+2025,Internal,Building 3,HVAC,1,,3501.803611111111,,0
+2025,Internal,Building 3,Janitorial & Cleaning,2,12925.61,2827.826666666667,,1
+2025,Internal,Building 7,Electrical,1,,3942.9391666666666,,0
+2025,Internal,Building 7,IT & Network,1,,1247.5380555555555,,0
+2025,Internal,Building 7,Pest Control,1,13796.33,886.3213888888889,3.9,0
+2025,Internal,Cafeteria Block,General Maintenance,1,5670.49,3111.508611111111,,0
+2025,Internal,Cafeteria Block,IT & Network,1,1799.53,4016.535,,0
+2025,Internal,Data Center 1,Vertical Transport,1,,3603.4869444444444,,0
+2025,Internal,HQ Floor 1,General Maintenance,1,5368.8,3811.7891666666665,,0
+2025,Internal,HQ Floor 1,Plumbing,1,925.94,813.7475,,0
+2025,Internal,HQ Floor 2,Electrical,1,4888.73,3916.9036111111113,,0
+2025,Internal,HQ Floor 2,Plumbing,1,632.63,1455.0377777777778,,0
+2025,Internal,HQ Floor 2,Vertical Transport,2,,2397.749861111111,,1
+2025,Internal,HQ Floor 3,Fire & Safety,2,4753.42,2153.1158333333333,,0
+2025,Internal,HQ Floor 3,Vertical Transport,1,,1772.6325,,1
+2025,Internal,Main Office,Electrical,1,,343.05,,0
+2025,Internal,Main Office,HVAC,1,14709.02,1811.0347222222222,,0
+2025,Internal,Remote Site Alpha,Janitorial & Cleaning,1,13497.77,3805.1575,,0
+2025,Internal,Remote Site Alpha,Pest Control,2,8139.41,318.67625,,0
+2025,Internal,Remote Site Alpha,Vertical Transport,1,,1738.3961111111112,,0
+2025,Internal,Remote Site Beta,Pest Control,1,14203.89,4655.203888888889,,0
+2025,Internal,Tower A,General Maintenance,1,8079.45,3765.8516666666665,,0
+2025,Internal,Tower A,IT & Network,1,3613.83,760.2897222222222,,0
+2025,Internal,Tower B,Janitorial & Cleaning,1,,1469.266388888889,,0
+2025,Internal,Warehouse North,Fire & Safety,1,,1875.036111111111,7.4,0
+2025,Internal,Warehouse North,IT & Network,1,,4560.0,,0
+2025,Internal,Warehouse South,Fire & Safety,1,,414.3666666666667,,0
+2025,Internal,Warehouse South,HVAC,1,10865.77,3771.3641666666667,,0
