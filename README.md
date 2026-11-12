@@ -199,9 +199,10 @@ The current pipeline is designed for a roughly 10k-row CSV, not daily million-ro
 
    ```bash
    docker compose up -d
-   python -m venv .venv
+   python3 --version
+   python3 -m venv .venv
    source .venv/bin/activate
-   pip install -r requirements.txt
+   python -m pip install -r requirements.txt
    LLM_CACHE_MODE=replay python run_pipeline.py
    ```
 
