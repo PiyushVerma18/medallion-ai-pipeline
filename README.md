@@ -185,28 +185,15 @@ The current pipeline is designed for a roughly 10k-row CSV, not daily million-ro
 
 ### Run the full pipeline
 
-1. Clone the repository and create the environment file:
+Run this from a directory where `medallion-ai-pipeline` does not already exist. It clones the repository, copies the example environment, starts PostgreSQL and waits for it to become healthy, creates a virtual environment, installs dependencies, and runs the complete pipeline in cache-replay mode:
 
-   ```bash
-   git clone https://github.com/PiyushVerma18/medallion-ai-pipeline
-   cd medallion-ai-pipeline
-   cp .env.example .env
-   ```
+```bash
+git clone https://github.com/PiyushVerma18/medallion-ai-pipeline && cd medallion-ai-pipeline && cp .env.example .env && docker compose up -d --wait && python3 -m venv .venv && .venv/bin/python -m pip install -r requirements.txt && LLM_CACHE_MODE=replay .venv/bin/python run_pipeline.py
+```
 
-   Keep the documented `DATABASE_URL` for the Compose database. For cached offline execution, set `LLM_CACHE_MODE=replay`; for new Gemini calls, set a valid `GEMINI_API_KEY` and use `LLM_CACHE_MODE` as `read_write` or `refresh`.
+This requires Git, Docker Compose, and Python 3 to be installed. The example `DATABASE_URL` is configured for the Compose database. Cache replay does not make Gemini calls; if a cache entry is missing, the run stops with an error. To create new cache entries, configure a valid `GEMINI_API_KEY` in `.env` and run with `LLM_CACHE_MODE=read_write` instead of `replay`.
 
-2. Start PostgreSQL, create/activate a virtual environment, install dependencies, and run the pipeline:
-
-   ```bash
-   docker compose up -d
-   python3 --version
-   python3 -m venv .venv
-   source .venv/bin/activate
-   python -m pip install -r requirements.txt
-   LLM_CACHE_MODE=replay python run_pipeline.py
-   ```
-
-   The pipeline runs Bronze ingestion, Silver, then Gold. The same invocation is safe to rerun: Bronze ignores previously ingested source rows, Silver upserts by ticket ID, and Gold replaces its own outputs.
+The pipeline runs Bronze ingestion, Silver, then Gold. Rerunning it is safe: Bronze ignores previously ingested source rows, Silver upserts by ticket ID, Gold replaces its own outputs, and successfully promoted Gold models are exported to `exports/`.
 
 ### Run Silver only
 
