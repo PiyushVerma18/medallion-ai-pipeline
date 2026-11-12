@@ -1,0 +1,291 @@
+{
+  "cache_key": "47ee4a0275d6a9a4767183084f6ee9c436ff13d4e8db44bc1732acb912784a4e",
+  "model": "gemini-2.5-flash",
+  "provider": "google-gemini",
+  "response": {
+    "items": [
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 0
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 1
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 2
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 3
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 4
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 5
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 6
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 7
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 8
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 9
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 10
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 11
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 12
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 13
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 14
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 15
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 16
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 17
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 18
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 1",
+        "item_id": 19
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 100",
+        "item_id": 20
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 101",
+        "item_id": 21
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 105",
+        "item_id": 22
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 107",
+        "item_id": 23
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 111",
+        "item_id": 24
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 112",
+        "item_id": 25
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 12",
+        "item_id": 26
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 120",
+        "item_id": 27
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 123",
+        "item_id": 28
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 125",
+        "item_id": 29
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 127",
+        "item_id": 30
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 13",
+        "item_id": 31
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 133",
+        "item_id": 32
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 136",
+        "item_id": 33
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 137",
+        "item_id": 34
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 14",
+        "item_id": 35
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 140",
+        "item_id": 36
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 141",
+        "item_id": 37
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 142",
+        "item_id": 38
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 143",
+        "item_id": 39
+      }
+    ]
+  },
+  "schema_name": "DescriptionBatchOutput",
+  "temperature": 0.0
+}

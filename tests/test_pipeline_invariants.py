@@ -35,24 +35,31 @@ def test_silver_deduplication_and_swaps():
         assert res["anomalies"] == 1866
 
 def test_gold_metrics_non_negative():
-    """Verify all duration and financial metrics in Gold are non-negative."""
-    tables = [
-        "gold.annual_facilities_opex_summary",
-        "gold.annual_critical_risk_and_duplicate_analysis",
-        "gold.annual_asset_failure_analysis",
-        "gold.annual_maintenance_sourcing_performance"
-    ]
+    """Verify numeric columns in every currently promoted Gold materialized view."""
     with engine.connect() as conn:
-        for t in tables:
+        view_names = conn.execute(text("""
+            SELECT matviewname
+            FROM pg_matviews
+            WHERE schemaname = 'gold'
+            ORDER BY matviewname;
+        """)).scalars().all()
+        assert view_names, "No Gold materialized views have been promoted."
+
+        preparer = conn.dialect.identifier_preparer
+        gold_schema = preparer.quote("gold")
+        for view_name in view_names:
             cols = conn.execute(text(f"""
                 SELECT column_name 
                 FROM information_schema.columns 
-                WHERE table_schema = 'gold' AND table_name = '{t.replace("gold.", "")}'
+                WHERE table_schema = 'gold' AND table_name = :view_name
                   AND data_type IN ('numeric', 'double precision', 'real', 'integer', 'bigint');
-            """)).fetchall()
+            """), {"view_name": view_name}).scalars().all()
             
-            for (col,) in cols:
+            quoted_view = preparer.quote(view_name)
+            for col in cols:
+                quoted_column = preparer.quote(col)
                 neg_count = conn.execute(text(f"""
-                    SELECT COUNT(*) FROM {t} WHERE "{col}" < 0;
+                    SELECT COUNT(*) FROM {gold_schema}.{quoted_view}
+                    WHERE {quoted_column} < 0;
                 """)).scalar()
-                assert neg_count == 0, f"Negative value detected in {t}.{col}!"
+                assert neg_count == 0, f"Negative value detected in gold.{view_name}.{col}!"

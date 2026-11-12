@@ -1,0 +1,291 @@
+{
+  "cache_key": "ca159effc5a71a9e4679b4ad3179826ee8108bde6c45972d797e73ae9d50c6dc",
+  "model": "gemini-2.5-flash",
+  "provider": "google-gemini",
+  "response": {
+    "items": [
+      {
+        "extracted_asset_id": "desk 4",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 0
+      },
+      {
+        "extracted_asset_id": "desk 40",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 1
+      },
+      {
+        "extracted_asset_id": "desk 400",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 2
+      },
+      {
+        "extracted_asset_id": "desk 43",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 3
+      },
+      {
+        "extracted_asset_id": "desk 46",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 4
+      },
+      {
+        "extracted_asset_id": "desk 47",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 5
+      },
+      {
+        "extracted_asset_id": "desk 51",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 6
+      },
+      {
+        "extracted_asset_id": "desk 53",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 7
+      },
+      {
+        "extracted_asset_id": "desk 55",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 8
+      },
+      {
+        "extracted_asset_id": "desk 57",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 9
+      },
+      {
+        "extracted_asset_id": "desk 59",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 10
+      },
+      {
+        "extracted_asset_id": "desk 6",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 11
+      },
+      {
+        "extracted_asset_id": "desk 60",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 12
+      },
+      {
+        "extracted_asset_id": "desk 63",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 13
+      },
+      {
+        "extracted_asset_id": "desk 65",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 14
+      },
+      {
+        "extracted_asset_id": "desk 66",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 15
+      },
+      {
+        "extracted_asset_id": "desk 70",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 16
+      },
+      {
+        "extracted_asset_id": "desk 72",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 17
+      },
+      {
+        "extracted_asset_id": "desk 77",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 18
+      },
+      {
+        "extracted_asset_id": "desk 79",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 19
+      },
+      {
+        "extracted_asset_id": "desk 81",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 20
+      },
+      {
+        "extracted_asset_id": "desk 84",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 21
+      },
+      {
+        "extracted_asset_id": "desk 90",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 22
+      },
+      {
+        "extracted_asset_id": "desk 94",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 23
+      },
+      {
+        "extracted_asset_id": "desk 96",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 24
+      },
+      {
+        "extracted_asset_id": "spot 1",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 25
+      },
+      {
+        "extracted_asset_id": "spot 101",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 26
+      },
+      {
+        "extracted_asset_id": "spot 105",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 27
+      },
+      {
+        "extracted_asset_id": "spot 108",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 28
+      },
+      {
+        "extracted_asset_id": "spot 110",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 29
+      },
+      {
+        "extracted_asset_id": "spot 114",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 30
+      },
+      {
+        "extracted_asset_id": "spot 115",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 31
+      },
+      {
+        "extracted_asset_id": "spot 134",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 32
+      },
+      {
+        "extracted_asset_id": "spot 137",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 33
+      },
+      {
+        "extracted_asset_id": "spot 141",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 34
+      },
+      {
+        "extracted_asset_id": "spot 142",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 35
+      },
+      {
+        "extracted_asset_id": "spot 148",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 36
+      },
+      {
+        "extracted_asset_id": "spot 150",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 37
+      },
+      {
+        "extracted_asset_id": "spot 151",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 38
+      },
+      {
+        "extracted_asset_id": "spot 159",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 39
+      }
+    ]
+  },
+  "schema_name": "DescriptionBatchOutput",
+  "temperature": 0.0
+}

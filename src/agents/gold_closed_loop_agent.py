@@ -1,22 +1,10 @@
 import json
-import os
 from typing import Dict, Any, List, Optional
 from pydantic import BaseModel, Field
 from sqlalchemy import text
-from langchain_google_genai import ChatGoogleGenerativeAI
-from src.config import GEMINI_API_KEY, GEMINI_MODEL
-from src.db import engine
-
-if not GEMINI_API_KEY:
-    raise ValueError("GEMINI_API_KEY not configured.")
-
-os.environ["GOOGLE_API_KEY"] = GEMINI_API_KEY
-
-llm = ChatGoogleGenerativeAI(
-    model=GEMINI_MODEL,
-    google_api_key=GEMINI_API_KEY,
-    temperature=0.0
-)
+from src.agents.llm_cache import invoke_gemini_structured
+from src.agents.sql_safety import validate_gold_select, validate_gold_target
+from src.db import engine as admin_engine, gold_engine
 
 # =========================================================================
 # 1. Pydantic Schemas
@@ -86,11 +74,12 @@ def introspect_silver_column_context(table_name: str = "silver.cleaned_tickets",
     and top distinct sample values. Provides empirical data grounding so the LLM
     never guesses categorical casing, spelling, or formatting.
     """
-    with engine.connect() as conn:
+    with gold_engine.connect() as conn:
         cols_query = text("""
             SELECT column_name, data_type 
             FROM information_schema.columns 
             WHERE table_schema = 'silver' AND table_name = 'cleaned_tickets'
+              AND column_name <> '_silver_processed_at'
             ORDER BY ordinal_position;
         """)
         cols = conn.execute(cols_query).fetchall()
@@ -102,6 +91,7 @@ def introspect_silver_column_context(table_name: str = "silver.cleaned_tickets",
                 SELECT DISTINCT {safe_col}::TEXT AS val 
                 FROM {table_name} 
                 WHERE {safe_col} IS NOT NULL 
+                ORDER BY val
                 LIMIT {sample_limit};
             """)
             samples = [str(r[0]) for r in conn.execute(sample_query).fetchall() if r[0] is not None]
@@ -113,7 +103,6 @@ def introspect_silver_column_context(table_name: str = "silver.cleaned_tickets",
 
 def agent_understand_schema(column_context: Dict[str, Any]) -> SchemaSemanticUnderstanding:
     """Step 1: Understand real-world semantics and operational traps using empirical column profiles."""
-    structured_llm = llm.with_structured_output(SchemaSemanticUnderstanding)
     prompt = f"""
 You are a Principal Data Warehouse Architect in Corporate Facilities Management.
 Examine this empirical schema profile from our PostgreSQL table (`silver.cleaned_tickets`), 
@@ -125,7 +114,7 @@ For each column:
 2. Explain what it represents in physical facility operations.
 3. Identify analytical pitfalls or quality traps (e.g., temporal inversions, duplicates, nulls).
 """
-    return structured_llm.invoke(prompt)
+    return invoke_gemini_structured(SchemaSemanticUnderstanding, prompt, temperature=0.0)
 
 
 def agent_formulate_domain_problems(
@@ -134,7 +123,6 @@ def agent_formulate_domain_problems(
     business_domain_narrative: str
 ) -> List[GoldProblemStatement]:
     """Step 2: Formulate 2 deeply justified problem statements with full stakeholder context."""
-    structured_llm = llm.with_structured_output(DomainProblemsProposal)
     prompt = f"""
 You are a Principal Enterprise Data Warehouse Architect and Strategic Operations Consultant.
 Analyze the Silver schema semantics:
@@ -152,7 +140,9 @@ For EACH problem statement, provide thorough analytical depth:
 4. `decisions_enabled`: List concrete operational decisions facilities leadership can make.
 5. `target_table_name`: Valid lowercase snake_case prefixed with 'gold.'.
 """
-    proposal: DomainProblemsProposal = structured_llm.invoke(prompt)
+    proposal: DomainProblemsProposal = invoke_gemini_structured(
+        DomainProblemsProposal, prompt, temperature=0.0
+    )
     return proposal.problems
 
 
@@ -162,8 +152,6 @@ def agent_generate_and_self_verify_sql(
     error_feedback: Optional[str] = None
 ) -> VerifiedSqlSolution:
     """Step 3: Generate SQL and self-verify against known column context traps."""
-    structured_llm = llm.with_structured_output(VerifiedSqlSolution)
-
     prompt = f"""
 You are an expert PostgreSQL 16 Analytics Engineer.
 Generate the analytical SELECT query to solve this business problem:
@@ -192,16 +180,17 @@ OPERATIONAL SQL RULES:
 7. Filter test rows where appropriate: `canonical_category != 'Unassigned'`.
 8. Return ONLY the SELECT statement inside `raw_query_sql`. Do not include CREATE TABLE or CREATE VIEW.
 """
-    return structured_llm.invoke(prompt)
+    return invoke_gemini_structured(VerifiedSqlSolution, prompt, temperature=0.0)
 
 
 def execute_dry_run_and_extract_stats(target_name: str, select_sql: str) -> Dict[str, Any]:
     """Step 4: Execute query into staging and compute statistical distribution of numeric columns."""
+    target_name = validate_gold_target(target_name)
+    select_sql = validate_gold_select(select_sql)
     clean_target = target_name.replace("gold.", "")
     staging_table = f"gold._staging_{clean_target}"
     
-    with engine.begin() as conn:
-        conn.execute(text("CREATE SCHEMA IF NOT EXISTS gold;"))
+    with gold_engine.begin() as conn:
         conn.execute(text(f"DROP TABLE IF EXISTS {staging_table};"))
         conn.execute(text(f"CREATE TABLE {staging_table} AS {select_sql};"))
         
@@ -247,7 +236,6 @@ def execute_dry_run_and_extract_stats(target_name: str, select_sql: str) -> Dict
 
 def agent_audit_gold_stats(stats_payload: Dict[str, Any]) -> StatAuditResult:
     """Step 5: Agent inspects empirical statistics and verifies physical possibility."""
-    structured_llm = llm.with_structured_output(StatAuditResult)
     prompt = f"""
 You are an expert Data Quality Auditor reviewing the statistical output of a newly computed Gold data mart.
 Inspect the following column statistics extracted from PostgreSQL:
@@ -261,13 +249,16 @@ EVALUATION RULES:
 
 Return whether the dataset is statistically sound. If violations exist, specify exact details and SQL fix.
 """
-    return structured_llm.invoke(prompt)
+    return invoke_gemini_structured(StatAuditResult, prompt, temperature=0.0)
 
 
 def promote_staging_to_production_view(target_name: str, select_sql: str) -> int:
     """Step 6: Promote verified SQL into production Materialized View."""
-    with engine.begin() as conn:
+    target_name = validate_gold_target(target_name)
+    select_sql = validate_gold_select(select_sql)
+    with admin_engine.begin() as conn:
         conn.execute(text("CREATE SCHEMA IF NOT EXISTS gold;"))
+        conn.execute(text("SET LOCAL ROLE medallion_gold;"))
         conn.execute(text(f"DROP MATERIALIZED VIEW IF EXISTS {target_name};"))
         conn.execute(text(f"CREATE MATERIALIZED VIEW {target_name} AS {select_sql};"))
         row_count = conn.execute(text(f"SELECT COUNT(*) FROM {target_name};")).scalar() or 0

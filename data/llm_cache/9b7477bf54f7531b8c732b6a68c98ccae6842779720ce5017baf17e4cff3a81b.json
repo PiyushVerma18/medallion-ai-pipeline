@@ -1,0 +1,461 @@
+{
+  "cache_key": "9b7477bf54f7531b8c732b6a68c98ccae6842779720ce5017baf17e4cff3a81b",
+  "model": "gemini-2.5-flash",
+  "provider": "google-gemini",
+  "response": {
+    "mappings": [
+      {
+        "canonical_category": "Unassigned",
+        "confidence": 1.0,
+        "rationale": "Noise/placeholder text -> Unassigned",
+        "raw_category": "???"
+      },
+      {
+        "canonical_category": "HVAC",
+        "confidence": 1.0,
+        "rationale": "A/C refers to air conditioning -> HVAC",
+        "raw_category": "A/C"
+      },
+      {
+        "canonical_category": "HVAC",
+        "confidence": 1.0,
+        "rationale": "AC refers to air conditioning -> HVAC",
+        "raw_category": "AC"
+      },
+      {
+        "canonical_category": "Access & Security",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to access control -> Access & Security",
+        "raw_category": "Access Control"
+      },
+      {
+        "canonical_category": "Access & Security",
+        "confidence": 1.0,
+        "rationale": "Badge/Access refers to access control -> Access & Security",
+        "raw_category": "Badge/Access"
+      },
+      {
+        "canonical_category": "Janitorial & Cleaning",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to cleaning -> Janitorial & Cleaning",
+        "raw_category": "CLEANING"
+      },
+      {
+        "canonical_category": "Janitorial & Cleaning",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to cleaning -> Janitorial & Cleaning",
+        "raw_category": "Cleaning"
+      },
+      {
+        "canonical_category": "HVAC",
+        "confidence": 1.0,
+        "rationale": "Climate Control refers to heating/cooling -> HVAC",
+        "raw_category": "Climate Control"
+      },
+      {
+        "canonical_category": "IT & Network",
+        "confidence": 1.0,
+        "rationale": "Connectivity refers to network/IT issues -> IT & Network",
+        "raw_category": "Connectivity"
+      },
+      {
+        "canonical_category": "Unassigned",
+        "confidence": 1.0,
+        "rationale": "Noise/placeholder text -> Unassigned",
+        "raw_category": "DELETE ME"
+      },
+      {
+        "canonical_category": "Electrical",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to electrical -> Electrical",
+        "raw_category": "ELECTRICAL"
+      },
+      {
+        "canonical_category": "Vertical Transport",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to elevator -> Vertical Transport",
+        "raw_category": "ELEVATOR"
+      },
+      {
+        "canonical_category": "Electrical",
+        "confidence": 1.0,
+        "rationale": "Elec is a common abbreviation for electrical -> Electrical",
+        "raw_category": "Elec"
+      },
+      {
+        "canonical_category": "Electrical",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to electrical -> Electrical",
+        "raw_category": "Electrical"
+      },
+      {
+        "canonical_category": "Electrical",
+        "confidence": 1.0,
+        "rationale": "Refers to electrical systems -> Electrical",
+        "raw_category": "Electrical Systems"
+      },
+      {
+        "canonical_category": "Vertical Transport",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to elevator -> Vertical Transport",
+        "raw_category": "Elevator"
+      },
+      {
+        "canonical_category": "Pest Control",
+        "confidence": 1.0,
+        "rationale": "Exterminator refers to pest control -> Pest Control",
+        "raw_category": "Exterminator"
+      },
+      {
+        "canonical_category": "Fire & Safety",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to fire alarm -> Fire & Safety",
+        "raw_category": "Fire Alarm"
+      },
+      {
+        "canonical_category": "Fire & Safety",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to fire safety -> Fire & Safety",
+        "raw_category": "Fire Safety"
+      },
+      {
+        "canonical_category": "Fire & Safety",
+        "confidence": 1.0,
+        "rationale": "Refers to fire and safety -> Fire & Safety",
+        "raw_category": "Fire/Safety"
+      },
+      {
+        "canonical_category": "Unassigned",
+        "confidence": 1.0,
+        "rationale": "General is a placeholder/noise term -> Unassigned",
+        "raw_category": "General"
+      },
+      {
+        "canonical_category": "General Maintenance",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to general maintenance -> General Maintenance",
+        "raw_category": "General Maintenance"
+      },
+      {
+        "canonical_category": "HVAC",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to HVAC -> HVAC",
+        "raw_category": "HVAC"
+      },
+      {
+        "canonical_category": "HVAC",
+        "confidence": 1.0,
+        "rationale": "Refers to HVAC system -> HVAC",
+        "raw_category": "HVAC System"
+      },
+      {
+        "canonical_category": "HVAC",
+        "confidence": 1.0,
+        "rationale": "Heating/Cooling refers to HVAC -> HVAC",
+        "raw_category": "Heating/Cooling"
+      },
+      {
+        "canonical_category": "Janitorial & Cleaning",
+        "confidence": 1.0,
+        "rationale": "Housekeeping refers to janitorial/cleaning -> Janitorial & Cleaning",
+        "raw_category": "Housekeeping"
+      },
+      {
+        "canonical_category": "IT & Network",
+        "confidence": 1.0,
+        "rationale": "Refers to IT -> IT & Network",
+        "raw_category": "IT"
+      },
+      {
+        "canonical_category": "IT & Network",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to IT support -> IT & Network",
+        "raw_category": "IT Support"
+      },
+      {
+        "canonical_category": "IT & Network",
+        "confidence": 1.0,
+        "rationale": "Refers to IT and Network -> IT & Network",
+        "raw_category": "IT/Network"
+      },
+      {
+        "canonical_category": "Janitorial & Cleaning",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to janitorial -> Janitorial & Cleaning",
+        "raw_category": "Janitorial"
+      },
+      {
+        "canonical_category": "Vertical Transport",
+        "confidence": 1.0,
+        "rationale": "Lift is a common term for elevator -> Vertical Transport",
+        "raw_category": "Lift"
+      },
+      {
+        "canonical_category": "General Maintenance",
+        "confidence": 0.8,
+        "rationale": "General term for maintenance, not specific enough for other categories -> General Maintenance",
+        "raw_category": "Maintenance"
+      },
+      {
+        "canonical_category": "Unassigned",
+        "confidence": 1.0,
+        "rationale": "Misc is a placeholder/noise term -> Unassigned",
+        "raw_category": "Misc"
+      },
+      {
+        "canonical_category": "Unassigned",
+        "confidence": 1.0,
+        "rationale": "Noise/placeholder text -> Unassigned",
+        "raw_category": "NULL"
+      },
+      {
+        "canonical_category": "IT & Network",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to network -> IT & Network",
+        "raw_category": "Network"
+      },
+      {
+        "canonical_category": "Unassigned",
+        "confidence": 1.0,
+        "rationale": "Other is a placeholder/noise term -> Unassigned",
+        "raw_category": "Other"
+      },
+      {
+        "canonical_category": "Plumbing",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to plumbing -> Plumbing",
+        "raw_category": "PLUMBING"
+      },
+      {
+        "canonical_category": "Pest Control",
+        "confidence": 1.0,
+        "rationale": "Pest refers to pest control -> Pest Control",
+        "raw_category": "Pest"
+      },
+      {
+        "canonical_category": "Pest Control",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to pest control -> Pest Control",
+        "raw_category": "Pest Control"
+      },
+      {
+        "canonical_category": "Plumbing",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to plumbing -> Plumbing",
+        "raw_category": "Plumbing"
+      },
+      {
+        "canonical_category": "Plumbing",
+        "confidence": 1.0,
+        "rationale": "Refers to a plumbing issue -> Plumbing",
+        "raw_category": "Plumbing Issue"
+      },
+      {
+        "canonical_category": "Electrical",
+        "confidence": 1.0,
+        "rationale": "Power refers to electrical issues -> Electrical",
+        "raw_category": "Power"
+      },
+      {
+        "canonical_category": "Access & Security",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to security -> Access & Security",
+        "raw_category": "SECURITY"
+      },
+      {
+        "canonical_category": "Access & Security",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to security -> Access & Security",
+        "raw_category": "Security"
+      },
+      {
+        "canonical_category": "Access & Security",
+        "confidence": 1.0,
+        "rationale": "Refers to security systems -> Access & Security",
+        "raw_category": "Security Systems"
+      },
+      {
+        "canonical_category": "Fire & Safety",
+        "confidence": 1.0,
+        "rationale": "Sprinkler refers to fire safety -> Fire & Safety",
+        "raw_category": "Sprinkler"
+      },
+      {
+        "canonical_category": "Vertical Transport",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to vertical transport -> Vertical Transport",
+        "raw_category": "Vertical Transport"
+      },
+      {
+        "canonical_category": "Plumbing",
+        "confidence": 1.0,
+        "rationale": "Water/Plumbing refers to plumbing issues -> Plumbing",
+        "raw_category": "Water/Plumbing"
+      },
+      {
+        "canonical_category": "IT & Network",
+        "confidence": 1.0,
+        "rationale": "WiFi refers to network/IT issues -> IT & Network",
+        "raw_category": "WiFi"
+      },
+      {
+        "canonical_category": "HVAC",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to air conditioning -> HVAC",
+        "raw_category": "air conditioning"
+      },
+      {
+        "canonical_category": "Unassigned",
+        "confidence": 1.0,
+        "rationale": "Noise/placeholder text -> Unassigned",
+        "raw_category": "asdf"
+      },
+      {
+        "canonical_category": "Pest Control",
+        "confidence": 1.0,
+        "rationale": "Bugs in office refers to pest control -> Pest Control",
+        "raw_category": "bugs in office Remote Site Beta"
+      },
+      {
+        "canonical_category": "Janitorial & Cleaning",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to cleaning -> Janitorial & Cleaning",
+        "raw_category": "cleaning"
+      },
+      {
+        "canonical_category": "HVAC",
+        "confidence": 1.0,
+        "rationale": "Cold refers to an air conditioning/heating issue -> HVAC",
+        "raw_category": "cold"
+      },
+      {
+        "canonical_category": "Electrical",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to electrical -> Electrical",
+        "raw_category": "electrical"
+      },
+      {
+        "canonical_category": "Vertical Transport",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to elevator -> Vertical Transport",
+        "raw_category": "elevator"
+      },
+      {
+        "canonical_category": "Vertical Transport",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to elevator/escalator -> Vertical Transport",
+        "raw_category": "elevator/escalator"
+      },
+      {
+        "canonical_category": "Fire & Safety",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to fire safety -> Fire & Safety",
+        "raw_category": "fire safety"
+      },
+      {
+        "canonical_category": "General Maintenance",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to general maintenance -> General Maintenance",
+        "raw_category": "general maintenance"
+      },
+      {
+        "canonical_category": "HVAC",
+        "confidence": 1.0,
+        "rationale": "Heating cooling refers to HVAC -> HVAC",
+        "raw_category": "heating cooling"
+      },
+      {
+        "canonical_category": "HVAC",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to HVAC -> HVAC",
+        "raw_category": "hvac"
+      },
+      {
+        "canonical_category": "Janitorial & Cleaning",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to janitorial -> Janitorial & Cleaning",
+        "raw_category": "janitorial"
+      },
+      {
+        "canonical_category": "Electrical",
+        "confidence": 1.0,
+        "rationale": "Outlets refer to electrical infrastructure -> Electrical",
+        "raw_category": "need more outlets in conf room 387"
+      },
+      {
+        "canonical_category": "Electrical",
+        "confidence": 1.0,
+        "rationale": "Outlets refer to electrical infrastructure -> Electrical",
+        "raw_category": "need more outlets in conf room 861"
+      },
+      {
+        "canonical_category": "IT & Network",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to network -> IT & Network",
+        "raw_category": "network"
+      },
+      {
+        "canonical_category": "Pest Control",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to pest control -> Pest Control",
+        "raw_category": "pest control"
+      },
+      {
+        "canonical_category": "Plumbing",
+        "confidence": 1.0,
+        "rationale": "Pipe burst refers to a plumbing issue -> Plumbing",
+        "raw_category": "pipe burst"
+      },
+      {
+        "canonical_category": "Plumbing",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to plumbing -> Plumbing",
+        "raw_category": "plumbing"
+      },
+      {
+        "canonical_category": "Electrical",
+        "confidence": 1.0,
+        "rationale": "Power issue refers to an electrical problem -> Electrical",
+        "raw_category": "power issue"
+      },
+      {
+        "canonical_category": "Access & Security",
+        "confidence": 1.0,
+        "rationale": "Explicitly refers to security -> Access & Security",
+        "raw_category": "security"
+      },
+      {
+        "canonical_category": "Fire & Safety",
+        "confidence": 1.0,
+        "rationale": "Smoke detector refers to fire safety -> Fire & Safety",
+        "raw_category": "smoke detector beeping Tower A"
+      },
+      {
+        "canonical_category": "Unassigned",
+        "confidence": 1.0,
+        "rationale": "Noise/placeholder text -> Unassigned",
+        "raw_category": "test"
+      },
+      {
+        "canonical_category": "Unassigned",
+        "confidence": 1.0,
+        "rationale": "Noise/placeholder text -> Unassigned",
+        "raw_category": "unknown"
+      },
+      {
+        "canonical_category": "Plumbing",
+        "confidence": 1.0,
+        "rationale": "Water issue refers to a plumbing problem -> Plumbing",
+        "raw_category": "water issue"
+      },
+      {
+        "canonical_category": "General Maintenance",
+        "confidence": 0.9,
+        "rationale": "A cracked window is a general building maintenance issue -> General Maintenance",
+        "raw_category": "window cracked HQ Floor 2 6 floor"
+      }
+    ]
+  },
+  "schema_name": "TaxonomyMappingOutput",
+  "temperature": 0.0
+}

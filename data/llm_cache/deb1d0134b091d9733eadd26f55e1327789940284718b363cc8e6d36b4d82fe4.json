@@ -1,0 +1,291 @@
+{
+  "cache_key": "deb1d0134b091d9733eadd26f55e1327789940284718b363cc8e6d36b4d82fe4",
+  "model": "gemini-2.5-flash",
+  "provider": "google-gemini",
+  "response": {
+    "items": [
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 386",
+        "item_id": 0
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 387",
+        "item_id": 1
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 388",
+        "item_id": 2
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 39",
+        "item_id": 3
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 392",
+        "item_id": 4
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 393",
+        "item_id": 5
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 394",
+        "item_id": 6
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 398",
+        "item_id": 7
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 4",
+        "item_id": 8
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 40",
+        "item_id": 9
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 42",
+        "item_id": 10
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 46",
+        "item_id": 11
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 51",
+        "item_id": 12
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 52",
+        "item_id": 13
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 55",
+        "item_id": 14
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 56",
+        "item_id": 15
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 61",
+        "item_id": 16
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 62",
+        "item_id": 17
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 64",
+        "item_id": 18
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 68",
+        "item_id": 19
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 7",
+        "item_id": 20
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 72",
+        "item_id": 21
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 76",
+        "item_id": 22
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "desk 80",
+        "item_id": 23
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 24
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 25
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "Annex East",
+        "item_id": 26
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "Annex West",
+        "item_id": 27
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 28
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 29
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "Cafeteria",
+        "item_id": 30
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "Data Center 1",
+        "item_id": 31
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": "1",
+        "extracted_room": null,
+        "item_id": 32
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": "2",
+        "extracted_room": null,
+        "item_id": 33
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": "3",
+        "extracted_room": null,
+        "item_id": 34
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "Main Office",
+        "item_id": 35
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": "Parking Garage",
+        "item_id": 36
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 37
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 38
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "Power outlet",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 39
+      }
+    ]
+  },
+  "schema_name": "DescriptionBatchOutput",
+  "temperature": 0.0
+}

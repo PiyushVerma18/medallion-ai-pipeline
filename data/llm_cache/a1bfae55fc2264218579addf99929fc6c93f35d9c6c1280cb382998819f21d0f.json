@@ -1,0 +1,12 @@
+{
+  "cache_key": "a1bfae55fc2264218579addf99929fc6c93f35d9c6c1280cb382998819f21d0f",
+  "model": "gemini-2.5-flash",
+  "provider": "google-gemini",
+  "response": {
+    "raw_query_sql": "SELECT\n    EXTRACT(YEAR FROM created_at)::INT AS incident_year,\n    CASE\n        WHEN assigned_to ILIKE '%in-house%' OR assigned_to ILIKE '%maintenance team%' THEN 'Internal'\n        ELSE 'External Vendor'\n    END AS assigned_to_category,\n    building,\n    canonical_category,\n    COUNT(ticket_id) AS total_tickets_resolved,\n    SUM(cost) AS total_cost_of_labor,\n    AVG(EXTRACT(EPOCH FROM (resolved_at - created_at))) / 3600 AS average_resolution_time_hours,\n    SUM(hours_on_site) AS total_hours_on_site,\n    SUM(CASE WHEN resolution_action = 'Fixed on site' THEN 1 ELSE 0 END) AS first_time_fixes_count\nFROM\n    silver.cleaned_tickets\nWHERE\n    created_at IS NOT NULL\n    AND resolved_at IS NOT NULL\n    AND is_temporal_anomaly = FALSE\n    AND status = 'Closed'\n    AND canonical_category != 'Unassigned'\n    AND assigned_to IS NOT NULL\nGROUP BY\n    incident_year,\n    assigned_to_category,\n    building,\n    canonical_category\nORDER BY\n    incident_year,\n    assigned_to_category,\n    building,\n    canonical_category;",
+    "self_verification_rationale": "The query aggregates maintenance ticket data annually, categorizing 'assigned_to' into 'Internal' or 'External Vendor' based on keywords like 'in-house' or 'maintenance team' found in the `assigned_to` column. It filters for valid, resolved tickets by ensuring `created_at` and `resolved_at` are not null, `is_temporal_anomaly` is false, and `status` is 'Closed'. Additionally, it excludes tickets with an 'Unassigned' `canonical_category` and those where `assigned_to` is null, as these are not relevant to workforce performance analysis. Metrics like total tickets resolved, total labor cost, average resolution time, total hours on site, and first-time fix counts are calculated to provide a comprehensive view of workforce efficiency and cost-effectiveness.",
+    "target_table_name": "gold.annual_workforce_performance_summary"
+  },
+  "schema_name": "VerifiedSqlSolution",
+  "temperature": 0.0
+}

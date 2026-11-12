@@ -1,283 +1,166 @@
-# Gold Analytical Models: Full Detail
+# Gold Analytical Models and Business Value
 
-> Full per-model detail (schemas, stakeholders, empirical profiling, decisions enabled).
-> The README holds the summary; nothing was removed, only moved here.
+Agent 3 examines the Silver schema and sample values, then proposes two annual-grain models for each configured business domain. It generates a PostgreSQL query for each model and runs the result in a staging table. The staging row count and numeric summaries are passed to the statistical audit. A model is promoted only when the audit passes.
 
-## Gold Analytical Models & Business Value
+The descriptions below follow the business dossiers generated in the supplied run. The dimensions, metrics, SQL, and names are agent proposals and can change with the Silver input, prompt, or LLM cache. The profiling numbers are observations from this run, not permanent guarantees about future data.
 
-The Gold Layer is modeled around an annual grain (incident_year), reflecting enterprise fiscal planning and vendor Master Service Agreement (MSA) review cycles. In the underlying operational data, ticket volume is concentrated in 2024 (6,490 tickets across 170 cohorts) and 2025 (3,266 tickets across 170 cohorts), alongside 2 late-2023 tickets, totaling 9,758 actionable incidents across 17 facilities and 10 canonical trade disciplines. Grouping by month would fragment the data into sparse cohorts (~3 tickets per cell), whereas an annual grain maintains statistical significance for CapEx, OpEx, and reliability decisions.
+## Domain 1: Corporate Real Estate and Facilities Operations
 
-### Domain 1: Corporate Real Estate & Facilities Operations (CRE / FM)
+### Model 1: `gold.annual_facilities_opex_summary`
 
-### Model 1: gold.annual_facilities_opex_summary
+**Dimensional grain:** `incident_year` × `building` × `canonical_category` × `assigned_to`
 
-- Table Type: Materialized View
-- Dataset Shape: 342 rows × 6 columns
-- Dimensional Grain: incident_year × building × canonical_category
-- Schema Definition:
-1) incident_year (INT): Operational year (2023, 2024, 2025).
-2) building (TEXT): Campus location (17 distinct facilities, e.g., Main Office, Tower A, Remote Site Alpha).
-3) canonical_category (VARCHAR): Normalized maintenance discipline (10 canonical classes, e.g., HVAC, Electrical, Plumbing, Vertical Transport).
-4) total_annual_cost (NUMERIC): Total annual operational expenditure per building-discipline cohort.
-5) total_annual_hours_on_site (NUMERIC): Cumulative field labor hours logged on site.
-6) total_annual_tickets (BIGINT): Annual incident volume.
+The model aggregates annual facilities tickets by year, facility, normalized maintenance category, and assigned team or vendor. The proposed measures are total cost, on-site hours, and unique ticket count.
 
 ### The "Why Behind" This Problem
 
-Without clear visibility into annual OPEX by building and maintenance category, the organization cannot identify cost drivers, negotiate better vendor contracts, or optimize internal resource deployment. This leads to budget overruns, inefficient spending, and a reactive rather than proactive approach to facilities management. The financial risk is significant, as unmanaged OPEX directly impacts profitability and diverts funds from strategic initiatives while preventing accurate forecasting and capital planning.
+Uncontrolled facilities OPEX can lead to budget overruns and leave less funding for planned maintenance or strategic improvements. Raw ticket logs do not make it easy to see which buildings, maintenance disciplines, or assigned teams account for the most cost and effort. Without that view, leaders may allocate budgets reactively, miss opportunities for preventative maintenance, or renegotiate vendor contracts without evidence about where spending is concentrated.
 
 ### Key Stakeholders & Pain Points
 
-- VP of Corporate Real Estate (Portfolio Optimization & CapEx Planning): Lacks a consolidated, granular view of annual OPEX by building and maintenance category, making it impossible to identify high-cost facilities or underperforming trade disciplines, leading to budget surprises and reactive cost-cutting.
-
-- Facilities Operations Director (Day-to-day Operations & Budget Adherence): Struggles to justify resource allocation or budget requests without clear data on where maintenance costs are concentrated annually, making it difficult to demonstrate ROI for preventative maintenance or identify areas for process improvement.
-
-- Corporate Financial Controller (Financial Reporting & Cost Control): Receives aggregated, high-level facilities expenditure reports that lack the necessary detail to challenge spending patterns or identify specific areas of financial leakage within the facilities domain.
+- **VP of Corporate Real Estate:** Needs to manage total cost of ownership, facility uptime, and alignment with portfolio strategy. The raw ticket data does not make disproportionate building or category costs easy to identify, which makes it harder to justify capital investment or shift budgets.
+- **Facilities Operations Director:** Needs to run daily maintenance, manage teams and vendors, and control operating budgets. The volume of tickets makes it difficult to find high-spend areas and demonstrate the return on preventative maintenance.
+- **Corporate Financial Controller:** Needs reliable cost reporting and forecasting. Ticket-level records lack the categorized, consolidated view needed to challenge budget requests or identify savings opportunities.
 
 ### How This Model Solves It
 
-At an annual grain (EXTRACT(YEAR FROM created_at)::INT), this model aggregates cost and hours_on_site grouped by building and canonical_category. It provides a standardized view of annual operational expenditures and labor hours, allowing stakeholders to pinpoint exactly which facilities and maintenance categories drive peak resource consumption without manual ticket inspection.
+The proposed annual grouping brings costs, on-site effort, and ticket counts together at building, category, and assignee level. This lets facilities and finance teams compare where money and work are concentrated, identify unusually expensive cohorts, and investigate whether resources or preventative maintenance should be shifted. It also creates a basis for vendor discussions using recorded costs and activity.
 
 ### Empirical Data Grounding & Statistical Profiling
 
-- Total Portfolio OPEX: $36,462,034.63 across 341 non-null cohorts (2024: $24.47M across 6,490 tickets; 2025: $11.98M across 3,266 tickets; 2023: $13.53k across 2 tickets).
+The staged query returned **2,517 rows**, spanning incident years **2023–2025** (average year 2024.47). Its audited measures were non-negative:
 
-- total_annual_cost: Min = $13,226.20, Max = $263,834.22, Mean = $106,926.79 per cohort (0 negative values).
+- `total_annual_cost`: minimum **$0.00**, maximum **$101,541.86**, average **$16,241.44**.
+- `total_annual_hours_on_site`: minimum **0.60**, maximum **22.80**, average **5.05 hours**.
+- `total_unique_tickets`: minimum **0**, maximum **24**, average **3.57**.
 
-- total_annual_hours_on_site: Min = 0.60 hrs, Max = 42.10 hrs, Mean = 10.95 hrs (3,075.80 total on-site labor hours logged).
-
-- total_annual_tickets: Min = 1, Max = 60, Mean = 28.53 tickets per cohort.
+The staging statistical audit passed, and Agent 3 promoted the model. The audit checks basic statistical plausibility; it does not independently verify that the cost field represents all OPEX or that the ticket-count definition matches a finance reporting policy.
 
 ### Strategic Decisions Enabled
 
-- Reallocate annual facilities budgets based on historical trade demand per campus facility.
+- Reallocate maintenance budgets toward buildings and categories with persistent demand or high cost.
+- Investigate facilities that may need modernization or capital investment.
+- Review vendor contracts against observed cost and workload patterns.
+- Target preventative maintenance where the annual ticket and cost profile suggests recurring demand.
+- Compare staffing and service effort across buildings and maintenance categories.
 
-- Identify high-cost buildings requiring targeted preventative maintenance or CapEx overhauls.
+### Model 2: `gold.annual_critical_risk_summary`
 
-- Negotiate volume-discounted vendor contracts for categories with heavy annual financial commitments.
+**Dimensional grain:** `incident_year` × `building` × `canonical_category` × `extracted_asset_type`
 
-- Benchmark labor intensity (total_annual_hours_on_site) against material expenditure per trade discipline.
-
-### Model 2: gold.annual_maintenance_efficiency_and_risk_summary
-
-- Table Type: Materialized View
-
-- Dataset Shape: 1,179 rows × 8 columns
-
-- Dimensional Grain: incident_year × building × canonical_category × extracted_asset_type
-
-- Schema Definition:
-
-1) incident_year (INT): Operational calendar year.
-
-2) building (TEXT): Campus facility.
-
-3) canonical_category (VARCHAR): Trade discipline.
-
-4) extracted_asset_type (VARCHAR): Physical hardware component (e.g., Elevator, Flooring, Door, Badge Reader, Sprinkler, HVAC Unit).
-
-5) total_annual_unique_tickets (BIGINT): Net actionable operational tickets.
-
-6) total_annual_duplicate_tickets (BIGINT): Redundant incident reports flagged for the same issue.
-
-7) total_annual_critical_tickets (BIGINT): Volume of CRITICAL priority failures.
-
-8) total_annual_critical_cost (NUMERIC): Direct expenditure dedicated strictly to critical incidents.
+This model focuses on tickets with `priority = 'CRITICAL'`. The dossier proposes annual critical-ticket counts, associated costs, and average resolution hours by facility, category, and asset type.
 
 ### The "Why Behind" This Problem
 
-A high volume of duplicate tickets inflates workload, wastes administrative resources, and obscures true underlying issues, leading to delayed resolution of critical problems. Furthermore, without understanding annual trends in critical tickets by asset type and building, the organization cannot proactively identify deteriorating physical plant health, leading to unexpected failures, increased emergency repairs, safety risks, and unplanned CapEx surprises.
+Escalating critical maintenance issues can signal equipment failure, safety exposure, regulatory risk, or growing downtime. If critical tickets are viewed only as individual records, it is difficult to see whether the same facilities or asset classes repeatedly generate high-risk incidents. That can leave maintenance reactive and delay capital planning or focused preventative work.
 
 ### Key Stakeholders & Pain Points
 
-- Facilities Operations Director (Operational Continuity & Triage Workflow): Cannot accurately assess the true volume of unique maintenance demand versus "noise" from duplicate tickets, making it difficult to measure team efficiency or allocate intake staffing.
-
-- VP of Corporate Real Estate (Portfolio Health & Life Safety): Lacks a clear annual view of escalating critical issues by building and asset type, preventing proactive CapEx planning for major renovations or equipment replacements.
-
-- Chief Reliability Engineer (Asset Reliability & Failure Prevention): Struggles to identify specific asset types or buildings that experience a disproportionate number of critical failures annually, hindering targeted preventative programs.
+- **VP of Corporate Real Estate:** Needs to understand portfolio health, safety, and asset value. Without an annual view of critical issues across properties, it is difficult to prioritize facility upgrades or demonstrate that risks are being managed.
+- **Facilities Operations Director:** Needs to keep facilities safe and available. Ticket volume can obscure recurring critical patterns, leading to crisis response instead of planned mitigation.
+- **Chief Reliability Engineer:** Needs to extend asset life and reduce operational risk. Raw records make it difficult to isolate which buildings or asset types repeatedly produce critical failures.
 
 ### How This Model Solves It
 
-At an annual grain, this model distinguishes net unique operational demand from duplicate ticket volume by aggregating ticket counts across building and canonical_category. It isolates priority = 'CRITICAL' failures and dimensions them by extracted_asset_type, enabling leadership to quantify redundant reporting and isolate high-risk asset classes across facilities.
+By restricting the proposed model to critical-priority tickets and grouping by year, building, category, and extracted asset type, the model highlights where critical issues recur. Ticket counts show frequency; cost and resolution-hour measures add impact context. Leaders can use these cohorts to prioritize risk reviews, maintenance plans, specialist resources, or capital upgrades.
 
 ### Empirical Data Grounding & Statistical Profiling
 
-- Volume Separation: Measures 8,974 net unique tickets against 784 duplicate tickets (duplicate ticket noise: min = 0, max = 7, mean = 0.66 per cohort).
+The staged query returned **816 rows**, spanning incident years **2024–2025** (average year 2024.43). The audited measures were non-negative:
 
-- Critical Exposure: Captures 2,077 critical priority tickets across the portfolio (min = 0, max = 16, mean = 1.76 per cohort).
+- `total_critical_tickets`: minimum **1**, maximum **16**, average **2.55**.
+- `total_critical_cost`: minimum **$0.00**, maximum **$71,094.93**, average **$12,492.50**.
+- `avg_critical_resolution_hours`: minimum **61.7**, maximum **13,412.61**, average **5,078.35 hours**.
 
-- total_annual_critical_cost: Total critical emergency spend of $8,045,172.38 across 639 cohorts; Min = $0.00, Max = $71,094.93, Mean = $12,590.25.
-
-- Asset Breakdown: Evaluates 32 distinct physical asset types, identifying major failure concentrations in structural and life-safety components (Flooring: 96 cohorts, Door: 62 cohorts, Elevator: 34 cohorts, Badge Reader: 34 cohorts, Sprinkler: 34 cohorts).
+The statistical audit passed, and the model was promoted. The very high maximum resolution duration is a signal for human review of timestamp quality, duration semantics, and the suitability of an average; non-negativity alone does not mean the value is operationally reasonable.
 
 ### Strategic Decisions Enabled
 
-- Implement automated ticket submission deduplication protocols to eliminate administrative triage overhead.
+- Prioritize capital work for facilities and asset classes with recurring critical incidents.
+- Establish focused preventative maintenance for high-risk buildings or equipment.
+- Conduct safety and compliance reviews where critical tickets cluster.
+- Assign specialist teams to recurring critical problems.
+- Track whether mitigation reduces critical-ticket frequency, cost, or resolution time over time.
 
-- Allocate capital expenditure funds for asset replacements in facilities exhibiting escalating critical risk.
+## Domain 2: Asset Reliability and Sourcing Performance
 
-- Direct specialized maintenance resources to specific critical hardware assets (e.g., life safety and vertical transport).
+### Model 3: `gold.annual_asset_failure_summary`
 
-- Adjust operational staffing models based on net unique workload rather than inflated raw ticket counts.
+**Dimensional grain:** `incident_year` × `building` × `canonical_category` × `extracted_asset_type` × `extracted_asset_id` × `root_cause`
 
-### Domain 2: Asset Reliability & Sourcing Performance (Maintenance Engineering)
-
-### Model 3: gold.annual_asset_failure_analysis
-
-- Table Type: Materialized View
-
-- Dataset Shape: 2,334 rows × 10 columns
-
-- Dimensional Grain: incident_year × building × extracted_asset_type × extracted_asset_id × canonical_category × root_cause
-
-- Schema Definition:
-
-1) incident_year (INT): Operational calendar year.
-
-2) building (TEXT): Campus facility.
-
-3) extracted_asset_type (VARCHAR): Physical asset class (Elevator, Security Camera, Flooring, Door, Plumbing Fixture).
-
-4) extracted_asset_id (VARCHAR): Machine-level identifier (e.g., E-048, H-012).
-
-5) canonical_category (VARCHAR): Trade discipline.
-
-6) root_cause (VARCHAR): Diagnosed engineering failure mechanism (faulty wiring, corrosion, power surge, clogged filter, normal wear).
-
-7) total_incidents (BIGINT): Total recorded breakdown events for this component and cause.
-
-8) avg_resolution_time_hours (DOUBLE PRECISION): Mean turnaround duration in hours for completed repairs.
-
-9) total_cost (NUMERIC): Direct financial expenditure incurred to remediate this specific failure.
-
-10) total_hours_on_site (NUMERIC): Hands-on field labor hours expended.
+This model analyzes recurring equipment failures at asset and cause level. The proposal reports incident counts, cost of failure, average resolution hours, and on-site hours.
 
 ### The "Why Behind" This Problem
 
-Unidentified "bad actor" assets or recurring failures lead to escalating maintenance costs, unplanned downtime, reduced operational capacity, and potential safety hazards. Without understanding which assets fail most often and why, organizations cannot implement targeted preventative maintenance, optimize asset replacement cycles, or negotiate warranty terms with manufacturers.
+Assets that fail repeatedly can drive repair costs, downtime, shorter useful lives, and safety concerns. If recurring failures and their suspected causes are buried in free-text ticket notes, reliability teams may not identify bad-actor equipment or recurring failure modes soon enough to plan repairs, replacement, or warranty action.
 
 ### Key Stakeholders & Pain Points
 
-- Chief Reliability Engineer (Asset Uptime & Lifecycle Engineering): Drowning in raw ticket logs, unable to systematically identify which specific assets fail repeatedly, what the underlying failure causes are, or how failure rates trend annually across buildings.
-
-- Maintenance Supervisor (Technician Dispatch & First-Time Fix): Lacks a consolidated view of recurring issues for specific assets, making it difficult to prioritize proactive maintenance, identify technician training needs, or justify equipment replacements.
+- **Chief Reliability Engineer:** Needs to improve uptime and asset lifecycle performance. Raw ticket logs make it difficult to identify repeatedly failing asset IDs, compare failure causes, or quantify their cost.
+- **Maintenance Supervisors:** Need to prioritize technicians, work orders, and spare parts. Without an aggregated view of failure patterns and repair effort, work is more likely to remain reactive.
 
 ### How This Model Solves It
 
-By aggregating silver.cleaned_tickets at the component level (extracted_asset_type, extracted_asset_id) combined with engineering diagnostics (root_cause), this model maps equipment breakdowns to root failure mechanisms, turnaround durations, and repair costs, converting raw maintenance logs into actionable reliability intelligence.
+The proposed grain combines year, facility, asset identity, maintenance category, and extracted root cause. Aggregated incident count, repair cost, resolution time, and field hours help distinguish frequent failures from costly or slow-to-resolve ones. Reliability teams can use those patterns to target root-cause investigation and maintenance planning.
 
 ### Empirical Data Grounding & Statistical Profiling
 
-- Incident Coverage: Analyzes 9,758 total equipment breakdown incidents across 2,334 cohorts (min = 1, max = 51, mean = 4.18 incidents per cohort).
+The staged query returned **682 rows**, spanning incident years **2024–2025** (average year 2024.27). Audited numeric measures were non-negative:
 
-- Repair Turnaround (avg_resolution_time_hours): Min = 34.32 hrs, Max = 13,209.17 hrs, Mean = 4,962.03 hrs (0 negative duration anomalies across all 1,011 verified completed repair cohorts).
+- `total_incidents`: minimum **1**, maximum **11**, average **1.68**.
+- `total_cost_of_failure`: minimum **$0.00**, maximum **$50,219.88**, average **$8,855.35**.
+- `average_resolution_time_hours`: minimum **53.64**, maximum **13,412.61**, average **5,141.56 hours**.
+- `total_hours_on_site`: minimum **0.60**, maximum **22.80**, average **4.91 hours**.
 
-- Remediation Spend (total_cost): Total tracked component repair expenditure of $8,377,457.04 across 769 cost cohorts; Min = $0.00, Max = $83,695.63, Mean = $10,893.96.
-
-- Field Labor (total_hours_on_site): Min = 0.60 hrs, Max = 22.80 hrs, Mean = 5.15 hrs (741.50 total labor hours logged).
-
-- Top Failure Mechanisms Diagnosed:
-
-1) Faulty wiring: 80 cohorts
-
-2) Corrosion: 72 cohorts
-
-3) Power surge: 72 cohorts
-
-4) Clogged filter: 67 cohorts
-
-5) Normal wear: 65 cohorts
-
-- High-Failure Asset Classes: Vertical transport (Elevator: 280 cohorts) and access systems (Security Camera: 238 cohorts).
+The audit passed and the model was promoted. The maximum resolution duration is unusually large relative to on-site hours; validate the business meaning and timestamp inputs before interpreting it as repair turnaround.
 
 ### Strategic Decisions Enabled
 
-- Prioritize capital expenditure for replacing chronically failing equipment identified by specific asset IDs.
+- Prioritize investigation or replacement of assets with repeated failures and high costs.
+- Direct preventative maintenance toward frequent root causes.
+- Support warranty or supplier discussions with asset-level failure history.
+- Plan spare-parts inventory around recurring equipment problems.
+- Compare failure patterns by facility, category, and asset type to identify systemic issues.
 
-- Refine preventative maintenance schedules targeting prevalent root causes (e.g., filter replacement intervals, anti-corrosion treatments).
+### Model 4: `gold.annual_workforce_performance_summary`
 
-- Hold equipment vendors accountable during warranty disputes using documented failure histories.
+**Dimensional grain:** `incident_year` × `assigned_to` workforce group × `building` × `canonical_category`
 
-- Optimize spare parts inventory for components associated with frequent power surges and wiring faults.
-
-### Model 4: gold.annual_maintenance_workforce_performance
-
-- Table Type: Materialized View
-
-- Dataset Shape: 373 rows × 8 columns
-
-- Dimensional Grain: incident_year × building × canonical_category × assigned_to_group
-
-- Schema Definition:
-
-1) incident_year (INT): Operational calendar year (2024, 2025).
-
-2) building (TEXT): Campus facility.
-
-3) canonical_category (VARCHAR): Trade discipline.
-
-4) assigned_to_group (TEXT): Workforce sourcing category (Internal in-house technician crew vs. Vendor third-party contractor).
-
-5) total_incidents (BIGINT): Number of maintenance work orders assigned.
-
-6) avg_resolution_time_hours (DOUBLE PRECISION): Average ticket resolution duration in hours.
-
-7) total_labor_hours (NUMERIC): Total hands-on labor hours logged on site.
-
-8) total_costs (NUMERIC): Direct operational costs associated with resolution.
+The proposed model categorizes assignees as Internal or External Vendor and compares annual resolved-ticket counts, labor cost, resolution time, on-site hours, and first-time fixes.
 
 ### The "Why Behind" This Problem
 
-Inefficient allocation of maintenance resources between internal crews and external vendors inflates operating expenses and degrades service delivery. Without objective comparative metrics on turnaround times, labor hours, and repair costs segmented by workforce tier, leadership cannot make informed insourcing vs. outsourcing decisions, evaluate contractor value, or identify internal training needs.
+Maintenance work may be split between internal teams and external vendors, but without comparable measures it is difficult to judge sourcing, staffing, or contract performance. Missing visibility into workload, resolution time, labor cost, and repeat fixes can contribute to overspending or missed service expectations. Comparisons also need to account for the fact that teams may handle different types and levels of ticket complexity.
 
 ### Key Stakeholders & Pain Points
 
-- Procurement & Vendor Contract Lead (Contract Negotiation & SLA Compliance): Lacks objective, data-backed metrics to compare the efficiency, cost, and responsiveness of third-party vendors against in-house teams to justify contract renewals or renegotiate rate cards.
-
-- Maintenance Supervisor (Workforce Optimization & Labor Allocation): Cannot benchmark internal technician crews against external contractors across specific trade disciplines to identify productivity gaps or optimize team scheduling.
+- **Procurement and Vendor Contract Lead:** Needs evidence to evaluate vendor service and negotiate contracts. Ticket-level data does not provide an easy comparison of vendor and internal cost, speed, or outcome patterns.
+- **VP of Corporate Real Estate / Facilities Director:** Needs to balance cost and service levels across the workforce. Without aggregated performance information, it is difficult to assess the internal/external mix or find staffing gaps.
 
 ### How This Model Solves It
 
-This model segments ticket assignments into Internal versus Vendor cohorts across buildings, trade categories, and operational years. It tracks workload volume, resolution turnaround duration, on-site labor hours, and total costs, providing an empirical baseline for vendor SLA compliance and sourcing trade-offs.
+The proposed annual view groups activity by workforce type, facility, and maintenance category. It combines ticket volume with cost, resolution time, on-site hours, and first-time-fix count. This supports structured comparisons and helps leaders identify where to investigate workload allocation, training, staffing, or vendor terms. It is descriptive evidence, not a causal or automatically fair ranking of workers or suppliers.
 
 ### Empirical Data Grounding & Statistical Profiling
 
-- Cohort Distribution: 281 Internal technician cohorts vs. 92 Vendor contractor cohorts across 1,146 categorized incidents.
+The staged query returned **385 rows**, spanning incident years **2024–2025** (average year 2024.31). All audited numeric measures were non-negative:
 
-- Volume Handled:
+- `total_tickets_resolved`: minimum **1**, maximum **8**, average **2.07**.
+- `total_cost_of_labor`: minimum **$0.00**, maximum **$52,673.61**, average **$10,215.60**.
+- `average_resolution_time_hours`: minimum **74.41**, maximum **13,045.84**, average **5,006.93 hours**.
+- `total_hours_on_site`: minimum **0.60**, maximum **22.80**, average **5.03 hours**.
+- `first_time_fixes_count`: minimum **0**, maximum **4**, average **0.49**.
 
-1) Internal Teams: 1,030 incidents (Mean = 3.67 incidents/cohort, Max = 11).
-
-2) Contracted Vendors: 116 incidents (Mean = 1.26 incidents/cohort, Max = 3).
-
-- Turnaround Efficiency (avg_resolution_time_hours):
-
-1) Internal Teams: Mean = 4,472.06 hrs (Min = 53.64 hrs, Max = 10,437.03 hrs).
-
-2) Contracted Vendors: Mean = 5,188.26 hrs (Min = 82.38 hrs, Max = 12,677.26 hrs).
-
-3) Insight: Internal teams resolve tickets an average of 716.20 hours (~30 days) faster than external contractors across comparable categories.
-
-- Labor Intensity (total_labor_hours):
-
-1) Internal Teams: 354.70 total on-site hours across 66 cohorts (Mean = 5.37 hrs, Max = 22.80 hrs).
-
-2) Contracted Vendors: 43.40 total on-site hours across 10 cohorts (Mean = 4.34 hrs, Max = 7.00 hrs).
-
-- Cost of Resolution (total_costs):
-
-1) Internal Teams: $3,925,108.78 total spend across 246 cohorts (Mean = $15,955.73/cohort, Max = $51,433.80).
-
-2) Contracted Vendors: $405,155.36 total spend across 60 cohorts (Mean = $6,752.59/cohort, Max = $23,585.23).
-
-3) Combined: Min = $0.00, Max = $51,433.80, Mean = $14,151.19 (0 negative values).
+The statistical audit passed and the model was promoted. The large resolution-hour maximum warrants review. Compare workforce groups only after checking ticket mix, assignment classification, missing values, and whether these metrics use consistent denominators.
 
 ### Strategic Decisions Enabled
 
-- Optimize insourcing vs. outsourcing allocations by shifting high-delay categories to in-house teams.
+- Review the balance of internal and external maintenance capacity by building and trade.
+- Investigate vendor cohorts with high cost, long resolution times, or low first-time-fix counts.
+- Identify internal training or staffing needs by maintenance category.
+- Inform contract discussions with workload and cost evidence.
+- Benchmark similar facilities and work categories while accounting for differences in ticket mix.
 
-- Renegotiate vendor contracts using concrete turnaround data (e.g., establishing SLA penalties when vendor resolution duration exceeds 5,000 hours).
+## Agent audit and human review
 
-- Identify trade disciplines where specialized contractors deliver cost efficiencies over internal crews.
-
-- Rebalance internal technician staffing in locations where high ticket volume strains turnaround times.
+In the supplied run, each staging result had rows and passed the statistical audit; all four models were promoted. The audit examined row counts and numeric summaries, including negative values. It did not verify the business correctness of every metric, detect every plausible outlier, or establish causality. Before using a model for financial, safety, asset, or workforce decisions, review its generated SQL, filters, grouping grain, treatment of duplicates and anomalies, null handling, and metric denominators.

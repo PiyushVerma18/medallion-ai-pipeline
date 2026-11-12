@@ -1,0 +1,291 @@
+{
+  "cache_key": "4c74f6700220b1047769c132ed7703908ed47e4284a77ac9ca02fbe427ca5f48",
+  "model": "gemini-2.5-flash",
+  "provider": "google-gemini",
+  "response": {
+    "items": [
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "alarm",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 0
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "alarm",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 1
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "alarm",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 2
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "alarm",
+        "extracted_floor": null,
+        "extracted_room": "Cafeteria",
+        "item_id": 3
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "alarm",
+        "extracted_floor": null,
+        "extracted_room": "Data Center 1",
+        "item_id": 4
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "alarm",
+        "extracted_floor": "1",
+        "extracted_room": null,
+        "item_id": 5
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "alarm",
+        "extracted_floor": "2",
+        "extracted_room": null,
+        "item_id": 6
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "alarm",
+        "extracted_floor": "3",
+        "extracted_room": null,
+        "item_id": 7
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "alarm",
+        "extracted_floor": null,
+        "extracted_room": "Main Office",
+        "item_id": 8
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "alarm",
+        "extracted_floor": null,
+        "extracted_room": "Parking Garage",
+        "item_id": 9
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "alarm",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 10
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "alarm",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 11
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "alarm",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 12
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "alarm",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 13
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "alarm",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 14
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": "alarm",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 15
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 16
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": "office",
+        "item_id": 17
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": "office",
+        "item_id": 18
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": "office",
+        "item_id": 19
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": "office",
+        "item_id": 20
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": "Cafeteria",
+        "item_id": 21
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": "Data Center 1",
+        "item_id": 22
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": "1",
+        "extracted_room": "office",
+        "item_id": 23
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": "2",
+        "extracted_room": "office",
+        "item_id": 24
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": "3",
+        "extracted_room": "office",
+        "item_id": 25
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": "Main Office",
+        "item_id": 26
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": "Parking Garage",
+        "item_id": 27
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": "office",
+        "item_id": 28
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": "office",
+        "item_id": 29
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": "office",
+        "item_id": 30
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": "office",
+        "item_id": 31
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": "office",
+        "item_id": 32
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": "office",
+        "item_id": 33
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 34
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 35
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 36
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 37
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 38
+      },
+      {
+        "extracted_asset_id": null,
+        "extracted_asset_type": null,
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 39
+      }
+    ]
+  },
+  "schema_name": "DescriptionBatchOutput",
+  "temperature": 0.0
+}

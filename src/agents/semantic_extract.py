@@ -1,13 +1,15 @@
 import hashlib
 import json
+import logging
 import re
 import time
 from typing import Dict, List, Optional
 from pydantic import BaseModel, Field
 from sqlalchemy import text
-from langchain_google_genai import ChatGoogleGenerativeAI
-from src.config import GEMINI_API_KEY, GEMINI_MODEL
-from src.db import engine
+from src.agents.llm_cache import invoke_gemini_structured
+from src.db import silver_engine as engine
+
+logger = logging.getLogger("medallion.pipeline")
 
 # =========================================================================
 # 1. Pydantic Schemas for Structured Output
@@ -199,18 +201,16 @@ def extract_description_entities(batch_size: int = 40, max_batches: Optional[int
         TRIM(b.description) AS desc_text,
         MAX(TRIM(b.building)) AS building_name
     FROM bronze.raw_tickets b
-    LEFT JOIN silver.dim_description_entities c 
-        ON MD5(TRIM(b.description)) = c.text_hash
     WHERE b.description IS NOT NULL 
       AND LENGTH(TRIM(b.description)) > 5
-      AND c.text_hash IS NULL
-    GROUP BY TRIM(b.description);
+    GROUP BY TRIM(b.description)
+    ORDER BY desc_text;
     """
 
     with engine.connect() as conn:
         unprocessed = [dict(r) for r in conn.execute(text(query)).mappings().all()]
 
-    print(f"[Description Extraction] Found {len(unprocessed)} distinct uncached descriptions.")
+    print(f"[Description Extraction] Found {len(unprocessed)} distinct descriptions to process.")
     if not unprocessed:
         return {"regex_resolved": 0, "llm_resolved": 0}
 
@@ -261,12 +261,6 @@ def extract_description_entities(batch_size: int = 40, max_batches: Optional[int
 
         print(f"[Description Extraction] Processing {len(chunks)} LLM batch(es) ({batch_size} items per batch)...")
 
-        llm = ChatGoogleGenerativeAI(
-            model=GEMINI_MODEL,
-            google_api_key=GEMINI_API_KEY,
-            temperature=0.0
-        ).with_structured_output(DescriptionBatchOutput)
-
         system_prompt = """
 You are an expert NLP Entity Extractor for corporate facilities maintenance.
 From each ticket description, extract:
@@ -285,10 +279,13 @@ Always return the corresponding `item_id` for each item.
             print(f"  -> Sending LLM description batch {batch_idx}/{len(chunks)} ({len(batch_payload)} records)...")
 
             try:
-                response: DescriptionBatchOutput = llm.invoke([
+                messages = [
                     ("system", system_prompt),
                     ("user", f"Extract entities from these descriptions:\n{json.dumps(batch_payload, indent=2)}")
-                ])
+                ]
+                response: DescriptionBatchOutput = invoke_gemini_structured(
+                    DescriptionBatchOutput, messages, temperature=0.0
+                )
 
                 with engine.begin() as conn:
                     for item in response.items:
@@ -320,6 +317,10 @@ Always return the corresponding `item_id` for each item.
                 llm_resolved_count += len(response.items)
                 time.sleep(0.4)
             except Exception as e:
+                logger.warning(
+                    "semantic_description_batch_failed batch=%s error=%s",
+                    batch_idx, e, exc_info=True,
+                )
                 print(f"  [Warning] Description batch {batch_idx} failed: {e}")
 
     return {"regex_resolved": len(regex_resolved), "llm_resolved": llm_resolved_count}
@@ -337,7 +338,8 @@ def extract_resolution_entities(batch_size: int = 50) -> Dict[str, int]:
     SELECT DISTINCT TRIM(resolution_notes) AS note_text
     FROM bronze.raw_tickets
     WHERE resolution_notes IS NOT NULL
-      AND LENGTH(TRIM(resolution_notes)) > 0;
+      AND LENGTH(TRIM(resolution_notes)) > 0
+    ORDER BY note_text;
     """
 
     with engine.connect() as conn:
@@ -416,12 +418,6 @@ def extract_resolution_entities(batch_size: int = 50) -> Dict[str, int]:
         chunks = [needs_llm[i:i + batch_size] for i in range(0, len(needs_llm), batch_size)]
         print(f"[Resolution Extraction] Calling Gemini across {len(chunks)} batch(es) for substantive notes...")
 
-        llm = ChatGoogleGenerativeAI(
-            model=GEMINI_MODEL,
-            google_api_key=GEMINI_API_KEY,
-            temperature=0.0
-        ).with_structured_output(ResolutionBatchOutput)
-
         system_prompt = """
 You are an expert NLP Auditor analyzing facility maintenance technician resolution notes.
 For each note, extract:
@@ -440,10 +436,13 @@ Always return the corresponding `item_id` for each note.
             print(f"  -> Sending resolution notes batch {idx}/{len(chunks)} ({len(chunk)} items)...")
 
             try:
-                response: ResolutionBatchOutput = llm.invoke([
+                messages = [
                     ("system", system_prompt),
                     ("user", f"Extract structured entities from these resolution notes:\n{json.dumps(batch_payload, indent=2)}")
-                ])
+                ]
+                response: ResolutionBatchOutput = invoke_gemini_structured(
+                    ResolutionBatchOutput, messages, temperature=0.0
+                )
 
                 with engine.begin() as conn:
                     for item in response.items:
@@ -466,6 +465,10 @@ Always return the corresponding `item_id` for each note.
                 llm_resolved_count += len(response.items)
                 time.sleep(0.4)
             except Exception as e:
+                logger.warning(
+                    "semantic_resolution_batch_failed batch=%s error=%s",
+                    idx, e, exc_info=True,
+                )
                 print(f"  [Warning] Resolution batch {idx} failed: {e}")
 
     print(f"[Resolution Extraction] Complete. Regex cached: {len(regex_resolved)}, LLM processed: {llm_resolved_count}.")

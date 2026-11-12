@@ -1,0 +1,90 @@
+{
+  "cache_key": "93278f7ef5661dd24f59a39892e653434ad242a11b64d6f67ca1b8942ecbd39d",
+  "model": "gemini-2.5-flash",
+  "provider": "google-gemini",
+  "response": {
+    "domain_name": "Asset Reliability & Sourcing Performance (Maintenance Engineering)",
+    "domain_thesis": "To strategically optimize facilities operations by providing granular, data-driven insights into asset performance, identifying root causes of failures, and evaluating the efficiency and cost-effectiveness of both internal and external maintenance workforces, thereby enabling proactive maintenance, informed capital planning, and optimized resource allocation.",
+    "problems": [
+      {
+        "decisions_enabled": [
+          "Prioritize capital expenditure for replacement of chronically failing assets.",
+          "Implement targeted preventative maintenance programs for specific asset types or instances.",
+          "Identify and address systemic design or operational flaws contributing to specific root causes.",
+          "Optimize spare parts inventory based on failure frequency of critical components."
+        ],
+        "how_model_solves_problem": "This Gold model, at an annual grain, will aggregate ticket data by incident_year, building, canonical_category, extracted_asset_type, extracted_asset_id, and root_cause. It will provide metrics such as total_incidents, total_cost_of_failure, average_resolution_time_hours, and total_hours_on_site. This allows for a clear, aggregated view of which specific assets (by type and ID) are generating the most tickets, costing the most, and taking the longest to resolve, broken down by their underlying root causes. This eliminates the need to sift through individual tickets, providing actionable insights into asset performance.",
+        "key_stakeholders": [
+          {
+            "current_pain_point": "Drowning in raw ticket logs, unable to systematically identify chronic failing assets, common failure modes, or quantify the true cost of specific asset types/instances.",
+            "primary_mandate": "Maximize asset uptime, extend asset life, reduce maintenance-related operational risks.",
+            "title": "Chief Reliability Engineer"
+          },
+          {
+            "current_pain_point": "Difficulty prioritizing maintenance efforts based on actual asset failure patterns and impact, leading to reactive rather than proactive scheduling.",
+            "primary_mandate": "Ensure efficient and effective execution of maintenance tasks, optimize technician deployment, manage spare parts inventory.",
+            "title": "Maintenance Supervisors"
+          }
+        ],
+        "problem_title": "Identifying and Mitigating High-Frequency/High-Cost Asset Failures",
+        "required_dimensions": [
+          "EXTRACT(YEAR FROM created_at)::INT AS incident_year",
+          "building",
+          "canonical_category",
+          "extracted_asset_type",
+          "extracted_asset_id",
+          "root_cause"
+        ],
+        "required_metrics": [
+          "COUNT(ticket_id) AS total_incidents",
+          "SUM(cost) AS total_cost_of_failure",
+          "AVG(EXTRACT(EPOCH FROM (resolved_at - created_at))) / 3600 AS average_resolution_time_hours",
+          "SUM(hours_on_site) AS total_hours_on_site"
+        ],
+        "target_table_name": "gold.annual_asset_failure_summary",
+        "temporal_grain": "EXTRACT(YEAR FROM created_at)::INT",
+        "why_this_problem_matters": "Unidentified \"bad actor\" assets lead to recurring operational disruptions, increased maintenance costs (parts, labor, emergency repairs), reduced asset lifespan, and potential safety hazards. Without a clear view of which assets fail most often, their root causes, and associated costs, capital expenditure planning for replacements is reactive and inefficient, and proactive maintenance strategies cannot be effectively implemented. This directly impacts budget adherence, operational uptime, and long-term asset value."
+      },
+      {
+        "decisions_enabled": [
+          "Optimize the balance between internal staff and external vendor utilization.",
+          "Renegotiate vendor contracts based on objective performance data (e.g., SLA adherence, cost per ticket).",
+          "Identify training needs for internal staff or specific vendors based on common issues or resolution times.",
+          "Benchmark performance across different buildings or categories for best practice sharing."
+        ],
+        "how_model_solves_problem": "This Gold model, at an annual grain, will aggregate ticket data by incident_year, assigned_to (categorized as 'Internal' or 'External Vendor'), building, and canonical_category. It will provide metrics such as total_tickets_resolved, total_cost_of_labor, average_resolution_time_hours, total_hours_on_site, and first_time_fixes_count. This allows for a direct comparison of performance and cost between internal teams and external vendors, highlighting areas of strength and weakness for strategic resource allocation and vendor management.",
+        "key_stakeholders": [
+          {
+            "current_pain_point": "Lacks objective, aggregated data to compare vendor performance (cost, speed, quality) against internal teams or other vendors, making contract renewals and negotiations difficult.",
+            "primary_mandate": "Negotiate and manage vendor contracts, ensure cost-effective external services, monitor vendor performance against SLAs.",
+            "title": "Procurement & Vendor Contract Lead"
+          },
+          {
+            "current_pain_point": "Unable to assess the overall efficiency and cost-effectiveness of the combined internal and external maintenance workforce, leading to potential overspending or underperformance.",
+            "primary_mandate": "Oversee all facilities operations, manage budgets, ensure high service levels for occupants.",
+            "title": "VP of Corporate Real Estate / Facilities Director"
+          }
+        ],
+        "problem_title": "Evaluating and Optimizing Maintenance Workforce (Internal vs. External) Efficiency and Cost-Effectiveness",
+        "required_dimensions": [
+          "EXTRACT(YEAR FROM created_at)::INT AS incident_year",
+          "assigned_to",
+          "building",
+          "canonical_category"
+        ],
+        "required_metrics": [
+          "COUNT(ticket_id) AS total_tickets_resolved",
+          "SUM(cost) AS total_cost_of_labor",
+          "AVG(EXTRACT(EPOCH FROM (resolved_at - created_at))) / 3600 AS average_resolution_time_hours",
+          "SUM(hours_on_site) AS total_hours_on_site",
+          "SUM(CASE WHEN resolution_action = 'Fixed on site' THEN 1 ELSE 0 END) AS first_time_fixes_count"
+        ],
+        "target_table_name": "gold.annual_workforce_performance_summary",
+        "temporal_grain": "EXTRACT(YEAR FROM created_at)::INT",
+        "why_this_problem_matters": "Inefficient allocation of maintenance tasks between internal staff and external vendors, or underperforming contractors, leads to inflated operational costs, missed SLAs, and suboptimal resource utilization. Without clear, comparative metrics on resolution times, first-time fix rates, and labor costs by assigned party, management cannot make informed decisions about staffing levels, vendor contract negotiations, or training needs. This directly impacts the facilities budget and overall operational responsiveness."
+      }
+    ]
+  },
+  "schema_name": "DomainProblemsProposal",
+  "temperature": 0.0
+}

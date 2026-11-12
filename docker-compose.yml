@@ -11,7 +11,8 @@ services:
       - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
-      - ./init_db.sql:/docker-entrypoint-initdb.d/init_db.sql
+      - ./init_db.sql:/docker-entrypoint-initdb.d/01_init_db.sql
+      - ./scripts/setup_stage_roles.sql:/docker-entrypoint-initdb.d/02_setup_stage_roles.sql
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U pipeline_user -d ticket_warehouse"]
       interval: 5s

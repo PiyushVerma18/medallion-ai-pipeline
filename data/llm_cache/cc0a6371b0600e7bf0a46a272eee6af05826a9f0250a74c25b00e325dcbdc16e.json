@@ -1,0 +1,291 @@
+{
+  "cache_key": "cc0a6371b0600e7bf0a46a272eee6af05826a9f0250a74c25b00e325dcbdc16e",
+  "model": "gemini-2.5-flash",
+  "provider": "google-gemini",
+  "response": {
+    "items": [
+      {
+        "extracted_asset_id": "spot 279",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 0
+      },
+      {
+        "extracted_asset_id": "spot 285",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 1
+      },
+      {
+        "extracted_asset_id": "spot 287",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 2
+      },
+      {
+        "extracted_asset_id": "spot 29",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 3
+      },
+      {
+        "extracted_asset_id": "spot 294",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 4
+      },
+      {
+        "extracted_asset_id": "spot 3",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 5
+      },
+      {
+        "extracted_asset_id": "spot 30",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 6
+      },
+      {
+        "extracted_asset_id": "spot 302",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 7
+      },
+      {
+        "extracted_asset_id": "spot 305",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 8
+      },
+      {
+        "extracted_asset_id": "spot 311",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 9
+      },
+      {
+        "extracted_asset_id": "spot 315",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 10
+      },
+      {
+        "extracted_asset_id": "spot 32",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 11
+      },
+      {
+        "extracted_asset_id": "spot 320",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 12
+      },
+      {
+        "extracted_asset_id": "spot 323",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 13
+      },
+      {
+        "extracted_asset_id": "spot 324",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 14
+      },
+      {
+        "extracted_asset_id": "spot 327",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 15
+      },
+      {
+        "extracted_asset_id": "spot 329",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 16
+      },
+      {
+        "extracted_asset_id": "spot 337",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 17
+      },
+      {
+        "extracted_asset_id": "spot 342",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 18
+      },
+      {
+        "extracted_asset_id": "spot 343",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 19
+      },
+      {
+        "extracted_asset_id": "spot 344",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 20
+      },
+      {
+        "extracted_asset_id": "spot 345",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 21
+      },
+      {
+        "extracted_asset_id": "spot 346",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 22
+      },
+      {
+        "extracted_asset_id": "spot 350",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 23
+      },
+      {
+        "extracted_asset_id": "spot 357",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 24
+      },
+      {
+        "extracted_asset_id": "spot 358",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 25
+      },
+      {
+        "extracted_asset_id": "spot 36",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 26
+      },
+      {
+        "extracted_asset_id": "spot 361",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 27
+      },
+      {
+        "extracted_asset_id": "spot 363",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 28
+      },
+      {
+        "extracted_asset_id": "spot 365",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 29
+      },
+      {
+        "extracted_asset_id": "spot 370",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 30
+      },
+      {
+        "extracted_asset_id": "spot 372",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 31
+      },
+      {
+        "extracted_asset_id": "spot 375",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 32
+      },
+      {
+        "extracted_asset_id": "spot 376",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 33
+      },
+      {
+        "extracted_asset_id": "spot 377",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 34
+      },
+      {
+        "extracted_asset_id": "spot 380",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 35
+      },
+      {
+        "extracted_asset_id": "spot 390",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 36
+      },
+      {
+        "extracted_asset_id": "spot 40",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 37
+      },
+      {
+        "extracted_asset_id": "spot 43",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 38
+      },
+      {
+        "extracted_asset_id": "spot 44",
+        "extracted_asset_type": "Pothole",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 39
+      }
+    ]
+  },
+  "schema_name": "DescriptionBatchOutput",
+  "temperature": 0.0
+}

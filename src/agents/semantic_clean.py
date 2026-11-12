@@ -1,11 +1,9 @@
 import json
-import os
 from typing import List, Dict, Optional
 from pydantic import BaseModel, Field
 from sqlalchemy import text
-from langchain_google_genai import ChatGoogleGenerativeAI
-from src.config import GEMINI_API_KEY, GEMINI_MODEL
-from src.db import engine
+from src.agents.llm_cache import invoke_gemini_structured
+from src.db import silver_engine as engine
 
 # -------------------------------------------------------------------------
 # 1. Structured Output Schemas (Pydantic v2)
@@ -96,37 +94,10 @@ def init_semantic_tables():
 # 3. Step 1: Semantic Column-Swap Detection Agent
 # -------------------------------------------------------------------------
 
-def run_semantic_swap_agent() -> List[SwappedFieldResolution]:
-    """
-    Identifies candidate records where columns may be inverted,
-    and uses Gemini to semantically verify and swap them back.
-    """
-    init_semantic_tables()
-    print("\n[Semantic Agent: Step 1] Extracting swap candidate pairs from bronze...")
-
-    # Statistical filter: category has sentence length (>25), description is short (<=30)
-    query = """
-    SELECT 
-        COALESCE(ticket_id, 'SYNTH-' || SUBSTRING(_row_hash, 1, 8)) AS ticket_id,
-        category AS raw_category,
-        description AS raw_description
-    FROM bronze.raw_tickets
-    WHERE LENGTH(TRIM(COALESCE(category, ''))) > 25 
-      AND LENGTH(TRIM(COALESCE(description, ''))) <= 30;
-    """
-
-    with engine.connect() as conn:
-        candidates = [dict(r) for r in conn.execute(text(query)).mappings().all()]
-
-    print(f"[Semantic Agent: Step 1] Found {len(candidates)} candidate swapped records.")
+def resolve_field_swap_candidates(candidates: List[dict]) -> List[SwappedFieldResolution]:
+    """Run the production swap prompt against supplied candidate rows."""
     if not candidates:
         return []
-
-    llm = ChatGoogleGenerativeAI(
-        model=GEMINI_MODEL,
-        google_api_key=GEMINI_API_KEY,
-        temperature=0.0
-    ).with_structured_output(SwappedBatchOutput)
 
     system_prompt = """
 You are a Semantic Data Cleansing Agent specialized in operational support tickets.
@@ -144,14 +115,43 @@ For each ticket:
    - Mark `is_swapped = False`
    - Retain original assignments
 """
-
     user_prompt = f"Analyze these candidate records and return swap resolutions:\n{json.dumps(candidates, indent=2)}"
-    
+    messages = [("system", system_prompt), ("user", user_prompt)]
+    response: SwappedBatchOutput = invoke_gemini_structured(
+        SwappedBatchOutput, messages, temperature=0.0
+    )
+    return response.resolutions
+
+
+def run_semantic_swap_agent() -> List[SwappedFieldResolution]:
+    """
+    Identifies candidate records where columns may be inverted,
+    and uses Gemini to semantically verify and swap them back.
+    """
+    init_semantic_tables()
+    print("\n[Semantic Agent: Step 1] Extracting swap candidate pairs from bronze...")
+
+    # Statistical filter: category has sentence length (>25), description is short (<=30)
+    query = """
+    SELECT 
+        COALESCE(ticket_id, 'SYNTH-' || SUBSTRING(_row_hash, 1, 8)) AS ticket_id,
+        category AS raw_category,
+        description AS raw_description
+    FROM bronze.raw_tickets
+    WHERE LENGTH(TRIM(COALESCE(category, ''))) > 25 
+      AND LENGTH(TRIM(COALESCE(description, ''))) <= 30
+    ORDER BY ticket_id, raw_category, raw_description;
+    """
+
+    with engine.connect() as conn:
+        candidates = [dict(r) for r in conn.execute(text(query)).mappings().all()]
+
+    print(f"[Semantic Agent: Step 1] Found {len(candidates)} candidate swapped records.")
+    if not candidates:
+        return []
+
     print("[Semantic Agent: Step 1] Sending candidate batch to Gemini for semantic resolution...")
-    response: SwappedBatchOutput = llm.invoke([
-        ("system", system_prompt),
-        ("user", user_prompt)
-    ])
+    resolutions = resolve_field_swap_candidates(candidates)
 
     # Persist to database cache
     upsert_sql = """
@@ -167,7 +167,7 @@ For each ticket:
     """
 
     with engine.begin() as conn:
-        for res in response.resolutions:
+        for res in resolutions:
             conn.execute(text(upsert_sql), {
                 "ticket_id": res.ticket_id,
                 "is_swapped": res.is_swapped,
@@ -176,13 +176,45 @@ For each ticket:
                 "semantic_reasoning": res.semantic_reasoning
             })
 
-    print(f"[Semantic Agent: Step 1] Persisted {len(response.resolutions)} verified swap records into silver.dim_field_swap_cache.")
-    return response.resolutions
+    print(f"[Semantic Agent: Step 1] Persisted {len(resolutions)} verified swap records into silver.dim_field_swap_cache.")
+    return resolutions
 
 
 # -------------------------------------------------------------------------
 # 4. Step 2: Semantic Taxonomy Normalization Agent
 # -------------------------------------------------------------------------
+
+def classify_categories(raw_categories: List[str]) -> List[CategoryMappingItem]:
+    """Run the production taxonomy prompt against supplied category strings."""
+    if not raw_categories:
+        return []
+
+    system_prompt = f"""
+You are a Principal Facilities Taxonomist.
+You will receive a list of noisy, raw operational maintenance category strings.
+Your task is to semantically classify EACH raw category into ONE of the following canonical domains:
+{json.dumps(CANONICAL_TAXONOMY, indent=2)}
+
+Semantic Guidelines:
+- Slang/Symptom words:
+  * 'cold', 'air conditioning', 'heating cooling', 'Climate Control' -> 'HVAC'
+  * 'pipe burst', 'water issue', 'Water/Plumbing' -> 'Plumbing'
+  * 'power issue', 'Power', 'Elec', 'ELECTRICAL' -> 'Electrical'
+  * 'WiFi', 'Connectivity', 'Network', 'IT Support' -> 'IT & Network'
+  * 'Sprinkler', 'Fire Alarm', 'fire safety' -> 'Fire & Safety'
+  * 'Badge/Access', 'Access Control', 'security' -> 'Access & Security'
+  * 'Lift', 'ELEVATOR', 'elevator/escalator' -> 'Vertical Transport'
+  * 'janitorial', 'Housekeeping', 'CLEANING' -> 'Janitorial & Cleaning'
+- Noise, test placeholders, or invalid text:
+  * 'DELETE ME', 'asdf', 'test', '???', 'unknown', 'Misc', 'Other', 'General' -> 'Unassigned'
+"""
+    user_prompt = f"Categorize these unique raw category terms:\n{json.dumps(raw_categories, indent=2)}"
+    messages = [("system", system_prompt), ("user", user_prompt)]
+    response: TaxonomyMappingOutput = invoke_gemini_structured(
+        TaxonomyMappingOutput, messages, temperature=0.0
+    )
+    return response.mappings
+
 
 def run_semantic_taxonomy_agent() -> List[CategoryMappingItem]:
     """
@@ -210,39 +242,8 @@ def run_semantic_taxonomy_agent() -> List[CategoryMappingItem]:
 
     print(f"[Semantic Agent: Step 2] Extracted {len(raw_categories)} unique raw category tags.")
 
-    llm = ChatGoogleGenerativeAI(
-        model=GEMINI_MODEL,
-        google_api_key=GEMINI_API_KEY,
-        temperature=0.0
-    ).with_structured_output(TaxonomyMappingOutput)
-
-    system_prompt = f"""
-You are a Principal Facilities Taxonomist.
-You will receive a list of noisy, raw operational maintenance category strings.
-Your task is to semantically classify EACH raw category into ONE of the following canonical domains:
-{json.dumps(CANONICAL_TAXONOMY, indent=2)}
-
-Semantic Guidelines:
-- Slang/Symptom words:
-  * 'cold', 'air conditioning', 'heating cooling', 'Climate Control' -> 'HVAC'
-  * 'pipe burst', 'water issue', 'Water/Plumbing' -> 'Plumbing'
-  * 'power issue', 'Power', 'Elec', 'ELECTRICAL' -> 'Electrical'
-  * 'WiFi', 'Connectivity', 'Network', 'IT Support' -> 'IT & Network'
-  * 'Sprinkler', 'Fire Alarm', 'fire safety' -> 'Fire & Safety'
-  * 'Badge/Access', 'Access Control', 'security' -> 'Access & Security'
-  * 'Lift', 'ELEVATOR', 'elevator/escalator' -> 'Vertical Transport'
-  * 'janitorial', 'Housekeeping', 'CLEANING' -> 'Janitorial & Cleaning'
-- Noise, test placeholders, or invalid text:
-  * 'DELETE ME', 'asdf', 'test', '???', 'unknown', 'Misc', 'Other', 'General' -> 'Unassigned'
-"""
-
-    user_prompt = f"Categorize these unique raw category terms:\n{json.dumps(raw_categories, indent=2)}"
-
     print("[Semantic Agent: Step 2] Calling Gemini to classify distinct categories in batch...")
-    response: TaxonomyMappingOutput = llm.invoke([
-        ("system", system_prompt),
-        ("user", user_prompt)
-    ])
+    mappings = classify_categories(raw_categories)
 
     # Persist mapping table
     upsert_sql = """
@@ -257,7 +258,7 @@ Semantic Guidelines:
     """
 
     with engine.begin() as conn:
-        for m in response.mappings:
+        for m in mappings:
             conn.execute(text(upsert_sql), {
                 "raw_category": m.raw_category,
                 "canonical_category": m.canonical_category,
@@ -265,5 +266,5 @@ Semantic Guidelines:
                 "rationale": m.rationale
             })
 
-    print(f"[Semantic Agent: Step 2] Successfully persisted {len(response.mappings)} taxonomy mappings into silver.dim_category_taxonomy.")
-    return response.mappings
+    print(f"[Semantic Agent: Step 2] Successfully persisted {len(mappings)} taxonomy mappings into silver.dim_category_taxonomy.")
+    return mappings

@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "description": "Small synthetic regression set for the DQ and semantic agents. Cases are labeled independently of model output.",
+  "taxonomy_cases": [
+    {"raw_category": "AC", "expected": "HVAC"},
+    {"raw_category": "air conditioning", "expected": "HVAC"},
+    {"raw_category": "pipe burst", "expected": "Plumbing"},
+    {"raw_category": "electrical", "expected": "Electrical"},
+    {"raw_category": "elevator", "expected": "Vertical Transport"},
+    {"raw_category": "fire alarm", "expected": "Fire & Safety"},
+    {"raw_category": "pest control", "expected": "Pest Control"},
+    {"raw_category": "security camera", "expected": "Access & Security"},
+    {"raw_category": "wifi", "expected": "IT & Network"},
+    {"raw_category": "janitorial", "expected": "Janitorial & Cleaning"},
+    {"raw_category": "unknown", "expected": "Unassigned"},
+    {"raw_category": "general", "expected": "Unassigned"}
+  ],
+  "swap_cases": [
+    {
+      "ticket_id": "EVAL-SWAP-01",
+      "raw_category": "The security camera by the main entrance is offline",
+      "raw_description": "SECURITY",
+      "expected_swapped": true,
+      "expected_category": "SECURITY",
+      "expected_description": "The security camera by the main entrance is offline"
+    },
+    {
+      "ticket_id": "EVAL-SWAP-02",
+      "raw_category": "Wasp nest forming on the third floor exterior wall",
+      "raw_description": "Pest",
+      "expected_swapped": true,
+      "expected_category": "Pest",
+      "expected_description": "Wasp nest forming on the third floor exterior wall"
+    },
+    {
+      "ticket_id": "EVAL-SWAP-03",
+      "raw_category": "Water leaking from the ceiling near room 204",
+      "raw_description": "Plumbing",
+      "expected_swapped": true,
+      "expected_category": "Plumbing",
+      "expected_description": "Water leaking from the ceiling near room 204"
+    },
+    {
+      "ticket_id": "EVAL-SWAP-04",
+      "raw_category": "HVAC",
+      "raw_description": "Air conditioning is not cooling the office",
+      "expected_swapped": false,
+      "expected_category": "HVAC",
+      "expected_description": "Air conditioning is not cooling the office"
+    },
+    {
+      "ticket_id": "EVAL-SWAP-05",
+      "raw_category": "Electrical",
+      "raw_description": "Circuit breaker trips when lights are switched on",
+      "expected_swapped": false,
+      "expected_category": "Electrical",
+      "expected_description": "Circuit breaker trips when lights are switched on"
+    },
+    {
+      "ticket_id": "EVAL-SWAP-06",
+      "raw_category": "Plumbing",
+      "raw_description": "Restroom faucet is dripping continuously",
+      "expected_swapped": false,
+      "expected_category": "Plumbing",
+      "expected_description": "Restroom faucet is dripping continuously"
+    }
+  ],
+  "dq_profile": {
+    "dataset_name": "synthetic_agent_evaluation_tickets",
+    "business_domain": "Synthetic facilities maintenance examples used only for agent evaluation",
+    "table": "eval.synthetic_tickets",
+    "total_rows": 6,
+    "cross_column_violations": {
+      "resolved_after_created": {
+        "description": "Resolution timestamp should not precede creation timestamp.",
+        "violation_count": 1,
+        "violation_rate": "16.67%",
+        "sample_violations": [
+          {"ticket_id": "TKT-100", "created_at": "2025-03-10", "resolved_at": "2025-03-09", "status": "Closed"}
+        ]
+      }
+    },
+    "column_profiles": {
+      "ticket_id": {"target_type": "VARCHAR(50)", "null_count": 1, "distinct_count": 5, "top_frequent_samples": {"TKT-100": 2, "N/A": 1}},
+      "created_at": {"target_type": "TIMESTAMP", "null_count": 0, "distinct_count": 6, "top_frequent_samples": {"2025-03-10": 2, "1741600000": 1, "03/10/2025 02:30 PM": 1}},
+      "resolved_at": {"target_type": "TIMESTAMP", "null_count": 1, "distinct_count": 4, "top_frequent_samples": {"2025-03-09": 1, "TBD": 1, "03/11/2025 04:15 PM": 1}},
+      "category": {"target_type": "TEXT", "null_count": 0, "distinct_count": 5, "top_frequent_samples": {"HVAC": 2, "Plumbing": 1}},
+      "description": {"target_type": "TEXT", "null_count": 0, "distinct_count": 6, "top_frequent_samples": {"AC is not cooling": 1}},
+      "priority": {"target_type": "VARCHAR(20)", "null_count": 1, "distinct_count": 4, "top_frequent_samples": {"urgent!!!": 2, "med": 2}},
+      "status": {"target_type": "VARCHAR(30)", "null_count": 0, "distinct_count": 3, "top_frequent_samples": {"closed": 3, "in progress": 2}},
+      "building": {"target_type": "VARCHAR(100)", "null_count": 1, "distinct_count": 3, "top_frequent_samples": {"North Tower": 4, "unknown": 1}},
+      "submitted_by": {"target_type": "VARCHAR(100)", "null_count": 0, "distinct_count": 6, "top_frequent_samples": {"Casey": 2}},
+      "assigned_to": {"target_type": "VARCHAR(100)", "null_count": 0, "distinct_count": 3, "top_frequent_samples": {"Facilities Team": 4}},
+      "resolution_notes": {"target_type": "TEXT", "null_count": 1, "distinct_count": 5, "top_frequent_samples": {"Took 2.5 hours; replaced capacitor": 1}},
+      "cost": {"target_type": "NUMERIC(10,2)", "null_count": 1, "distinct_count": 5, "top_frequent_samples": {"$1,250.50": 2, "TBD": 1, "-1": 1}},
+      "sla_hours": {"target_type": "NUMERIC(6,1)", "null_count": 0, "distinct_count": 3, "top_frequent_samples": {"24": 3, "999": 1, "0": 1}}
+    }
+  }
+}

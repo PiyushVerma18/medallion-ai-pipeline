@@ -1,0 +1,261 @@
+{
+  "cache_key": "e1d67321eb59325a77307e7b2fba7ae30f3de6a9e17d8946dd735659c12b1d37",
+  "model": "gemini-2.5-flash",
+  "provider": "google-gemini",
+  "response": {
+    "items": [
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 0,
+        "replaced_component": null,
+        "resolution_action": "Parts on order",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 1,
+        "replaced_component": null,
+        "resolution_action": "Parts on order",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 2,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": "ABC Mechanical"
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 3,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": "CityWide Electric"
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 4,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": "Joe (in-house)"
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 5,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": "PestPro Services"
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 6,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": "maintenance team"
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 7,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": "overnight crew"
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 8,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": "vendor tech"
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 9,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": "clogged filter",
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 10,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": "corrosion",
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 11,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": "faulty wiring",
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 12,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": "improper installation",
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 13,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": "normal wear",
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 14,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": "power surge",
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 15,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": "rodent damage",
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 16,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": "software glitch",
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 17,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": "water damage",
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 18,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": "worn bearings",
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 19,
+        "replaced_component": null,
+        "resolution_action": "Temporary fix",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 20,
+        "replaced_component": null,
+        "resolution_action": "Vendor scheduled",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 21,
+        "replaced_component": null,
+        "resolution_action": "Vendor scheduled",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 22,
+        "replaced_component": null,
+        "resolution_action": "Vendor scheduled",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 23,
+        "replaced_component": null,
+        "resolution_action": "Vendor scheduled",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": null,
+        "is_duplicate": false,
+        "item_id": 24,
+        "replaced_component": null,
+        "resolution_action": "Vendor scheduled",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      }
+    ]
+  },
+  "schema_name": "ResolutionBatchOutput",
+  "temperature": 0.0
+}

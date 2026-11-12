@@ -1,0 +1,12 @@
+{
+  "cache_key": "b910b6f02d9a672597398e5ca0c9c0a367cf211bca088d32d0526c1cb0c0f5be",
+  "model": "gemini-2.5-flash",
+  "provider": "google-gemini",
+  "response": {
+    "detected_violations": [],
+    "is_statistically_sound": true,
+    "suggested_sql_patch": null
+  },
+  "schema_name": "StatAuditResult",
+  "temperature": 0.0
+}

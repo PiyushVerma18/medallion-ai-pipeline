@@ -1,189 +1,223 @@
-# Autonomous Medallion AI Pipeline: Operational Facilities Intelligence
+# Facilities Tickets Medallion Pipeline
 
-An enterprise-grade Medallion Data Lakehouse (Bronze → Silver → Gold) architecture orchestrated with LangGraph, PostgreSQL 16, and Gemini 2.5 Flash. The pipeline transforms ~10,280 messy, heterogeneous operational facility support tickets into production-grade analytical data marts using autonomous, self-healing AI agents.
+A PostgreSQL and Python implementation of a Bronze → Silver → Gold pipeline for the operational ticket data in `data/raw_tickets.csv`. LangGraph coordinates the stages. Gemini assists with Silver data-quality and semantic tasks, and with Gold model design and review. Prompt responses are cached so an identical run can replay offline.
 
-## Table of Contents
+## Architecture
 
-- Architecture Overview
-
-- Medallion Layer Design & Cleaning Rules
-
-- Gold Analytical Models & Business Value
-
-- Agent Assessment (Honesty Over Impressiveness)
-
-- Trust vs. Override Framework
-
-- What Changes at 100x+ Scale (10k+ to 1M+ Rows)
-
-- Observability & Evaluation Harness
-
-- Quickstart: How to Run
-
-## 1. Architecture Overview
-
-![Alt text](assets/Structural_diagram.png)
-
-## 2. Medallion Layer Design & Cleaning Rules
-
-The pipeline enforces strict separation of concerns across PostgreSQL schemas: bronze, silver, and gold.
-
-### Bronze Layer (bronze.raw_tickets)
-
-- Philosophy: Schema-on-read ingestion with zero data loss. All incoming columns are stored as raw text (TEXT) to preserve input fidelity.
-- Lineage Tracking:
-1)  _row_hash: MD5 digest across all raw row values, serving as the immutable primary key for idempotent upserts.
-2) _source_file: Name of the source file (e.g., raw_tickets.csv).
-3) _ingested_at: UTC timestamp recording when the record entered the data warehouse.
-
-### Silver Layer (silver.cleaned_tickets)
-
-- Philosophy: Validated, typed, deduplicated, and semantically enriched table providing a single source of truth.
-- Cleaning Rules & Rationale:
-
-| Target Column | Raw Data Issue | Cleansing & Transformation Rule | Operational Rationale |
-| :--- | :--- | :--- | :--- |
-| `ticket_id` | Missing values, malformed strings, or duplicates. | Synthesize IDs for malformed entries (`TKT-SYNTH-<hash8>`). Deduplicate using `ROW_NUMBER() OVER (PARTITION BY clean_ticket_id ORDER BY _ingested_at DESC)`. | Guarantees primary key uniqueness without dropping rows containing valid operational notes. |
-| `created_at` / `resolved_at` | 7 mixed formats (Unix epoch, ISO 8601, `YYYY-MM-DD`, `MM/DD/YYYY HH12:MI AM`, `DD-Mon-YYYY`, string sentinels like `TBD`, `never`, `00/00/0000`). | Regex-driven `CASE` statement mapping valid formats into standard `TIMESTAMP`. String sentinels map to `NULL`. | Normalizes disparate timestamp logging conventions across legacy CMMS tools into queryable ISO timestamps. |
-| `is_temporal_anomaly` | 1,866 tickets contain inverted timestamps where `resolved_at < created_at` (e.g., created 2025, resolved 2024). | Non-destructive audit flag: `CASE WHEN resolved_at < created_at THEN TRUE ELSE FALSE END`. | Prevents inverted timestamps from corrupting resolution time and MTTR metrics without deleting records. |
-| `is_field_swapped` | 46 records have `category` and `description` swapped (e.g., `category` contains a 200-character description). | Heuristic filter (`LENGTH(category) > 40 AND LENGTH(description) < 25`) verified by Gemini, cached in `silver.dim_field_swap_cache`. | Realigns inverted columns so categorization and description fields are correctly populated. |
-| `canonical_category` | 113 noisy, colloquial, or misspelled categories (e.g., `ac`, `hvac leak`, `Pest`, `bug extermination`). | Clustered and mapped into an 11-discipline canonical taxonomy via Agent 2, cached in `silver.dim_category_taxonomy`. | Enables cross-campus spend aggregation across standardized trade disciplines. |
-| `priority` | Informal entries (`crit`, `urgent!!!`, `asap`, `hi`, `med`, `lo`). | Normalized into an uppercase standard enum: `'CRITICAL'`, `'HIGH'`, `'MEDIUM'`, `'LOW'`. | Restores queryable cardinality for SLA dispatch and triage tracking. |
-| `status` | Case variations and typos (`open`, `in progress`, `pending vendor`, `escalated`, `resolved`, `closed`). | Canonicalized to Title Case. Invalid or empty statuses default to `'Unassigned'`. | Standardizes ticket lifecycle tracking for operational backlog reporting. |
-| `cost` | Negative values (`-1`, `-999`), currency symbols (`$`, `,`), and sentinels (`TBD`, `error`). | Strips currency characters. Validates numeric range: `CASE WHEN cost::NUMERIC < 0 THEN NULL ELSE cost::NUMERIC(10,2) END`. | Eliminates invalid sentinels while preserving genuine financial transactions. |
-| `sla_hours` | Invalid limits (`999`, `-1`, `0`). | Sets `<= 0` or `>= 999` to `NULL`. | Prevents artificial SLA breaches or infinite compliance margins. |
-| `is_duplicate` / `duplicate_of_ticket_id` | Call-center duplicate complaints for the same physical issue. | Extracted from resolution notes (e.g., `"Duplicate of TKT-1234"`, `"Already reported"`). | Separates gross call-center noise from net actionable operational workload. |
-| Entity Enrichments | Unstructured descriptions and resolution notes. | Extracted into structured columns: `extracted_asset_type`, `extracted_asset_id`, `extracted_floor`, `extracted_room`, `root_cause`, `resolution_action`, `hours_on_site`. | Transforms free text into dimensional attributes for hardware failure and technician labor analysis. |
-
-## 3. Gold Analytical Models & Business Value
-
-The Gold layer uses an **annual grain** (`incident_year`) to match fiscal planning and vendor MSA review cycles. Volume is concentrated in 2024 (6,490 tickets) and 2025 (3,266 tickets), plus 2 late-2023 tickets: 9,758 actionable incidents across 17 facilities and 10 canonical trade disciplines. A monthly grain would fragment the data into sparse cohorts (~3 tickets per cell); annual keeps cohorts statistically meaningful.
-
-| # | Model (`gold.*`, materialized view) | Grain | Rows x Cols | Business question it answers | Primary stakeholders |
-| :-- | :--- | :--- | :--- | :--- | :--- |
-| 1 | `annual_facilities_opex_summary` | year x building x category | 342 x 6 | Which buildings and trades drive OPEX and on-site labor? | VP Real Estate, Facilities Ops Director, Financial Controller |
-| 2 | `annual_maintenance_efficiency_and_risk_summary` | year x building x category x asset type | 1,179 x 8 | How much demand is duplicate noise, and where is critical-failure risk concentrated? | Facilities Ops Director, VP Real Estate, Chief Reliability Engineer |
-| 3 | `annual_asset_failure_analysis` | year x building x asset type x asset id x category x root cause | 2,334 x 10 | Which specific assets are bad actors, and why do they fail? | Chief Reliability Engineer, Maintenance Supervisor |
-| 4 | `annual_maintenance_workforce_performance` | year x building x category x assigned group | 373 x 8 | How do internal crews compare to vendors on speed, hours and cost? | Procurement and Vendor Lead, Maintenance Supervisor |
-
-**Domains:** Models 1-2 serve *Corporate Real Estate & Facilities Operations*; Models 3-4 serve *Asset Reliability & Sourcing Performance*.
-
-**Headline numbers:** $36.46M total portfolio OPEX; 8,974 net unique vs. 784 duplicate tickets; 2,077 critical tickets ($8.05M critical spend); internal teams resolve ~716 hrs (~30 days) faster than vendors on average.
-
-> **Full detail** for each model (schema definitions, the "why behind" the problem, stakeholder pain points, empirical profiling and strategic decisions enabled) lives in [`docs/gold_models.md`](docs/gold_models.md). Sample outputs of all four marts are in [`exports/`](exports/).
-
-
-## 4. Agent Assessment (Honesty Over Impressiveness)
-
-| Agent | Core Function | Sample Input / Output | Honest Assessment |
-| :--- | :--- | :--- | :--- |
-| **Agent 1: Data Quality & Profiling Agent** | Profiles Bronze distributions, identifies dirty timestamp formats, sentinels, and anomalies; generates SQL cleaning logic with business impact rationales. | **Input**: Profile showing cost strings (`-1`, `TBD`, `$1,200`) and 7 timestamp patterns.<br><br>**Output**: Synthesized `CASE` regex expressions handling non-destructive casts and `is_temporal_anomaly` flags. | **Saved**: 2+ hours manually cataloging mixed date strings and edge-case cost formats.<br><br>**Trouble**: Initially proposed non-standard SQL dialect expressions (`TRY_CAST`, not available in standard PostgreSQL). Fixed by constraining the prompt to standard PostgreSQL 16 `CASE` expressions. |
-| **Agent 2: Semantic Classification & Entity Extraction Agent** | Detects field-swapped records, normalizes 113 colloquial categories into an 11-discipline taxonomy, and extracts structured entities from free-text notes. | **Input**: `"water everywhere in bathroom Remote Site Beta"`<br><br>**Output**: `canonical_category = 'Plumbing'`, `extracted_asset_type = 'Plumbing Fixture'`, `extracted_room = 'bathroom'`. | **Saved**: Extracted operational fields (`asset_id`, `root_cause`, `action`, `hours_on_site`) that static regex alone could not reliably isolate.<br><br>**Trouble**: Row-by-row LLM inference over 10,280 rows was too slow and costly. We built a hybrid approach: regex fast-paths, distinct string deduplication (74 categories, 901 unique resolution notes), and DB table caching, cutting LLM calls from >10,000 to <25 batched requests. |
-| **Agent 3: Closed-Loop Gold Layer Design Agent** | Autonomously formulates business problem statements, drafts dimensional SQL queries, profiles staging data, and self-heals metric violations. | **Input**: Silver schema + domain narrative.<br><br>**Output**: Production-ready materialized views with verified non-negative durations and executive problem dossiers. | **Saved**: Handled schema design, grain selection, and boilerplate SQL generation, delivering business dossiers alongside working code.<br><br>**Trouble**: Suffered two notable pitfalls on initial runs: negative resolution times due to unfiltered temporal anomalies (−11,602 hrs), and empty tables from case-sensitive string matching (`priority IN ('High', 'Critical')`). Resolved via Empirical Data Grounding and the Closed-Loop Feedback Gate. |
-
-## 5. Trust vs. Override Framework
-
-Autonomous agents accelerate pipeline design, but human engineering oversight is necessary to catch edge cases that violate domain logic:
-
-| When to Trust the Agent | When to Override the Agent |
-| :--- | :--- |
-| **1. Dimensional Modeling Scaffolding:**<br>Star schema design, grain selection, dimension vs. fact separation, and join keys. | **1. Temporal Lifecycle Integrity:**<br>The LLM may write `AVG(resolved_at - created_at)` without filtering `is_temporal_anomaly = FALSE` or tickets still `In Progress`, yielding negatives. |
-| **2. Dialect-Specific SQL Authoring:**<br>Writing clean PostgreSQL 16 CTEs, window functions, and conditional `FILTER (WHERE ...)` clauses. | **2. Business Metric Denominators:**<br>When calculating average cost per incident, the LLM may divide by gross tickets instead of net actionable tickets (`WHERE NOT is_duplicate`). |
-| **3. Multi-Persona Metric Ideation:**<br>Brainstorming multi-faceted operational KPIs across finance, reliability, and workforce personas. | **3. Missing Data vs. Zero Sentinels:**<br>The LLM may treat null costs as $0.00, skewing averages unless guided to filter null sentinels. |
-| **4. Unstructured Text Entity Normalization:**<br>Parsing descriptive strings into structured labels (e.g., mapping colloquial terms to standard names). | **4. Contractual & SLA Specifics:**<br>The LLM cannot infer custom SLA schedules (e.g., business hours vs. calendar hours) without context. |
-
-## 6. What Changes at 100x+ Scale (10K+ to 1M+ Rows)
-
-If this pipeline were scaled from 10k+ rows to 1M+ daily records:
-
-| Architectural Dimension | Current Architecture (10k Rows) | 100x Production Redesign (1M+ to 10M+ Rows) |
-| :--- | :--- | :--- |
-| **Compute & Storage Engine** | Single-instance PostgreSQL 16 on local Docker volume. | Decoupled Lakehouse storage using **Apache Iceberg / Delta Lake** on Amazon S3, queried via **DuckDB** (micro-batch) or **Apache Spark / Trino** (distributed). |
-| **LLM Inference Strategy** | Chunked synchronous API calls with local DB caching. | • **Asynchronous Batch APIs** (e.g., Gemini Batch) running overnight at 50% lower cost.<br>• **Semantic Clustering**: Generate embeddings with `pgvector`/Qdrant; cluster 10M records into ~1,000 centroids; run the LLM only on centroids and propagate labels via vector similarity. |
-| **Ingestion Pipeline** | Batch CSV ingestion into temporary staging tables. | Change Data Capture (CDC) with **Kafka** and **Debezium**, appending micro-batches with watermark tracking on `_ingested_at`. |
-| **Gold Transformations** | Full materialized view creation (`CREATE MATERIALIZED VIEW AS`). | Incremental **dbt models** (`is_incremental()`) partitioned by `incident_year` and `incident_month`, refreshing only active time windows. |
-| **Data Quality Profiling** | Exact table scans (`COUNT(*)`, `COUNT(DISTINCT)`). | Approximate profiling using **HyperLogLog** (cardinality) and **t-digest** (quantiles) to prevent out-of-memory errors on large scans. |
-
-
-
-## 7. Observability & Evaluation Harness
-
-The repository includes a dedicated test harness (tests/test_pipeline_invariants.py) that acts as an automated regression gate:
-
-``` python -m pytest tests/test_pipeline_invariants.py ```
-
-### Invariant Checks Verified:
-
-1) Bronze Lineage Completeness: Asserts 100% of rows carry valid _source_file, _ingested_at, and _row_hash identifiers.
-
-2) Silver Deduplication & Swap Ground Truth: Validates that all 46 swapped records are resolved, 823 duplicates are marked, and 1,866 temporal anomalies are properly flagged.
-
-3) Gold Non-Negativity Invariant: Scans every numeric column across all 4 production Gold marts to verify that no negative durations or invalid costs reach end-user tables (MIN(col) >= 0).
-
-## 8. Quickstart: How to Run
-
-### Prerequisites
-
-- Docker and Docker Compose
-
-- Python 3.9+
-
-- Google Gemini API Key
-
-### Step-by-Step Setup
-
-1) Clone Repository & Configure Environment:
-
-```
-git clone https://github.com/PiyushVerma18/medallion-ai-pipeline
-cd medallion-ai-pipeline
-cp .env.example .env 
-```
-Add your API key inside .env:
-
-```
-DATABASE_URL=postgresql://pipeline_user:pipeline_password@localhost:5432/ticket_warehouse
-GEMINI_API_KEY=your_gemini_api_key_here
-GEMINI_MODEL=gemini-2.5-flash
+```mermaid
+flowchart LR
+    CSV["data/raw_tickets.csv"] --> B["Bronze · bronze.raw_tickets<br/>raw values + JSONB + lineage"]
+    B --> P["Catalog profiler"]
+    P --> DQ["Silver Agent 1<br/>Data Quality"]
+    B --> SC["Silver Agent 2<br/>Semantic classification + extraction"]
+    DQ --> S["Silver · silver.cleaned_tickets<br/>typed, validated, enriched, upserted"]
+    SC --> S
+    S --> G1["Agent 3 · inspect Silver schema<br/>propose annual-grain models"]
+    G1 --> G2["Generate PostgreSQL SELECT<br/>self-verification rationale"]
+    G2 --> G3["Execute as Gold role<br/>gold._staging_* table"]
+    G3 --> G4["Compute staged row count<br/>and numeric statistics"]
+    G4 --> G5["Agent 3 audits the statistics<br/>sound? violations + suggested fix"]
+    G5 -->|"passes"| G6["Promote verified model"]
+    G5 -->|"fails; retries remain"| G7["Send violations to SQL generator"]
+    G7 --> G2
+    G5 -->|"fails; retry limit reached"| G8["Do not promote model"]
+    G6 --> M["Gold · materialized views"]
+    C["Gemini response cache"] -. "cache hit/replay" .-> DQ
+    C -. "cache hit/replay" .-> SC
+    C -. "cache hit/replay" .-> G1
+    C -. "cache hit/replay" .-> G2
+    L["Run-ID stage logs"] -.-> P
+    L -.-> S
+    L -.-> G5
 ```
 
-2) Start PostgreSQL Container:
+PostgreSQL schemas separate the data layers. The pipeline reads the source CSV and does not modify it.
 
-``` docker-compose up -d ```
+## Medallion layers
 
-3) Install Dependencies in Virtual Environment:
+### Bronze: `bronze.raw_tickets`
 
+Bronze preserves each source record and provides a convenient set of known ticket columns for downstream SQL:
+
+- CSV fields are read as strings, with empty values retained as empty strings.
+- `_raw_data` stores the complete row as JSONB, including columns not in the known ticket schema.
+- `_bronze_id` is the database identity for a stored Bronze row.
+- `_row_hash` is a SHA-256 content fingerprint; identical rows can have the same hash.
+- `_source_file_hash` and the 1-based `_source_row_number` form the source-row uniqueness key. Re-running the same file content is idempotent while repeated identical rows within that file remain distinct.
+- `_source_file` records the resolved source path; `_ingested_at` records ingestion time.
+
+Bronze ingestion loads through a temporary staging table and inserts with `ON CONFLICT DO NOTHING`. It is append-only for new source file content; it does not remove rows when a source file is changed or removed.
+
+### Silver: `silver.cleaned_tickets`
+
+Silver profiles Bronze, applies catalog-aware cleaning, repairs/enriches semantic fields, then upserts by cleaned `ticket_id`. Candidate ticket IDs are deduplicated with a deterministic `ROW_NUMBER()` ordering. Silver preserves the Bronze row reference and lineage fields (`_bronze_id`, `_source_file`, `_ingested_at`, `_row_hash`).
+
+| Area | Implemented rule | Why it matters |
+| --- | --- | --- |
+| IDs and duplicate ticket IDs | Invalid or missing IDs receive a deterministic synthetic ID derived from `_row_hash`; repeated IDs are ranked and only the selected record is materialized for that key. | Stable keys let reruns upsert instead of multiplying Silver rows. The original records remain in Bronze. |
+| Timestamps | The Data Quality Agent generates guarded PostgreSQL expressions for the supported timestamp formats and sentinels; unparseable values become `NULL`. | A consistent timestamp type supports time-based reporting and avoids invalid casts. |
+| Temporal integrity | `resolved_at < created_at` is retained and flagged as `is_temporal_anomaly = TRUE`. | Analysts can exclude bad durations without losing the ticket or hiding the source issue. |
+| Priority and status | Values are standardized using catalog rules (for example, priority tiers and lifecycle statuses); invalid values use the documented fallback. | Consistent enums support reliable grouping and filtering. |
+| Cost and SLA | Currency formatting and sentinel values are sanitized before numeric casts; invalid or out-of-range values become `NULL`. | Prevents text sentinels and invalid values from distorting numeric summaries. |
+| Category/description swaps | The Semantic Classification Agent reviews heuristic candidates and stores its resolution in `silver.dim_field_swap_cache`. | Repairs records where the short category and long description were put in the wrong fields. |
+| Category taxonomy | Distinct raw labels are mapped to the canonical taxonomy and cached in `silver.dim_category_taxonomy`. | Consolidates colloquial or misspelled categories for cross-building reporting. |
+| Free-text entities | Regex fast paths handle recognizable patterns; ambiguous distinct descriptions and resolution notes are sent to the LLM in batches. Results are cached in Silver entity tables using text hashes. | Extracts useful asset, room, duplicate, cause, action, and labor fields without one LLM call per ticket. |
+
+The detailed catalog and prompt rules are in [`src/agents/catalog.py`](src/agents/catalog.py) and [`prompts.md`](prompts.md). Agent output is not blindly trusted: required catalog coverage is checked, generated Silver SQL must be a scalar expression, and the SQL safety guard rejects statement-like output before materialization.
+
+### Gold: `gold.*`
+
+Gold is produced by a separate closed-loop LLM workflow. It profiles the Silver schema and samples, proposes business models for each of the two configured business domains, generates PostgreSQL `SELECT` SQL, stages the result, checks row/numeric statistics, and retries with audit feedback up to the configured limit. A passing model is promoted to a Gold materialized view; a model that still fails the audit is not promoted.
+
+The current configuration asks for two models from each of two configured domains, producing four models:
+
+- `gold.annual_facilities_opex_summary` — annual cost, effort, and ticket counts by facility/category/assignee.
+- `gold.annual_critical_risk_summary` — annual critical ticket counts, costs, and resolution time by facility/category/asset type.
+- `gold.annual_asset_failure_summary` — annual incident count, failure cost, resolution time, and on-site hours by asset and root cause.
+- `gold.annual_workforce_performance_summary` — annual resolved-ticket, labor cost, resolution-time, and first-time-fix metrics by workforce grouping.
+
+The model names and SQL are proposed at run time, so they may change when prompts, inputs, or cache entries change. The evaluation brief suggests 2–3 Gold models; this implementation currently emits four because it asks each of two domains for two models. The full Gold model documentation is in [`docs/gold_models.md`](docs/gold_models.md): for each model it explains the business problem, stakeholder pain points, how the aggregation addresses them, observed data and audit statistics, and decisions the model can inform.
+
+Gold SQL is constrained to one `SELECT` over `silver.cleaned_tickets` and its own CTEs. The target must be a safe `gold.*` name. Promotion and staging are application-owned operations. [`exports/`](exports/) contains example extracts; treat them as snapshots because the active Gold workflow generates model details at run time.
+
+## Agent roles and assessment
+
+The pipeline has two agents in Silver and a third agent in Gold. The Gold Agent 3 flow is a separate closed-loop LangGraph workflow, not part of the Silver agent-evaluation harness.
+
+| Agent | What it does | Example | Practical assessment |
+| --- | --- | --- | --- |
+| **Silver Agent 1: Data Quality** | Uses the dataset catalog and empirical profile to return per-column target types, cleaning expressions, detected anomalies, business risk, and table integrity rules. Its expressions feed Silver materialization after validation. | Mixed cost values such as `"$1,250.50"`, `"TBD"`, and `"-1"` → a guarded numeric-cleaning expression and anomaly rationale. | Useful for drafting many column rules from a profile. Requires review: early output included SQL constructs unsupported by PostgreSQL, so the prompt and execution guard now constrain the dialect. |
+| **Silver Agent 2: Semantic Classification and Extraction** | Resolves field swaps, maps category labels, and extracts entities from descriptions/resolution notes. Regex handles clear cases; LLM calls are batched and results cached by text or lookup key. | `raw_category="Wasp nest on the third floor"`, `raw_description="Pest"` → swap decision, `clean_category="Pest"`, repaired description. | Helps with ambiguous language that fixed rules cannot cover well. Distinct-value processing, regex fast paths, batching, and database caching avoid a call for every source row. Human review is still appropriate for ambiguous classifications and extracted entities. |
+| **Agent 3: Closed-Loop Gold Model Design** | Interprets the Silver schema, proposes annual-grain business models for configured domains, generates SQL, executes it in a staging table, asks an audit agent to check row/numeric summaries, and retries failed models with feedback. Passing models are promoted as Gold materialized views. | **Input:** Silver columns/samples plus the facilities OPEX domain. **Output example:** `gold.annual_facilities_opex_summary`, grouped by year, building, canonical category, and assignee; the latest run also proposed critical-risk, asset-failure, and workforce-performance summaries. | It speeds up model ideation and produces query scaffolding, but the audit only sees row counts and numeric distributions. A `statistically_sound` result does not validate metric definitions or stakeholder usefulness. No controlled timing study measured hours saved; treat it as a design accelerator and review the grain, filters, denominators, and SQL before relying on the marts. |
+
+### Trust and override
+
+- Review the DQ expressions when they affect financial values, timestamp parsing, or identity rules. A structurally valid expression can still implement the wrong business rule.
+- Treat semantic mappings and extracted entities as suggestions when confidence is low or the source text is ambiguous.
+- Check Gold model grain, filters, denominators, anomaly treatment, and business definitions before relying on a materialized view for decisions. In particular, the database audit checks row counts and numeric distributions; it does not prove every metric is conceptually correct.
+
+## Database access boundaries
+
+The pipeline provisions and assumes two PostgreSQL roles:
+
+| Role | Read access | Write access |
+| --- | --- | --- |
+| `medallion_silver` | Bronze | Silver (including Silver caches and `cleaned_tickets`) |
+| `medallion_gold` | Bronze and Silver | Gold outputs |
+
+Stage-specific SQLAlchemy connection pools set the role on checkout. Agent-generated Gold SQL executes under the Gold role, so it cannot write Bronze or Silver even if it violates its prompt. Role grants and existing object ownership are set up idempotently by [`scripts/setup_stage_roles.sql`](scripts/setup_stage_roles.sql). Graph setup runs this script using `DATABASE_URL`; that account must be a PostgreSQL administrator able to create roles and transfer ownership. The provided Compose configuration uses `pipeline_user` for this trusted setup. There is no interactive permission prompt, but a non-admin external database account will not be able to provision the roles.
+
+## LLM cache and offline replay
+
+Structured Gemini responses are cached in `data/llm_cache/`. Cache keys include provider, model, temperature, exact prompt, and output schema. Files are written atomically. If prompt, input, model, or schema changes, the key changes and the request is a cache miss.
+
+`LLM_CACHE_MODE` values:
+
+- `read_write` (default): use an existing cache entry, or call Gemini and save a new response.
+- `replay`: require an existing entry; never call Gemini; fail clearly on a miss.
+- `refresh`: bypass the cache and call Gemini.
+
+To run without an API key, submit the cache bundle with the code and run with `LLM_CACHE_MODE=replay`. The bundle must contain entries for all exact pipeline prompts and inputs. Cache files can contain model responses derived from ticket data; review them for sensitive content before publishing.
+
+## Logging and evaluation
+
+### Pipeline logs
+
+Pipeline stage start, completion, duration, summaries, and failures are logged to the console and a separate file for each run under `logs/`. Files use the pattern `pipeline_<local timestamp>_<run_id>.log`, and the run-start event records the file name. The `run_id` is also included on every event, so a complete run can be found by opening its file or searching the ID. Logs include row/rule/enrichment counters where available, not full prompts or raw ticket payloads. The current code does not send alerts or expose a metrics dashboard.
+
+### Agent evaluation harness
+
+Run [`evals/run_agent_eval.py`](evals/run_agent_eval.py) separately from the pipeline invariant tests:
+
+```bash
+LLM_CACHE_MODE=replay python -m evals.run_agent_eval
 ```
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+
+It evaluates the **two Silver agents** using production prompt functions and a small synthetic labeled fixture:
+
+- **Semantic Classification Agent:** exact taxonomy accuracy on 12 labels and exact swap decision/field-repair accuracy on 6 examples. These are submetrics of one agent, not separate agents.
+- **Data Quality Agent:** output-contract checks for all catalog columns, target types, non-empty SQL, severity values, selected SQL guardrails, and table integrity rules. This is format/contract compliance, not semantic execution accuracy.
+
+The semantic score averages taxonomy and swap accuracy; the overall score averages the two agent scores. Default gates are 85% taxonomy, 85% swap, 100% DQ format compliance, and 90% overall. Output includes case mismatches, latency, cache/provider call counts, and rough token estimates. If both `GEMINI_INPUT_USD_PER_1M_TOKENS` and `GEMINI_OUTPUT_USD_PER_1M_TOKENS` are configured, it also calculates an approximate cost from those rates. Otherwise cost is reported as `null`.
+
+The fixture is small; a perfect score is a regression signal, not evidence of broad production accuracy. DQ checks mostly cover output contract/guardrails, and the harness does **not** evaluate entity extraction or Gold model design/SQL quality. A first run for uncached eval prompts requires a Gemini key unless the cache bundle already contains those responses.
+
+To save a report:
+
+```bash
+LLM_CACHE_MODE=replay python -m evals.run_agent_eval --output evals/latest_report.json
 ```
 
-4) Run the Full Pipeline:
+To compare a candidate prompt/tool change with a previously saved report and fail on a score drop over five percentage points:
 
-```python run_pipeline.py```
-
-This single command executes Bronze ingestion, Silver cleaning and enrichment, and the Gold closed-loop agent, printing the final observability scorecard:
-
-```
-==========================================================================================
-📊 END-TO-END PIPELINE OBSERVABILITY & SLA SCORECARD
-==========================================================================================
-Total Execution Runtime     : 250.18 seconds
-Bronze Raw Records Ingested : 10,280
-Silver Validated Records    : 10,280
-  • Inverted Fields Repaired: 46
-  • Duplicate Tickets Marked: 823
-  • Temporal Anomalies Flagged: 1,866
-------------------------------------------------------------------------------------------
-PRODUCTION GOLD DATA MARTS:
-  ✔ Model 1: gold.annual_facilities_opex_summary             | Rows:   342 | Domain: Corporate Real Estate & Faci...
-  ✔ Model 2: gold.annual_maintenance_efficiency_and_risk_summary | Rows: 1,179 | Domain: Corporate Real Estate & Faci...
-  ✔ Model 3: gold.annual_asset_failure_analysis              | Rows: 2,334 | Domain: Asset Reliability & Sourcing...
-  ✔ Model 4: gold.annual_maintenance_workforce_performance   | Rows:   373 | Domain: Asset Reliability & Sourcing...
-==========================================================================================
+```bash
+LLM_CACHE_MODE=read_write python -m evals.run_agent_eval \
+  --baseline-report evals/baseline_report.json \
+  --max-score-drop 0.05 \
+  --output evals/candidate_report.json
 ```
 
-5) Run Data Invariant Tests:
+If a prompt or schema changed, the cache key changes; that evaluation needs a Gemini key to create the candidate response before it can be compared. The baseline report should be a reviewed version that passed the current quality gates. This is a manual CLI gate, not CI automation.
 
-``` python -m pytest tests/test_pipeline_invariants.py ```
+### Pipeline invariant tests
+
+[`tests/test_pipeline_invariants.py`](tests/test_pipeline_invariants.py) checks Bronze lineage, fixed Silver sample counts, and non-negative numeric values across all Gold materialized views discovered in the database. The Silver count assertions are specific to the supplied dataset and need updating if that input changes.
+
+## What changes at 100× scale
+
+The current pipeline is designed for a roughly 10k-row CSV, not daily million-row CDC:
+
+- **Ingestion:** pandas reads the full CSV and Bronze computes file/row hashes in-process. Move to object storage plus incremental ingestion (CDC or partitioned micro-batches), persisted watermarks, and replay/backfill windows.
+- **Profiling and Silver:** current profiling performs exact scans, and semantic steps scan distinct text across Bronze. Partition or incrementally profile changed records; use durable work queues and bounded retries.
+- **LLM work:** current calls are synchronous and cached locally. Use provider batch APIs, centralized durable cache, strict token budgets, deduplication/semantic clustering, and human approval for low-confidence/high-impact changes.
+- **Gold:** current models are rebuilt as complete materialized views. Use incremental models (for example, dbt over Iceberg/Delta or partitioned PostgreSQL tables), with late-arrival correction windows and deterministic backfills.
+- **Operations:** add durable run metadata, freshness/volume/null-delta alerts, failure and cost SLAs, and evaluation dashboards.
+
+## Quickstart
+
+### Requirements
+
+- Docker with Compose
+- Python 3.9 or later
+- A Gemini API key only if a required cache entry is missing or you set `LLM_CACHE_MODE=refresh`
+
+### Run the full pipeline
+
+1. Clone the repository and create the environment file:
+
+   ```bash
+   git clone https://github.com/PiyushVerma18/medallion-ai-pipeline
+   cd medallion-ai-pipeline
+   cp .env.example .env
+   ```
+
+   Keep the documented `DATABASE_URL` for the Compose database. For cached offline execution, set `LLM_CACHE_MODE=replay`; for new Gemini calls, set a valid `GEMINI_API_KEY` and use `read_write` or `refresh`.
+
+2. Start PostgreSQL, create/activate a virtual environment, install dependencies, and run the pipeline:
+
+   ```bash
+   docker compose up -d
+   python -m venv .venv
+   source .venv/bin/activate
+   pip install -r requirements.txt
+   LLM_CACHE_MODE=replay python run_pipeline.py
+   ```
+
+   The pipeline runs Bronze ingestion, Silver, then Gold. The same invocation is safe to rerun: Bronze ignores previously ingested source rows, Silver upserts by ticket ID, and Gold replaces its own outputs.
+
+### Run Silver only
+
+Bronze must already be populated:
+
+```bash
+LLM_CACHE_MODE=replay python src/pipeline/silver_graph.py
+```
+
+### Repository checks
+
+```bash
+LLM_CACHE_MODE=replay python -m evals.run_agent_eval
+python -m pytest tests/test_pipeline_invariants.py
+```
+
+The Silver count assertions in the invariant test are tied to the supplied dataset; the agent-evaluation command is the separate labeled-agent check.

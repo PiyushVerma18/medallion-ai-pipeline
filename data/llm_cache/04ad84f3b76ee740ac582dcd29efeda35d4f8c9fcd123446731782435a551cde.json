@@ -1,0 +1,174 @@
+{
+  "cache_key": "04ad84f3b76ee740ac582dcd29efeda35d4f8c9fcd123446731782435a551cde",
+  "model": "gemini-2.5-flash",
+  "provider": "google-gemini",
+  "response": {
+    "column_rules": [
+      {
+        "anomalies_detected": [
+          "Invalid ID formats (e.g., '', '15', 'N/A', 'NULL') not matching '^TKT-\\d+$'.",
+          "Empty strings and 'N/A' values."
+        ],
+        "business_risk": "Critical for data integrity, primary key uniqueness, and join operations. Invalid IDs can lead to lost records or incorrect aggregations.",
+        "column_name": "ticket_id",
+        "severity": "CRITICAL",
+        "sql_transformation": "CASE\n    WHEN NULLIF(TRIM(raw.ticket_id), '') IS NULL THEN 'TKT-SYNTH-' || SUBSTRING(MD5(raw._row_hash), 1, 8)\n    WHEN TRIM(raw.ticket_id) ~ '^TKT-[0-9]+$' THEN TRIM(raw.ticket_id)\n    ELSE 'TKT-SYNTH-' || SUBSTRING(MD5(raw._row_hash), 1, 8)\nEND::VARCHAR(50)",
+        "target_type": "VARCHAR(50)"
+      },
+      {
+        "anomalies_detected": [
+          "Multiple date/time formats: Unix epoch (10-digit), ISO-8601 date only, US slash dates (with/without AM/PM), hyphenated MM-DD-YYYY, alpha month dates (DD-Mon-YYYY).",
+          "Known textual sentinels ('00/00/0000', 'asap', 'not a date', 'TBD').",
+          "Empty strings."
+        ],
+        "business_risk": "Inaccurate temporal analysis, incorrect SLA calculations, and inability to track ticket lifecycle events reliably. Critical for operational reporting.",
+        "column_name": "created_at",
+        "severity": "CRITICAL",
+        "sql_transformation": "CASE\n    WHEN TRIM(raw.created_at) IN ('00/00/0000', 'asap', 'not a date', 'TBD') THEN NULL\n    WHEN TRIM(raw.created_at) ~ '^[0-9]{10}$' THEN TO_TIMESTAMP(TRIM(raw.created_at)::BIGINT)\n    WHEN TRIM(raw.created_at) ~ '^[0-9]{4}-[0-9]{2}-[0-9]{2}[T ][0-9]{2}:[0-9]{2}:[0-9]{2}$' THEN REPLACE(TRIM(raw.created_at), 'T', ' ')::TIMESTAMP\n    WHEN TRIM(raw.created_at) ~ '^[0-9]{4}-[0-9]{2}-[0-9]{2}$' THEN TO_DATE(TRIM(raw.created_at), 'YYYY-MM-DD')::TIMESTAMP\n    WHEN TRIM(raw.created_at) ~ '^[0-9]{2}/[0-9]{2}/[0-9]{4} [0-9]{2}:[0-9]{2} (AM|PM)$' THEN TO_TIMESTAMP(TRIM(raw.created_at), 'MM/DD/YYYY HH12:MI AM')\n    WHEN TRIM(raw.created_at) ~ '^[0-9]{2}/[0-9]{2}/[0-9]{4}$' THEN TO_DATE(TRIM(raw.created_at), 'MM/DD/YYYY')::TIMESTAMP\n    WHEN TRIM(raw.created_at) ~ '^[0-9]{2}-[A-Za-z]{3}-[0-9]{4} [0-9]{2}:[0-9]{2}$' THEN TO_TIMESTAMP(TRIM(raw.created_at), 'DD-Mon-YYYY HH24:MI')\n    WHEN TRIM(raw.created_at) ~ '^[0-9]{2}-[0-9]{2}-[0-9]{4} [0-9]{2}:[0-9]{2}:[0-9]{2}$' THEN TO_TIMESTAMP(TRIM(raw.created_at), 'MM-DD-YYYY HH24:MI:SS')\n    ELSE NULL\nEND::TIMESTAMP",
+        "target_type": "TIMESTAMP"
+      },
+      {
+        "anomalies_detected": [
+          "Multiple date/time formats: Unix epoch (10-digit), ISO-8601 date only, US slash dates (with/without AM/PM), hyphenated MM-DD-YYYY, alpha month dates (DD-Mon-YYYY).",
+          "Known textual sentinels ('???', 'never', 'pending', 'TBD', '00/00/0000').",
+          "Empty strings.",
+          "Temporal anomalies where resolved_at < created_at (handled by table integrity rule)."
+        ],
+        "business_risk": "Distorted resolution metrics, incorrect SLA adherence, and unreliable historical analysis of ticket closure. Critical for performance monitoring.",
+        "column_name": "resolved_at",
+        "severity": "CRITICAL",
+        "sql_transformation": "CASE\n    WHEN TRIM(raw.resolved_at) IN ('???', 'never', 'pending', 'TBD', '00/00/0000') THEN NULL\n    WHEN TRIM(raw.resolved_at) ~ '^[0-9]{10}$' THEN TO_TIMESTAMP(TRIM(raw.resolved_at)::BIGINT)\n    WHEN TRIM(raw.resolved_at) ~ '^[0-9]{4}-[0-9]{2}-[0-9]{2}[T ][0-9]{2}:[0-9]{2}:[0-9]{2}$' THEN REPLACE(TRIM(raw.resolved_at), 'T', ' ')::TIMESTAMP\n    WHEN TRIM(raw.resolved_at) ~ '^[0-9]{4}-[0-9]{2}-[0-9]{2}$' THEN TO_DATE(TRIM(raw.resolved_at), 'YYYY-MM-DD')::TIMESTAMP\n    WHEN TRIM(raw.resolved_at) ~ '^[0-9]{2}/[0-9]{2}/[0-9]{4} [0-9]{2}:[0-9]{2} (AM|PM)$' THEN TO_TIMESTAMP(TRIM(raw.resolved_at), 'MM/DD/YYYY HH12:MI AM')\n    WHEN TRIM(raw.resolved_at) ~ '^[0-9]{2}/[0-9]{2}/[0-9]{4}$' THEN TO_DATE(TRIM(raw.resolved_at), 'MM/DD/YYYY')::TIMESTAMP\n    WHEN TRIM(raw.resolved_at) ~ '^[0-9]{2}-[A-Za-z]{3}-[0-9]{4} [0-9]{2}:[0-9]{2}$' THEN TO_TIMESTAMP(TRIM(raw.resolved_at), 'DD-Mon-YYYY HH24:MI')\n    WHEN TRIM(raw.resolved_at) ~ '^[0-9]{2}-[0-9]{2}-[0-9]{4} [0-9]{2}:[0-9]{2}:[0-9]{2}$' THEN TO_TIMESTAMP(TRIM(raw.resolved_at), 'MM-DD-YYYY HH24:MI:SS')\n    ELSE NULL\nEND::TIMESTAMP",
+        "target_type": "TIMESTAMP"
+      },
+      {
+        "anomalies_detected": [
+          "Leading/trailing whitespace.",
+          "Empty strings."
+        ],
+        "business_risk": "Minor impact on direct reporting, but can cause issues for downstream semantic classification and entity extraction if not cleaned. Agent 2 handles deeper issues.",
+        "column_name": "category",
+        "severity": "INFO",
+        "sql_transformation": "COALESCE(NULLIF(TRIM(raw.category), ''), 'Uncategorized')::TEXT",
+        "target_type": "TEXT"
+      },
+      {
+        "anomalies_detected": [
+          "Leading/trailing whitespace.",
+          "Empty strings."
+        ],
+        "business_risk": "Minor impact on direct reporting, but can cause issues for downstream semantic parsing and entity extraction if not cleaned. Agent 2 handles deeper issues.",
+        "column_name": "description",
+        "severity": "INFO",
+        "sql_transformation": "COALESCE(NULLIF(TRIM(raw.description), ''), 'No description provided')::TEXT",
+        "target_type": "TEXT"
+      },
+      {
+        "anomalies_detected": [
+          "Non-canonical values ('crit', 'urgent!!!', 'hi', 'med', 'lo', 'normal', 'ASAP').",
+          "Mixed casing ('critical', 'CRITICAL').",
+          "Empty strings and '???' sentinel."
+        ],
+        "business_risk": "Inconsistent reporting of ticket urgency, leading to misprioritization of work and potential SLA breaches. Impacts resource allocation and response times.",
+        "column_name": "priority",
+        "severity": "CRITICAL",
+        "sql_transformation": "CASE\n    WHEN LOWER(TRIM(raw.priority)) IN ('crit', 'critical', 'urgent!!!', 'asap') THEN 'CRITICAL'\n    WHEN LOWER(TRIM(raw.priority)) IN ('hi', 'high') THEN 'HIGH'\n    WHEN LOWER(TRIM(raw.priority)) IN ('med', 'medium', 'normal') THEN 'MEDIUM'\n    WHEN LOWER(TRIM(raw.priority)) IN ('lo', 'low') THEN 'LOW'\n    WHEN NULLIF(TRIM(raw.priority), '') IS NULL OR TRIM(raw.priority) = '???' THEN 'MEDIUM'\n    ELSE 'MEDIUM'\nEND::VARCHAR(20)",
+        "target_type": "VARCHAR(20)"
+      },
+      {
+        "anomalies_detected": [
+          "Non-canonical values and mixed casing.",
+          "Empty strings and '???' sentinel."
+        ],
+        "business_risk": "Inaccurate tracking of ticket lifecycle, leading to miscommunication, incorrect workflow reporting, and potential operational bottlenecks.",
+        "column_name": "status",
+        "severity": "CRITICAL",
+        "sql_transformation": "CASE\n    WHEN LOWER(TRIM(raw.status)) = 'open' THEN 'Open'\n    WHEN LOWER(TRIM(raw.status)) = 'in progress' THEN 'In Progress'\n    WHEN LOWER(TRIM(raw.status)) = 'pending vendor' THEN 'Pending Vendor'\n    WHEN LOWER(TRIM(raw.status)) = 'escalated' THEN 'Escalated'\n    WHEN LOWER(TRIM(raw.status)) = 'resolved' THEN 'Resolved'\n    WHEN LOWER(TRIM(raw.status)) = 'closed' THEN 'Closed'\n    WHEN NULLIF(TRIM(raw.status), '') IS NULL OR TRIM(raw.status) IN ('???', 'unknown') THEN 'Unassigned'\n    ELSE 'Unassigned'\nEND::VARCHAR(30)",
+        "target_type": "VARCHAR(30)"
+      },
+      {
+        "anomalies_detected": [
+          "Test artifacts ('???', 'unknown', 'test building').",
+          "Empty strings."
+        ],
+        "business_risk": "Inaccurate facility-level reporting and resource allocation. Can skew geographical or site-specific analysis.",
+        "column_name": "building",
+        "severity": "WARNING",
+        "sql_transformation": "CASE\n    WHEN NULLIF(TRIM(raw.building), '') IS NULL THEN NULL\n    WHEN LOWER(TRIM(raw.building)) IN ('???', 'unknown', 'test building') THEN NULL\n    ELSE TRIM(raw.building)\nEND::VARCHAR(100)",
+        "target_type": "VARCHAR(100)"
+      },
+      {
+        "anomalies_detected": [
+          "Leading/trailing whitespace.",
+          "Empty strings."
+        ],
+        "business_risk": "Minor impact on direct reporting, but can affect searchability and consistency in user identification.",
+        "column_name": "submitted_by",
+        "severity": "INFO",
+        "sql_transformation": "NULLIF(TRIM(raw.submitted_by), '')::VARCHAR(100)",
+        "target_type": "VARCHAR(100)"
+      },
+      {
+        "anomalies_detected": [
+          "Leading/trailing whitespace.",
+          "Empty strings."
+        ],
+        "business_risk": "Minor impact on direct reporting, but can affect searchability and consistency in technician/vendor identification.",
+        "column_name": "assigned_to",
+        "severity": "INFO",
+        "sql_transformation": "NULLIF(TRIM(raw.assigned_to), '')::VARCHAR(100)",
+        "target_type": "VARCHAR(100)"
+      },
+      {
+        "anomalies_detected": [
+          "Leading/trailing whitespace.",
+          "Empty strings."
+        ],
+        "business_risk": "Minor impact on direct reporting, but can affect text analysis and readability of resolution details.",
+        "column_name": "resolution_notes",
+        "severity": "INFO",
+        "sql_transformation": "NULLIF(TRIM(raw.resolution_notes), '')::TEXT",
+        "target_type": "TEXT"
+      },
+      {
+        "anomalies_detected": [
+          "Currency symbols ('$') and commas.",
+          "Sentinel values ('TBD', 'error', '-1', '-999').",
+          "Negative values (< 0).",
+          "Empty strings and 'N/A'."
+        ],
+        "business_risk": "Financial misreporting, inaccurate budget tracking, and incorrect cost analysis. Critical for financial audits and resource planning.",
+        "column_name": "cost",
+        "severity": "CRITICAL",
+        "sql_transformation": "CASE\n    WHEN NULLIF(TRIM(raw.cost), '') IS NULL THEN NULL\n    WHEN LOWER(TRIM(raw.cost)) IN ('tbd', 'error', '-1', '-999', 'n/a') THEN NULL\n    WHEN REPLACE(REPLACE(TRIM(raw.cost), '$', ''), ',', '') ~ '^-?[0-9]+(\\.[0-9]+)?$' THEN\n        CASE\n            WHEN (REPLACE(REPLACE(TRIM(raw.cost), '$', ''), ',', ''))::NUMERIC(10,2) < 0 THEN NULL\n            ELSE (REPLACE(REPLACE(TRIM(raw.cost), '$', ''), ',', ''))::NUMERIC(10,2)\n        END\n    ELSE NULL\nEND::NUMERIC(10,2)",
+        "target_type": "NUMERIC(10,2)"
+      },
+      {
+        "anomalies_detected": [
+          "Sentinel values ('999', '999.0', '-1', '-1.0', '0', '0.0').",
+          "Non-positive values (<= 0).",
+          "Empty strings."
+        ],
+        "business_risk": "Inaccurate SLA adherence reporting, leading to misjudgment of operational efficiency and potential penalties. Critical for performance management.",
+        "column_name": "sla_hours",
+        "severity": "CRITICAL",
+        "sql_transformation": "CASE\n    WHEN NULLIF(TRIM(raw.sla_hours), '') IS NULL THEN NULL\n    WHEN TRIM(raw.sla_hours) IN ('999', '999.0', '-1', '-1.0', '0', '0.0') THEN NULL\n    WHEN TRIM(raw.sla_hours) ~ '^-?[0-9]+(\\.[0-9]+)?$' THEN\n        CASE\n            WHEN (TRIM(raw.sla_hours))::NUMERIC(6,1) <= 0 THEN NULL\n            ELSE (TRIM(raw.sla_hours))::NUMERIC(6,1)\n        END\n    ELSE NULL\nEND::NUMERIC(6,1)",
+        "target_type": "NUMERIC(6,1)"
+      }
+    ],
+    "executive_summary": "The 'facility_support_tickets' dataset presents several critical data quality issues that require robust transformations for the Silver layer. Key challenges include highly inconsistent date/time formats in 'created_at' and 'resolved_at', invalid 'ticket_id' patterns, and non-standardized categorical values in 'priority' and 'status'. Numeric fields like 'cost' and 'sla_hours' contain sentinel values and formatting inconsistencies that could lead to inaccurate financial and operational reporting. A significant number of temporal anomalies (resolved_at < created_at) were detected, necessitating a flagging mechanism to preserve raw data while preventing corrupted metrics. The proposed SQL transformations aim to meticulously clean, parse, and standardize these fields, ensuring the dataset is reliable and fit for purpose for downstream analytics and operational decision-making.",
+    "table_integrity_rules": [
+      {
+        "description": "Tickets cannot be resolved before creation. This rule identifies records where 'resolved_at' is earlier than 'created_at'. For Silver, these records will be flagged with `is_temporal_anomaly = TRUE`, and the `resolved_at` timestamp will be set to `NULL` to prevent corrupting duration calculations, while preserving the original raw record.",
+        "rule_name": "temporal_integrity_resolved_after_created",
+        "sql_constraint_or_filter": "silver.resolved_at IS NOT NULL AND silver.created_at IS NOT NULL AND silver.resolved_at < silver.created_at"
+      },
+      {
+        "description": "Tickets marked 'Resolved' or 'Closed' must have a valid resolution timestamp. This rule identifies records where the status indicates closure but 'resolved_at' is missing or contains a known sentinel value.",
+        "rule_name": "closed_ticket_requires_resolved_timestamp",
+        "sql_constraint_or_filter": "silver.status IN ('Resolved', 'Closed') AND silver.resolved_at IS NULL"
+      }
+    ]
+  },
+  "schema_name": "ComprehensiveAuditReport",
+  "temperature": 0.1
+}

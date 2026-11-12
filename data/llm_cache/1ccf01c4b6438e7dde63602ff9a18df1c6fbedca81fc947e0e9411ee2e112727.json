@@ -1,0 +1,291 @@
+{
+  "cache_key": "1ccf01c4b6438e7dde63602ff9a18df1c6fbedca81fc947e0e9411ee2e112727",
+  "model": "gemini-2.5-flash",
+  "provider": "google-gemini",
+  "response": {
+    "items": [
+      {
+        "extracted_asset_id": "desk 13",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 0
+      },
+      {
+        "extracted_asset_id": "desk 131",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 1
+      },
+      {
+        "extracted_asset_id": "desk 140",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 2
+      },
+      {
+        "extracted_asset_id": "desk 141",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 3
+      },
+      {
+        "extracted_asset_id": "desk 144",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 4
+      },
+      {
+        "extracted_asset_id": "desk 146",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 5
+      },
+      {
+        "extracted_asset_id": "desk 149",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 6
+      },
+      {
+        "extracted_asset_id": "desk 151",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 7
+      },
+      {
+        "extracted_asset_id": "desk 154",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 8
+      },
+      {
+        "extracted_asset_id": "desk 156",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 9
+      },
+      {
+        "extracted_asset_id": "desk 157",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 10
+      },
+      {
+        "extracted_asset_id": "desk 158",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 11
+      },
+      {
+        "extracted_asset_id": "desk 163",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 12
+      },
+      {
+        "extracted_asset_id": "desk 165",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 13
+      },
+      {
+        "extracted_asset_id": "desk 166",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 14
+      },
+      {
+        "extracted_asset_id": "desk 167",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 15
+      },
+      {
+        "extracted_asset_id": "desk 17",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 16
+      },
+      {
+        "extracted_asset_id": "desk 172",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 17
+      },
+      {
+        "extracted_asset_id": "desk 173",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 18
+      },
+      {
+        "extracted_asset_id": "desk 176",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 19
+      },
+      {
+        "extracted_asset_id": "desk 178",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 20
+      },
+      {
+        "extracted_asset_id": "desk 180",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 21
+      },
+      {
+        "extracted_asset_id": "desk 182",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 22
+      },
+      {
+        "extracted_asset_id": "desk 183",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 23
+      },
+      {
+        "extracted_asset_id": "desk 185",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 24
+      },
+      {
+        "extracted_asset_id": "desk 187",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 25
+      },
+      {
+        "extracted_asset_id": "desk 189",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 26
+      },
+      {
+        "extracted_asset_id": "desk 190",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 27
+      },
+      {
+        "extracted_asset_id": "desk 191",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 28
+      },
+      {
+        "extracted_asset_id": "desk 192",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 29
+      },
+      {
+        "extracted_asset_id": "desk 194",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 30
+      },
+      {
+        "extracted_asset_id": "desk 195",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 31
+      },
+      {
+        "extracted_asset_id": "desk 196",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 32
+      },
+      {
+        "extracted_asset_id": "desk 197",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 33
+      },
+      {
+        "extracted_asset_id": "desk 199",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 34
+      },
+      {
+        "extracted_asset_id": "desk 20",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 35
+      },
+      {
+        "extracted_asset_id": "desk 201",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 36
+      },
+      {
+        "extracted_asset_id": "desk 202",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 37
+      },
+      {
+        "extracted_asset_id": "desk 206",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 38
+      },
+      {
+        "extracted_asset_id": "desk 207",
+        "extracted_asset_type": "Network jack",
+        "extracted_floor": null,
+        "extracted_room": null,
+        "item_id": 39
+      }
+    ]
+  },
+  "schema_name": "DescriptionBatchOutput",
+  "temperature": 0.0
+}

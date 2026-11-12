@@ -1,0 +1,333 @@
+{
+  "cache_key": "9db20c29de80ab23bef1711b10b2b47864599f0b3f2d512220e737484574c6e4",
+  "model": "gemini-2.5-flash",
+  "provider": "google-gemini",
+  "response": {
+    "resolutions": [
+      {
+        "clean_category": "Water/Plumbing",
+        "clean_description": "Hot water not working in Cafeteria Block. Multiple sinks aff",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11231"
+      },
+      {
+        "clean_category": "elevator/escalator",
+        "clean_description": "Elevator buttons for floor 1 not responding. HQ Floor 1.",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11232"
+      },
+      {
+        "clean_category": "SECURITY",
+        "clean_description": "Security camera A-040 offline since yesterday. Covers parkin",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11233"
+      },
+      {
+        "clean_category": "elevator/escalator",
+        "clean_description": "Elevator A-001 stuck between floors 4 and 12. No one inside ",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11234"
+      },
+      {
+        "clean_category": "CLEANING",
+        "clean_description": "trash overflowing in kitchen area Annex West",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11235"
+      },
+      {
+        "clean_category": "elevator/escalator",
+        "clean_description": "Wheelchair-accessible elevator in Annex East has expired ins",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11236"
+      },
+      {
+        "clean_category": "elevator/escalator",
+        "clean_description": "Elevator E-048 stuck between floors 2 and 9. No one inside (",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11238"
+      },
+      {
+        "clean_category": "Connectivity",
+        "clean_description": "VPN issues from Warehouse North conference room. Can't conne",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11239"
+      },
+      {
+        "clean_category": "Pest",
+        "clean_description": "bugs in office Remote Site Beta",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11240"
+      },
+      {
+        "clean_category": "fire safety",
+        "clean_description": "Emergency exit sign burnt out, HQ Floor 2 6 floor east stair",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11241"
+      },
+      {
+        "clean_category": "Elec",
+        "clean_description": "need more outlets in conf room 861",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11242"
+      },
+      {
+        "clean_category": "Housekeeping",
+        "clean_description": "Restrooms on 7 floor haven't been serviced today.",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11244"
+      },
+      {
+        "clean_category": "Vertical Transport",
+        "clean_description": "elevator out of order again Parking Garage",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11245"
+      },
+      {
+        "clean_category": "Network",
+        "clean_description": "WiFi down on 4 floor, Building 7. Multiple users affected.",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11246"
+      },
+      {
+        "clean_category": "Lift",
+        "clean_description": "Elevator making grinding noise. Annex East main elevator.",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11247"
+      },
+      {
+        "clean_category": "Plumbing Issue",
+        "clean_description": "Water leak detected in ceiling tiles, Building 7 room 805. A",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11248"
+      },
+      {
+        "clean_category": "Fire Safety",
+        "clean_description": "Fire extinguisher expired in hallway near room 470, Tower B.",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11249"
+      },
+      {
+        "clean_category": "AC",
+        "clean_description": "The AC unit on 6 floor is not working. Room temp is around 5",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11250"
+      },
+      {
+        "clean_category": "Pest",
+        "clean_description": "bugs in office Remote Site Beta",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11251"
+      },
+      {
+        "clean_category": "network",
+        "clean_description": "Network jack at desk 301 not active. New hire needs connecti",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11252"
+      },
+      {
+        "clean_category": "Plumbing",
+        "clean_description": "Toilet in 7 floor men's restroom is overflowing. Urgent.",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11253"
+      },
+      {
+        "clean_category": "CLEANING",
+        "clean_description": "Restrooms on 7 floor haven't been serviced today.",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11254"
+      },
+      {
+        "clean_category": "Plumbing Issue",
+        "clean_description": "Hot water not working in Tower B. Multiple sinks affected.",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11255"
+      },
+      {
+        "clean_category": "fire safety",
+        "clean_description": "Emergency exit sign burnt out, Main Office 8 floor east stai",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11256"
+      },
+      {
+        "clean_category": "CLEANING",
+        "clean_description": "Restrooms on 2 floor haven't been serviced today.",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11257"
+      },
+      {
+        "clean_category": "Fire/Safety",
+        "clean_description": "smoke detector beeping Tower A",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11258"
+      },
+      {
+        "clean_category": "AC",
+        "clean_description": "Temperature control issue in conference room 379. The thermo",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11259"
+      },
+      {
+        "clean_category": "Pest",
+        "clean_description": "Wasp nest forming on HQ Floor 3 exterior, near entrance.",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11260"
+      },
+      {
+        "clean_category": "AC",
+        "clean_description": "Unit H-008 cycling on and off every few minutes. Coils might",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11261"
+      },
+      {
+        "clean_category": "Network",
+        "clean_description": "VPN issues from HQ Floor 1 conference room. Can't connect to",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11262"
+      },
+      {
+        "clean_category": "water issue",
+        "clean_description": "Hot water not working in Annex East. Multiple sinks affected",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11263"
+      },
+      {
+        "clean_category": "General Maintenance",
+        "clean_description": "Furniture request — need 3 additional chairs for room 778.",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11264"
+      },
+      {
+        "clean_category": "Plumbing Issue",
+        "clean_description": "Faucet in Remote Site Alpha kitchen won't turn off completel",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11265"
+      },
+      {
+        "clean_category": "HVAC",
+        "clean_description": "Unit C-050 cycling on and off every few minutes. Coils might",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11266"
+      },
+      {
+        "clean_category": "CLEANING",
+        "clean_description": "Bird droppings on Parking Garage entrance canopy. Looks unpr",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11267"
+      },
+      {
+        "clean_category": "Elec",
+        "clean_description": "need more outlets in conf room 387",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11268"
+      },
+      {
+        "clean_category": "janitorial",
+        "clean_description": "trash overflowing in kitchen area HQ Floor 1",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11269"
+      },
+      {
+        "clean_category": "Other",
+        "clean_description": "window cracked HQ Floor 2 6 floor",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11270"
+      },
+      {
+        "clean_category": "Lift",
+        "clean_description": "Elevator making grinding noise. Annex West main elevator.",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11271"
+      },
+      {
+        "clean_category": "water issue",
+        "clean_description": "Hot water not working in Building 7. Multiple sinks affected",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11272"
+      },
+      {
+        "clean_category": "electrical",
+        "clean_description": "Breaker keeps tripping in server room 696. Critical — affect",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11273"
+      },
+      {
+        "clean_category": "HVAC",
+        "clean_description": "Temperature control issue in conference room 618. The thermo",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11274"
+      },
+      {
+        "clean_category": "IT Support",
+        "clean_description": "VPN issues from Remote Site Alpha conference room. Can't con",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11275"
+      },
+      {
+        "clean_category": "Security Systems",
+        "clean_description": "Need access card programmed for new employee starting Monday",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11276"
+      },
+      {
+        "clean_category": "security",
+        "clean_description": "Security camera E-049 offline since yesterday. Covers parkin",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11278"
+      },
+      {
+        "clean_category": "Housekeeping",
+        "clean_description": "trash overflowing in kitchen area Cafeteria Block",
+        "is_swapped": true,
+        "semantic_reasoning": "raw_category is a descriptive sentence, raw_description is a short category tag.",
+        "ticket_id": "TKT-11279"
+      }
+    ]
+  },
+  "schema_name": "SwappedBatchOutput",
+  "temperature": 0.0
+}

@@ -1,9 +1,7 @@
-import os
 import json
 from typing import List, Optional
 from pydantic import BaseModel, Field
-from langchain_google_genai import ChatGoogleGenerativeAI
-from src.config import GEMINI_API_KEY, GEMINI_MODEL
+from src.agents.llm_cache import invoke_gemini_structured
 from src.agents.catalog import DatasetCatalog
 
 # -------------------------------------------------------------------------
@@ -72,18 +70,7 @@ def run_generalized_dq_agent(
     anomalies discovered by the catalog-driven profiler, producing an audit report
     and production-ready PostgreSQL transformation rules.
     """
-    if not GEMINI_API_KEY:
-        raise ValueError("GEMINI_API_KEY is not configured in environment or .env file.")
-
-    # Ensure environment key is populated for the LangChain Google GenAI client
-    os.environ["GOOGLE_API_KEY"] = GEMINI_API_KEY
-
-    print(f"[DQ Agent] Initializing Gemini ({GEMINI_MODEL}) with structured output...")
-    llm = ChatGoogleGenerativeAI(
-        model=GEMINI_MODEL,
-        google_api_key=GEMINI_API_KEY,
-        temperature=0.1
-    ).with_structured_output(ComprehensiveAuditReport)
+    print("[DQ Agent] Preparing structured audit request (cache-first)...")
 
     system_prompt = """
 You are a Principal Data Quality Architect and PostgreSQL 16 Pipeline Specialist.
@@ -162,9 +149,12 @@ STRICT TECHNICAL & POSTGRESQL 16 EXECUTION CONSTRAINTS:
     )
 
     print("[DQ Agent] Running LLM reasoning over catalog specification and empirical profile...")
-    report: ComprehensiveAuditReport = llm.invoke([
+    messages = [
         ("system", system_prompt),
         ("user", user_prompt)
-    ])
+    ]
+    report: ComprehensiveAuditReport = invoke_gemini_structured(
+        ComprehensiveAuditReport, messages, temperature=0.1
+    )
 
     return report

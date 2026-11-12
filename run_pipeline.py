@@ -6,6 +6,7 @@ from sqlalchemy import text
 from src.db import engine
 from src.pipeline.bronze_pipeline import ingest_bronze
 from src.pipeline.silver_graph import build_silver_pipeline_graph
+from src.pipeline.stage_logging import configure_pipeline_logging, log_stage
 from src.pipeline.gold_closed_loop_graph import (
     build_multi_domain_closed_loop_pipeline,
     DomainConfig,
@@ -44,7 +45,8 @@ DOMAINS = [
     )
 ]
 
-def main():
+@log_stage("pipeline.end_to_end")
+def _run_pipeline():
     start_time = time.time()
     print("\n" + "=" * 90)
     print("🚀 LAUNCHING END-TO-END AUTONOMOUS MEDALLION PIPELINE (BRONZE -> SILVER -> GOLD)")
@@ -116,6 +118,11 @@ def main():
         row_c = getattr(m, "final_row_count", getattr(m, "row_count", 0))
         print(f"  {icon} Model {idx}: {m.problem.target_table_name:<46} | Rows: {row_c:>5,} | Domain: {m.domain_name[:28]}...")
     print("=" * 90 + "\n")
+
+def main():
+    configure_pipeline_logging()
+    _run_pipeline()
+
 
 if __name__ == "__main__":
     main()

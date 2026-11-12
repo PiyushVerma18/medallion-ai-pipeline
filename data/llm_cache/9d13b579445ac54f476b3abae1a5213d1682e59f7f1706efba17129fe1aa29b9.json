@@ -1,0 +1,342 @@
+{
+  "cache_key": "9d13b579445ac54f476b3abae1a5213d1682e59f7f1706efba17129fe1aa29b9",
+  "model": "gemini-2.5-flash",
+  "provider": "google-gemini",
+  "response": {
+    "column_mappings": [
+      {
+        "analytical_pitfalls_or_traps": "Ensure uniqueness; potential for duplicate `ticket_id` if data sources are merged incorrectly.",
+        "column_name": "ticket_id",
+        "physical_real_world_meaning": "A unique identifier for each facility maintenance request or issue.",
+        "sample_values": [
+          "TKT-1000",
+          "TKT-10000",
+          "TKT-10001",
+          "TKT-10002",
+          "TKT-10003"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Primarily for data lineage; not for business analysis. Could be non-unique across different source files if not handled carefully.",
+        "column_name": "_bronze_id",
+        "physical_real_world_meaning": "An internal system identifier from the raw (bronze) layer, likely a surrogate key for tracking original records. Not directly meaningful in facility operations.",
+        "sample_values": [
+          "1",
+          "10",
+          "100",
+          "1000",
+          "10000"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Not for business analysis. Path formats might vary, making direct comparison difficult.",
+        "column_name": "_source_file",
+        "physical_real_world_meaning": "The original file path from which the record was ingested. Useful for data lineage and auditing.",
+        "sample_values": [
+          "/Users/lucifer/Piyush_ML/medallion-ai-pipeline/data/raw_tickets.csv"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Not for business analysis of ticket lifecycle. Timezone consistency is crucial.",
+        "column_name": "_ingested_at",
+        "physical_real_world_meaning": "The timestamp when the record was loaded into the data warehouse.",
+        "sample_values": [
+          "2026-11-12 14:37:38.646597+00"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Internal ETL artifact; not for business analysis. Hash collisions are theoretically possible but rare.",
+        "column_name": "_row_hash",
+        "physical_real_world_meaning": "A hash value computed from the row's content, used for detecting changes or duplicates during ETL processes.",
+        "sample_values": [
+          "00065c9ab075792b29555e09f7bd15ae32d5a9edfed94bd91e694d0d450c0dbc",
+          "000f59e81d294ced9770e33bae5bc7def8e11501d2050c4b4790dfb12d39739c",
+          "0014d9dce1f22a11b67ffa148e2165674f877a8e742394003f1e018dc4193365",
+          "00156d1af98b5306be44a58c9837efea0584d2b79c623772729aa558d38e46e7",
+          "00159dfc8fc396ea8d1e0549d7b1879eae9842c22f87840f988a90686ac8f697"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Nulls, future dates (data entry errors), inconsistent timezones if not standardized. Crucial for calculating response times.",
+        "column_name": "created_at",
+        "physical_real_world_meaning": "The date and time when the facility maintenance ticket was originally created or reported.",
+        "sample_values": [
+          "2023-12-31 19:03:03",
+          "2023-12-31 21:55:11",
+          "2024-01-01 00:00:00",
+          "2024-01-01 01:28:51",
+          "2024-01-01 02:32:53"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Nulls (for open tickets), `resolved_at` before `created_at` (temporal inversion), future dates, inconsistent timezones. Essential for calculating resolution times.",
+        "column_name": "resolved_at",
+        "physical_real_world_meaning": "The date and time when the facility maintenance ticket was officially resolved or closed.",
+        "sample_values": [
+          "2024-01-01 00:00:00",
+          "2024-01-01 05:10:00",
+          "2024-01-01 07:41:31",
+          "2024-01-01 10:13:34",
+          "2024-01-01 19:57:00"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Needs clear definition of what constitutes an anomaly. Should be used to filter or investigate problematic records.",
+        "column_name": "is_temporal_anomaly",
+        "physical_real_world_meaning": "A flag indicating if there's an issue with the temporal sequence of the ticket (e.g., `resolved_at` before `created_at`).",
+        "sample_values": [
+          "false",
+          "true"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "High cardinality, inconsistent spellings, synonyms, abbreviations, 'junk' values ('???'). Requires mapping to a canonical category for consistent analysis.",
+        "column_name": "raw_category",
+        "physical_real_world_meaning": "The original, unstandardized category provided for the maintenance request, often from free-text input or a source system's uncleaned list.",
+        "sample_values": [
+          "???",
+          "A/C",
+          "AC",
+          "Access Control",
+          "Badge/Access"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Mapping errors from `raw_category`, 'Other' categories that are too broad, nulls if mapping fails.",
+        "column_name": "canonical_category",
+        "physical_real_world_meaning": "A standardized, cleaned, and consistent category for the maintenance request, derived from `raw_category`. Used for consistent reporting and analysis.",
+        "sample_values": [
+          "Access & Security",
+          "Electrical",
+          "Fire & Safety",
+          "General Maintenance",
+          "HVAC"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Inconsistent definitions across departments/systems, subjective assignment, nulls.",
+        "column_name": "priority",
+        "physical_real_world_meaning": "The urgency level assigned to the maintenance ticket, indicating how quickly it needs to be addressed.",
+        "sample_values": [
+          "CRITICAL",
+          "HIGH",
+          "LOW",
+          "MEDIUM"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Inconsistent status definitions, transitions that don't make sense (e.g., 'Closed' then 'Open'), nulls.",
+        "column_name": "status",
+        "physical_real_world_meaning": "The current state or lifecycle stage of the maintenance ticket (e.g., Open, In Progress, Closed).",
+        "sample_values": [
+          "Closed",
+          "Escalated",
+          "In Progress",
+          "Open",
+          "Pending Vendor"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Inconsistent naming (e.g., 'Bldg 3' vs 'Building 3'), nulls, misspellings.",
+        "column_name": "building",
+        "physical_real_world_meaning": "The specific building within the corporate facility where the maintenance issue is located.",
+        "sample_values": [
+          "Annex East",
+          "Annex West",
+          "Building 3",
+          "Building 7",
+          "Cafeteria Block"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Highly unstructured, typos, irrelevant information, sensitive data, very short/generic descriptions (e.g., '.'), nulls. Difficult for direct quantitative analysis.",
+        "column_name": "raw_description",
+        "physical_real_world_meaning": "The original, free-text description of the maintenance issue provided by the requester.",
+        "sample_values": [
+          ".",
+          "A/C leaking water onto the carpet near cubicle 103. Building 3.",
+          "A/C leaking water onto the carpet near cubicle 114. HQ Floor 1.",
+          "A/C leaking water onto the carpet near cubicle 118. Main Office.",
+          "A/C leaking water onto the carpet near cubicle 124. Tower B."
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Indicates data quality issues that need correction or careful handling in analysis.",
+        "column_name": "is_field_swapped",
+        "physical_real_world_meaning": "A flag indicating if certain fields (e.g., description and resolution notes) were inadvertently swapped during data entry or ingestion.",
+        "sample_values": [
+          "false",
+          "true"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Extraction errors, misclassification, nulls if no asset is mentioned, inconsistent naming.",
+        "column_name": "extracted_asset_type",
+        "physical_real_world_meaning": "The type of physical asset (e.g., AC Unit, Elevator, Door) identified as being related to the maintenance issue, often extracted from the `raw_description`.",
+        "sample_values": [
+          "AC Unit",
+          "Badge Reader",
+          "Circuit Breaker",
+          "Door",
+          "Elevator"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Extraction errors, non-standard IDs, nulls, IDs that don't exist in an asset registry.",
+        "column_name": "extracted_asset_id",
+        "physical_real_world_meaning": "The specific identifier of the physical asset involved in the maintenance issue, often extracted from the `raw_description`.",
+        "sample_values": [
+          "A-001",
+          "A-002",
+          "A-003",
+          "A-004",
+          "A-006"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Extraction errors, inconsistent formats (e.g., '1' vs 'Floor 1' vs '1st'), nulls.",
+        "column_name": "extracted_floor",
+        "physical_real_world_meaning": "The floor number or identifier where the maintenance issue occurred, extracted from the description.",
+        "sample_values": [
+          "1",
+          "1-1",
+          "1-11",
+          "1-12",
+          "1-3"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Extraction errors, inconsistent formats, nulls, rooms that don't exist.",
+        "column_name": "extracted_room",
+        "physical_real_world_meaning": "The room number or identifier where the maintenance issue occurred, extracted from the description.",
+        "sample_values": [
+          "100",
+          "101",
+          "102",
+          "103",
+          "104"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Inconsistent naming (e.g., 'A. Garcia' vs 'Alex Garcia'), nulls, dummy names.",
+        "column_name": "submitted_by",
+        "physical_real_world_meaning": "The name of the person who submitted the maintenance request.",
+        "sample_values": [
+          "A. Garcia",
+          "Alex Garcia",
+          "Bob Martinez",
+          "C. Taylor",
+          "Chris Taylor"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Inconsistent naming, nulls (unassigned tickets), generic team names ('maintenance team').",
+        "column_name": "assigned_to",
+        "physical_real_world_meaning": "The individual or team responsible for resolving the maintenance ticket. This could be an internal technician or an external vendor.",
+        "sample_values": [
+          "ABC Mechanical",
+          "CityWide Electric",
+          "Joe (in-house)",
+          "PestPro Services",
+          "maintenance team"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Unstructured text, brevity, lack of detail, typos, nulls, sensitive information. Difficult for direct quantitative analysis.",
+        "column_name": "resolution_notes",
+        "physical_real_world_meaning": "Free-text notes provided by the technician or resolver detailing the actions taken to resolve the issue.",
+        "sample_values": [
+          "Completed. Took 0.5 hours on site.",
+          "Completed. Took 0.6 hours on site.",
+          "Completed. Took 0.7 hours on site.",
+          "Completed. Took 0.8 hours on site.",
+          "Completed. Took 0.9 hours on site."
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "False positives/negatives in duplicate detection, nulls. Should be used to exclude duplicate tickets from primary analysis of unique issues.",
+        "column_name": "is_duplicate",
+        "physical_real_world_meaning": "A flag indicating if this ticket is identified as a duplicate of another existing ticket.",
+        "sample_values": [
+          "false",
+          "true"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Nulls if not a duplicate, refers to a non-existent `ticket_id`, circular references. Only relevant when `is_duplicate` is true.",
+        "column_name": "duplicate_of_ticket_id",
+        "physical_real_world_meaning": "The `ticket_id` of the original ticket that this record is a duplicate of.",
+        "sample_values": [
+          "TKT-1000",
+          "TKT-10009",
+          "TKT-10019",
+          "TKT-10029",
+          "TKT-1007"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Subjective classification, inconsistent terminology, 'Other' categories, nulls if not identified.",
+        "column_name": "root_cause",
+        "physical_real_world_meaning": "The underlying reason or origin of the maintenance issue, identified after investigation.",
+        "sample_values": [
+          "clogged filter",
+          "corrosion",
+          "faulty wiring",
+          "improper installation",
+          "normal wear"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Inconsistent descriptions, 'Other' categories, nulls.",
+        "column_name": "resolution_action",
+        "physical_real_world_meaning": "The specific action taken to resolve the maintenance ticket.",
+        "sample_values": [
+          "Closed duplicate",
+          "Could not reproduce",
+          "Fixed on site",
+          "Parts on order",
+          "Resolved by technician"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Nulls (if not tracked or estimated), zero values for issues resolved remotely or duplicates, negative values (data entry error), inconsistent measurement (e.g., includes travel time?).",
+        "column_name": "hours_on_site",
+        "physical_real_world_meaning": "The number of hours a technician spent physically on-site to address the maintenance issue.",
+        "sample_values": [
+          "0.50",
+          "0.60",
+          "0.70",
+          "0.80",
+          "0.90"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Nulls, zero values (if no cost or not tracked), negative values (data entry error), inconsistent inclusion of labor/parts/vendor fees.",
+        "column_name": "cost",
+        "physical_real_world_meaning": "The financial cost associated with resolving the maintenance ticket (e.g., parts, labor).",
+        "sample_values": [
+          "0.00",
+          "100.00",
+          "10004.37",
+          "10006.76",
+          "10008.13"
+        ]
+      },
+      {
+        "analytical_pitfalls_or_traps": "Nulls, zero or negative values, inconsistent application of SLAs, changes in SLA policies over time.",
+        "column_name": "sla_hours",
+        "physical_real_world_meaning": "The Service Level Agreement (SLA) target in hours for resolving the ticket, based on its priority or category.",
+        "sample_values": [
+          "24.0",
+          "4.0",
+          "48.0",
+          "72.0",
+          "8.0"
+        ]
+      }
+    ],
+    "executive_understanding": "This table, `silver.cleaned_tickets`, represents a cleaned and enriched dataset of facility maintenance tickets. It provides a comprehensive view of each maintenance request from creation to resolution, including details about the issue, location, responsible parties, and associated metrics like time and cost. It's designed for analytical purposes to understand operational efficiency, identify common issues, track performance against SLAs, and manage facility assets."
+  },
+  "schema_name": "SchemaSemanticUnderstanding",
+  "temperature": 0.0
+}

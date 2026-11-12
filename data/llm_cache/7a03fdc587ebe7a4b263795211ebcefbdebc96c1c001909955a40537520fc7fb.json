@@ -1,0 +1,97 @@
+{
+  "cache_key": "7a03fdc587ebe7a4b263795211ebcefbdebc96c1c001909955a40537520fc7fb",
+  "model": "gemini-2.5-flash",
+  "provider": "google-gemini",
+  "response": {
+    "domain_name": "Corporate Real Estate & Facilities Operations (CRE / FM)",
+    "domain_thesis": "This domain focuses on providing strategic insights into the operational health, cost efficiency, and risk profile of the corporate real estate portfolio. By transforming raw facility maintenance ticket data into actionable intelligence, we aim to optimize annual operational expenditures, enhance resource allocation, mitigate critical asset risks, and inform long-term capital planning decisions across all facilities and trade disciplines.",
+    "problems": [
+      {
+        "decisions_enabled": [
+          "Reallocate maintenance budgets to high-priority areas or underperforming assets.",
+          "Identify buildings or asset types requiring significant capital investment for modernization or replacement.",
+          "Renegotiate vendor contracts based on actual performance and cost data.",
+          "Justify investments in preventative maintenance programs for specific categories or buildings.",
+          "Optimize internal staffing levels and skill sets based on demand patterns and cost centers."
+        ],
+        "how_model_solves_problem": "This Gold model aggregates annual maintenance tickets by `incident_year`, `building`, `canonical_category`, and `assigned_to`. By summing `cost` and `hours_on_site`, and counting `ticket_id` (unique issues), it provides a clear, consolidated view of where money and effort are being spent. It eliminates the noise of individual tickets, allowing stakeholders to quickly identify high-cost buildings, problematic asset categories, or inefficient service providers, enabling proactive budget management and strategic resource deployment.",
+        "key_stakeholders": [
+          {
+            "current_pain_point": "Cannot easily identify which buildings or maintenance categories are disproportionately driving operational costs from raw ticket logs, making it impossible to justify capital improvements or reallocate maintenance budgets effectively across the portfolio.",
+            "primary_mandate": "Optimize the total cost of ownership for the corporate real estate portfolio, ensure facility uptime, and align real estate strategy with overarching business goals.",
+            "title": "VP of Corporate Real Estate"
+          },
+          {
+            "current_pain_point": "Struggles to pinpoint specific areas of high expenditure or underperforming assets from the overwhelming volume of raw ticket data, leading to reactive budget management and difficulty in proving ROI for preventative maintenance programs.",
+            "primary_mandate": "Ensure efficient day-to-day operation and maintenance of all facilities, manage maintenance teams and vendor performance, and control operational budgets.",
+            "title": "Facilities Operations Director"
+          },
+          {
+            "current_pain_point": "Lacks granular, categorized data on facilities OPEX to accurately forecast future expenses, identify specific cost-saving opportunities, or challenge departmental budget requests with data-driven insights.",
+            "primary_mandate": "Oversee financial reporting, budget adherence, and cost control across the organization.",
+            "title": "Corporate Financial Controller"
+          }
+        ],
+        "problem_title": "Annual Facilities OPEX & Resource Allocation Inefficiency",
+        "required_dimensions": [
+          "incident_year",
+          "building",
+          "canonical_category",
+          "assigned_to"
+        ],
+        "required_metrics": [
+          "SUM(cost) AS total_annual_cost",
+          "SUM(hours_on_site) AS total_annual_hours_on_site",
+          "COUNT(DISTINCT ticket_id) AS total_unique_tickets"
+        ],
+        "target_table_name": "gold.annual_facilities_opex_summary",
+        "temporal_grain": "EXTRACT(YEAR FROM created_at)::INT",
+        "why_this_problem_matters": "Uncontrolled operational expenditures (OPEX) lead to significant budget overruns, reduced profitability, and an inability to fund strategic initiatives. Without clear, granular visibility into where maintenance costs are concentrated—by building, canonical category, or assigned team/vendor—leadership cannot make informed decisions about resource allocation, preventative maintenance investments, or vendor contract renegotiations. This lack of insight results in a reactive maintenance cycle, escalating costs, and a gradual decline in overall facility asset health and operational efficiency."
+      },
+      {
+        "decisions_enabled": [
+          "Prioritize capital expenditure projects for critical infrastructure upgrades or asset replacements.",
+          "Implement targeted preventative maintenance schedules for high-risk assets or buildings.",
+          "Conduct detailed safety audits and risk assessments for facilities showing escalating critical issues.",
+          "Allocate specialized maintenance teams or external experts to address recurring critical problems.",
+          "Develop long-term asset management strategies based on critical failure trends and risk profiles."
+        ],
+        "how_model_solves_problem": "This Gold model focuses specifically on tickets with `priority = 'CRITICAL'` and aggregates them annually by `incident_year`, `building`, `canonical_category`, and `extracted_asset_type`. By counting critical tickets, summing their associated costs, and calculating average resolution times, it highlights areas of persistent critical failure. This allows stakeholders to identify specific buildings or asset types that are becoming high-risk liabilities, enabling proactive capital planning for upgrades, replacements, or enhanced preventative maintenance.",
+        "key_stakeholders": [
+          {
+            "current_pain_point": "Lacks a consolidated, annual view of critical issues across the entire portfolio, making it difficult to assess overall facility risk, prioritize capital improvements for safety/compliance, or demonstrate due diligence to executive leadership regarding asset health.",
+            "primary_mandate": "Ensure the long-term health, safety, and value of the corporate real estate portfolio, and mitigate operational risks across all properties.",
+            "title": "VP of Corporate Real Estate"
+          },
+          {
+            "current_pain_point": "Overwhelmed by the volume of raw tickets, cannot easily discern patterns of escalating critical issues in specific buildings or asset types, leading to reactive crisis management rather than proactive risk mitigation and asset lifecycle planning.",
+            "primary_mandate": "Maintain safe and functional facilities, minimize downtime, and ensure compliance with safety and operational standards.",
+            "title": "Facilities Operations Director"
+          },
+          {
+            "current_pain_point": "Cannot systematically identify which assets or systems are repeatedly failing or generating critical tickets, hindering efforts to develop targeted reliability programs or justify asset replacement based on data-driven risk assessments.",
+            "primary_mandate": "Optimize asset performance, extend asset lifecycles, and implement predictive/preventative maintenance strategies.",
+            "title": "Chief Reliability Engineer"
+          }
+        ],
+        "problem_title": "Annual Critical Risk & Asset Health Deterioration Monitoring",
+        "required_dimensions": [
+          "incident_year",
+          "building",
+          "canonical_category",
+          "extracted_asset_type"
+        ],
+        "required_metrics": [
+          "COUNT(DISTINCT ticket_id) AS total_critical_tickets",
+          "SUM(cost) AS total_critical_cost",
+          "AVG(EXTRACT(EPOCH FROM (resolved_at - created_at)) / 3600) AS avg_critical_resolution_hours"
+        ],
+        "target_table_name": "gold.annual_critical_risk_summary",
+        "temporal_grain": "EXTRACT(YEAR FROM created_at)::INT",
+        "why_this_problem_matters": "Failure to identify and address escalating critical maintenance issues can lead to catastrophic equipment failures, significant safety hazards, regulatory non-compliance, and extensive unplanned downtime, ultimately devaluing corporate assets. Ignoring trends in critical tickets means facilities are managed reactively, increasing the likelihood of major incidents and emergency repairs, which are far more costly and disruptive than planned, proactive interventions. This poses a direct threat to business continuity and employee safety."
+      }
+    ]
+  },
+  "schema_name": "DomainProblemsProposal",
+  "temperature": 0.0
+}

@@ -1,6 +1,6 @@
 from typing import Dict, Any
 from sqlalchemy import text
-from src.db import engine
+from src.db import silver_engine as engine
 from src.agents.catalog import DatasetCatalog
 
 
@@ -44,6 +44,7 @@ def profile_catalog_dataset(
                     SELECT ticket_id, created_at, resolved_at, status 
                     FROM {full_table} 
                     WHERE {constraint.sql_violation_condition}
+                    ORDER BY ticket_id, created_at, resolved_at, status
                     LIMIT 3;
                 """
                 samples = [dict(r) for r in conn.execute(text(sample_viol_sql)).mappings().all()]
@@ -85,7 +86,7 @@ def profile_catalog_dataset(
                 FROM {full_table}
                 WHERE "{col.name}" IS NOT NULL
                 GROUP BY "{col.name}"
-                ORDER BY cnt DESC
+                ORDER BY cnt DESC, val ASC
                 LIMIT 5;
             """
             try:
@@ -108,6 +109,7 @@ def profile_catalog_dataset(
                         SELECT DISTINCT "{col.name}" AS sample_val
                         FROM {full_table}
                         WHERE {chk.sql_violation_condition}
+                        ORDER BY sample_val
                         LIMIT 5;
                     """
                     sample_vals = conn.execute(text(sample_vals_sql)).scalars().all()

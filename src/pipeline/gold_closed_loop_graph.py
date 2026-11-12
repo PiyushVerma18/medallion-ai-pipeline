@@ -14,6 +14,8 @@ from src.agents.gold_closed_loop_agent import (
     VerifiedSqlSolution,
     StatAuditResult
 )
+from src.pipeline.stage_logging import log_stage
+from src.db import ensure_stage_roles
 
 # =========================================================================
 # State Definitions
@@ -49,6 +51,7 @@ class MultiDomainClosedLoopState(TypedDict):
 # Graph Nodes
 # =========================================================================
 
+@log_stage("gold.understand_schema")
 def node_understand_schema(state: MultiDomainClosedLoopState) -> Dict[str, Any]:
     print("\n" + "=" * 80)
     print("▶ [Step 1/4: Schema Understanding] Introspecting Column Profiles & Top Samples...")
@@ -68,6 +71,7 @@ def node_understand_schema(state: MultiDomainClosedLoopState) -> Dict[str, Any]:
     }
 
 
+@log_stage("gold.formulate_problems")
 def node_formulate_problems(state: MultiDomainClosedLoopState) -> Dict[str, Any]:
     print("\n" + "=" * 80)
     print(f"▶ [Step 2/4: Problem Formulation] Generating Deep Business Problem Dossiers...")
@@ -114,6 +118,7 @@ def node_formulate_problems(state: MultiDomainClosedLoopState) -> Dict[str, Any]
     }
 
 
+@log_stage("gold.generate_sql")
 def node_generate_sql(state: MultiDomainClosedLoopState) -> Dict[str, Any]:
     idx = state["current_model_idx"]
     m = state["models"][idx]
@@ -140,6 +145,7 @@ def node_generate_sql(state: MultiDomainClosedLoopState) -> Dict[str, Any]:
     return {"models": state["models"]}
 
 
+@log_stage("gold.dry_run_and_audit")
 def node_dry_run_and_audit(state: MultiDomainClosedLoopState) -> Dict[str, Any]:
     idx = state["current_model_idx"]
     m = state["models"][idx]
@@ -207,6 +213,7 @@ def route_audit_decision(state: MultiDomainClosedLoopState) -> str:
     return "promote_and_advance"
 
 
+@log_stage("gold.promote_and_advance")
 def node_promote_and_advance(state: MultiDomainClosedLoopState) -> Dict[str, Any]:
     idx = state["current_model_idx"]
     m = state["models"][idx]
@@ -243,6 +250,7 @@ def route_next_model_or_finish(state: MultiDomainClosedLoopState) -> str:
 # =========================================================================
 
 def build_multi_domain_closed_loop_pipeline() -> StateGraph:
+    ensure_stage_roles()
     graph = StateGraph(MultiDomainClosedLoopState)
 
     graph.add_node("understand_schema", node_understand_schema)

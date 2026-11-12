@@ -1,0 +1,511 @@
+{
+  "cache_key": "61e6ae1d6cd7d4527ad1853fd41501764be29e7bb097107f2cc2af603a888308",
+  "model": "gemini-2.5-flash",
+  "provider": "google-gemini",
+  "response": {
+    "items": [
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 0.5,
+        "is_duplicate": false,
+        "item_id": 0,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 0.6,
+        "is_duplicate": false,
+        "item_id": 1,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 0.7,
+        "is_duplicate": false,
+        "item_id": 2,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 0.8,
+        "is_duplicate": false,
+        "item_id": 3,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 0.9,
+        "is_duplicate": false,
+        "item_id": 4,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 1.0,
+        "is_duplicate": false,
+        "item_id": 5,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 1.1,
+        "is_duplicate": false,
+        "item_id": 6,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 1.2,
+        "is_duplicate": false,
+        "item_id": 7,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 1.3,
+        "is_duplicate": false,
+        "item_id": 8,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 1.4,
+        "is_duplicate": false,
+        "item_id": 9,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 1.5,
+        "is_duplicate": false,
+        "item_id": 10,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 1.6,
+        "is_duplicate": false,
+        "item_id": 11,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 1.7,
+        "is_duplicate": false,
+        "item_id": 12,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 1.8,
+        "is_duplicate": false,
+        "item_id": 13,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 1.9,
+        "is_duplicate": false,
+        "item_id": 14,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 2.0,
+        "is_duplicate": false,
+        "item_id": 15,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 2.1,
+        "is_duplicate": false,
+        "item_id": 16,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 2.2,
+        "is_duplicate": false,
+        "item_id": 17,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 2.3,
+        "is_duplicate": false,
+        "item_id": 18,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 2.4,
+        "is_duplicate": false,
+        "item_id": 19,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 2.5,
+        "is_duplicate": false,
+        "item_id": 20,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 2.6,
+        "is_duplicate": false,
+        "item_id": 21,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 2.7,
+        "is_duplicate": false,
+        "item_id": 22,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 2.8,
+        "is_duplicate": false,
+        "item_id": 23,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 2.9,
+        "is_duplicate": false,
+        "item_id": 24,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 3.0,
+        "is_duplicate": false,
+        "item_id": 25,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 3.1,
+        "is_duplicate": false,
+        "item_id": 26,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 3.2,
+        "is_duplicate": false,
+        "item_id": 27,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 3.3,
+        "is_duplicate": false,
+        "item_id": 28,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 3.4,
+        "is_duplicate": false,
+        "item_id": 29,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 3.5,
+        "is_duplicate": false,
+        "item_id": 30,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 3.6,
+        "is_duplicate": false,
+        "item_id": 31,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 3.7,
+        "is_duplicate": false,
+        "item_id": 32,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 3.8,
+        "is_duplicate": false,
+        "item_id": 33,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 3.9,
+        "is_duplicate": false,
+        "item_id": 34,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 4.0,
+        "is_duplicate": false,
+        "item_id": 35,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 4.1,
+        "is_duplicate": false,
+        "item_id": 36,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 4.2,
+        "is_duplicate": false,
+        "item_id": 37,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 4.3,
+        "is_duplicate": false,
+        "item_id": 38,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 4.4,
+        "is_duplicate": false,
+        "item_id": 39,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 4.5,
+        "is_duplicate": false,
+        "item_id": 40,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 4.6,
+        "is_duplicate": false,
+        "item_id": 41,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 4.7,
+        "is_duplicate": false,
+        "item_id": 42,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 4.8,
+        "is_duplicate": false,
+        "item_id": 43,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 4.9,
+        "is_duplicate": false,
+        "item_id": 44,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 5.0,
+        "is_duplicate": false,
+        "item_id": 45,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 5.1,
+        "is_duplicate": false,
+        "item_id": 46,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 5.2,
+        "is_duplicate": false,
+        "item_id": 47,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 5.3,
+        "is_duplicate": false,
+        "item_id": 48,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      },
+      {
+        "duplicate_of_ticket_id": null,
+        "hours_on_site": 5.4,
+        "is_duplicate": false,
+        "item_id": 49,
+        "replaced_component": null,
+        "resolution_action": "Resolved by technician",
+        "root_cause": null,
+        "servicing_vendor_or_tech": null
+      }
+    ]
+  },
+  "schema_name": "ResolutionBatchOutput",
+  "temperature": 0.0
+}

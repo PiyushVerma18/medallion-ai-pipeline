@@ -1,0 +1,12 @@
+{
+  "cache_key": "ac6547d6378a7b276e7b58e7419d87f5e4920b19b4177d4698477c1d40174855",
+  "model": "gemini-2.5-flash",
+  "provider": "google-gemini",
+  "response": {
+    "raw_query_sql": "SELECT\n    EXTRACT(YEAR FROM created_at)::INT AS incident_year,\n    building,\n    canonical_category,\n    assigned_to,\n    SUM(cost) AS total_annual_cost,\n    SUM(hours_on_site) AS total_annual_hours_on_site,\n    COUNT(DISTINCT ticket_id) FILTER (WHERE NOT is_duplicate) AS total_unique_tickets\nFROM\n    silver.cleaned_tickets\nWHERE\n    created_at IS NOT NULL\n    AND canonical_category != 'Unassigned'\nGROUP BY\n    incident_year,\n    building,\n    canonical_category,\n    assigned_to\nORDER BY\n    incident_year, building, canonical_category, assigned_to;",
+    "self_verification_rationale": "The query aggregates annual maintenance ticket data from `silver.cleaned_tickets` to provide a summary of operational expenditures and resource allocation. It correctly calculates `incident_year` from `created_at`, sums `cost` and `hours_on_site`, and counts `DISTINCT ticket_id` for non-duplicate issues. All required dimensions (`incident_year`, `building`, `canonical_category`, `assigned_to`) are included in the GROUP BY clause. Filters are applied for `created_at IS NOT NULL` and `canonical_category != 'Unassigned'` as per the operational rules and problem description. Column aliases adhere to the lowercase snake_case convention. The `total_unique_tickets` metric correctly uses `COUNT(DISTINCT ticket_id) FILTER (WHERE NOT is_duplicate)` to count only unique, actionable tickets, aligning with the problem's intent to identify 'unique issues' and operational rule 6.",
+    "target_table_name": "gold.annual_facilities_opex_summary"
+  },
+  "schema_name": "VerifiedSqlSolution",
+  "temperature": 0.0
+}
